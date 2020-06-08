@@ -1,0 +1,162 @@
+/*  TEMPLATE STYLE
+	html, body {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	body {
+		color: #333;
+		margin: 0;
+		padding: 8px;
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	}
+
+	a {
+		color: rgb(0,100,200);
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	a:visited {
+		color: rgb(0,80,160);
+	}
+
+	label {
+		display: block;
+	}
+
+	input, button, select, textarea {
+		font-family: inherit;
+		font-size: inherit;
+		padding: 0.4em;
+		margin: 0 0 0.5em 0;
+		box-sizing: border-box;
+		border: 1px solid #ccc;
+		border-radius: 2px;
+	}
+
+	input:disabled {
+		color: #ccc;
+	}
+
+	input[type="range"] {
+		height: 0;
+	}
+
+	button {
+		color: #333;
+		background-color: #f4f4f4;
+		outline: none;
+	}
+
+	button:disabled {
+		color: #999;
+	}
+
+	button:not(:disabled):active {
+		background-color: #ddd;
+	}
+
+	button:focus {
+		border-color: #666;
+	}
+*/
+
+
+
+
+/*   FANPAGE    */
+@font-face {
+    font-family: ortica;
+    src: url(./fonts/Ortica/Ortica-Light.otf);
+}
+@font-face {
+    font-family: meadow;
+    src: url(./fonts/GlyphWorld/GlyphWorld-Meadow.otf);
+}
+
+body {background-color: rgb(250,250,250);}
+
+.text {font: 12px ortica;}
+
+
+
+
+
+
+
+
+
+
+
+/*   SWIPABLE SVELTE   */
+
+
+
+.fullpage {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	user-select: none;
+	overflow: scroll;
+}
+/*
+.fullpage .inner {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}*/
+
+
+main {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+
+	/*border: 1px solid red;*/
+
+	display: flex;
+    align-items: flex-start;
+}
+.content {
+	width: calc(100vw - 2px);
+	height: calc(95vh - 1px);
+	position: relative;
+
+	border-left: 1px solid rgb(70,70,70);
+	border-right: 1px solid rgb(70,70,70);
+	border-top: 1px solid rgb(70,70,70);
+
+	/*position: absolute;
+	position: sticky;*/
+}
+/*
+.bg {
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	transform: scale(1.35);
+	transition: all 9s ease-out;
+}
+*/
+
+
+
+#wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	margin: 0;
+	/*color: #fafafa;
+	background: black;*/
+}
