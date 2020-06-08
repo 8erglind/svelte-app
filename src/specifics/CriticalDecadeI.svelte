@@ -34,45 +34,10 @@
 
 <style>
 
-	.pagetitle {
-	    position: absolute;
-	    /*top: 100px;
-	    height: 80vh;
-	    right: 20px;*/
-	    font-size: 30px;
-	    font-family: meadow;
-	    z-index: 9;
-
-	    pointer-events: none;
-
-	    /*writing-mode: vertical-rl;
-		text-orientation: mixed;*/
-
-
-		bottom: 0vh;
-		left: 0px;
-		right: 0px;
-		width: 100vw;
-		text-align: center;
-
-		/*background-color: yellow;*/
-
-		bottom: 50vh;
-	}
-
-	.tempMeter {
-		position: absolute;
-		top: calc((100vw / 16) - 8px);   /* added the -8px just to push it up a bit  */
-		left: calc(100vw / 16);
-		right: calc(100vw / 16);
-		height: calc(((95vh - 1px) / 9) - ((100vw / 16) * 2) - 2px);
-		border: 1px solid black;
-	}
-
 	.temperature {
 		position: absolute;
 		background-color: rgb(70,70,70);
-		background-color: blue;
+		background-color: lightgrey;
 		height: 100%;
 		top: 0%;
 		left: 0%;
@@ -82,7 +47,7 @@
 		position: absolute;
 		right: 2.5px;
 		top: 2.5px;
-		color: white !important;
+		/*color: white !important;*/
 	}
 
 	.verticalLine1 {
@@ -95,9 +60,6 @@
 	}
 	.text {
 		color: blue;
-	}
-	.pagetitle .text {
-		font-size: 6vw;
 	}
 	.arrow {
 		width: calc(100vw / 16);

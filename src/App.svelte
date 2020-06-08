@@ -180,8 +180,8 @@
 	background-color: rgba(250,250,250,1);
 }
 .page1 {
-	position: sticky;
-	left: 0vw;
+	/*position: sticky;
+	left: 0vw;*/
 }
 .page2 {
 	/*position: sticky;
