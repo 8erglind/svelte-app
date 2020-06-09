@@ -17,6 +17,10 @@
  	<div class="text">Swipe<br>&uarr;</div>
 </div>
 
+<div class="activedot activedot1">
+	<div class="progressline" style="transform: rotate(calc(0deg - {rotate}));"></div>
+</div>
+
 
 
 

@@ -9,17 +9,21 @@
 </script>
 
 
-<TimelinePast></TimelinePast>
+
 
 
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
- 	<div class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by&nbsp;1,1&nbsp;-&nbsp;1,3°C.</div>
+ 	<div class="text"></div>
+</div>
+
+<div class="activedot activedot2">
+	<div class="progressline" style="transform: rotate(calc(0deg - {rotate}));"></div>
 </div>
 
 
 
-<div class="tempMeter">
+<!--<div class="tempMeter">
 	<div class="temperature">
 		<span class="tempnumber text">1,2°C</span>
 	</div>
@@ -27,12 +31,7 @@
 
 <div class="verticalLine1"></div>
 
-<div class="arrow text">&uarr;</div>
-
-
-<div class="activedot activedot4">
-	<div class="progressline" style="transform: rotate(calc(0deg - {rotate}));"></div>
-</div>
+<div class="arrow text">&uarr;</div>-->
 
 
 
