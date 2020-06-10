@@ -151,8 +151,8 @@
 
 .dots {
 	position: fixed;
-	bottom: 0vh;
-	height: 5vh;
+	bottom: 0%;
+	height: 5%;
 	left: 0px;
 	width: 100vw;
 	border-left: 1px solid #444;
@@ -161,9 +161,10 @@
 .dot {
 	width: calc((100vw / 16) - 1px);
 	border-right: 1px solid #444;
-	height: calc(5vh - 2px);
+	height: calc(100% - 2px);
 	margin-top: 1px;
 	/*margin: 0 0px;*/
 	display: inline-block;
+
 }
 </style>
