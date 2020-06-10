@@ -56,7 +56,9 @@
  		<div on:click={togglethirdSetup} class="text">“Two-thirds of the warming has occurred since 1975”, in the last 45&nbsp;years.<sub>1</sub></div>
  	{/if}
  	{#if thirdText}
- 		<div href="#page5" class="text">The Paris Agreement (which has been critisized for not being radical enough) aims to limit warming to +&nbsp;1,5°C by&nbsp;2100.</div>
+ 		<a href="#page5" style="text-decoration: none;">
+ 			<div class="text">The Paris Agreement (which has been critisized for not being radical enough) aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
+ 		</a>
  	{/if}
 </div>
 
