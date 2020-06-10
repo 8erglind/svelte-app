@@ -29,27 +29,5 @@
 
 
 <style>
-	.line {
-		position: absolute;
-		height: 1px;
-    	background-color: black;
-    	width: calc(100vw / 16);
-	}
-	.years {
-		position: absolute;
-		width: calc(100vw / 16);
-		text-align: center; 
-	}
-	.right {right: 0px;}
-
-	.line0 {bottom: 0vh;}   /*   why not 5vh???*??   */
-	.line10 {bottom: calc((95vh - 1px) / 9 * 1);}
-	.line20 {bottom: calc((95vh - 1px) / 9 * 2);}
-	.line30 {bottom: calc((95vh - 1px) / 9 * 3);}
-	.line40 {bottom: calc((95vh - 1px) / 9 * 4);}
-	.line50 {bottom: calc((95vh - 1px) / 9 * 5);}
-	.line60 {bottom: calc((95vh - 1px) / 9 * 6);}
-	.line70 {bottom: calc((95vh - 1px) / 9 * 7);}
-	.line80 {bottom: calc((95vh - 1px) / 9 * 8);}
-
+	
 </style>

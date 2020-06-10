@@ -6,6 +6,7 @@
 	import TimelinePast from './specifics/TimelinePast.svelte';
 	import Meter from './specifics/topMeter.svelte';
 	import Footer from './footer.svelte';
+	import Header from './header.svelte';
 
 
 	// PAGES  //
@@ -27,6 +28,9 @@
 	import CriticalDecadeIII from './specifics/CriticalDecadeIII.svelte';
 
 	
+
+
+
 
 	let pages = [
 		{ name: 'page1', id: 1, swipes: 0, type: 'notcountry', rotate: '90', pagetitle: 'cover' },
@@ -51,14 +55,17 @@
 </script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+<Header></Header>
 
 
 
 <div class="newmain">
-	<div class="content page1 notcountry">
+	<a href="#page1" class="content page1 notcountry">
 		<Cover pagetitleText="Cover" rotate="90deg"></Cover>
-	</div>
+	</a>
 	<div class="content page2 notcountry">
 		<ExtremeHeatI pagetitleText="Extreme heat:&emsp;I" rotate="78.75deg"></ExtremeHeatI>
 	</div>
@@ -108,9 +115,9 @@
 
 	<div class="dots">
 		{#each pages as page (page.id)}
-			<div class="dot">
+			<a href="#{page.name}" class="dot dot{page.id}">
 				<!--<img style="width: 95%; margin-left: 2.5%; margin-top: 4%;" src="imgs/{page.name}.png">-->
-			</div>
+			</a>
 		{/each}
 	</div>
 </div>
@@ -125,11 +132,11 @@
 
 
 
-
-
-
-
 <style>
+
+
+
+
 
 .dots {
 	position: fixed;
@@ -138,18 +145,17 @@
 	left: 0px;
 	width: 100vw;
 	border-left: 1px solid #444;
+	z-index: 99999;
 }
 .dot {
 	width: calc((100vw / 16) - 1px);
 	border-right: 1px solid #444;
-	height: 5vh;
+	height: calc(5vh - 2px);
+	margin-top: 1px;
 	/*margin: 0 0px;*/
 	display: inline-block;
 }
-.dot.active {
-	position: absolute;
-	background-color: rgb(70,70,70);
-	width: calc(100vw / 16);
-	z-index: -1;
+.dot:hover {
+	background-color: rgba(70,70,70);
 }
 </style>

@@ -18,6 +18,8 @@
 		width: calc(100vw - 1px);
 		left: 0vw;
 		bottom: 0vh;
+		pointer-events: none;
+		z-index: -1;
 	}
 
 

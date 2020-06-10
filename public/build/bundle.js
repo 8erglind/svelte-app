@@ -37,6 +37,9 @@ var app = (function () {
     function element(name) {
         return document.createElement(name);
     }
+    function svg_element(name) {
+        return document.createElementNS('http://www.w3.org/2000/svg', name);
+    }
     function text(data) {
         return document.createTextNode(data);
     }
@@ -151,6 +154,86 @@ var app = (function () {
             });
             block.o(local);
         }
+    }
+
+    function destroy_block(block, lookup) {
+        block.d(1);
+        lookup.delete(block.key);
+    }
+    function update_keyed_each(old_blocks, dirty, get_key, dynamic, ctx, list, lookup, node, destroy, create_each_block, next, get_context) {
+        let o = old_blocks.length;
+        let n = list.length;
+        let i = o;
+        const old_indexes = {};
+        while (i--)
+            old_indexes[old_blocks[i].key] = i;
+        const new_blocks = [];
+        const new_lookup = new Map();
+        const deltas = new Map();
+        i = n;
+        while (i--) {
+            const child_ctx = get_context(ctx, list, i);
+            const key = get_key(child_ctx);
+            let block = lookup.get(key);
+            if (!block) {
+                block = create_each_block(key, child_ctx);
+                block.c();
+            }
+            else if (dynamic) {
+                block.p(child_ctx, dirty);
+            }
+            new_lookup.set(key, new_blocks[i] = block);
+            if (key in old_indexes)
+                deltas.set(key, Math.abs(i - old_indexes[key]));
+        }
+        const will_move = new Set();
+        const did_move = new Set();
+        function insert(block) {
+            transition_in(block, 1);
+            block.m(node, next);
+            lookup.set(block.key, block);
+            next = block.first;
+            n--;
+        }
+        while (o && n) {
+            const new_block = new_blocks[n - 1];
+            const old_block = old_blocks[o - 1];
+            const new_key = new_block.key;
+            const old_key = old_block.key;
+            if (new_block === old_block) {
+                // do nothing
+                next = new_block.first;
+                o--;
+                n--;
+            }
+            else if (!new_lookup.has(old_key)) {
+                // remove old block
+                destroy(old_block, lookup);
+                o--;
+            }
+            else if (!lookup.has(new_key) || will_move.has(new_key)) {
+                insert(new_block);
+            }
+            else if (did_move.has(old_key)) {
+                o--;
+            }
+            else if (deltas.get(new_key) > deltas.get(old_key)) {
+                did_move.add(new_key);
+                insert(new_block);
+            }
+            else {
+                will_move.add(old_key);
+                o--;
+            }
+        }
+        while (o--) {
+            const old_block = old_blocks[o];
+            if (!new_lookup.has(old_block.key))
+                destroy(old_block, lookup);
+        }
+        while (n)
+            insert(new_blocks[n - 1]);
+        return new_blocks;
     }
     function validate_each_keys(ctx, list, get_context, get_key) {
         const keys = new Set();
@@ -424,39 +507,39 @@ var app = (function () {
     			t23 = space();
     			div16 = element("div");
     			div16.textContent = "1940";
-    			attr_dev(div0, "class", "line left line10 svelte-1lkff93");
+    			attr_dev(div0, "class", "line left line10");
     			add_location(div0, file, 4, 0, 21);
-    			attr_dev(div1, "class", "line left line20 svelte-1lkff93");
+    			attr_dev(div1, "class", "line left line20");
     			add_location(div1, file, 5, 0, 58);
-    			attr_dev(div2, "class", "line left line30 svelte-1lkff93");
+    			attr_dev(div2, "class", "line left line30");
     			add_location(div2, file, 6, 0, 95);
-    			attr_dev(div3, "class", "line left line40 svelte-1lkff93");
+    			attr_dev(div3, "class", "line left line40");
     			add_location(div3, file, 7, 0, 132);
-    			attr_dev(div4, "class", "line left line50 svelte-1lkff93");
+    			attr_dev(div4, "class", "line left line50");
     			add_location(div4, file, 8, 0, 169);
-    			attr_dev(div5, "class", "line left line60 svelte-1lkff93");
+    			attr_dev(div5, "class", "line left line60");
     			add_location(div5, file, 9, 0, 206);
-    			attr_dev(div6, "class", "line left line70 svelte-1lkff93");
+    			attr_dev(div6, "class", "line left line70");
     			add_location(div6, file, 10, 0, 243);
-    			attr_dev(div7, "class", "line left line80 svelte-1lkff93");
+    			attr_dev(div7, "class", "line left line80");
     			add_location(div7, file, 11, 0, 280);
-    			attr_dev(div8, "class", "text years left line0 svelte-1lkff93");
+    			attr_dev(div8, "class", "text years left line0");
     			add_location(div8, file, 13, 0, 318);
-    			attr_dev(div9, "class", "text years left line10 svelte-1lkff93");
+    			attr_dev(div9, "class", "text years left line10");
     			add_location(div9, file, 14, 0, 364);
-    			attr_dev(div10, "class", "text years left line20 svelte-1lkff93");
+    			attr_dev(div10, "class", "text years left line20");
     			add_location(div10, file, 15, 0, 411);
-    			attr_dev(div11, "class", "text years left line30 svelte-1lkff93");
+    			attr_dev(div11, "class", "text years left line30");
     			add_location(div11, file, 16, 0, 458);
-    			attr_dev(div12, "class", "text years left line40 svelte-1lkff93");
+    			attr_dev(div12, "class", "text years left line40");
     			add_location(div12, file, 17, 0, 505);
-    			attr_dev(div13, "class", "text years left line50 svelte-1lkff93");
+    			attr_dev(div13, "class", "text years left line50");
     			add_location(div13, file, 18, 0, 552);
-    			attr_dev(div14, "class", "text years left line60 svelte-1lkff93");
+    			attr_dev(div14, "class", "text years left line60");
     			add_location(div14, file, 19, 0, 599);
-    			attr_dev(div15, "class", "text years left line70 svelte-1lkff93");
+    			attr_dev(div15, "class", "text years left line70");
     			add_location(div15, file, 20, 0, 646);
-    			attr_dev(div16, "class", "text years left line80 svelte-1lkff93");
+    			attr_dev(div16, "class", "text years left line80");
     			add_location(div16, file, 21, 0, 693);
     		},
     		l: function claim(nodes) {
@@ -657,39 +740,39 @@ var app = (function () {
     			t23 = space();
     			div16 = element("div");
     			div16.textContent = "2100";
-    			attr_dev(div0, "class", "line right line10 svelte-87krwh");
+    			attr_dev(div0, "class", "line right line10");
     			add_location(div0, file$1, 7, 0, 24);
-    			attr_dev(div1, "class", "line right line20 svelte-87krwh");
+    			attr_dev(div1, "class", "line right line20");
     			add_location(div1, file$1, 8, 0, 62);
-    			attr_dev(div2, "class", "line right line30 svelte-87krwh");
+    			attr_dev(div2, "class", "line right line30");
     			add_location(div2, file$1, 9, 0, 100);
-    			attr_dev(div3, "class", "line right line40 svelte-87krwh");
+    			attr_dev(div3, "class", "line right line40");
     			add_location(div3, file$1, 10, 0, 138);
-    			attr_dev(div4, "class", "line right line50 svelte-87krwh");
+    			attr_dev(div4, "class", "line right line50");
     			add_location(div4, file$1, 11, 0, 176);
-    			attr_dev(div5, "class", "line right line60 svelte-87krwh");
+    			attr_dev(div5, "class", "line right line60");
     			add_location(div5, file$1, 12, 0, 214);
-    			attr_dev(div6, "class", "line right line70 svelte-87krwh");
+    			attr_dev(div6, "class", "line right line70");
     			add_location(div6, file$1, 13, 0, 252);
-    			attr_dev(div7, "class", "line right line80 svelte-87krwh");
+    			attr_dev(div7, "class", "line right line80");
     			add_location(div7, file$1, 14, 0, 290);
-    			attr_dev(div8, "class", "text years right line0 svelte-87krwh");
+    			attr_dev(div8, "class", "text years right line0");
     			add_location(div8, file$1, 17, 0, 330);
-    			attr_dev(div9, "class", "text years right line10 svelte-87krwh");
+    			attr_dev(div9, "class", "text years right line10");
     			add_location(div9, file$1, 18, 0, 377);
-    			attr_dev(div10, "class", "text years right line20 svelte-87krwh");
+    			attr_dev(div10, "class", "text years right line20");
     			add_location(div10, file$1, 19, 0, 425);
-    			attr_dev(div11, "class", "text years right line30 svelte-87krwh");
+    			attr_dev(div11, "class", "text years right line30");
     			add_location(div11, file$1, 20, 0, 473);
-    			attr_dev(div12, "class", "text years right line40 svelte-87krwh");
+    			attr_dev(div12, "class", "text years right line40");
     			add_location(div12, file$1, 21, 0, 521);
-    			attr_dev(div13, "class", "text years right line50 svelte-87krwh");
+    			attr_dev(div13, "class", "text years right line50");
     			add_location(div13, file$1, 22, 0, 569);
-    			attr_dev(div14, "class", "text years right line60 svelte-87krwh");
+    			attr_dev(div14, "class", "text years right line60");
     			add_location(div14, file$1, 23, 0, 617);
-    			attr_dev(div15, "class", "text years right line70 svelte-87krwh");
+    			attr_dev(div15, "class", "text years right line70");
     			add_location(div15, file$1, 24, 0, 665);
-    			attr_dev(div16, "class", "text years right line80 svelte-87krwh");
+    			attr_dev(div16, "class", "text years right line80");
     			add_location(div16, file$1, 25, 0, 713);
     		},
     		l: function claim(nodes) {
@@ -961,7 +1044,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "footer svelte-1iksmvr");
+    			attr_dev(div, "class", "footer svelte-236w9f");
     			add_location(div, file$3, 4, 0, 21);
     		},
     		l: function claim(nodes) {
@@ -1015,77 +1098,266 @@ var app = (function () {
     	}
     }
 
-    /* src/specifics/Cover.svelte generated by Svelte v3.23.0 */
-    const file$4 = "src/specifics/Cover.svelte";
+    /* src/header.svelte generated by Svelte v3.23.0 */
+
+    const file$4 = "src/header.svelte";
 
     function create_fragment$5(ctx) {
-    	let div1;
+    	let meta0;
     	let t0;
+    	let meta1;
     	let t1;
-    	let div0;
+    	let a0;
     	let t2;
-    	let br;
+    	let a1;
     	let t3;
+    	let a2;
     	let t4;
-    	let div3;
-    	let div2;
+    	let a3;
+    	let t5;
+    	let a4;
+    	let t6;
+    	let a5;
+    	let t7;
+    	let a6;
+    	let t8;
+    	let a7;
+    	let t9;
+    	let a8;
+    	let t10;
+    	let a9;
+    	let t11;
+    	let a10;
+    	let t12;
+    	let a11;
+    	let t13;
+    	let a12;
+    	let t14;
+    	let a13;
+    	let t15;
+    	let a14;
+    	let t16;
+    	let a15;
 
     	const block = {
     		c: function create() {
-    			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
+    			meta0 = element("meta");
+    			t0 = space();
+    			meta1 = element("meta");
     			t1 = space();
-    			div0 = element("div");
-    			t2 = text("Swipe");
-    			br = element("br");
-    			t3 = text("↑");
+    			a0 = element("a");
+    			t2 = space();
+    			a1 = element("a");
+    			t3 = space();
+    			a2 = element("a");
     			t4 = space();
-    			div3 = element("div");
-    			div2 = element("div");
-    			add_location(br, file$4, 16, 25, 359);
-    			attr_dev(div0, "class", "text svelte-eekkh2");
-    			add_location(div0, file$4, 16, 2, 336);
-    			attr_dev(div1, "class", "pagetitle svelte-eekkh2");
-    			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$4, 14, 0, 255);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$4, 20, 1, 420);
-    			attr_dev(div3, "class", "activedot activedot1");
-    			add_location(div3, file$4, 19, 0, 384);
+    			a3 = element("a");
+    			t5 = space();
+    			a4 = element("a");
+    			t6 = space();
+    			a5 = element("a");
+    			t7 = space();
+    			a6 = element("a");
+    			t8 = space();
+    			a7 = element("a");
+    			t9 = space();
+    			a8 = element("a");
+    			t10 = space();
+    			a9 = element("a");
+    			t11 = space();
+    			a10 = element("a");
+    			t12 = space();
+    			a11 = element("a");
+    			t13 = space();
+    			a12 = element("a");
+    			t14 = space();
+    			a13 = element("a");
+    			t15 = space();
+    			a14 = element("a");
+    			t16 = space();
+    			a15 = element("a");
+    			attr_dev(meta0, "name", "viewport");
+    			attr_dev(meta0, "content", "width=device-width, initial-scale=1");
+    			add_location(meta0, file$4, 3, 0, 20);
+    			attr_dev(meta1, "name", "viewport");
+    			attr_dev(meta1, "content", "width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0");
+    			add_location(meta1, file$4, 4, 0, 89);
+    			attr_dev(a0, "name", "page1");
+    			set_style(a0, "position", "absolute");
+    			set_style(a0, "top", "0vw");
+    			set_style(a0, "left", "0vw");
+    			set_style(a0, "width", "100vw");
+    			add_location(a0, file$4, 7, 0, 239);
+    			attr_dev(a1, "name", "page2");
+    			set_style(a1, "position", "absolute");
+    			set_style(a1, "top", "0vw");
+    			set_style(a1, "left", "100vw");
+    			set_style(a1, "width", "100vw");
+    			add_location(a1, file$4, 8, 0, 321);
+    			attr_dev(a2, "name", "page3");
+    			set_style(a2, "position", "absolute");
+    			set_style(a2, "top", "0vw");
+    			set_style(a2, "left", "200vw");
+    			set_style(a2, "width", "100vw");
+    			add_location(a2, file$4, 9, 0, 405);
+    			attr_dev(a3, "name", "page4");
+    			set_style(a3, "position", "absolute");
+    			set_style(a3, "top", "0vw");
+    			set_style(a3, "left", "300vw");
+    			set_style(a3, "width", "100vw");
+    			add_location(a3, file$4, 10, 0, 489);
+    			attr_dev(a4, "name", "page5");
+    			set_style(a4, "position", "absolute");
+    			set_style(a4, "top", "0vw");
+    			set_style(a4, "left", "400vw");
+    			set_style(a4, "width", "100vw");
+    			add_location(a4, file$4, 11, 0, 573);
+    			attr_dev(a5, "name", "page6");
+    			set_style(a5, "position", "absolute");
+    			set_style(a5, "top", "0vw");
+    			set_style(a5, "left", "500vw");
+    			set_style(a5, "width", "100vw");
+    			add_location(a5, file$4, 12, 0, 657);
+    			attr_dev(a6, "name", "page7");
+    			set_style(a6, "position", "absolute");
+    			set_style(a6, "top", "0vw");
+    			set_style(a6, "left", "600vw");
+    			set_style(a6, "width", "100vw");
+    			add_location(a6, file$4, 13, 0, 741);
+    			attr_dev(a7, "name", "page8");
+    			set_style(a7, "position", "absolute");
+    			set_style(a7, "top", "0vw");
+    			set_style(a7, "left", "700vw");
+    			set_style(a7, "width", "100vw");
+    			add_location(a7, file$4, 14, 0, 825);
+    			attr_dev(a8, "name", "page9");
+    			set_style(a8, "position", "absolute");
+    			set_style(a8, "top", "0vw");
+    			set_style(a8, "left", "800vw");
+    			set_style(a8, "width", "100vw");
+    			add_location(a8, file$4, 15, 0, 909);
+    			attr_dev(a9, "name", "page10");
+    			set_style(a9, "position", "absolute");
+    			set_style(a9, "top", "0vw");
+    			set_style(a9, "left", "900vw");
+    			set_style(a9, "width", "100vw");
+    			add_location(a9, file$4, 16, 0, 993);
+    			attr_dev(a10, "name", "page11");
+    			set_style(a10, "position", "absolute");
+    			set_style(a10, "top", "0vw");
+    			set_style(a10, "left", "1000vw");
+    			set_style(a10, "width", "100vw");
+    			add_location(a10, file$4, 17, 0, 1078);
+    			attr_dev(a11, "name", "page12");
+    			set_style(a11, "position", "absolute");
+    			set_style(a11, "top", "0vw");
+    			set_style(a11, "left", "1100vw");
+    			set_style(a11, "width", "100vw");
+    			add_location(a11, file$4, 18, 0, 1164);
+    			attr_dev(a12, "name", "page13");
+    			set_style(a12, "position", "absolute");
+    			set_style(a12, "top", "0vw");
+    			set_style(a12, "left", "1200vw");
+    			set_style(a12, "width", "100vw");
+    			add_location(a12, file$4, 19, 0, 1250);
+    			attr_dev(a13, "name", "page14");
+    			set_style(a13, "position", "absolute");
+    			set_style(a13, "top", "0vw");
+    			set_style(a13, "left", "1300vw");
+    			set_style(a13, "width", "100vw");
+    			add_location(a13, file$4, 20, 0, 1336);
+    			attr_dev(a14, "name", "page15");
+    			set_style(a14, "position", "absolute");
+    			set_style(a14, "top", "0vw");
+    			set_style(a14, "left", "1400vw");
+    			set_style(a14, "width", "100vw");
+    			add_location(a14, file$4, 21, 0, 1422);
+    			attr_dev(a15, "name", "page16");
+    			set_style(a15, "position", "absolute");
+    			set_style(a15, "top", "0vw");
+    			set_style(a15, "left", "1500vw");
+    			set_style(a15, "width", "100vw");
+    			add_location(a15, file$4, 22, 0, 1508);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
-    			append_dev(div1, t1);
-    			append_dev(div1, div0);
-    			append_dev(div0, t2);
-    			append_dev(div0, br);
-    			append_dev(div0, t3);
+    			insert_dev(target, meta0, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, meta1, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, a0, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, a1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, a2, anchor);
     			insert_dev(target, t4, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, a3, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, a4, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, a5, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, a6, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, a7, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, a8, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, a9, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, a10, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, a11, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, a12, anchor);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, a13, anchor);
+    			insert_dev(target, t15, anchor);
+    			insert_dev(target, a14, anchor);
+    			insert_dev(target, t16, anchor);
+    			insert_dev(target, a15, anchor);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			}
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			}
-    		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(meta0);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(meta1);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(a0);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(a1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(a2);
     			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(a3);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(a4);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(a5);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(a6);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(a7);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(a8);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(a9);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(a10);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(a11);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(a12);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(a13);
+    			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(a14);
+    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(a15);
     		}
     	};
 
@@ -1100,7 +1372,141 @@ var app = (function () {
     	return block;
     }
 
-    function instance$5($$self, $$props, $$invalidate) {
+    function instance$5($$self, $$props) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Header> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Header", $$slots, []);
+    	return [];
+    }
+
+    class Header extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$5, create_fragment$5, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Header",
+    			options,
+    			id: create_fragment$5.name
+    		});
+    	}
+    }
+
+    /* src/specifics/Cover.svelte generated by Svelte v3.23.0 */
+    const file$5 = "src/specifics/Cover.svelte";
+
+    function create_fragment$6(ctx) {
+    	let div1;
+    	let t0;
+    	let t1;
+    	let div0;
+    	let t2;
+    	let br;
+    	let t3;
+    	let t4;
+    	let div2;
+    	let t5;
+    	let div5;
+    	let div3;
+    	let t6;
+    	let div4;
+
+    	const block = {
+    		c: function create() {
+    			div1 = element("div");
+    			t0 = text(/*pagetitleText*/ ctx[0]);
+    			t1 = space();
+    			div0 = element("div");
+    			t2 = text("Swipe");
+    			br = element("br");
+    			t3 = text("↑");
+    			t4 = space();
+    			div2 = element("div");
+    			t5 = space();
+    			div5 = element("div");
+    			div3 = element("div");
+    			t6 = space();
+    			div4 = element("div");
+    			add_location(br, file$5, 16, 25, 359);
+    			attr_dev(div0, "class", "text svelte-eekkh2");
+    			add_location(div0, file$5, 16, 2, 336);
+    			attr_dev(div1, "class", "pagetitle svelte-eekkh2");
+    			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div1, file$5, 14, 0, 255);
+    			attr_dev(div2, "class", "activedot activedot1");
+    			add_location(div2, file$5, 19, 0, 384);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			add_location(div3, file$5, 21, 1, 466);
+    			attr_dev(div4, "class", "progressline");
+    			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div4, file$5, 22, 1, 550);
+    			attr_dev(div5, "class", "activedotnew activedotFan");
+    			add_location(div5, file$5, 20, 0, 425);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, t0);
+    			append_dev(div1, t1);
+    			append_dev(div1, div0);
+    			append_dev(div0, t2);
+    			append_dev(div0, br);
+    			append_dev(div0, t3);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div3);
+    			append_dev(div5, t6);
+    			append_dev(div5, div4);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			}
+
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			}
+    		},
+    		i: noop,
+    		o: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div5);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$6.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$6($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
     	let { pagetitleText } = $$props;
@@ -1145,13 +1551,13 @@ var app = (function () {
     class Cover extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$5, create_fragment$5, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$6, create_fragment$6, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Cover",
     			options,
-    			id: create_fragment$5.name
+    			id: create_fragment$6.name
     		});
 
     		const { ctx } = this.$$;
@@ -1184,16 +1590,18 @@ var app = (function () {
     }
 
     /* src/specifics/ExtremeHeatI.svelte generated by Svelte v3.23.0 */
-    const file$5 = "src/specifics/ExtremeHeatI.svelte";
+    const file$6 = "src/specifics/ExtremeHeatI.svelte";
 
-    function create_fragment$6(ctx) {
+    function create_fragment$7(ctx) {
     	let div1;
     	let t0;
     	let t1;
     	let div0;
     	let t2;
-    	let div3;
     	let div2;
+    	let t3;
+    	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -1202,18 +1610,22 @@ var app = (function () {
     			t1 = space();
     			div0 = element("div");
     			t2 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t3 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text svelte-l4fgir");
-    			add_location(div0, file$5, 16, 2, 297);
+    			add_location(div0, file$6, 16, 2, 297);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$5, 14, 0, 216);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$5, 20, 1, 366);
-    			attr_dev(div3, "class", "activedot activedot2");
-    			add_location(div3, file$5, 19, 0, 330);
+    			add_location(div1, file$6, 14, 0, 216);
+    			attr_dev(div2, "class", "activedot activedot2");
+    			add_location(div2, file$6, 19, 0, 330);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$6, 21, 1, 412);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$6, 20, 0, 371);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1224,8 +1636,10 @@ var app = (function () {
     			append_dev(div1, t1);
     			append_dev(div1, div0);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -1235,7 +1649,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -1243,13 +1657,15 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$6.name,
+    		id: create_fragment$7.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1258,7 +1674,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$6($$self, $$props, $$invalidate) {
+    function instance$7($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
     	let { pagetitleText } = $$props;
@@ -1302,13 +1718,13 @@ var app = (function () {
     class ExtremeHeatI extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$6, create_fragment$6, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$7, create_fragment$7, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "ExtremeHeatI",
     			options,
-    			id: create_fragment$6.name
+    			id: create_fragment$7.name
     		});
 
     		const { ctx } = this.$$;
@@ -1341,16 +1757,18 @@ var app = (function () {
     }
 
     /* src/specifics/ExtremeHeatII.svelte generated by Svelte v3.23.0 */
-    const file$6 = "src/specifics/ExtremeHeatII.svelte";
+    const file$7 = "src/specifics/ExtremeHeatII.svelte";
 
-    function create_fragment$7(ctx) {
+    function create_fragment$8(ctx) {
     	let div1;
     	let t0;
     	let t1;
     	let div0;
     	let t2;
-    	let div3;
     	let div2;
+    	let t3;
+    	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -1359,18 +1777,22 @@ var app = (function () {
     			t1 = space();
     			div0 = element("div");
     			t2 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t3 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text svelte-l4fgir");
-    			add_location(div0, file$6, 16, 2, 297);
+    			add_location(div0, file$7, 16, 2, 297);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$6, 14, 0, 216);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$6, 20, 1, 366);
-    			attr_dev(div3, "class", "activedot activedot3");
-    			add_location(div3, file$6, 19, 0, 330);
+    			add_location(div1, file$7, 14, 0, 216);
+    			attr_dev(div2, "class", "activedot activedot3");
+    			add_location(div2, file$7, 19, 0, 330);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$7, 21, 1, 412);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$7, 20, 0, 371);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1381,8 +1803,10 @@ var app = (function () {
     			append_dev(div1, t1);
     			append_dev(div1, div0);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -1392,7 +1816,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -1400,13 +1824,15 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$7.name,
+    		id: create_fragment$8.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1415,7 +1841,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$7($$self, $$props, $$invalidate) {
+    function instance$8($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
     	let { pagetitleText } = $$props;
@@ -1459,13 +1885,13 @@ var app = (function () {
     class ExtremeHeatII extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$7, create_fragment$7, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$8, create_fragment$8, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "ExtremeHeatII",
     			options,
-    			id: create_fragment$7.name
+    			id: create_fragment$8.name
     		});
 
     		const { ctx } = this.$$;
@@ -1498,9 +1924,9 @@ var app = (function () {
     }
 
     /* src/specifics/CriticalDecadeI.svelte generated by Svelte v3.23.0 */
-    const file$7 = "src/specifics/CriticalDecadeI.svelte";
+    const file$8 = "src/specifics/CriticalDecadeI.svelte";
 
-    function create_fragment$8(ctx) {
+    function create_fragment$9(ctx) {
     	let t0;
     	let div1;
     	let t1;
@@ -1515,8 +1941,10 @@ var app = (function () {
     	let t7;
     	let div5;
     	let t9;
-    	let div7;
     	let div6;
+    	let t10;
+    	let div8;
+    	let div7;
     	let current;
     	const timelinepast = new TimelinePast({ $$inline: true });
 
@@ -1540,28 +1968,32 @@ var app = (function () {
     			div5 = element("div");
     			div5.textContent = "↑";
     			t9 = space();
-    			div7 = element("div");
     			div6 = element("div");
+    			t10 = space();
+    			div8 = element("div");
+    			div7 = element("div");
     			attr_dev(div0, "class", "text svelte-l4fgir");
-    			add_location(div0, file$7, 16, 2, 326);
+    			add_location(div0, file$8, 16, 2, 326);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$7, 14, 0, 245);
+    			add_location(div1, file$8, 14, 0, 245);
     			attr_dev(span, "class", "tempnumber text svelte-l4fgir");
-    			add_location(span, file$7, 23, 2, 527);
+    			add_location(span, file$8, 23, 2, 527);
     			attr_dev(div2, "class", "temperature svelte-l4fgir");
-    			add_location(div2, file$7, 22, 1, 499);
+    			add_location(div2, file$8, 22, 1, 499);
     			attr_dev(div3, "class", "tempMeter");
-    			add_location(div3, file$7, 21, 0, 474);
+    			add_location(div3, file$8, 21, 0, 474);
     			attr_dev(div4, "class", "verticalLine1 svelte-l4fgir");
-    			add_location(div4, file$7, 27, 0, 586);
+    			add_location(div4, file$8, 27, 0, 586);
     			attr_dev(div5, "class", "arrow text svelte-l4fgir");
-    			add_location(div5, file$7, 29, 0, 621);
-    			attr_dev(div6, "class", "progressline");
-    			set_style(div6, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div6, file$7, 33, 1, 696);
-    			attr_dev(div7, "class", "activedot activedot4");
-    			add_location(div7, file$7, 32, 0, 660);
+    			add_location(div5, file$8, 29, 0, 621);
+    			attr_dev(div6, "class", "activedot activedot4");
+    			add_location(div6, file$8, 38, 0, 666);
+    			attr_dev(div7, "class", "progressline");
+    			set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div7, file$8, 40, 1, 748);
+    			attr_dev(div8, "class", "activedotnew activedotFan");
+    			add_location(div8, file$8, 39, 0, 707);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1582,8 +2014,10 @@ var app = (function () {
     			insert_dev(target, t7, anchor);
     			insert_dev(target, div5, anchor);
     			insert_dev(target, t9, anchor);
-    			insert_dev(target, div7, anchor);
-    			append_dev(div7, div6);
+    			insert_dev(target, div6, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, div8, anchor);
+    			append_dev(div8, div7);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -1594,7 +2028,7 @@ var app = (function () {
     			}
 
     			if (!current || dirty & /*rotate*/ 2) {
-    				set_style(div6, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: function intro(local) {
@@ -1617,13 +2051,15 @@ var app = (function () {
     			if (detaching) detach_dev(t7);
     			if (detaching) detach_dev(div5);
     			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(div7);
+    			if (detaching) detach_dev(div6);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(div8);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$8.name,
+    		id: create_fragment$9.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1632,7 +2068,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$8($$self, $$props, $$invalidate) {
+    function instance$9($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
     	let { pagetitleText } = $$props;
@@ -1676,13 +2112,13 @@ var app = (function () {
     class CriticalDecadeI extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$8, create_fragment$8, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$9, create_fragment$9, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "CriticalDecadeI",
     			options,
-    			id: create_fragment$8.name
+    			id: create_fragment$9.name
     		});
 
     		const { ctx } = this.$$;
@@ -1715,17 +2151,19 @@ var app = (function () {
     }
 
     /* src/specifics/CriticalDecadeII.svelte generated by Svelte v3.23.0 */
-    const file$8 = "src/specifics/CriticalDecadeII.svelte";
+    const file$9 = "src/specifics/CriticalDecadeII.svelte";
 
-    function create_fragment$9(ctx) {
+    function create_fragment$a(ctx) {
     	let t0;
     	let div1;
     	let t1;
     	let t2;
     	let div0;
     	let t3;
-    	let div3;
     	let div2;
+    	let t4;
+    	let div4;
+    	let div3;
     	let current;
     	const timelinepast = new TimelinePast({ $$inline: true });
 
@@ -1738,18 +2176,22 @@ var app = (function () {
     			t2 = space();
     			div0 = element("div");
     			t3 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t4 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text svelte-l4fgir");
-    			add_location(div0, file$8, 16, 2, 326);
+    			add_location(div0, file$9, 16, 2, 326);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$8, 14, 0, 245);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$8, 33, 1, 590);
-    			attr_dev(div3, "class", "activedot activedot5");
-    			add_location(div3, file$8, 32, 0, 554);
+    			add_location(div1, file$9, 14, 0, 245);
+    			attr_dev(div2, "class", "activedot activedot5");
+    			add_location(div2, file$9, 32, 0, 554);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$9, 34, 1, 636);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$9, 33, 0, 595);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1762,8 +2204,10 @@ var app = (function () {
     			append_dev(div1, t2);
     			append_dev(div1, div0);
     			insert_dev(target, t3, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -1774,7 +2218,7 @@ var app = (function () {
     			}
 
     			if (!current || dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: function intro(local) {
@@ -1791,13 +2235,15 @@ var app = (function () {
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$9.name,
+    		id: create_fragment$a.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1806,7 +2252,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$9($$self, $$props, $$invalidate) {
+    function instance$a($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
     	let { pagetitleText } = $$props;
@@ -1850,13 +2296,13 @@ var app = (function () {
     class CriticalDecadeII extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$9, create_fragment$9, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$a, create_fragment$a, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "CriticalDecadeII",
     			options,
-    			id: create_fragment$9.name
+    			id: create_fragment$a.name
     		});
 
     		const { ctx } = this.$$;
@@ -1888,74 +2334,186 @@ var app = (function () {
     	}
     }
 
-    /* src/specifics/USA.svelte generated by Svelte v3.23.0 */
+    /* src/specifics/TimelineEmpty.svelte generated by Svelte v3.23.0 */
 
-    const file$9 = "src/specifics/USA.svelte";
+    const file$a = "src/specifics/TimelineEmpty.svelte";
 
-    function create_fragment$a(ctx) {
-    	let div1;
-    	let t0;
-    	let t1;
+    function create_fragment$b(ctx) {
     	let div0;
+    	let t0;
+    	let div1;
+    	let t1;
+    	let div2;
     	let t2;
     	let div3;
-    	let div2;
+    	let t3;
+    	let div4;
+    	let t4;
+    	let div5;
+    	let t5;
+    	let div6;
+    	let t6;
+    	let div7;
+    	let t7;
+    	let div8;
+    	let t8;
+    	let div9;
+    	let t9;
+    	let div10;
+    	let t10;
+    	let div11;
+    	let t11;
+    	let div12;
+    	let t12;
+    	let div13;
+    	let t13;
+    	let div14;
+    	let t14;
+    	let div15;
 
     	const block = {
     		c: function create() {
-    			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
     			div0 = element("div");
+    			t0 = space();
+    			div1 = element("div");
+    			t1 = space();
+    			div2 = element("div");
     			t2 = space();
     			div3 = element("div");
-    			div2 = element("div");
-    			attr_dev(div0, "class", "text");
-    			add_location(div0, file$9, 11, 2, 152);
-    			attr_dev(div1, "class", "pagetitle");
-    			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$9, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$9, 15, 1, 221);
-    			attr_dev(div3, "class", "activedot activedot6");
-    			add_location(div3, file$9, 14, 0, 185);
+    			t3 = space();
+    			div4 = element("div");
+    			t4 = space();
+    			div5 = element("div");
+    			t5 = space();
+    			div6 = element("div");
+    			t6 = space();
+    			div7 = element("div");
+    			t7 = space();
+    			div8 = element("div");
+    			t8 = space();
+    			div9 = element("div");
+    			t9 = space();
+    			div10 = element("div");
+    			t10 = space();
+    			div11 = element("div");
+    			t11 = space();
+    			div12 = element("div");
+    			t12 = space();
+    			div13 = element("div");
+    			t13 = space();
+    			div14 = element("div");
+    			t14 = space();
+    			div15 = element("div");
+    			attr_dev(div0, "class", "line left line10");
+    			add_location(div0, file$a, 4, 0, 21);
+    			attr_dev(div1, "class", "line left line20");
+    			add_location(div1, file$a, 5, 0, 58);
+    			attr_dev(div2, "class", "line left line30");
+    			add_location(div2, file$a, 6, 0, 95);
+    			attr_dev(div3, "class", "line left line40");
+    			add_location(div3, file$a, 7, 0, 132);
+    			attr_dev(div4, "class", "line left line50");
+    			add_location(div4, file$a, 8, 0, 169);
+    			attr_dev(div5, "class", "line left line60");
+    			add_location(div5, file$a, 9, 0, 206);
+    			attr_dev(div6, "class", "line left line70");
+    			add_location(div6, file$a, 10, 0, 243);
+    			attr_dev(div7, "class", "line left line80");
+    			add_location(div7, file$a, 11, 0, 280);
+    			attr_dev(div8, "class", "line right line10");
+    			add_location(div8, file$a, 13, 0, 318);
+    			attr_dev(div9, "class", "line right line20");
+    			add_location(div9, file$a, 14, 0, 356);
+    			attr_dev(div10, "class", "line right line30");
+    			add_location(div10, file$a, 15, 0, 394);
+    			attr_dev(div11, "class", "line right line40");
+    			add_location(div11, file$a, 16, 0, 432);
+    			attr_dev(div12, "class", "line right line50");
+    			add_location(div12, file$a, 17, 0, 470);
+    			attr_dev(div13, "class", "line right line60");
+    			add_location(div13, file$a, 18, 0, 508);
+    			attr_dev(div14, "class", "line right line70");
+    			add_location(div14, file$a, 19, 0, 546);
+    			attr_dev(div15, "class", "line right line80");
+    			add_location(div15, file$a, 20, 0, 584);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
-    			append_dev(div1, t1);
-    			append_dev(div1, div0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div2, anchor);
     			insert_dev(target, t2, anchor);
     			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div5, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div6, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div7, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, div8, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, div9, anchor);
+    			insert_dev(target, t9, anchor);
+    			insert_dev(target, div10, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, div11, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, div12, anchor);
+    			insert_dev(target, t12, anchor);
+    			insert_dev(target, div13, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div14, anchor);
+    			insert_dev(target, t14, anchor);
+    			insert_dev(target, div15, anchor);
     		},
-    		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			}
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			}
-    		},
+    		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div2);
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div6);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div7);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(div8);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(div9);
+    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(div10);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(div11);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(div12);
+    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(div13);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(div14);
+    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(div15);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$a.name,
+    		id: create_fragment$b.name,
     		type: "component",
     		source: "",
     		ctx
@@ -1964,7 +2522,154 @@ var app = (function () {
     	return block;
     }
 
-    function instance$a($$self, $$props, $$invalidate) {
+    function instance$b($$self, $$props) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<TimelineEmpty> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("TimelineEmpty", $$slots, []);
+    	return [];
+    }
+
+    class TimelineEmpty extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$b, create_fragment$b, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "TimelineEmpty",
+    			options,
+    			id: create_fragment$b.name
+    		});
+    	}
+    }
+
+    /* src/specifics/USA.svelte generated by Svelte v3.23.0 */
+    const file$b = "src/specifics/USA.svelte";
+
+    function create_fragment$c(ctx) {
+    	let t0;
+    	let div1;
+    	let t1;
+    	let t2;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
+    	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
+
+    	const block = {
+    		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
+    			div1 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
+    			t2 = space();
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
+    			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
+    			attr_dev(div0, "class", "text");
+    			add_location(div0, file$b, 13, 2, 240);
+    			attr_dev(div1, "class", "pagetitle");
+    			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div1, file$b, 11, 0, 159);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 305 0 305 300 340 600 340 900 353 900 353 1200 365 1200");
+    			add_location(polygon, file$b, 20, 1, 384);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$b, 19, 0, 276);
+    			attr_dev(div2, "class", "activedot activedot6");
+    			add_location(div2, file$b, 32, 0, 530);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$b, 34, 1, 612);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$b, 33, 0, 571);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, t1);
+    			append_dev(div1, t2);
+    			append_dev(div1, div0);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
+
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			}
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$c.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$c($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -1981,7 +2686,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -1998,13 +2703,13 @@ var app = (function () {
     class USA extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$a, create_fragment$a, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$c, create_fragment$c, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "USA",
     			options,
-    			id: create_fragment$a.name
+    			id: create_fragment$c.name
     		});
 
     		const { ctx } = this.$$;
@@ -2037,73 +2742,118 @@ var app = (function () {
     }
 
     /* src/specifics/Brazil.svelte generated by Svelte v3.23.0 */
+    const file$c = "src/specifics/Brazil.svelte";
 
-    const file$a = "src/specifics/Brazil.svelte";
-
-    function create_fragment$b(ctx) {
-    	let div1;
+    function create_fragment$d(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$a, 11, 2, 152);
+    			add_location(div0, file$c, 13, 2, 240);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$a, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$a, 15, 1, 221);
-    			attr_dev(div3, "class", "activedot activedot7");
-    			add_location(div3, file$a, 14, 0, 185);
+    			add_location(div1, file$c, 11, 0, 159);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 279 0 279 300 336 600 336 900 353 900 353 1200 365 1200");
+    			add_location(polygon, file$c, 23, 1, 387);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$c, 22, 0, 279);
+    			attr_dev(div2, "class", "activedot activedot7");
+    			add_location(div2, file$c, 33, 0, 531);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$c, 35, 1, 613);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$c, 34, 0, 572);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$b.name,
+    		id: create_fragment$d.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2112,7 +2862,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$b($$self, $$props, $$invalidate) {
+    function instance$d($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2129,7 +2879,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2146,13 +2896,13 @@ var app = (function () {
     class Brazil extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$b, create_fragment$b, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$d, create_fragment$d, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Brazil",
     			options,
-    			id: create_fragment$b.name
+    			id: create_fragment$d.name
     		});
 
     		const { ctx } = this.$$;
@@ -2185,73 +2935,99 @@ var app = (function () {
     }
 
     /* src/specifics/Iceland.svelte generated by Svelte v3.23.0 */
+    const file$d = "src/specifics/Iceland.svelte";
 
-    const file$b = "src/specifics/Iceland.svelte";
-
-    function create_fragment$c(ctx) {
-    	let div1;
+    function create_fragment$e(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
     	let div2;
+    	let t4;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
     			div2 = element("div");
+    			t4 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$b, 11, 2, 152);
+    			add_location(div0, file$d, 13, 2, 240);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$b, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$b, 15, 1, 221);
-    			attr_dev(div3, "class", "activedot activedot8");
-    			add_location(div3, file$b, 14, 0, 185);
+    			add_location(div1, file$d, 11, 0, 159);
+    			attr_dev(div2, "class", "activedot activedot8");
+    			add_location(div2, file$d, 25, 0, 282);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$d, 27, 1, 364);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$d, 26, 0, 323);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$c.name,
+    		id: create_fragment$e.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2260,7 +3036,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$c($$self, $$props, $$invalidate) {
+    function instance$e($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2277,7 +3053,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2294,13 +3070,13 @@ var app = (function () {
     class Iceland extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$c, create_fragment$c, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$e, create_fragment$e, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Iceland",
     			options,
-    			id: create_fragment$c.name
+    			id: create_fragment$e.name
     		});
 
     		const { ctx } = this.$$;
@@ -2333,73 +3109,118 @@ var app = (function () {
     }
 
     /* src/specifics/Ghana.svelte generated by Svelte v3.23.0 */
+    const file$e = "src/specifics/Ghana.svelte";
 
-    const file$c = "src/specifics/Ghana.svelte";
-
-    function create_fragment$d(ctx) {
-    	let div1;
+    function create_fragment$f(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$c, 11, 2, 152);
+    			add_location(div0, file$e, 13, 2, 240);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$c, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$c, 15, 1, 221);
-    			attr_dev(div3, "class", "activedot activedot9");
-    			add_location(div3, file$c, 14, 0, 185);
+    			add_location(div1, file$e, 11, 0, 159);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 269 0 269 300 320 600 320 900 342 900 342 1200 365 1200");
+    			add_location(polygon, file$e, 23, 1, 387);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$e, 22, 0, 279);
+    			attr_dev(div2, "class", "activedot activedot9");
+    			add_location(div2, file$e, 28, 0, 526);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$e, 30, 1, 608);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$e, 29, 0, 567);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$d.name,
+    		id: create_fragment$f.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2408,7 +3229,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$d($$self, $$props, $$invalidate) {
+    function instance$f($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2425,7 +3246,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2442,13 +3263,13 @@ var app = (function () {
     class Ghana extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$d, create_fragment$d, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$f, create_fragment$f, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Ghana",
     			options,
-    			id: create_fragment$d.name
+    			id: create_fragment$f.name
     		});
 
     		const { ctx } = this.$$;
@@ -2481,73 +3302,118 @@ var app = (function () {
     }
 
     /* src/specifics/SaudiArabia.svelte generated by Svelte v3.23.0 */
+    const file$f = "src/specifics/SaudiArabia.svelte";
 
-    const file$d = "src/specifics/SaudiArabia.svelte";
-
-    function create_fragment$e(ctx) {
-    	let div1;
+    function create_fragment$g(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$d, 11, 2, 152);
+    			add_location(div0, file$f, 14, 2, 241);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$d, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$d, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot10");
-    			add_location(div3, file$d, 14, 0, 185);
+    			add_location(div1, file$f, 12, 0, 160);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 292 0 292 300 328 600 328 900 344 900 344 1200 365 1200");
+    			add_location(polygon, file$f, 20, 1, 384);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$f, 19, 0, 276);
+    			attr_dev(div2, "class", "activedot activedot10");
+    			add_location(div2, file$f, 26, 0, 524);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$f, 28, 1, 607);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$f, 27, 0, 566);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$e.name,
+    		id: create_fragment$g.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2556,7 +3422,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$e($$self, $$props, $$invalidate) {
+    function instance$g($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2573,7 +3439,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2590,13 +3456,13 @@ var app = (function () {
     class SaudiArabia extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$e, create_fragment$e, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$g, create_fragment$g, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "SaudiArabia",
     			options,
-    			id: create_fragment$e.name
+    			id: create_fragment$g.name
     		});
 
     		const { ctx } = this.$$;
@@ -2629,73 +3495,118 @@ var app = (function () {
     }
 
     /* src/specifics/India.svelte generated by Svelte v3.23.0 */
+    const file$g = "src/specifics/India.svelte";
 
-    const file$e = "src/specifics/India.svelte";
-
-    function create_fragment$f(ctx) {
-    	let div1;
+    function create_fragment$h(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$e, 11, 2, 152);
+    			add_location(div0, file$g, 15, 2, 242);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$e, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$e, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot11");
-    			add_location(div3, file$e, 14, 0, 185);
+    			add_location(div1, file$g, 13, 0, 161);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200.5 365 900.5 365 600.5 365 300.5 365 0.5 263 0.5 263 300.5 326 600.5 326 900.5 347 900.5 347 1200.5 365 1200.5");
+    			add_location(polygon, file$g, 22, 1, 386);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$g, 21, 0, 278);
+    			attr_dev(div2, "class", "activedot activedot11");
+    			add_location(div2, file$g, 29, 0, 551);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$g, 31, 1, 634);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$g, 30, 0, 593);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$f.name,
+    		id: create_fragment$h.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2704,7 +3615,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$f($$self, $$props, $$invalidate) {
+    function instance$h($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2721,7 +3632,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2738,13 +3649,13 @@ var app = (function () {
     class India extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$f, create_fragment$f, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "India",
     			options,
-    			id: create_fragment$f.name
+    			id: create_fragment$h.name
     		});
 
     		const { ctx } = this.$$;
@@ -2777,73 +3688,118 @@ var app = (function () {
     }
 
     /* src/specifics/Cambodia.svelte generated by Svelte v3.23.0 */
+    const file$h = "src/specifics/Cambodia.svelte";
 
-    const file$f = "src/specifics/Cambodia.svelte";
-
-    function create_fragment$g(ctx) {
-    	let div1;
+    function create_fragment$i(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$f, 11, 2, 152);
+    			add_location(div0, file$h, 15, 2, 242);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$f, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$f, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot12");
-    			add_location(div3, file$f, 14, 0, 185);
+    			add_location(div1, file$h, 13, 0, 161);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 184 0 184 300 300 600 300 900 331 900 331 1200 365 1200");
+    			add_location(polygon, file$h, 23, 1, 387);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$h, 22, 0, 279);
+    			attr_dev(div2, "class", "activedot activedot12");
+    			add_location(div2, file$h, 31, 0, 529);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$h, 33, 1, 612);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$h, 32, 0, 571);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$g.name,
+    		id: create_fragment$i.name,
     		type: "component",
     		source: "",
     		ctx
@@ -2852,7 +3808,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$g($$self, $$props, $$invalidate) {
+    function instance$i($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -2869,7 +3825,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -2886,13 +3842,13 @@ var app = (function () {
     class Cambodia extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$g, create_fragment$g, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$i, create_fragment$i, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "Cambodia",
     			options,
-    			id: create_fragment$g.name
+    			id: create_fragment$i.name
     		});
 
     		const { ctx } = this.$$;
@@ -2925,73 +3881,118 @@ var app = (function () {
     }
 
     /* src/specifics/SouthKorea.svelte generated by Svelte v3.23.0 */
+    const file$i = "src/specifics/SouthKorea.svelte";
 
-    const file$g = "src/specifics/SouthKorea.svelte";
-
-    function create_fragment$h(ctx) {
-    	let div1;
+    function create_fragment$j(ctx) {
     	let t0;
+    	let div1;
     	let t1;
-    	let div0;
     	let t2;
-    	let div3;
+    	let div0;
+    	let t3;
+    	let svg;
+    	let polygon;
+    	let t4;
     	let div2;
+    	let t5;
+    	let div4;
+    	let div3;
+    	let current;
+    	const timelinesempty = new TimelineEmpty({ $$inline: true });
 
     	const block = {
     		c: function create() {
+    			create_component(timelinesempty.$$.fragment);
+    			t0 = space();
     			div1 = element("div");
-    			t0 = text(/*pagetitleText*/ ctx[0]);
-    			t1 = space();
-    			div0 = element("div");
+    			t1 = text(/*pagetitleText*/ ctx[0]);
     			t2 = space();
-    			div3 = element("div");
+    			div0 = element("div");
+    			t3 = space();
+    			svg = svg_element("svg");
+    			polygon = svg_element("polygon");
+    			t4 = space();
     			div2 = element("div");
+    			t5 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$g, 11, 2, 152);
+    			add_location(div0, file$i, 14, 2, 241);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$g, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$g, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot13");
-    			add_location(div3, file$g, 14, 0, 185);
+    			add_location(div1, file$i, 12, 0, 160);
+    			attr_dev(polygon, "class", "cls-1");
+    			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 346 0 346 300 363 600 363 900 365 900 365 1200 365 1200");
+    			add_location(polygon, file$i, 23, 1, 387);
+    			attr_dev(svg, "class", "hotDays");
+    			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
+    			attr_dev(svg, "viewBox", "0 0 365 1200");
+    			attr_dev(svg, "preserveAspectRatio", "none");
+    			add_location(svg, file$i, 22, 0, 279);
+    			attr_dev(div2, "class", "activedot activedot13");
+    			add_location(div2, file$i, 34, 0, 532);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$i, 36, 1, 615);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$i, 35, 0, 574);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
+    			mount_component(timelinesempty, target, anchor);
+    			insert_dev(target, t0, anchor);
     			insert_dev(target, div1, anchor);
-    			append_dev(div1, t0);
     			append_dev(div1, t1);
+    			append_dev(div1, t2);
     			append_dev(div1, div0);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, svg, anchor);
+    			append_dev(svg, polygon);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
+    			current = true;
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
+    			if (!current || dirty & /*pagetitleText*/ 1) set_data_dev(t1, /*pagetitleText*/ ctx[0]);
 
-    			if (dirty & /*rotate*/ 2) {
+    			if (!current || dirty & /*rotate*/ 2) {
     				set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			}
 
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			if (!current || dirty & /*rotate*/ 2) {
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
-    		i: noop,
-    		o: noop,
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(timelinesempty.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(timelinesempty.$$.fragment, local);
+    			current = false;
+    		},
     		d: function destroy(detaching) {
+    			destroy_component(timelinesempty, detaching);
+    			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(svg);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$h.name,
+    		id: create_fragment$j.name,
     		type: "component",
     		source: "",
     		ctx
@@ -3000,7 +4001,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$h($$self, $$props, $$invalidate) {
+    function instance$j($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -3017,7 +4018,7 @@ var app = (function () {
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     	};
 
-    	$$self.$capture_state = () => ({ pagetitleText, rotate });
+    	$$self.$capture_state = () => ({ pagetitleText, rotate, TimelinesEmpty: TimelineEmpty });
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
@@ -3034,13 +4035,13 @@ var app = (function () {
     class SouthKorea extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$h, create_fragment$h, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$j, create_fragment$j, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "SouthKorea",
     			options,
-    			id: create_fragment$h.name
+    			id: create_fragment$j.name
     		});
 
     		const { ctx } = this.$$;
@@ -3074,16 +4075,18 @@ var app = (function () {
 
     /* src/specifics/EnvironmentalJustice.svelte generated by Svelte v3.23.0 */
 
-    const file$h = "src/specifics/EnvironmentalJustice.svelte";
+    const file$j = "src/specifics/EnvironmentalJustice.svelte";
 
-    function create_fragment$i(ctx) {
+    function create_fragment$k(ctx) {
     	let div1;
     	let t0;
     	let t1;
     	let div0;
     	let t2;
-    	let div3;
     	let div2;
+    	let t3;
+    	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -3092,18 +4095,22 @@ var app = (function () {
     			t1 = space();
     			div0 = element("div");
     			t2 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t3 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$h, 11, 2, 152);
+    			add_location(div0, file$j, 11, 2, 152);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$h, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$h, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot14");
-    			add_location(div3, file$h, 14, 0, 185);
+    			add_location(div1, file$j, 9, 0, 71);
+    			attr_dev(div2, "class", "activedot activedot14");
+    			add_location(div2, file$j, 14, 0, 185);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$j, 16, 1, 268);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$j, 15, 0, 227);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3114,8 +4121,10 @@ var app = (function () {
     			append_dev(div1, t1);
     			append_dev(div1, div0);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -3125,7 +4134,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -3133,13 +4142,15 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$i.name,
+    		id: create_fragment$k.name,
     		type: "component",
     		source: "",
     		ctx
@@ -3148,7 +4159,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$i($$self, $$props, $$invalidate) {
+    function instance$k($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -3182,13 +4193,13 @@ var app = (function () {
     class EnvironmentalJustice extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$i, create_fragment$i, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$k, create_fragment$k, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "EnvironmentalJustice",
     			options,
-    			id: create_fragment$i.name
+    			id: create_fragment$k.name
     		});
 
     		const { ctx } = this.$$;
@@ -3222,16 +4233,18 @@ var app = (function () {
 
     /* src/specifics/ImpactofIndividualAction.svelte generated by Svelte v3.23.0 */
 
-    const file$i = "src/specifics/ImpactofIndividualAction.svelte";
+    const file$k = "src/specifics/ImpactofIndividualAction.svelte";
 
-    function create_fragment$j(ctx) {
+    function create_fragment$l(ctx) {
     	let div1;
     	let t0;
     	let t1;
     	let div0;
     	let t2;
-    	let div3;
     	let div2;
+    	let t3;
+    	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -3240,18 +4253,22 @@ var app = (function () {
     			t1 = space();
     			div0 = element("div");
     			t2 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t3 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$i, 11, 2, 152);
+    			add_location(div0, file$k, 11, 2, 152);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$i, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$i, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot15");
-    			add_location(div3, file$i, 14, 0, 185);
+    			add_location(div1, file$k, 9, 0, 71);
+    			attr_dev(div2, "class", "activedot activedot15");
+    			add_location(div2, file$k, 14, 0, 185);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$k, 16, 1, 268);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$k, 15, 0, 227);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3262,8 +4279,10 @@ var app = (function () {
     			append_dev(div1, t1);
     			append_dev(div1, div0);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -3273,7 +4292,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -3281,13 +4300,15 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$j.name,
+    		id: create_fragment$l.name,
     		type: "component",
     		source: "",
     		ctx
@@ -3296,7 +4317,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$j($$self, $$props, $$invalidate) {
+    function instance$l($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -3330,13 +4351,13 @@ var app = (function () {
     class ImpactofIndividualAction extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$j, create_fragment$j, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$l, create_fragment$l, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "ImpactofIndividualAction",
     			options,
-    			id: create_fragment$j.name
+    			id: create_fragment$l.name
     		});
 
     		const { ctx } = this.$$;
@@ -3370,16 +4391,18 @@ var app = (function () {
 
     /* src/specifics/CriticalDecadeIII.svelte generated by Svelte v3.23.0 */
 
-    const file$j = "src/specifics/CriticalDecadeIII.svelte";
+    const file$l = "src/specifics/CriticalDecadeIII.svelte";
 
-    function create_fragment$k(ctx) {
+    function create_fragment$m(ctx) {
     	let div1;
     	let t0;
     	let t1;
     	let div0;
     	let t2;
-    	let div3;
     	let div2;
+    	let t3;
+    	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -3388,18 +4411,22 @@ var app = (function () {
     			t1 = space();
     			div0 = element("div");
     			t2 = space();
-    			div3 = element("div");
     			div2 = element("div");
+    			t3 = space();
+    			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(div0, "class", "text");
-    			add_location(div0, file$j, 11, 2, 152);
+    			add_location(div0, file$l, 11, 2, 152);
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div1, file$j, 9, 0, 71);
-    			attr_dev(div2, "class", "progressline");
-    			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$j, 15, 1, 222);
-    			attr_dev(div3, "class", "activedot activedot16");
-    			add_location(div3, file$j, 14, 0, 185);
+    			add_location(div1, file$l, 9, 0, 71);
+    			attr_dev(div2, "class", "activedot activedot16");
+    			add_location(div2, file$l, 14, 0, 185);
+    			attr_dev(div3, "class", "progressline");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div3, file$l, 16, 1, 268);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$l, 15, 0, 227);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3410,8 +4437,10 @@ var app = (function () {
     			append_dev(div1, t1);
     			append_dev(div1, div0);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div2);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -3421,7 +4450,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -3429,13 +4458,15 @@ var app = (function () {
     		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$k.name,
+    		id: create_fragment$m.name,
     		type: "component",
     		source: "",
     		ctx
@@ -3444,7 +4475,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$k($$self, $$props, $$invalidate) {
+    function instance$m($$self, $$props, $$invalidate) {
     	let { pagetitleText } = $$props;
     	let { rotate } = $$props;
     	const writable_props = ["pagetitleText", "rotate"];
@@ -3478,13 +4509,13 @@ var app = (function () {
     class CriticalDecadeIII extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$k, create_fragment$k, safe_not_equal, { pagetitleText: 0, rotate: 1 });
+    		init(this, options, instance$m, create_fragment$m, safe_not_equal, { pagetitleText: 0, rotate: 1 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "CriticalDecadeIII",
     			options,
-    			id: create_fragment$k.name
+    			id: create_fragment$m.name
     		});
 
     		const { ctx } = this.$$;
@@ -3517,7 +4548,7 @@ var app = (function () {
     }
 
     /* src/App.svelte generated by Svelte v3.23.0 */
-    const file$k = "src/App.svelte";
+    const file$m = "src/App.svelte";
 
     function get_each_context(ctx, list, i) {
     	const child_ctx = ctx.slice();
@@ -3525,24 +4556,28 @@ var app = (function () {
     	return child_ctx;
     }
 
-    // (110:2) {#each pages as page (page.id)}
+    // (117:2) {#each pages as page (page.id)}
     function create_each_block(key_1, ctx) {
-    	let div;
+    	let a;
+    	let a_href_value;
+    	let a_class_value;
 
     	const block = {
     		key: key_1,
     		first: null,
     		c: function create() {
-    			div = element("div");
-    			attr_dev(div, "class", "dot svelte-17ko7lx");
-    			add_location(div, file$k, 110, 3, 5313);
-    			this.first = div;
+    			a = element("a");
+    			attr_dev(a, "href", a_href_value = "#" + /*page*/ ctx[1].name);
+    			attr_dev(a, "class", a_class_value = "dot dot" + /*page*/ ctx[1].id + " svelte-il7zr7");
+    			add_location(a, file$m, 117, 3, 5381);
+    			this.first = a;
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
+    			insert_dev(target, a, anchor);
     		},
+    		p: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(a);
     		}
     	};
 
@@ -3550,56 +4585,58 @@ var app = (function () {
     		block,
     		id: create_each_block.name,
     		type: "each",
-    		source: "(110:2) {#each pages as page (page.id)}",
+    		source: "(117:2) {#each pages as page (page.id)}",
     		ctx
     	});
 
     	return block;
     }
 
-    function create_fragment$l(ctx) {
+    function create_fragment$n(ctx) {
     	let meta0;
     	let t0;
     	let meta1;
     	let t1;
-    	let div17;
-    	let div0;
     	let t2;
-    	let div1;
-    	let t3;
-    	let div2;
-    	let t4;
-    	let div3;
-    	let t5;
-    	let div4;
-    	let t6;
-    	let div5;
-    	let t7;
-    	let div6;
-    	let t8;
-    	let div7;
-    	let t9;
-    	let div8;
-    	let t10;
-    	let div9;
-    	let t11;
-    	let div10;
-    	let t12;
-    	let div11;
-    	let t13;
-    	let div12;
-    	let t14;
-    	let div13;
-    	let t15;
-    	let div14;
-    	let t16;
-    	let div15;
-    	let t17;
     	let div16;
+    	let a;
+    	let t3;
+    	let div0;
+    	let t4;
+    	let div1;
+    	let t5;
+    	let div2;
+    	let t6;
+    	let div3;
+    	let t7;
+    	let div4;
+    	let t8;
+    	let div5;
+    	let t9;
+    	let div6;
+    	let t10;
+    	let div7;
+    	let t11;
+    	let div8;
+    	let t12;
+    	let div9;
+    	let t13;
+    	let div10;
+    	let t14;
+    	let div11;
+    	let t15;
+    	let div12;
+    	let t16;
+    	let div13;
+    	let t17;
+    	let div14;
+    	let t18;
+    	let div15;
     	let each_blocks = [];
     	let each_1_lookup = new Map();
-    	let t18;
+    	let t19;
     	let current;
+    	const header = new Header({ $$inline: true });
 
     	const cover = new Cover({
     			props: { pagetitleText: "Cover", rotate: "90deg" },
@@ -3742,105 +4779,108 @@ var app = (function () {
     			t0 = space();
     			meta1 = element("meta");
     			t1 = space();
-    			div17 = element("div");
-    			div0 = element("div");
-    			create_component(cover.$$.fragment);
+    			create_component(header.$$.fragment);
     			t2 = space();
-    			div1 = element("div");
-    			create_component(extremeheati.$$.fragment);
-    			t3 = space();
-    			div2 = element("div");
-    			create_component(extremeheatii.$$.fragment);
-    			t4 = space();
-    			div3 = element("div");
-    			create_component(criticaldecadei.$$.fragment);
-    			t5 = space();
-    			div4 = element("div");
-    			create_component(criticaldecadeii.$$.fragment);
-    			t6 = space();
-    			div5 = element("div");
-    			create_component(usa.$$.fragment);
-    			t7 = space();
-    			div6 = element("div");
-    			create_component(brazil.$$.fragment);
-    			t8 = space();
-    			div7 = element("div");
-    			create_component(iceland.$$.fragment);
-    			t9 = space();
-    			div8 = element("div");
-    			create_component(ghana.$$.fragment);
-    			t10 = space();
-    			div9 = element("div");
-    			create_component(saudiarabia.$$.fragment);
-    			t11 = space();
-    			div10 = element("div");
-    			create_component(india.$$.fragment);
-    			t12 = space();
-    			div11 = element("div");
-    			create_component(cambodia.$$.fragment);
-    			t13 = space();
-    			div12 = element("div");
-    			create_component(southkorea.$$.fragment);
-    			t14 = space();
-    			div13 = element("div");
-    			create_component(environmentaljustice.$$.fragment);
-    			t15 = space();
-    			div14 = element("div");
-    			create_component(impactofindividualaction.$$.fragment);
-    			t16 = space();
-    			div15 = element("div");
-    			create_component(criticaldecadeiii.$$.fragment);
-    			t17 = space();
     			div16 = element("div");
+    			a = element("a");
+    			create_component(cover.$$.fragment);
+    			t3 = space();
+    			div0 = element("div");
+    			create_component(extremeheati.$$.fragment);
+    			t4 = space();
+    			div1 = element("div");
+    			create_component(extremeheatii.$$.fragment);
+    			t5 = space();
+    			div2 = element("div");
+    			create_component(criticaldecadei.$$.fragment);
+    			t6 = space();
+    			div3 = element("div");
+    			create_component(criticaldecadeii.$$.fragment);
+    			t7 = space();
+    			div4 = element("div");
+    			create_component(usa.$$.fragment);
+    			t8 = space();
+    			div5 = element("div");
+    			create_component(brazil.$$.fragment);
+    			t9 = space();
+    			div6 = element("div");
+    			create_component(iceland.$$.fragment);
+    			t10 = space();
+    			div7 = element("div");
+    			create_component(ghana.$$.fragment);
+    			t11 = space();
+    			div8 = element("div");
+    			create_component(saudiarabia.$$.fragment);
+    			t12 = space();
+    			div9 = element("div");
+    			create_component(india.$$.fragment);
+    			t13 = space();
+    			div10 = element("div");
+    			create_component(cambodia.$$.fragment);
+    			t14 = space();
+    			div11 = element("div");
+    			create_component(southkorea.$$.fragment);
+    			t15 = space();
+    			div12 = element("div");
+    			create_component(environmentaljustice.$$.fragment);
+    			t16 = space();
+    			div13 = element("div");
+    			create_component(impactofindividualaction.$$.fragment);
+    			t17 = space();
+    			div14 = element("div");
+    			create_component(criticaldecadeiii.$$.fragment);
+    			t18 = space();
+    			div15 = element("div");
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			t18 = space();
+    			t19 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(meta0, "name", "viewport");
     			attr_dev(meta0, "content", "width=device-width, initial-scale=1");
-    			add_location(meta0, file$k, 52, 0, 2985);
+    			add_location(meta0, file$m, 56, 0, 3027);
     			attr_dev(meta1, "name", "viewport");
     			attr_dev(meta1, "content", "width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0");
-    			add_location(meta1, file$k, 53, 4, 3058);
-    			attr_dev(div0, "class", "content page1 notcountry");
-    			add_location(div0, file$k, 58, 1, 3232);
-    			attr_dev(div1, "class", "content page2 notcountry");
-    			add_location(div1, file$k, 61, 1, 3335);
-    			attr_dev(div2, "class", "content page3 notcountry");
-    			add_location(div2, file$k, 64, 1, 3470);
-    			attr_dev(div3, "class", "content page4 notcountry");
-    			add_location(div3, file$k, 67, 1, 3607);
-    			attr_dev(div4, "class", "content page5 notcountry");
-    			add_location(div4, file$k, 70, 1, 3755);
+    			add_location(meta1, file$m, 57, 0, 3096);
+    			attr_dev(a, "href", "#page1");
+    			attr_dev(a, "class", "content page1 notcountry");
+    			add_location(a, file$m, 65, 1, 3290);
+    			attr_dev(div0, "class", "content page2 notcountry");
+    			add_location(div0, file$m, 68, 1, 3403);
+    			attr_dev(div1, "class", "content page3 notcountry");
+    			add_location(div1, file$m, 71, 1, 3538);
+    			attr_dev(div2, "class", "content page4 notcountry");
+    			add_location(div2, file$m, 74, 1, 3675);
+    			attr_dev(div3, "class", "content page5 notcountry");
+    			add_location(div3, file$m, 77, 1, 3823);
+    			attr_dev(div4, "class", "content page6 country");
+    			add_location(div4, file$m, 80, 1, 3971);
     			attr_dev(div5, "class", "content page6 country");
-    			add_location(div5, file$k, 73, 1, 3903);
-    			attr_dev(div6, "class", "content page6 country");
-    			add_location(div6, file$k, 76, 1, 4003);
-    			attr_dev(div7, "class", "content page7 country");
-    			add_location(div7, file$k, 79, 1, 4108);
-    			attr_dev(div8, "class", "content page8 country");
-    			add_location(div8, file$k, 82, 1, 4217);
-    			attr_dev(div9, "class", "content page10 country");
-    			add_location(div9, file$k, 85, 1, 4316);
-    			attr_dev(div10, "class", "content page11 country");
-    			add_location(div10, file$k, 88, 1, 4439);
-    			attr_dev(div11, "class", "content page12 country");
-    			add_location(div11, file$k, 91, 1, 4543);
-    			attr_dev(div12, "class", "content page13 country");
-    			add_location(div12, file$k, 94, 1, 4657);
-    			attr_dev(div13, "class", "content page14 notcountry");
-    			add_location(div13, file$k, 97, 1, 4774);
-    			attr_dev(div14, "class", "content page15 notcountry");
-    			add_location(div14, file$k, 100, 1, 4928);
-    			attr_dev(div15, "class", "content page16 notcountry");
-    			add_location(div15, file$k, 103, 1, 5095);
-    			attr_dev(div16, "class", "dots svelte-17ko7lx");
-    			add_location(div16, file$k, 108, 1, 5257);
-    			attr_dev(div17, "class", "newmain");
-    			add_location(div17, file$k, 57, 0, 3209);
+    			add_location(div5, file$m, 83, 1, 4071);
+    			attr_dev(div6, "class", "content page7 country");
+    			add_location(div6, file$m, 86, 1, 4176);
+    			attr_dev(div7, "class", "content page8 country");
+    			add_location(div7, file$m, 89, 1, 4285);
+    			attr_dev(div8, "class", "content page10 country");
+    			add_location(div8, file$m, 92, 1, 4384);
+    			attr_dev(div9, "class", "content page11 country");
+    			add_location(div9, file$m, 95, 1, 4507);
+    			attr_dev(div10, "class", "content page12 country");
+    			add_location(div10, file$m, 98, 1, 4611);
+    			attr_dev(div11, "class", "content page13 country");
+    			add_location(div11, file$m, 101, 1, 4725);
+    			attr_dev(div12, "class", "content page14 notcountry");
+    			add_location(div12, file$m, 104, 1, 4842);
+    			attr_dev(div13, "class", "content page15 notcountry");
+    			add_location(div13, file$m, 107, 1, 4996);
+    			attr_dev(div14, "class", "content page16 notcountry");
+    			add_location(div14, file$m, 110, 1, 5163);
+    			attr_dev(div15, "class", "dots svelte-il7zr7");
+    			add_location(div15, file$m, 115, 1, 5325);
+    			attr_dev(div16, "class", "newmain");
+    			add_location(div16, file$m, 64, 0, 3267);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -3850,68 +4890,78 @@ var app = (function () {
     			insert_dev(target, t0, anchor);
     			insert_dev(target, meta1, anchor);
     			insert_dev(target, t1, anchor);
-    			insert_dev(target, div17, anchor);
-    			append_dev(div17, div0);
-    			mount_component(cover, div0, null);
-    			append_dev(div17, t2);
-    			append_dev(div17, div1);
-    			mount_component(extremeheati, div1, null);
-    			append_dev(div17, t3);
-    			append_dev(div17, div2);
-    			mount_component(extremeheatii, div2, null);
-    			append_dev(div17, t4);
-    			append_dev(div17, div3);
-    			mount_component(criticaldecadei, div3, null);
-    			append_dev(div17, t5);
-    			append_dev(div17, div4);
-    			mount_component(criticaldecadeii, div4, null);
-    			append_dev(div17, t6);
-    			append_dev(div17, div5);
-    			mount_component(usa, div5, null);
-    			append_dev(div17, t7);
-    			append_dev(div17, div6);
-    			mount_component(brazil, div6, null);
-    			append_dev(div17, t8);
-    			append_dev(div17, div7);
-    			mount_component(iceland, div7, null);
-    			append_dev(div17, t9);
-    			append_dev(div17, div8);
-    			mount_component(ghana, div8, null);
-    			append_dev(div17, t10);
-    			append_dev(div17, div9);
-    			mount_component(saudiarabia, div9, null);
-    			append_dev(div17, t11);
-    			append_dev(div17, div10);
-    			mount_component(india, div10, null);
-    			append_dev(div17, t12);
-    			append_dev(div17, div11);
-    			mount_component(cambodia, div11, null);
-    			append_dev(div17, t13);
-    			append_dev(div17, div12);
-    			mount_component(southkorea, div12, null);
-    			append_dev(div17, t14);
-    			append_dev(div17, div13);
-    			mount_component(environmentaljustice, div13, null);
-    			append_dev(div17, t15);
-    			append_dev(div17, div14);
-    			mount_component(impactofindividualaction, div14, null);
-    			append_dev(div17, t16);
-    			append_dev(div17, div15);
-    			mount_component(criticaldecadeiii, div15, null);
-    			append_dev(div17, t17);
-    			append_dev(div17, div16);
+    			mount_component(header, target, anchor);
+    			insert_dev(target, t2, anchor);
+    			insert_dev(target, div16, anchor);
+    			append_dev(div16, a);
+    			mount_component(cover, a, null);
+    			append_dev(div16, t3);
+    			append_dev(div16, div0);
+    			mount_component(extremeheati, div0, null);
+    			append_dev(div16, t4);
+    			append_dev(div16, div1);
+    			mount_component(extremeheatii, div1, null);
+    			append_dev(div16, t5);
+    			append_dev(div16, div2);
+    			mount_component(criticaldecadei, div2, null);
+    			append_dev(div16, t6);
+    			append_dev(div16, div3);
+    			mount_component(criticaldecadeii, div3, null);
+    			append_dev(div16, t7);
+    			append_dev(div16, div4);
+    			mount_component(usa, div4, null);
+    			append_dev(div16, t8);
+    			append_dev(div16, div5);
+    			mount_component(brazil, div5, null);
+    			append_dev(div16, t9);
+    			append_dev(div16, div6);
+    			mount_component(iceland, div6, null);
+    			append_dev(div16, t10);
+    			append_dev(div16, div7);
+    			mount_component(ghana, div7, null);
+    			append_dev(div16, t11);
+    			append_dev(div16, div8);
+    			mount_component(saudiarabia, div8, null);
+    			append_dev(div16, t12);
+    			append_dev(div16, div9);
+    			mount_component(india, div9, null);
+    			append_dev(div16, t13);
+    			append_dev(div16, div10);
+    			mount_component(cambodia, div10, null);
+    			append_dev(div16, t14);
+    			append_dev(div16, div11);
+    			mount_component(southkorea, div11, null);
+    			append_dev(div16, t15);
+    			append_dev(div16, div12);
+    			mount_component(environmentaljustice, div12, null);
+    			append_dev(div16, t16);
+    			append_dev(div16, div13);
+    			mount_component(impactofindividualaction, div13, null);
+    			append_dev(div16, t17);
+    			append_dev(div16, div14);
+    			mount_component(criticaldecadeiii, div14, null);
+    			append_dev(div16, t18);
+    			append_dev(div16, div15);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div16, null);
+    				each_blocks[i].m(div15, null);
     			}
 
-    			insert_dev(target, t18, anchor);
+    			insert_dev(target, t19, anchor);
     			mount_component(footer, target, anchor);
     			current = true;
     		},
-    		p: noop,
+    		p: function update(ctx, [dirty]) {
+    			if (dirty & /*pages*/ 1) {
+    				const each_value = /*pages*/ ctx[0];
+    				validate_each_argument(each_value);
+    				validate_each_keys(ctx, each_value, get_each_context, get_key);
+    				each_blocks = update_keyed_each(each_blocks, dirty, get_key, 1, ctx, each_value, each_1_lookup, div15, destroy_block, create_each_block, null, get_each_context);
+    			}
+    		},
     		i: function intro(local) {
     			if (current) return;
+    			transition_in(header.$$.fragment, local);
     			transition_in(cover.$$.fragment, local);
     			transition_in(extremeheati.$$.fragment, local);
     			transition_in(extremeheatii.$$.fragment, local);
@@ -3932,6 +4982,7 @@ var app = (function () {
     			current = true;
     		},
     		o: function outro(local) {
+    			transition_out(header.$$.fragment, local);
     			transition_out(cover.$$.fragment, local);
     			transition_out(extremeheati.$$.fragment, local);
     			transition_out(extremeheatii.$$.fragment, local);
@@ -3956,7 +5007,9 @@ var app = (function () {
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(meta1);
     			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div17);
+    			destroy_component(header, detaching);
+    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(div16);
     			destroy_component(cover);
     			destroy_component(extremeheati);
     			destroy_component(extremeheatii);
@@ -3978,14 +5031,14 @@ var app = (function () {
     				each_blocks[i].d();
     			}
 
-    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(t19);
     			destroy_component(footer, detaching);
     		}
     	};
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$l.name,
+    		id: create_fragment$n.name,
     		type: "component",
     		source: "",
     		ctx
@@ -3994,7 +5047,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$l($$self, $$props, $$invalidate) {
+    function instance$n($$self, $$props, $$invalidate) {
     	let pages = [
     		{
     			name: "page1",
@@ -4141,6 +5194,7 @@ var app = (function () {
     		TimelinePast,
     		Meter: TopMeter,
     		Footer,
+    		Header,
     		Cover,
     		ExtremeHeatI,
     		ExtremeHeatII,
@@ -4174,13 +5228,13 @@ var app = (function () {
     class App extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$l, create_fragment$l, safe_not_equal, {});
+    		init(this, options, instance$n, create_fragment$n, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "App",
     			options,
-    			id: create_fragment$l.name
+    			id: create_fragment$n.name
     		});
     	}
     }
