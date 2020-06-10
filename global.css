@@ -71,7 +71,15 @@ html {
     scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(100vw);
     scroll-snap-type: x mandatory;
+
+    overflow-y: hidden;
   }
+
+html, body {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
 
 
 /*   FANPAGE    */
@@ -87,6 +95,8 @@ html {
 body {
 	background-color: rgb(250,250,250);
 	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 .text {font: 12px ortica;}
@@ -112,13 +122,9 @@ body {
 
 	display: flex;
     align-items: flex-start;
+
 }
 .content {
-	/*position: relative;
-
-	display: flex;
-    align-items: flex-start;*/
-
 	width: calc(100vw - 2px);
 	height: calc(95vh - 1px);
 
@@ -132,40 +138,58 @@ body {
 
   	scroll-snap-align: start;
     -webkit-overflow-scrolling: touch;
+
+    border-bottom: 1px solid rgb(70,70,70);
 }
 .country {background-color: rgba(250,250,250,1);}
-.notcountry {background-color: rgb(245,245,245);}
+.notcountry {background-color: rgb(250,250,250); /*rgb(245,245,245) rgb(230,230,230);*/}
 
-.page1 {
+/*.page1 {background-color: rgb(70,70,70);}
+.page2 {}
+.page3 {}
+.page4 {background-color: rgb(250,250,250);}
+.page5 {background-color: rgb(250,250,250);}
 
-}
-.page2 {
-
-}
-.page3 {
-
-}
+.page14 {background-color: rgb(250,250,250);}
+.page15 {background-color: rgb(250,250,250);}
+.page16 {background-color: rgb(70,70,70);}*/
 
 .activedot {
 	position: absolute;
 	bottom: -5vh;
-	/*background-color: rgb(70,70,70);*/
-	width: calc(100vw / 16);
+	width: calc((100vw / 16) - 1px);
 	height: 5vh;
+	background-color: rgb(250,250,250);
+	/*background-color: rgb(70,70,70);*/
+
+	height: 4px; 
+	bottom: -2px;
 }
-.progressline /*
-.activedot:after*/ {
-	content: '';
+.activedotnew {
+	position: absolute;
+	bottom: -5vh;
+	width: calc(100vw / 16);
+	height: calc(5vh + 2px);	
+}
+.progressline {
     position: absolute;
-    top: calc((5vh - (100vw / 16)) / 2);
-    height: calc(100vw / 16);
+    top: calc((5vh - (5vh - 10px)) / 2);
+    /*height: calc(100vw / 16);*/
+    height: calc(5vh - 10px);
     left: calc(50% - .5px);
     width: 1px;
-    background-color: rgb(70,70,70);
+    /*background-color: rgb(70,70,70);*/
+
+    background-color: purple;
+
+    transform-origin: 0% 100%;
 }
-.activedot1 {left:calc(100vw / 16 * 0);}
-.activedot2 {left:calc(100vw / 16 * 1);}
-.activedot3 {left:calc(100vw / 16 * 2);}
+
+.activedotFan {left:calc(100vw / 16 * 2);}
+
+.activedot1 {left:calc(100vw / 16 * 0); /*background-color: rgb(70,70,70);*/}
+.activedot2 {left:calc(100vw / 16 * 1); /*background-color: rgb(230,230,230);*/}
+.activedot3 {left:calc(100vw / 16 * 2); /*background-color: rgb(230,230,230);*/}
 .activedot4 {left:calc(100vw / 16 * 3);}
 .activedot5 {left:calc(100vw / 16 * 4);}
 .activedot6 {left:calc(100vw / 16 * 5);}
@@ -178,7 +202,86 @@ body {
 .activedot13 {left:calc(100vw / 16 * 12);}
 .activedot14 {left:calc(100vw / 16 * 13);}
 .activedot15 {left:calc(100vw / 16 * 14);}
-.activedot16 {left:calc(100vw / 16 * 15);}
+.activedot16 {left:calc(100vw / 16 * 15); width: calc((100vw / 16) - 2px); /*background-color: rgb(70,70,70);*/}
+
+
+/*.dot1 {background-color: rgb(70,70,70);}
+.dot2 {background-color: rgb(230,230,230);}
+.dot3 {background-color: rgb(230,230,230);}
+.dot16 {background-color: rgb(70,70,70);}*/
+
+
+a.dot:hover {
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+/*     COUNTRY PAGES    */
+
+.hotDays {
+	position: absolute;
+    height: calc(100% - ((95vh - 1px) / 9 * 1));
+    width: 100vw;
+    top: calc((95vh - 1px) / 9 * 1);
+    right: 0px;
+    z-index: -1;
+}
+
+.cls-1 {
+    z-index: 99999999999;
+    fill: /*orange*/ rgb(230,230,230);
+}
+
+
+
+
+
+
+/*     TIMELINES      */
+	.line {
+		position: absolute;
+		height: 1px;
+    	background-color: black;
+    	width: calc(100vw / 16);
+	}
+	.years {
+		position: absolute;
+		/*width: calc(100vw / 16);*/
+		width: auto;
+		text-align: center; 
+	}
+	.left {left: 0px;}
+	.right {right: 0px; left: auto;}
+
+	.line0 {bottom: 0vh;} 
+	.line10 {bottom: calc((95vh - 1px) / 9 * 1);}
+	.line20 {bottom: calc((95vh - 1px) / 9 * 2);}
+	.line30 {bottom: calc((95vh - 1px) / 9 * 3);}
+	.line40 {bottom: calc((95vh - 1px) / 9 * 4);}
+	.line45 {bottom: calc((95vh - 1px) / 9 * 4.5);}
+	.line50 {bottom: calc((95vh - 1px) / 9 * 5);}
+	.line55 {bottom: calc((95vh - 1px) / 9 * 5.5);}
+	.line60 {bottom: calc((95vh - 1px) / 9 * 6);}
+	.line70 {bottom: calc((95vh - 1px) / 9 * 7);}
+	.line80 {bottom: calc((95vh - 1px) / 9 * 8);}
+
+
+
+
+
+
+
+
+
+
 
 
 /*   SWIPABLE SVELTE   */
@@ -244,14 +347,10 @@ main {
 /*     PAGES     */
 .pagetitle {
     position: absolute;
-    /*top: 100px;
-    height: 80vh;
-    right: 20px;*/
     font-size: 30px;
     font-family: meadow;
     z-index: 9;
 
-    pointer-events: none;
 
     /*writing-mode: vertical-rl;
 	text-orientation: mixed;*/
@@ -263,9 +362,7 @@ main {
 	width: 100vw;
 	text-align: center;
 
-	/*background-color: yellow;*/
-
-	bottom: 50vh;
+	bottom: 35vh;
 
 	-webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: .5px;
@@ -278,22 +375,25 @@ main {
 	left: calc(100vw / 16);
 	right: calc(100vw / 16);
 	height: calc(((95vh - 1px) / 9) - ((100vw / 16) * 2) - 2px);
-	border: 1px solid black;
+	border: .5px solid black;
 }
 
-.pagetitle .text {
+.pagetitle .text, a.text {
 	font-size: 6vw !important;
 	line-height: 6.5vw !important;
 	/*font-family: arial;*/
 
 	/*-webkit-text-fill-color: rgb(70,70,70);  Will override color (regardless of order) */
 	-webkit-text-stroke-width: 0px;
-	-webkit-text-fill-color: grey;
+	-webkit-text-fill-color: /*grey*/ rgb(70,70,70);
+
+	text-decoration: none !important;
 }
 
 
 
 
 
+/*.extraText:hover {background-color: yellow;}*/
 
 
