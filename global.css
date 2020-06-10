@@ -1,88 +1,17 @@
-/*  TEMPLATE STYLE
-	html, body {
-		position: relative;
-		width: 100%;
-		height: 100%;
-	}
-
-	body {
-		color: #333;
-		margin: 0;
-		padding: 8px;
-		box-sizing: border-box;
-		font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-	}
-
-	a {
-		color: rgb(0,100,200);
-		text-decoration: none;
-	}
-
-	a:hover {
-		text-decoration: underline;
-	}
-
-	a:visited {
-		color: rgb(0,80,160);
-	}
-
-	label {
-		display: block;
-	}
-
-	input, button, select, textarea {
-		font-family: inherit;
-		font-size: inherit;
-		padding: 0.4em;
-		margin: 0 0 0.5em 0;
-		box-sizing: border-box;
-		border: 1px solid #ccc;
-		border-radius: 2px;
-	}
-
-	input:disabled {
-		color: #ccc;
-	}
-
-	input[type="range"] {
-		height: 0;
-	}
-
-	button {
-		color: #333;
-		background-color: #f4f4f4;
-		outline: none;
-	}
-
-	button:disabled {
-		color: #999;
-	}
-
-	button:not(:disabled):active {
-		background-color: #ddd;
-	}
-
-	button:focus {
-		border-color: #666;
-	}
-*/
-
 html {
-    scroll-snap-type: mandatory;
-    scroll-snap-points-x: repeat(100vw);
-    scroll-snap-type: x mandatory;
+	scroll-snap-type: mandatory;
+	scroll-snap-points-x: repeat(100vw);
+	scroll-snap-type: x mandatory;
 
-    overflow-y: hidden;
-  }
+	overflow-y: hidden;
+}
 
 html, body {
-		position: relative;
-		width: 100%;
-		height: 100%;
-	}
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 
-
-/*   FANPAGE    */
 @font-face {
     font-family: ortica;
     src: url(./fonts/Ortica/Ortica-Light.otf);
@@ -99,19 +28,10 @@ body {
 	margin: 0;
 }
 
-.text {font: 12px ortica;}
 
 
 
-
-
-/*.viewport {
-	position: absolute;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	background-color: pink;
-}*/
+/*   APP.SVELTE ----- Main page    */
 
 .newmain {
 	position: absolute;
@@ -180,7 +100,7 @@ body {
     width: 1px;
     /*background-color: rgb(70,70,70);*/
 
-    background-color: purple;
+    background-color: /*purple*/ black;
 
     transform-origin: 0% 100%;
 }
@@ -211,9 +131,6 @@ body {
 .dot16 {background-color: rgb(70,70,70);}*/
 
 
-a.dot:hover {
-	background-color: red;
-}
 
 
 
@@ -224,21 +141,16 @@ a.dot:hover {
 
 
 
-/*     COUNTRY PAGES    */
 
-.hotDays {
-	position: absolute;
-    height: calc(100% - ((100% - 1px) / 9 * 1));
-    width: 100vw;
-    top: calc((100% - 1px) / 9 * 1);
-    right: 0px;
-    z-index: -1;
-}
 
-.cls-1 {
-    z-index: 99999999999;
-    fill: /*orange*/ rgb(230,230,230);
-}
+
+
+
+
+
+
+
+
 
 
 
@@ -249,7 +161,8 @@ a.dot:hover {
 	.line {
 		position: absolute;
 		height: 1px;
-    	background-color: black;
+    	/*background-color: black;*/
+    	background-color: lightgrey;
     	width: calc(100vw / 16);
 	}
 	.years {
@@ -284,67 +197,13 @@ a.dot:hover {
 
 
 
-/*   SWIPABLE SVELTE   */
-
-
-
-.fullpage {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	/*overflow: hidden;
-	user-select: none;*/
-	overflow: scroll;
-}
-
-
-
-main {
-	position: relative;
-	width: 100%;
-	height: 100%;
-
-
-
-	position: absolute;
-	width: 100%;
-	height: 100%;
-
-	/*border: 1px solid red;*/
-
-	display: flex;
-    align-items: flex-start;
-
-}
-
-
-
-
-
-/*#wrapper {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100vw;
-	overflow: hidden;
-	margin: 0;
-
-}*/
 
 
 
 
 
 
-
-
-
-
-
-
-
-/*     PAGES     */
+/*     PAGES   --- text     */
 .pagetitle {
     position: absolute;
     font-size: 30px;
@@ -363,37 +222,144 @@ main {
 	text-align: center;
 
 	bottom: 45%;
+	/*top: 20%;*/
 
 	-webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: .5px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: black /*purple*/;
 }
+.pagetitle .text {
+	font-size: /*6vw*/ 5.5vw;
+	line-height: 6.5vw;
+	/*font-family: arial;*/
 
+	/*-webkit-text-fill-color: rgb(70,70,70);  Will override color (regardless of order) */
+	-webkit-text-stroke-width: 0px;
+	-webkit-text-fill-color: /*grey*/ rgb(70,70,70);
+}
+.text {font: 12px ortica;}
+.transp {color: rgba(0,0,0,0) !important; -webkit-text-fill-color: rgba(0,0,0,0) !important;}
+
+
+
+
+/*     PAGES   --- meter     */
 .tempMeter {
 	position: absolute;
 	top: calc((100vw / 16) - 8px);   /* added the -8px just to push it up a bit  */
 	left: calc(100vw / 16);
 	right: calc(100vw / 16);
 	height: calc(((100% - 1px) / 9) - ((100vw / 16) * 2) - 2px);
-	border: .5px solid black;
+	/*border: .5px solid black;*/
+
+	background-color: rgb(245,245,245);
+	border-radius: 20px;
+}
+.temperature {
+	position: absolute;
+	height: 100%;
+	top: 0%;
+	left: 0%;
+	/*background-color: lightgrey;*/
+
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.tempnumber {
+	position: absolute;
+	right: 2.5px;
+	top: 2.5px;
 }
 
-.pagetitle .text, a.text {
-	font-size: 6vw !important;
-	line-height: 6.5vw !important;
-	/*font-family: arial;*/
 
-	/*-webkit-text-fill-color: rgb(70,70,70);  Will override color (regardless of order) */
-	-webkit-text-stroke-width: 0px;
-	-webkit-text-fill-color: /*grey*/ rgb(70,70,70);
 
-	text-decoration: none !important;
+
+
+
+/*     PAGES   --- content     */
+.backgroundBox {
+	position: absolute;
+	top: calc((100% - 1px) / 9 * 1);
+	left: calc(100vw / 16);
+	right: calc(100vw / 16);
+	bottom: 0%;
+	z-index: -1;
+	border-radius: 20px;
 }
 
 
 
 
 
-/*.extraText:hover {background-color: yellow;}*/
+
+
+/*     PAGES   --- (dotted)lines     */
+.verticalLine {
+	position: absolute;
+	border-right: 1px dotted blue;
+	width: 0px;
+}
+.fromTop {top: 0vh;}
+
+.horizontalLine {
+	position: absolute;
+	border-top: 1px dotted blue;
+	height: 0px;
+}
+
+
+
+
+
+
+/*     PAGES   --- navigation buttons     */
+.buttonNext, .buttonPrev {
+	position: absolute;
+	bottom: 0%;
+	height: 100%;
+	z-index: 9999999999;
+}
+.buttonNext {
+	width: 65%;
+	right: 0%;
+}
+.buttonPrev {
+	width: 35%;
+	left: 0%;
+}
+
+
+
+
+
+
+
+/*     COUNTRY PAGES   --- SVG    */
+
+.hotDays {
+	position: absolute;
+    height: calc(100% - ((100% - 1px) / 9 * 1));
+    width: 100vw;
+    top: calc((100% - 1px) / 9 * 1);
+    right: 0px;
+    z-index: -1;
+}
+.graph {
+	position: absolute; 
+	top: 0%; 
+	width: 100%; 
+	left: 0%; 
+	height: 100%;
+}
+
+.cls-1 {
+    z-index: 99999999999;
+    fill: /*orange*/ rgb(230,230,230);
+}
+.cls-2 {
+    z-index: 99999999999;
+    fill: beige !important;
+}
+
 
 
