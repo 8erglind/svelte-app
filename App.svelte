@@ -6,28 +6,32 @@
 	import TimelinePast from './specifics/TimelinePast.svelte';
 	import Meter from './specifics/topMeter.svelte';
 	import Footer from './footer.svelte';
-
-	
-	//  take out and delete file once all pages are in  //
-	import Pagetitle from './specifics/pagetitle.svelte';
+	import Header from './header.svelte';
 
 
 	// PAGES  //
 	import Cover from './specifics/Cover.svelte';
+	import ExtremeHeatI from './specifics/ExtremeHeatI.svelte';
+	import ExtremeHeatII from './specifics/ExtremeHeatII.svelte';
 	import CriticalDecadeI from './specifics/CriticalDecadeI.svelte';
-
-	// hvað gerist ef ég breyti þessu hér?   3tilraun
-
-	import Swipeable from './swipable.svelte'
-	import { onMount } from 'svelte'
-
-	let initializing = true
-	let loginProgress, loginSwipeable
-	onMount(function() {
-		setTimeout(() => initializing = false, 100)
-	})
+	import CriticalDecadeII from './specifics/CriticalDecadeII.svelte';
+	import USA from './specifics/USA.svelte';
+	import Brazil from './specifics/Brazil.svelte';
+	import Iceland from './specifics/Iceland.svelte';
+	import Ghana from './specifics/Ghana.svelte';
+	import SaudiArabia from './specifics/SaudiArabia.svelte';
+	import India from './specifics/India.svelte';
+	import Cambodia from './specifics/Cambodia.svelte';
+	import SouthKorea from './specifics/SouthKorea.svelte';
+	import EnvironmentalJustice from './specifics/EnvironmentalJustice.svelte';
+	import ImpactofIndividualAction from './specifics/ImpactofIndividualAction.svelte';
+	import CriticalDecadeIII from './specifics/CriticalDecadeIII.svelte';
 
 	
+
+
+
+
 	let pages = [
 		{ name: 'page1', id: 1, swipes: 0, type: 'notcountry', rotate: '90', pagetitle: 'cover' },
 		{ name: 'page2', id: 2, swipes: 1, type: 'notcountry', rotate: '78.75', pagetitle: 'Extreme heat:&emsp;I' },
@@ -50,120 +54,76 @@
 
 </script>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+
+
+<Header></Header>
 
 
 
+<div class="newmain">
+	<a href="#page1" class="content page1 notcountry">
+		<Cover pagetitleText="Cover" rotate="90deg"></Cover>
+	</a>
+	<div class="content page2 notcountry">
+		<ExtremeHeatI pagetitleText="Extreme heat:&emsp;I" rotate="78.75deg"></ExtremeHeatI>
+	</div>
+	<div class="content page3 notcountry">
+		<ExtremeHeatII pagetitleText="Extreme heat:&emsp;II" rotate="67.5deg"></ExtremeHeatII>
+	</div>
+	<div class="content page4 notcountry">
+		<CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="56.25deg"></CriticalDecadeI>
+	</div>
+	<div class="content page5 notcountry">
+		<CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="45deg"></CriticalDecadeII>
+	</div>
+	<div class="content page6 country">
+		<USA pagetitleText="U.S.A." rotate="33.75deg"></USA>
+	</div>
+	<div class="content page6 country">
+		<Brazil pagetitleText="Brazil" rotate="22.5deg"></Brazil>
+	</div>
+	<div class="content page7 country">
+		<Iceland pagetitleText="Iceland" rotate="11.25deg"></Iceland>
+	</div>
+	<div class="content page8 country">
+		<Ghana pagetitleText="Ghana" rotate="0deg"></Ghana>
+	</div>
+	<div class="content page10 country">
+		<SaudiArabia pagetitleText="SaudiArabia" rotate="-11.25deg"></SaudiArabia>
+	</div>
+	<div class="content page11 country">
+		<India pagetitleText="India" rotate="-22.5deg"></India>
+	</div>
+	<div class="content page12 country">
+		<Cambodia pagetitleText="Cambodia" rotate="-33.75deg"></Cambodia>
+	</div>
+	<div class="content page13 country">
+		<SouthKorea pagetitleText="SouthKorea" rotate="-45deg"></SouthKorea>
+	</div>
+	<div class="content page14 notcountry">
+		<EnvironmentalJustice pagetitleText="Environmental Justice" rotate="-56.25deg"></EnvironmentalJustice>
+	</div>
+	<div class="content page15 notcountry">
+		<ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="-67.5deg"></ImpactofIndividualAction>
+	</div>
+	<div class="content page16 notcountry">
+		<CriticalDecadeIII pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="-78.75deg"></CriticalDecadeIII>
+	</div>
 
 
-<div id="wrapper">
-	<Swipeable numStates="16" let:current let:progress={introProgress}>
-	  <div class="slides fullpage" style="transform: scale({0.7 + 0.3 * (1 - $loginProgress)})">
-
-			<main class:current={current == 0}>
-				<div class="content page1" style="right: {100 * (introProgress - 0)}%;">
-					<Cover pagetitleText="Cover" rotate="90deg"></Cover>
-				</div>
-			</main>
-			<main class:current={current == 1}>
-				<div class="content page2" style="right: {100 * (introProgress - 1)}%;">
-					<Pagetitle pagetitleText="Extreme heat:&emsp;I" rotate="78.75deg"></Pagetitle>
-				</div>
-			</main>
-			<main class:current={current == 2}>
-				<div class="content page3" style="right: {100 * (introProgress - 2)}%;">
-					<Pagetitle pagetitleText="Extreme heat:&emsp;II" rotate="67.5deg"></Pagetitle>
-				</div>
-			</main>
-			<main class:current={current == 3}>
-				<div class="content page4" style="right: {100 * (introProgress - 3)}%;">
-					
-					<CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="56.25deg"></CriticalDecadeI>
-				</div>				
-			</main>
-			<main class:current={current == 4}>
-				<div class="content page4" style="right: {100 * (introProgress - 4)}%;">
-					<Pagetitle pagetitleText="The Critical Decade:&emsp;II" rotate="45deg"></Pagetitle>
-					<Meter></Meter>
-				</div>
-			</main>
-			<main class:current={current == 5}>
-				<div class="content page5" style="right: {100 * (introProgress - 5)}%;">
-					<Pagetitle pagetitleText="U.S.A." rotate="33.75deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 6}>
-				<div class="content page6" style="right: {100 * (introProgress - 6)}%;">
-					<Pagetitle pagetitleText="Brazil" rotate="22.5deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 7}>
-				<div class="content page7" style="right: {100 * (introProgress - 7)}%;">
-					<Pagetitle pagetitleText="Iceland" rotate="11.25deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 8}>
-				<div class="content page8" style="right: {100 * (introProgress - 8)}%;">
-					<Pagetitle pagetitleText="Ghana" rotate="0deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 9}>
-				<div class="content page9" style="right: {100 * (introProgress - 9)}%;">
-					<Pagetitle pagetitleText="Saudi Arabia" rotate="-11.25deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 10}>
-				<div class="content page10" style="right: {100 * (introProgress - 10)}%;">
-					<Pagetitle pagetitleText="India" rotate="-22.5deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 11}>
-				<div class="content page11" style="right: {100 * (introProgress - 11)}%;">
-					<Pagetitle pagetitleText="Cambodia" rotate="-33.75deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 12}>
-				<div class="content page12" style="right: {100 * (introProgress - 12)}%;">
-					<Pagetitle pagetitleText="South Korea" rotate="-45deg"></Pagetitle>
-					<Timelines></Timelines>
-				</div>
-			</main>
-			<main class:current={current == 13}>
-				<div class="content page13" style="right: {100 * (introProgress - 13)}%;">
-					<Pagetitle pagetitleText="Environmental Justice" rotate="-56.25deg"></Pagetitle>
-				</div>
-			</main>
-			<main class:current={current == 14}>
-				<div class="content page14" style="right: {100 * (introProgress - 14)}%;">
-					<Pagetitle pagetitleText="Impact of Individual Action" rotate="-67.5deg"></Pagetitle>
-				</div>
-			</main>
-			<main class:current={current == 15}>
-				<div class="content page15" style="right: {100 * (introProgress - 15)}%;">
-					<Pagetitle pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="-78.75deg"></Pagetitle>
-				</div>
-			</main>
-
-
-			
-			
-			<div class="dots">
-				<div class="dot active" style="left: calc({introProgress * 6.25}vw)"></div>
-				{#each pages as page (page.id)}
-					<div class="dot">
-						<img style="width: 95%; margin-left: 2.5%; margin-top: 4%;" src="imgs/{page.name}.png">
-					</div>
-				{/each}
-			</div>
-		</div>
-	</Swipeable>
+	<div class="dots">
+		{#each pages as page (page.id)}
+			<a href="#{page.name}" class="dot dot{page.id}">
+				<!--<img style="width: 95%; margin-left: 2.5%; margin-top: 4%;" src="imgs/{page.name}.png">-->
+			</a>
+		{/each}
+	</div>
 </div>
+
+
+
 
 
 <Footer></Footer>
@@ -175,46 +135,27 @@
 <style>
 
 
-.content {
-	position: relative;
-	background-color: rgba(250,250,250,1);
-}
-.page1 {
-	position: sticky;
-	left: 0vw;
-}
-.page2 {
-	/*position: sticky;
-	left: calc(80vw + 1vw);
-	left: 80vw;*/
-}
-.page3 {
-	/*position: sticky;
-	left: calc(80vw * 3);
-	left: auto;*/
-}
 
 
 
 .dots {
-	position: absolute;
+	position: fixed;
 	bottom: 0vh;
 	height: 5vh;
 	left: 0px;
 	width: 100vw;
 	border-left: 1px solid #444;
+	z-index: 99999;
 }
 .dot {
 	width: calc((100vw / 16) - 1px);
 	border-right: 1px solid #444;
-	height: 5vh;
+	height: calc(5vh - 2px);
+	margin-top: 1px;
 	/*margin: 0 0px;*/
 	display: inline-block;
 }
-.dot.active {
-	position: absolute;
-	background-color: rgb(70,70,70);
-	width: calc(100vw / 16);
-	z-index: -1;
+.dot:hover {
+	background-color: rgba(70,70,70);
 }
 </style>
