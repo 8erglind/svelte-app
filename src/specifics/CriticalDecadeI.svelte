@@ -5,7 +5,7 @@
 	export let rotate;
 
 
-	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
+	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
 	let tempWidthA = 'calc((100vw - (100vw / 8)) / 15 * 12)';
@@ -16,100 +16,134 @@
 	let secondText = false;
 	let thirdText = false;
 
-	let firstLines = true;
 	let secondLines = false;
-	let thirdLines = false;
+
+
+	const togglefirstSetup = () => {
+		firstText = true;
+		secondText = false;
+		thirdText = false;
+
+		secondLines = false;
+	}
 
 	const togglesecondSetup = () => {
 		firstText = false;
 		secondText = true;
+		thirdText = false;
 
-		firstLines = false;
 		secondLines = true;
 	}
 
 	const togglethirdSetup = () => {
+		firstText = false;
 		secondText = false;
 		thirdText = true;
-
-		//secondLines = false;
-		thirdLines = true;
 	}
-
-
-	
-
 
 </script>
 
+
+
+<!--    BUTTONS    -->
+
+
 {#if firstText}
-	<TimelinePast></TimelinePast>
+	<div class="buttonNext" on:click={togglesecondSetup}></div>
+	<a class="buttonPrev" href="#page3"></a>
 {/if}
+{#if secondText}
+	<div class="buttonNext" on:click={togglethirdSetup}></div>
+	<div class="buttonPrev" on:click={togglefirstSetup}></div>
+{/if}
+{#if thirdText}
+	<a class="buttonNext" href="#page5"></a>
+	<div class="buttonPrev" on:click={togglesecondSetup}></div>
+{/if}
+
+
+
+
+
+
+
+
+
+<!--    TEXT    -->
 
 
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
  	{#if firstText}
- 		<div on:click={togglesecondSetup} class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by&nbsp;1,1&nbsp;-&nbsp;1,3°C.</div>
+ 		<div class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by&nbsp;1,1&nbsp;-&nbsp;1,3°C.</div>
  	{/if}
  	{#if secondText}
- 		<div on:click={togglethirdSetup} class="text">“Two-thirds of the warming has occurred since 1975”, in the last 45&nbsp;years.<sub>1</sub></div>
+ 		<div class="text">“Two-thirds of the warming has occurred since 1975”, in the last 45&nbsp;years.<sub>1</sub></div>
  	{/if}
  	{#if thirdText}
- 		<a href="#page5" style="text-decoration: none;">
- 			<div class="text">The Paris Agreement (which has been critisized for not being radical enough) aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
- 		</a>
+ 		<div class="text">The Paris Agreement (which has been critisized for not being radical enough) aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
  	{/if}
 </div>
 
 
 
+
+
+<!--    CONTENT    -->
+
+
+<div class="backgroundBox"></div>
 
 
 
 <div class="tempMeter">
-	<div class="temperature" style="width: {tempWidthA};">
+	<div class="temperature" style="width: calc({tempWidthA} - 1px);">
 		<span class="tempnumber text">1,2°C</span>
 	</div>
+	{#if thirdText}
+		<div class="temperature" style="width: 100%; background-color: rgba(0,0,0,0) !important; border: none;">
+			<span class="tempnumber text">1,5°C</span>
+		</div>
+	{/if}
 </div>
+<div class="arrow text" style="width: {marginSides};">&uarr;</div>
 
 
-{#if firstLines}
+
+{#if firstText}
+	<TimelinePast></TimelinePast>
+
 	<div class="verticalLine fromTop" style="left: calc({marginSides} + {tempWidthA}); height: calc({distanceBLines} * 9);"></div>
 {/if}
+
+
+<div class="text years left line0">2020</div>
+
+
 {#if secondLines}
 	<div class="verticalLine fromTop" style="left: calc({marginSides} + {tempWidthB}); height: calc({distanceBLines} * 4.5);"></div>
 	<div class="horizontalLine" style="left: calc({marginSides} + {tempWidthB}); width: calc({tempWidthA} - {tempWidthB}); top: calc({distanceBLines} * 4.5);"></div>
 	<div class="verticalLine" style="left: calc({marginSides} + {tempWidthA}); top: calc({distanceBLines} * 4.5); height: calc({distanceBLines} * 4.5);"></div>
 	{#if secondText}
 		<div class="text years left line45">1975</div>
-		<div class="text years left line0">2020</div>
 	{/if}
 	<div class="line left line45"></div>
 {/if}
-{#if thirdLines}
-	<div class="tempMeter">
-		<div class="temperature" style="width: 100%; background-color: rgba(0,0,0,0) !important;">
-			<span class="tempnumber text">1,5°C</span>
-		</div>
-	</div>
 
+
+{#if thirdText}
 	<TimelineFuture></TimelineFuture>
-
 	<div class="verticalLine fromTop" style="right: {marginSides}; height: calc({distanceBLines} * 9);"></div>
+	<div class="text years right line0">2020</div>
 {/if}
 
-<div class="arrow text" style="width: {marginSides};">&uarr;</div>
 
 
 
 
 
 
-
-
-
-
+<!--    DOTS    -->
 
 
 <div class="activedot activedot4"></div>
@@ -120,41 +154,18 @@
 
 
 
+
+
 <style>
 
-	.temperature {
-		position: absolute;
-		height: 100%;
-		top: 0%;
-		left: 0%;
-		background-color: lightgrey;
-	}
-
-
-	.tempnumber {
-		position: absolute;
-		right: 2.5px;
-		top: 2.5px;
-	}
-
-
-	.verticalLine {
-		position: absolute;
-		border-right: 1px dotted blue;
-		width: 0px;
-	}
-	.fromTop {top: 0vh;}
-
-	.horizontalLine {
-		position: absolute;
-		border-top: 1px dotted blue;
-		height: 0px;
-	}
-
-
-	.text {color: blue;}
+	/*.pagetitle .text {/*-webkit-text-fill-color: rgb(190,190,190) purple;} */
+	.text {color: darkorange;}
 	.arrow {text-align: center;}
-	.line {background-color: blue;}
+	.line {background-color: darkorange;}
+	.backgroundBox {background-color: rgb(245,245,245);}
+	.temperature {border: 1px dotted darkorange;}
+	.verticalLine {border-right: 1px dotted darkorange;}
+	.horizontalLine {border-top: 1px dotted darkorange;}
 
 
 </style>
