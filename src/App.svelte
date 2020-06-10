@@ -123,7 +123,7 @@
 </div>
 
 
-
+<!--<div class="button">&nbsp;&rarr;</div>-->
 
 
 <Footer></Footer>
@@ -134,7 +134,18 @@
 
 <style>
 
-
+/*.button {
+	position: fixed;
+	bottom: calc(5vh + 10px);
+	right: 10px;
+	width: 5vh;
+	height: 5vh;
+	border-radius: 50%;
+	border: 1px solid purple;
+	font-size: 22px;
+    font-family: meadow;
+    color: purple;
+}*/
 
 
 
@@ -154,8 +165,5 @@
 	margin-top: 1px;
 	/*margin: 0 0px;*/
 	display: inline-block;
-}
-.dot:hover {
-	background-color: rgba(70,70,70);
 }
 </style>

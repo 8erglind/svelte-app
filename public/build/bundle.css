@@ -1,8 +1,8 @@
-.dots.svelte-il7zr7{position:fixed;bottom:0vh;height:5vh;left:0px;width:100vw;border-left:1px solid #444;z-index:99999}.dot.svelte-il7zr7{width:calc((100vw / 16) - 1px);border-right:1px solid #444;height:calc(5vh - 2px);margin-top:1px;display:inline-block}.dot.svelte-il7zr7:hover{background-color:rgba(70,70,70)}
+.dots.svelte-1xh3bjv{position:fixed;bottom:0vh;height:5vh;left:0px;width:100vw;border-left:1px solid #444;z-index:99999}.dot.svelte-1xh3bjv{width:calc((100vw / 16) - 1px);border-right:1px solid #444;height:calc(5vh - 2px);margin-top:1px;display:inline-block}
 .footer.svelte-236w9f{position:fixed;border-top:1px solid rgb(70,70,70);border-bottom:1px solid rgb(70,70,70);border-right:1px solid rgb(70,70,70);height:calc(5vh - 2px);width:calc(100vw - 1px);left:0vw;bottom:0vh;pointer-events:none;z-index:-1}
 .pagetitle.svelte-eekkh2.svelte-eekkh2{position:absolute;font-size:30px;font-family:meadow;z-index:9;pointer-events:none;bottom:0vh;left:0px;right:0px;width:100vw;text-align:center;bottom:50vh}.text.svelte-eekkh2.svelte-eekkh2{color:rgb(70,70,70)}.pagetitle.svelte-eekkh2 .text.svelte-eekkh2{font-size:6vw}
-.temperature.svelte-l4fgir{position:absolute;background-color:rgb(70,70,70);background-color:lightgrey;height:100%;top:0%;left:0%;width:calc((100% / 15) * 12)}.tempnumber.svelte-l4fgir{position:absolute;right:2.5px;top:2.5px}.verticalLine1.svelte-l4fgir{position:absolute;top:0vh;height:95vh;width:1px;border-right:1px dotted blue;left:calc((100vw / 16) + (((100vw - ((100vw / 16) * 2)) / 15) * 12) - 2px - 0.5px)}.text.svelte-l4fgir{color:blue}.arrow.svelte-l4fgir{width:calc(100vw / 16);text-align:center}
-.text.svelte-l4fgir{color:blue}
+.temperature.svelte-4rue82{position:absolute;height:100%;top:0%;left:0%;background-color:lightgrey}.tempnumber.svelte-4rue82{position:absolute;right:2.5px;top:2.5px}.verticalLine.svelte-4rue82{position:absolute;border-right:1px dotted blue;width:0px}.fromTop.svelte-4rue82{top:0vh}.horizontalLine.svelte-4rue82{position:absolute;border-top:1px dotted blue;height:0px}.text.svelte-4rue82{color:blue}.arrow.svelte-4rue82{text-align:center}.line.svelte-4rue82{background-color:blue}
+.text.svelte-zdxubz{color:blue}
 .text.svelte-l4fgir{color:blue}
 .text.svelte-l4fgir{color:blue}
 .right.svelte-1aeo6us{right:0px}

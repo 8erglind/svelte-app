@@ -75,6 +75,12 @@ html {
     overflow-y: hidden;
   }
 
+html, body {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
 
 /*   FANPAGE    */
 @font-face {
@@ -89,6 +95,8 @@ html {
 body {
 	background-color: rgb(250,250,250);
 	-webkit-overflow-scrolling: touch;
+	box-sizing: border-box;
+	margin: 0;
 }
 
 .text {font: 12px ortica;}
@@ -117,11 +125,6 @@ body {
 
 }
 .content {
-	/*position: relative;
-
-	display: flex;
-    align-items: flex-start;*/
-
 	width: calc(100vw - 2px);
 	height: calc(95vh - 1px);
 
@@ -263,7 +266,9 @@ a.dot:hover {
 	.line20 {bottom: calc((95vh - 1px) / 9 * 2);}
 	.line30 {bottom: calc((95vh - 1px) / 9 * 3);}
 	.line40 {bottom: calc((95vh - 1px) / 9 * 4);}
+	.line45 {bottom: calc((95vh - 1px) / 9 * 4.5);}
 	.line50 {bottom: calc((95vh - 1px) / 9 * 5);}
+	.line55 {bottom: calc((95vh - 1px) / 9 * 5.5);}
 	.line60 {bottom: calc((95vh - 1px) / 9 * 6);}
 	.line70 {bottom: calc((95vh - 1px) / 9 * 7);}
 	.line80 {bottom: calc((95vh - 1px) / 9 * 8);}
@@ -342,14 +347,10 @@ main {
 /*     PAGES     */
 .pagetitle {
     position: absolute;
-    /*top: 100px;
-    height: 80vh;
-    right: 20px;*/
     font-size: 30px;
     font-family: meadow;
     z-index: 9;
 
-    pointer-events: none;
 
     /*writing-mode: vertical-rl;
 	text-orientation: mixed;*/
@@ -361,9 +362,7 @@ main {
 	width: 100vw;
 	text-align: center;
 
-	/*background-color: yellow;*/
-
-	bottom: 50vh;
+	bottom: 35vh;
 
 	-webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
 	-webkit-text-stroke-width: .5px;
@@ -376,22 +375,25 @@ main {
 	left: calc(100vw / 16);
 	right: calc(100vw / 16);
 	height: calc(((95vh - 1px) / 9) - ((100vw / 16) * 2) - 2px);
-	border: 1px solid black;
+	border: .5px solid black;
 }
 
-.pagetitle .text {
+.pagetitle .text, a.text {
 	font-size: 6vw !important;
 	line-height: 6.5vw !important;
 	/*font-family: arial;*/
 
 	/*-webkit-text-fill-color: rgb(70,70,70);  Will override color (regardless of order) */
 	-webkit-text-stroke-width: 0px;
-	-webkit-text-fill-color: grey;
+	-webkit-text-fill-color: /*grey*/ rgb(70,70,70);
+
+	text-decoration: none !important;
 }
 
 
 
 
 
+/*.extraText:hover {background-color: yellow;}*/
 
 

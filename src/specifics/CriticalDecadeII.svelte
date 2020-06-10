@@ -62,11 +62,9 @@
 		height: 95vh;
 		width: 1px;
 		border-right: 1px dotted blue;
-		left: calc((100vw / 16) + (((100vw - ((100vw / 16) * 2)) / 15) * 12) - 2px - 0.5px);
+		left: calc((100vw / 16) + (((100vw - ((100vw / 16) * 2)) / 15) * 12) - 1px - 0.5px);
 	}
-	.text {
-		color: blue;
-	}
+	.text {color: blue;}
 	.arrow {
 		width: calc(100vw / 16);
 		text-align: center;
