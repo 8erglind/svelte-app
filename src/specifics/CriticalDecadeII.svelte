@@ -5,7 +5,7 @@
 	export let rotate;
 
 
-	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
+	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
 	let tempWidthA = 'calc((100vw - (100vw / 8)) / 15 * 12)';
@@ -170,19 +170,19 @@
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
  	{#if firstText}
- 		<div class="text">Emissions have risen steadily since the industrial revolution. <span class="transp">With our current level of emissions we have reached the limit. From now on we must reduce.</span></div>
+ 		<div class="text">Emissions have risen steadily since the industrial revolution. <span class="transp">With our current level of emissions we have reached our limit. From now on we must reduce.</span></div>
  	{/if}
  	{#if secondText}
- 		<div class="text">Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached the limit. <span class="transp">From now on we must reduce.</span></div>
+ 		<div class="text">Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached our limit. <span class="transp">From now on we must reduce.</span></div>
  	{/if}
  	{#if thirdText}
- 		<div class="text">Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached the limit. From now on we must reduce.</div>
+ 		<div class="text">Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached our limit. From now on we must reduce.</div>
  	{/if}
  	{#if fourthText}
- 		<div class="text">To limit warming to 1,5°C, global CO2 emissions must have reached net-zero by&nbsp;2050.</div>
+ 		<div class="text">To limit warming to 1,5°C, global CO2 emissions must have reached net-zero by&nbsp;2050. <span class="transp">To reach net-zero by 2050, emissions must be halved by 2030.</span></div>
  	{/if}
  	{#if fifthText}
- 		<div class="text">To reach net-zero by 2050, emissions must be halved by 2030.</div>
+ 		<div class="text"><span class="transp">To limit warming to 1,5°C, global CO2 emissions must have reached net-zero by&nbsp;2050. </span>To reach net-zero by 2050, emissions must be halved by 2030.</div>
  	{/if}
 </div>
 
