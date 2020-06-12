@@ -25,5 +25,8 @@
 
 <style>
 	
+.text {
+	color: lightgrey;
+}	
 
 </style>
