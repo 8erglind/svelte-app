@@ -3,13 +3,15 @@
 	import TimelineFuture from './TimelineFuture.svelte';
 	export let pagetitleText;
 	export let rotate;
+	export let next;
+	export let prev;
 
 
 	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
 	let tempWidthA = 'calc((100vw - (100vw / 8)) / 15 * 12)';
-	let tempWidthB = 'calc(((100vw - (100vw / 8)) / 15 * 10) / 3 * 2)';
+	let tempWidthB = 'calc(((100vw - (100vw / 8)) / 15 * 10) / 3 * 1)';
 
 
 	let firstText = true;
@@ -50,14 +52,14 @@
 
 {#if firstText}
 	<div class="buttonNext" on:click={togglesecondSetup}></div>
-	<a class="buttonPrev" href="#page3"></a>
+	<a class="buttonPrev" href="{next}"></a>
 {/if}
 {#if secondText}
 	<div class="buttonNext" on:click={togglethirdSetup}></div>
 	<div class="buttonPrev" on:click={togglefirstSetup}></div>
 {/if}
 {#if thirdText}
-	<a class="buttonNext" href="#page5"></a>
+	<a class="buttonNext" href="{prev}"></a>
 	<div class="buttonPrev" on:click={togglesecondSetup}></div>
 {/if}
 
@@ -75,13 +77,13 @@
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
  	{#if firstText}
- 		<div class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by&nbsp;1,1&nbsp;-&nbsp;1,3°C.</div>
+ 		<div class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br><span class="transp"> Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</span></div>
  	{/if}
  	{#if secondText}
- 		<div class="text">“Two-thirds of the warming has occurred since 1975”, in the last 45&nbsp;years.<sub>1</sub></div>
+ 		<div class="text"><span class="transp">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br></span> Two-thirds of that warming happened in the last 45&nbsp;years.<span class="transp"> The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</span></div>
  	{/if}
  	{#if thirdText}
- 		<div class="text">The Paris Agreement (which has been critisized for not being radical enough) aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
+ 		<div class="text"><span class="transp">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
  	{/if}
 </div>
 
