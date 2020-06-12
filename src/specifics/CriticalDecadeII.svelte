@@ -278,7 +278,7 @@
 <!--    DOTS    -->
 
 
-<div class="activedot activedot5"></div>
+<div class="activedot activedot6"></div>
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>

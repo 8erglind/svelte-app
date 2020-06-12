@@ -1447,10 +1447,8 @@ var app = (function () {
     	let t6;
     	let div2;
     	let t7;
-    	let div5;
-    	let div3;
-    	let t8;
     	let div4;
+    	let div3;
 
     	const block = {
     		c: function create() {
@@ -1468,10 +1466,8 @@ var app = (function () {
     			t6 = space();
     			div2 = element("div");
     			t7 = space();
-    			div5 = element("div");
-    			div3 = element("div");
-    			t8 = space();
     			div4 = element("div");
+    			div3 = element("div");
     			attr_dev(a, "class", "buttonNext");
     			attr_dev(a, "href", /*prev*/ ctx[2]);
     			add_location(a, file$5, 15, 0, 273);
@@ -1490,13 +1486,10 @@ var app = (function () {
     			attr_dev(div2, "class", "activedot activedot1");
     			add_location(div2, file$5, 34, 0, 547);
     			attr_dev(div3, "class", "progressline");
-    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			add_location(div3, file$5, 36, 1, 629);
-    			attr_dev(div4, "class", "progressline");
-    			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div4, file$5, 37, 1, 713);
-    			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$5, 35, 0, 588);
+    			attr_dev(div4, "class", "activedotnew activedotFan");
+    			add_location(div4, file$5, 35, 0, 588);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1516,10 +1509,8 @@ var app = (function () {
     			insert_dev(target, t6, anchor);
     			insert_dev(target, div2, anchor);
     			insert_dev(target, t7, anchor);
-    			insert_dev(target, div5, anchor);
-    			append_dev(div5, div3);
-    			append_dev(div5, t8);
-    			append_dev(div5, div4);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div3);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*prev*/ 4) {
@@ -1533,11 +1524,7 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			}
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -1551,7 +1538,7 @@ var app = (function () {
     			if (detaching) detach_dev(t6);
     			if (detaching) detach_dev(div2);
     			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
@@ -4203,7 +4190,7 @@ var app = (function () {
     			add_location(div4, file$8, 110, 0, 3071);
     			attr_dev(div5, "class", "text years left line0 svelte-1emori2");
     			add_location(div5, file$8, 121, 0, 3325);
-    			attr_dev(div6, "class", "activedot activedot4");
+    			attr_dev(div6, "class", "activedot activedot5");
     			add_location(div6, file$8, 150, 0, 4203);
     			attr_dev(div7, "class", "progressline");
     			set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
@@ -5788,7 +5775,7 @@ var app = (function () {
     			add_location(div2, file$9, 225, 1, 5523);
     			attr_dev(div3, "class", "tempMeter svelte-1hxy7sn");
     			add_location(div3, file$9, 218, 0, 5362);
-    			attr_dev(div4, "class", "activedot activedot5");
+    			attr_dev(div4, "class", "activedot activedot6");
     			add_location(div4, file$9, 280, 0, 6790);
     			attr_dev(div5, "class", "progressline");
     			set_style(div5, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
@@ -6854,13 +6841,13 @@ var app = (function () {
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div1, file$a, 73, 0, 1157);
-    			attr_dev(div2, "class", "activedot activedot6");
+    			attr_dev(div2, "class", "activedot activedot15");
     			add_location(div2, file$a, 118, 0, 2511);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$a, 120, 1, 2593);
+    			add_location(div3, file$a, 120, 1, 2594);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$a, 119, 0, 2552);
+    			add_location(div4, file$a, 119, 0, 2553);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7440,13 +7427,13 @@ var app = (function () {
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			add_location(svg, file$c, 22, 0, 279);
-    			attr_dev(div2, "class", "activedot activedot7");
+    			attr_dev(div2, "class", "activedot activedot14");
     			add_location(div2, file$c, 33, 0, 531);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$c, 35, 1, 613);
+    			add_location(div3, file$c, 35, 1, 614);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$c, 34, 0, 572);
+    			add_location(div4, file$c, 34, 0, 573);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7619,13 +7606,13 @@ var app = (function () {
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div1, file$d, 11, 0, 159);
-    			attr_dev(div2, "class", "activedot activedot8");
+    			attr_dev(div2, "class", "activedot activedot12");
     			add_location(div2, file$d, 25, 0, 282);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$d, 27, 1, 364);
+    			add_location(div3, file$d, 27, 1, 365);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$d, 26, 0, 323);
+    			add_location(div4, file$d, 26, 0, 324);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -7807,13 +7794,13 @@ var app = (function () {
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			add_location(svg, file$e, 22, 0, 279);
-    			attr_dev(div2, "class", "activedot activedot9");
+    			attr_dev(div2, "class", "activedot activedot11");
     			add_location(div2, file$e, 28, 0, 526);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$e, 30, 1, 608);
+    			add_location(div3, file$e, 30, 1, 609);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$e, 29, 0, 567);
+    			add_location(div4, file$e, 29, 0, 568);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8193,13 +8180,13 @@ var app = (function () {
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			add_location(svg, file$g, 21, 0, 278);
-    			attr_dev(div2, "class", "activedot activedot11");
+    			attr_dev(div2, "class", "activedot activedot8");
     			add_location(div2, file$g, 29, 0, 551);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$g, 31, 1, 634);
+    			add_location(div3, file$g, 31, 1, 633);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$g, 30, 0, 593);
+    			add_location(div4, file$g, 30, 0, 592);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8386,13 +8373,13 @@ var app = (function () {
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			add_location(svg, file$h, 22, 0, 279);
-    			attr_dev(div2, "class", "activedot activedot12");
+    			attr_dev(div2, "class", "activedot activedot7");
     			add_location(div2, file$h, 31, 0, 529);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$h, 33, 1, 612);
+    			add_location(div3, file$h, 33, 1, 611);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$h, 32, 0, 571);
+    			add_location(div4, file$h, 32, 0, 570);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -8765,7 +8752,7 @@ var app = (function () {
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div1, file$j, 9, 0, 71);
-    			attr_dev(div2, "class", "activedot activedot14");
+    			attr_dev(div2, "class", "activedot activedot13");
     			add_location(div2, file$j, 14, 0, 185);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
@@ -8923,13 +8910,13 @@ var app = (function () {
     			attr_dev(div1, "class", "pagetitle");
     			set_style(div1, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div1, file$k, 9, 0, 71);
-    			attr_dev(div2, "class", "activedot activedot15");
+    			attr_dev(div2, "class", "activedot activedot9");
     			add_location(div2, file$k, 14, 0, 185);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div3, file$k, 16, 1, 268);
+    			add_location(div3, file$k, 16, 1, 267);
     			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$k, 15, 0, 227);
+    			add_location(div4, file$k, 15, 0, 226);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9062,8 +9049,10 @@ var app = (function () {
     	let t2;
     	let div2;
     	let t3;
-    	let div4;
+    	let div5;
     	let div3;
+    	let t4;
+    	let div4;
 
     	const block = {
     		c: function create() {
@@ -9074,8 +9063,10 @@ var app = (function () {
     			t2 = space();
     			div2 = element("div");
     			t3 = space();
-    			div4 = element("div");
+    			div5 = element("div");
     			div3 = element("div");
+    			t4 = space();
+    			div4 = element("div");
     			attr_dev(div0, "class", "text");
     			add_location(div0, file$l, 11, 2, 152);
     			attr_dev(div1, "class", "pagetitle");
@@ -9084,10 +9075,13 @@ var app = (function () {
     			attr_dev(div2, "class", "activedot activedot16");
     			add_location(div2, file$l, 14, 0, 185);
     			attr_dev(div3, "class", "progressline");
-    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
     			add_location(div3, file$l, 16, 1, 268);
-    			attr_dev(div4, "class", "activedotnew activedotFan");
-    			add_location(div4, file$l, 15, 0, 227);
+    			attr_dev(div4, "class", "progressline");
+    			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    			add_location(div4, file$l, 17, 1, 352);
+    			attr_dev(div5, "class", "activedotnew activedotFan");
+    			add_location(div5, file$l, 15, 0, 227);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -9100,8 +9094,10 @@ var app = (function () {
     			insert_dev(target, t2, anchor);
     			insert_dev(target, div2, anchor);
     			insert_dev(target, t3, anchor);
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, div3);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div3);
+    			append_dev(div5, t4);
+    			append_dev(div5, div4);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*pagetitleText*/ 1) set_data_dev(t0, /*pagetitleText*/ ctx[0]);
@@ -9111,7 +9107,11 @@ var app = (function () {
     			}
 
     			if (dirty & /*rotate*/ 2) {
-    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
+    				set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
+    			}
+
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
     			}
     		},
     		i: noop,
@@ -9121,7 +9121,7 @@ var app = (function () {
     			if (detaching) detach_dev(t2);
     			if (detaching) detach_dev(div2);
     			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div5);
     		}
     	};
 
