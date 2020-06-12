@@ -3688,18 +3688,20 @@ var app = (function () {
     	let div;
     	let t0;
     	let br;
+    	let t1;
     	let span;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t0 = text("Since 1880 Earth’s average global temperature has increased by 1,1 - 1,3°C.");
+    			t0 = text("Since 1880 Earth’s average global temperature has increased by 1,1 - 1,3°C. \n \t\t\t");
     			br = element("br");
+    			t1 = space();
     			span = element("span");
     			span.textContent = "Two-thirds of that warming happened in the last 45 years. The Paris Agreement aims to limit warming to + 1,5°C.";
-    			add_location(br, file$8, 79, 129, 1562);
+    			add_location(br, file$8, 81, 4, 1550);
     			attr_dev(span, "class", "transp");
-    			add_location(span, file$8, 79, 133, 1566);
+    			add_location(span, file$8, 82, 4, 1559);
     			attr_dev(div, "class", "text svelte-1emori2");
     			add_location(div, file$8, 79, 3, 1436);
     		},
@@ -3707,6 +3709,7 @@ var app = (function () {
     			insert_dev(target, div, anchor);
     			append_dev(div, t0);
     			append_dev(div, br);
+    			append_dev(div, t1);
     			append_dev(div, span);
     		},
     		d: function destroy(detaching) {
@@ -3725,7 +3728,7 @@ var app = (function () {
     	return block;
     }
 
-    // (82:2) {#if secondText}
+    // (88:2) {#if secondText}
     function create_if_block_6$2(ctx) {
     	let div;
     	let span0;
@@ -3738,18 +3741,18 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			span0 = element("span");
-    			t0 = text("Since 1880 Earth’s average global temperature has increased by 1,1 - 1,3°C.");
+    			t0 = text("Since 1880 Earth’s average global temperature has increased by 1,1 - 1,3°C. \n \t\t\t\t");
     			br = element("br");
-    			t1 = text(" Two-thirds of that warming happened in the last 45 years.");
+    			t1 = text("\n \t\t\tTwo-thirds of that warming happened in the last 45 years. \n \t\t\t");
     			span1 = element("span");
     			span1.textContent = "The Paris Agreement aims to limit warming to + 1,5°C.";
-    			add_location(br, file$8, 82, 150, 1989);
+    			add_location(br, file$8, 91, 5, 1907);
     			attr_dev(span0, "class", "transp");
-    			add_location(span0, file$8, 82, 21, 1860);
+    			add_location(span0, file$8, 89, 4, 1788);
     			attr_dev(span1, "class", "transp");
-    			add_location(span1, file$8, 82, 224, 2063);
+    			add_location(span1, file$8, 94, 4, 1996);
     			attr_dev(div, "class", "text svelte-1emori2");
-    			add_location(div, file$8, 82, 3, 1842);
+    			add_location(div, file$8, 88, 3, 1765);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3768,14 +3771,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6$2.name,
     		type: "if",
-    		source: "(82:2) {#if secondText}",
+    		source: "(88:2) {#if secondText}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (85:2) {#if thirdText}
+    // (100:2) {#if thirdText}
     function create_if_block_5$2(ctx) {
     	let div;
     	let span;
@@ -3792,11 +3795,11 @@ var app = (function () {
     			br = element("br");
     			t1 = text(" Two-thirds of that warming happened in the last 45 years. ");
     			t2 = text("The Paris Agreement aims to limit warming to + 1,5°C.");
-    			add_location(br, file$8, 85, 150, 2422);
+    			add_location(br, file$8, 100, 127, 2262);
     			attr_dev(span, "class", "transp");
-    			add_location(span, file$8, 85, 21, 2293);
+    			add_location(span, file$8, 100, 21, 2156);
     			attr_dev(div, "class", "text svelte-1emori2");
-    			add_location(div, file$8, 85, 3, 2275);
+    			add_location(div, file$8, 100, 3, 2138);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3815,14 +3818,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5$2.name,
     		type: "if",
-    		source: "(85:2) {#if thirdText}",
+    		source: "(100:2) {#if thirdText}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (105:1) {#if thirdText}
+    // (120:1) {#if thirdText}
     function create_if_block_4$2(ctx) {
     	let div;
     	let span;
@@ -3833,12 +3836,12 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "1,5°C";
     			attr_dev(span, "class", "tempnumber text svelte-1emori2");
-    			add_location(span, file$8, 106, 3, 3005);
+    			add_location(span, file$8, 121, 3, 2761);
     			attr_dev(div, "class", "temperature svelte-1emori2");
     			set_style(div, "width", "100%");
     			set_style(div, "background-color", "rgba(0,0,0,0)", 1);
     			set_style(div, "border", "none");
-    			add_location(div, file$8, 105, 2, 2897);
+    			add_location(div, file$8, 120, 2, 2653);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -3853,14 +3856,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$2.name,
     		type: "if",
-    		source: "(105:1) {#if thirdText}",
+    		source: "(120:1) {#if thirdText}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (115:0) {#if firstText}
+    // (130:0) {#if firstText}
     function create_if_block_3$2(ctx) {
     	let t;
     	let div;
@@ -3875,7 +3878,7 @@ var app = (function () {
     			attr_dev(div, "class", "verticalLine fromTop svelte-1emori2");
     			set_style(div, "left", "calc(" + /*marginSides*/ ctx[9] + " + " + /*tempWidthA*/ ctx[10] + ")");
     			set_style(div, "height", "calc(" + /*distanceBLines*/ ctx[8] + " * 9)");
-    			add_location(div, file$8, 117, 1, 3190);
+    			add_location(div, file$8, 132, 1, 2946);
     		},
     		m: function mount(target, anchor) {
     			mount_component(timelinepast, target, anchor);
@@ -3904,14 +3907,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$2.name,
     		type: "if",
-    		source: "(115:0) {#if firstText}",
+    		source: "(130:0) {#if firstText}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (125:0) {#if secondLines}
+    // (140:0) {#if secondLines}
     function create_if_block_1$2(ctx) {
     	let div0;
     	let t0;
@@ -3937,19 +3940,19 @@ var app = (function () {
     			attr_dev(div0, "class", "verticalLine fromTop svelte-1emori2");
     			set_style(div0, "left", "calc(" + /*marginSides*/ ctx[9] + " + " + /*tempWidthB*/ ctx[11] + ")");
     			set_style(div0, "height", "calc(" + /*distanceBLines*/ ctx[8] + " * 4.5)");
-    			add_location(div0, file$8, 125, 1, 3392);
+    			add_location(div0, file$8, 140, 1, 3148);
     			attr_dev(div1, "class", "horizontalLine svelte-1emori2");
     			set_style(div1, "left", "calc(" + /*marginSides*/ ctx[9] + " + " + /*tempWidthB*/ ctx[11] + ")");
     			set_style(div1, "width", "calc(" + /*tempWidthA*/ ctx[10] + " - " + /*tempWidthB*/ ctx[11] + ")");
     			set_style(div1, "top", "calc(" + /*distanceBLines*/ ctx[8] + " * 4.5)");
-    			add_location(div1, file$8, 126, 1, 3522);
+    			add_location(div1, file$8, 141, 1, 3278);
     			attr_dev(div2, "class", "verticalLine svelte-1emori2");
     			set_style(div2, "left", "calc(" + /*marginSides*/ ctx[9] + " + " + /*tempWidthA*/ ctx[10] + ")");
     			set_style(div2, "top", "calc(" + /*distanceBLines*/ ctx[8] + " * 4.5)");
     			set_style(div2, "height", "calc(" + /*distanceBLines*/ ctx[8] + " * 4.5)");
-    			add_location(div2, file$8, 127, 1, 3685);
+    			add_location(div2, file$8, 142, 1, 3441);
     			attr_dev(div3, "class", "line left line45 svelte-1emori2");
-    			add_location(div3, file$8, 131, 1, 3916);
+    			add_location(div3, file$8, 146, 1, 3672);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -3991,14 +3994,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$2.name,
     		type: "if",
-    		source: "(125:0) {#if secondLines}",
+    		source: "(140:0) {#if secondLines}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (129:1) {#if secondText}
+    // (144:1) {#if secondText}
     function create_if_block_2$2(ctx) {
     	let div;
 
@@ -4007,7 +4010,7 @@ var app = (function () {
     			div = element("div");
     			div.textContent = "1975";
     			attr_dev(div, "class", "text years left line45 svelte-1emori2");
-    			add_location(div, file$8, 129, 2, 3861);
+    			add_location(div, file$8, 144, 2, 3617);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -4021,14 +4024,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$2.name,
     		type: "if",
-    		source: "(129:1) {#if secondText}",
+    		source: "(144:1) {#if secondText}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (136:0) {#if thirdText}
+    // (151:0) {#if thirdText}
     function create_if_block$2(ctx) {
     	let t0;
     	let div0;
@@ -4048,9 +4051,9 @@ var app = (function () {
     			attr_dev(div0, "class", "verticalLine fromTop svelte-1emori2");
     			set_style(div0, "right", /*marginSides*/ ctx[9]);
     			set_style(div0, "height", "calc(" + /*distanceBLines*/ ctx[8] + " * 9)");
-    			add_location(div0, file$8, 137, 1, 4013);
+    			add_location(div0, file$8, 152, 1, 3769);
     			attr_dev(div1, "class", "text years right line0 svelte-1emori2");
-    			add_location(div1, file$8, 138, 1, 4121);
+    			add_location(div1, file$8, 153, 1, 3877);
     		},
     		m: function mount(target, anchor) {
     			mount_component(timelinefuture, target, anchor);
@@ -4083,7 +4086,7 @@ var app = (function () {
     		block,
     		id: create_if_block$2.name,
     		type: "if",
-    		source: "(136:0) {#if thirdText}",
+    		source: "(151:0) {#if thirdText}",
     		ctx
     	});
 
@@ -4177,26 +4180,26 @@ var app = (function () {
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$8, 76, 0, 1336);
     			attr_dev(div1, "class", "backgroundBox svelte-1emori2");
-    			add_location(div1, file$8, 96, 0, 2696);
+    			add_location(div1, file$8, 111, 0, 2452);
     			attr_dev(span, "class", "tempnumber text svelte-1emori2");
-    			add_location(span, file$8, 102, 2, 2827);
+    			add_location(span, file$8, 117, 2, 2583);
     			attr_dev(div2, "class", "temperature svelte-1emori2");
     			set_style(div2, "width", "calc(" + /*tempWidthA*/ ctx[10] + " - 1px)");
-    			add_location(div2, file$8, 101, 1, 2758);
+    			add_location(div2, file$8, 116, 1, 2514);
     			attr_dev(div3, "class", "tempMeter");
-    			add_location(div3, file$8, 100, 0, 2733);
+    			add_location(div3, file$8, 115, 0, 2489);
     			attr_dev(div4, "class", "arrow text svelte-1emori2");
     			set_style(div4, "width", /*marginSides*/ ctx[9]);
-    			add_location(div4, file$8, 110, 0, 3071);
+    			add_location(div4, file$8, 125, 0, 2827);
     			attr_dev(div5, "class", "text years left line0 svelte-1emori2");
-    			add_location(div5, file$8, 121, 0, 3325);
+    			add_location(div5, file$8, 136, 0, 3081);
     			attr_dev(div6, "class", "activedot activedot5");
-    			add_location(div6, file$8, 150, 0, 4203);
+    			add_location(div6, file$8, 165, 0, 3959);
     			attr_dev(div7, "class", "progressline");
     			set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div7, file$8, 152, 1, 4285);
+    			add_location(div7, file$8, 167, 1, 4041);
     			attr_dev(div8, "class", "activedotnew activedotFan");
-    			add_location(div8, file$8, 151, 0, 4244);
+    			add_location(div8, file$8, 166, 0, 4000);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
