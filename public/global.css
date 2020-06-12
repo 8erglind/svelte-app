@@ -23,9 +23,10 @@ html, body {
 
 body {
 	background-color: rgb(250,250,250);
-	-webkit-overflow-scrolling: touch;
+	/*-webkit-overflow-scrolling: touch;*/
 	box-sizing: border-box;
 	margin: 0;
+
 }
 
 
@@ -42,6 +43,8 @@ body {
 
 	display: flex;
     align-items: flex-start;
+
+    -webkit-overflow-scrolling: touch;
 
 }
 .content {
@@ -60,9 +63,11 @@ body {
     -webkit-overflow-scrolling: touch;
 
     border-bottom: 1px solid rgb(70,70,70);
+
+    background-color: rgb(250,250,250)
 }
-.country {background-color: rgba(250,250,250,1);}
-.notcountry {background-color: rgb(250,250,250); /*rgb(245,245,245) rgb(230,230,230);*/}
+/*.country {background-color: rgba(250,250,250,1);}
+.notcountry {background-color: rgb(250,250,250); /*rgb(245,245,245) rgb(230,230,230);*//*}*/
 
 /*.page1 {background-color: rgb(70,70,70);}
 .page2 {}
@@ -82,7 +87,7 @@ body {
 	background-color: rgb(250,250,250);
 	/*background-color: rgb(70,70,70);*/
 
-	height: 4px; 
+	height: 2px; 
 	bottom: -2px;
 }
 .activedotnew {
@@ -107,22 +112,22 @@ body {
 
 .activedotFan {left:calc(100vw / 16 * 2);}
 
-.activedot1 {left:calc(100vw / 16 * 0); /*background-color: rgb(70,70,70);*/}
-.activedot2 {left:calc(100vw / 16 * 1); /*background-color: rgb(230,230,230);*/}
-.activedot3 {left:calc(100vw / 16 * 2); /*background-color: rgb(230,230,230);*/}
-.activedot4 {left:calc(100vw / 16 * 3);}
-.activedot5 {left:calc(100vw / 16 * 4);}
-.activedot6 {left:calc(100vw / 16 * 5);}
-.activedot7 {left:calc(100vw / 16 * 6);}
-.activedot8 {left:calc(100vw / 16 * 7);}
-.activedot9 {left:calc(100vw / 16 * 8);}
-.activedot10 {left:calc(100vw / 16 * 9);}
-.activedot11 {left:calc(100vw / 16 * 10);}
-.activedot12 {left:calc(100vw / 16 * 11);}
-.activedot13 {left:calc(100vw / 16 * 12);}
-.activedot14 {left:calc(100vw / 16 * 13);}
-.activedot15 {left:calc(100vw / 16 * 14);}
-.activedot16 {left:calc(100vw / 16 * 15); width: calc((100vw / 16) - 2px); /*background-color: rgb(70,70,70);*/}
+.activedot1 {left:calc(100vw / 16 * 15); width: calc((100vw / 16) - 2px); /*background-color: rgb(70,70,70);*/}
+.activedot2 {left:calc(100vw / 16 * 14); /*background-color: rgb(230,230,230);*/}
+.activedot3 {left:calc(100vw / 16 * 13); /*background-color: rgb(230,230,230);*/}
+.activedot4 {left:calc(100vw / 16 * 12);}
+.activedot5 {left:calc(100vw / 16 * 11);}
+.activedot6 {left:calc(100vw / 16 * 10);}
+.activedot7 {left:calc(100vw / 16 * 9);}
+.activedot8 {left:calc(100vw / 16 * 8);}
+.activedot9 {left:calc(100vw / 16 * 7);}
+.activedot10 {left:calc(100vw / 16 * 6);}
+.activedot11 {left:calc(100vw / 16 * 5);}
+.activedot12 {left:calc(100vw / 16 * 4);}
+.activedot13 {left:calc(100vw / 16 * 3);}
+.activedot14 {left:calc(100vw / 16 * 2);}
+.activedot15 {left:calc(100vw / 16 * 1);}
+.activedot16 {left:calc(100vw / 16 * 0); /*background-color: rgb(70,70,70);*/}
 
 
 /*.dot1 {background-color: rgb(70,70,70);}
@@ -240,6 +245,18 @@ body {
 .text {font: 12px ortica;}
 .transp {color: rgba(0,0,0,0) !important; -webkit-text-fill-color: rgba(0,0,0,0) !important;}
 
+.criticalText {
+	position: absolute; 
+	bottom: 0%;  
+	text-align: center;
+	/*background-color: rgba(0,0,255,.5);*/
+	color: blue;
+	font-size: 5.5vw;
+	padding-top: 10px;
+	text-transform: uppercase;
+	font: 5.5vw arial;
+}
+
 
 
 
@@ -249,8 +266,8 @@ body {
 	top: calc((100vw / 16) - 8px);   /* added the -8px just to push it up a bit  */
 	left: calc(100vw / 16);
 	right: calc(100vw / 16);
-	height: calc(((100% - 1px) / 9) - ((100vw / 16) * 2) - 2px);
-	/*border: .5px solid black;*/
+	height: calc(((100% - 1px) / 9) - ((100vw / 16) * 2) + 7px);
+	/*border: 1px solid rgba(0,0,0,0);*/
 
 	background-color: rgb(245,245,245);
 	border-radius: 20px;
@@ -258,7 +275,7 @@ body {
 .temperature {
 	position: absolute;
 	height: 100%;
-	top: 0%;
+	top: -1px;
 	left: 0%;
 	/*background-color: lightgrey;*/
 
@@ -321,11 +338,11 @@ body {
 }
 .buttonNext {
 	width: 65%;
-	right: 0%;
+	left: 0%;
 }
 .buttonPrev {
 	width: 35%;
-	left: 0%;
+	right: 0%;
 }
 
 
