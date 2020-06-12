@@ -27,12 +27,14 @@
 
 
 
+<img src="https://dimg.donga.com/egc/CDB/CHINESE/Article/20/07/06/07/2007060738918.jpg">
 
 
 
 
 
-<div class="activedot activedot13"></div>
+
+<div class="activedot activedot4"></div>
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>
