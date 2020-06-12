@@ -77,13 +77,28 @@
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
  	{#if firstText}
- 		<div class="text">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br><span class="transp"> Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</span></div>
+ 		<div class="text">
+ 			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
+ 			<br>
+ 			<span class="transp">
+ 				Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
+ 			</span>
+ 		</div>
  	{/if}
  	{#if secondText}
- 		<div class="text"><span class="transp">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br></span> Two-thirds of that warming happened in the last 45&nbsp;years.<span class="transp"> The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</span></div>
+ 		<div class="text">
+ 			<span class="transp">
+ 				Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
+ 				<br>
+ 			</span>
+ 			Two-thirds of that warming happened in the last 45&nbsp;years. 
+ 			<span class="transp">
+ 				The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
+ 			</span>
+ 		</div>
  	{/if}
  	{#if thirdText}
- 		<div class="text"><span class="transp">Since 1880<!-- , in 140 years,--> Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement <!--(which has been critisized for not being radical enough) -->aims to limit warming to&nbsp;+&nbsp;1,5°C<!-- by&nbsp;2100-->.</div>
+ 		<div class="text"><span class="transp">Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.</div>
  	{/if}
 </div>
 
