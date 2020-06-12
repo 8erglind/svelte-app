@@ -3,13 +3,15 @@
 	import TimelineFuture from './TimelineFuture.svelte';
 	export let pagetitleText;
 	export let rotate;
+	export let next;
+	export let prev;
 
 
 	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
-	let tempWidthA = 'calc((100vw - (100vw / 8)) / 15 * 12)';
-	let tempWidthB = 'calc(((100vw - (100vw / 8)) / 15 * 10) / 3 * 2)';
+	//let tempWidthA = 'calc((100vw - (100vw / 8)) / 15 * 12)';
+	//let tempWidthB = 'calc(((100vw - (100vw / 8)) / 15 * 10) / 3 * 2)';
 
 
 	let firstText = true;
@@ -132,7 +134,7 @@
 
 {#if firstText}
 	<div class="buttonNext" on:click={togglesecondSetup}></div>
-	<a class="buttonPrev" href="#page4"></a>
+	<a class="buttonPrev" href="{next}"></a>
 {/if}
 {#if secondText}
 	<div class="buttonNext" on:click={togglethirdSetup}></div>
@@ -151,7 +153,7 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthText}
-	<a class="buttonNext" href="#page6"></a>
+	<a class="buttonNext" href="{prev}"></a>
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
 {/if}
 
@@ -324,18 +326,6 @@
 	}
 	.verticalLine {border-right: 1px dotted blue;}
 	.horizontalLine {border-top: 1px dotted blue;}
-
-	.criticalText {
-		position: absolute; 
-		bottom: 0%;  
-		text-align: center;
-		/*background-color: rgba(0,0,255,.5);*/
-		color: blue;
-		font-size: 5.5vw;
-		padding-top: 10px;
-		text-transform: uppercase;
-		font: 5.5vw arial;
-	}
 
 
 </style>
