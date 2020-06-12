@@ -7,7 +7,13 @@
 	
 	export let pagetitleText;
 	export let rotate;
+	export let prev;
 </script>
+
+
+
+
+<a class="buttonNext" href="{prev}"></a>
 
 
 
@@ -16,6 +22,15 @@
  	{pagetitleText}
  	<div class="text">Swipe<br>&uarr;</div>
 </div>
+
+
+
+
+<img style="position: absolute; bottom: 10%; width: 80%; left: 10%;" src="imgs/fanRaw.png">
+
+
+
+
 
 <div class="activedot activedot1"></div>
 <div class="activedotnew activedotFan">
