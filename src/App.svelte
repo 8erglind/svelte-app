@@ -78,23 +78,23 @@
 	<div class="content"><SaudiArabia pagetitleText="SaudiArabia" rotate="22.5deg" next="#page8" prev="#page6"></SaudiArabia></div>
 	<div class="content"><ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="11.25deg" next="#page9" prev="#page7"></ImpactofIndividualAction></div>
 	<div class="content"><India pagetitleText="India" rotate="0deg" next="#page10" prev="#page8"></India></div>
-	<div class="content"><Cambodia pagetitleText="Cambodia" rotate="-11.25deg" next="#page11" prev="#page9"></Cambodia></div>
-	<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-22.5deg" next="#page12" prev="#page10"></CriticalDecadeII></div>
-	<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-33.75deg" next="#page13" prev="#page11"></CriticalDecadeI></div>
-	<div class="content"><SouthKorea pagetitleText="SouthKorea" rotate="-45deg" next="#page14" prev="#page12"></SouthKorea></div>
+	<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-11.25deg" next="#page11" prev="#page9"></CriticalDecadeII></div>
+	<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-22.5deg" next="#page12" prev="#page10"></CriticalDecadeI></div>
+	<div class="content"><Cambodia pagetitleText="Cambodia" rotate="-33.75deg" next="#page13" prev="#page11"></Cambodia></div>
+
+
+	<div class="content"><SouthKorea pagetitleText="South Korea" rotate="-45deg" next="#page14" prev="#page12"></SouthKorea></div>
 	<div class="content"><ExtremeHeatII pagetitleText="Extreme heat:&emsp;II" rotate="-56.25deg" next="#page15" prev="#page13"></ExtremeHeatII></div>
 	<div class="content"><ExtremeHeatI pagetitleText="Extreme heat:&emsp;I" rotate="-67.5deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
 	<div class="content"><Cover pagetitleText="Cover" rotate="-78.75deg" prev="#page15"></Cover></div>
 
 
 
-	<div class="dots">
+	<!--<div class="dots">
 		{#each pages as page (page.id)}
-			<a href="#{page.name}" class="dot dot{page.id}">
-				<!--<img style="width: 95%; margin-left: 2.5%; margin-top: 4%;" src="imgs/{page.name}.png">-->
-			</a>
+			<a href="#{page.name}" class="dot dot{page.id}"></a>
 		{/each}
-	</div>
+	</div>-->
 </div>
 
 
@@ -130,12 +130,12 @@
 	height: 5%;
 	left: 0px;
 	width: 100vw;
-	border-left: 1px solid #444;
+	/*border-left: 1px solid #444;*/
 	z-index: 99999;
 }
 .dot {
 	width: calc((100vw / 16) - 1px);
-	border-right: 1px solid #444;
+	/*border-right: 1px solid #444;*/
 	height: calc(100% - 2px);
 	margin-top: 1px;
 	/*margin: 0 0px;*/

@@ -1,6 +1,12 @@
 <script>
 	export let pagetitleText;
 	export let rotate;
+	export let next;
+	export let prev;
+
+
+	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
+	let marginSides = 'calc(100vw / 16)';
 
 	import TimelinesEmpty from './TimelineEmpty.svelte';
 </script>
@@ -23,7 +29,7 @@
 	<polygon class="cls-1" points="365 1200.5 365 900.5 365 600.5 365 300.5 365 0.5 263 0.5 263 300.5 326 600.5 326 900.5 347 900.5 347 1200.5 365 1200.5"/>
 </svg>
 
-
+<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
 
 
 

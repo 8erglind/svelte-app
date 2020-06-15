@@ -71,23 +71,39 @@
 <!--    TEXT    -->
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	{#if firstSetup}
- 		<div class="text">It’s June, after the warmest May on record. Its getting warmer, and Extreme heat is becoming more and more common.</div>
- 	{/if}
- 	{#if secondText}
- 		<div class="text"><span class="transp">It’s June, after the warmest May on record. Its getting warmer, and Extreme heat is becoming more and more common.</span></div>
- 	{/if}
- 	{#if thirdSetup}
- 		<div class="text">With each eccess extremely hot day of 35°C, mortality rates increase by ~&nbsp;0,0004%.</div>
- 	{/if}
-</div>
+<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+
+
+{#if firstSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		It’s June, after the warmest May on record. Its getting warmer, and Extreme heat is becoming more and more common.
+	</div>
+{/if}
+{#if secondText}
+	<div class="pagetext" style="transform: rotate({rotate});">The dangers of heat depend on temperature and humidity.</div>
+{/if}
+{#if thirdSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		With each eccess extremely hot day of 35°C, mortality rates increase by ~&nbsp;0,0004%.
+	</div>
+{/if}
+
 
 
 
 
 <!--    CONTENT    -->
+
+{#if firstSetup}
+	<div class="backgroundBox">
+		<svg class="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" preserveAspectRatio="none">
+			<polygon class="caution" style="background-color: yellow;" points="0 0 250 0 250 100 200 100 200 200 150 200 150 400 100 400 100 500 50 500 50 700 0 700 0 0"/>
+			<polygon class="extremeCaution" points="450 0 450 100 400 100 400 200 300 200 300 300 250 300 250 400 200 400 200 500 150 500 150 700 50 700 50 500 100 500 100 400 150 400 150 200 200 200 200 100 250 100 250 0 450 0"/>
+			<polygon class="danger" points="450 0 700 0 700 100 600 100 600 200 500 200 500 300 400 300 400 400 350 400 350 500 300 500 300 600 250 600 250 700 150 700 150 500 200 500 200 400 250 400 250 300 300 300 300 200 400 200 400 100 450 100 450 0"/>
+			<polyline class="extremeDanger" points="800 700 250 700 250 600 300 600 300 500 350 500 350 400 400 400 400 300 500 300 500 200 600 200 600 100 700 100 700 0 800 0 800 700"/>
+		</svg>
+	</div>
+{/if}
 
 {#if secondSetup}
 	<div class="backgroundBox">

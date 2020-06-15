@@ -11,27 +11,27 @@
 	
 
 	let firstSetup = true;
-	let firstText = true;
+	let secondText = false;
 	let secondSetup = false;
 	let thirdSetup = false;
 
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
-		firstText = true;
+		secondText = false;
 		secondSetup = false;
 		thirdSetup = false;
 	}
 
 	const togglesecondSetup = () => {
 		firstSetup = true;
-		firstText = false;
+		secondText = true;
 		secondSetup = true;
 		thirdSetup = false;
 	}
 	const togglethirdSetup = () => {
 		firstSetup = true;
-		firstText = false;
+		secondText = false;
 		secondSetup = true;
 		thirdSetup = true;
 	}
@@ -65,16 +65,24 @@
 <!--    TEXT    -->
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	{#if firstText}
- 		<div class="text"><span class="transp">When the temperature becomes close to, or highter than that of the human body, the body can no longer easily cool itself down and runs the risk of overheating.</span></div>
- 	{/if}
- 	{#if secondSetup}
- 		<div class="text"><!--A temperature of around 35°C and higher is dangerously close to the temperature of the human body, making it harder for the body to cool itself down.-->When the temperature becomes close to, or highter than that of the human body, the body can no longer easily cool itself down and runs the risk of overheating.</div>
- 	{/if}
+<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
 
-</div>
+
+{#if secondText}
+	<div class="pagetext" style="transform: rotate({rotate});font-weight: normal;
+        font-style: normal;">
+		When the temperature becomes close to, or highter than that of the human body, the body can no longer easily cool itself down and runs the risk of overheating.
+	</div>
+{/if}
+
+
+<!--<div class="text bottomLine">
+	{#if firstSetup}
+		<div class="bottomLineText">
+			When the temperature becomes close to, or highter than that of the human body, the body can no longer easily cool itself down and runs the risk of overheating.
+		</div>
+	{/if}
+</div>-->
 
 
 
@@ -124,7 +132,7 @@
 <style>
 
 	.text {color: darkred;}
-	.backgroundBox {overflow: hidden; border-radius: 0px; background-color: rgb(245,245,245);}
+	.backgroundBox {overflow: hidden; border-radius: 0px; background-color: rgb(245,245,245); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
 	.celcius {position: absolute;}
 	.celciusTop {width: 100%; text-align: center;}
 	.inGraph {font-family: arial; text-transform: uppercase;}

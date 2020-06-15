@@ -20,7 +20,7 @@
 
 <div class="pagetitle" style="transform: rotate({rotate});">
  	{pagetitleText}
- 	<div class="text">Swipe<br>&uarr;</div>
+ 	<!--<div class="text">Swipe<br>&uarr;</div>-->
 </div>
 
 
@@ -31,12 +31,19 @@
 
 
 
-
-<div class="activedot activedot1"></div>
+<!--<div class="activedot activedot1"></div>-->
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>
 
+
+
+<div class="text bottomLine">
+	<div class="bottomLineText">
+		&larr; &larr; &larr; Swipe to left to open and press left side of screen click through.&emsp; 
+	</div>
+</div>
+	
 
 
 

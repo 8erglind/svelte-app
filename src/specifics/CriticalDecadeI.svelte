@@ -1,6 +1,6 @@
 <script>
-	import TimelinePast from './TimelinePast.svelte';
-	import TimelineFuture from './TimelineFuture.svelte';
+	//import TimelinePast from './TimelinePast.svelte';
+	//import TimelineFuture from './TimelineFuture.svelte';
 	export let pagetitleText;
 	export let rotate;
 	export let next;
@@ -74,33 +74,32 @@
 <!--    TEXT    -->
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	{#if firstText}
- 		<div class="text">
- 			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
- 			<br>
- 			<span class="transp">
- 				Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
- 			</span>
- 		</div>
- 	{/if}
- 	{#if secondText}
- 		<div class="text">
- 			<span class="transp">
- 				Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
- 				<br>
- 			</span>
- 			Two-thirds of that warming happened in the last 45&nbsp;years. 
- 			<span class="transp">
- 				The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
- 			</span>
- 		</div>
- 	{/if}
- 	{#if thirdText}
- 		<div class="text"><span class="transp">Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.</div>
- 	{/if}
-</div>
+<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+
+{#if firstText}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
+		<br>
+		<span class="transp">
+			Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
+		</span>
+	</div>
+{/if}
+{#if secondText}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		<span class="transp">
+			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
+			<br>
+		</span>
+		Two-thirds of that warming happened in the last 45&nbsp;years. 
+		<span class="transp">
+			The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
+		</span>
+	</div>
+{/if}
+{#if thirdText}
+	<div class="pagetext" style="transform: rotate({rotate});"><span class="transp">Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.</div>
+{/if}
 
 
 
@@ -114,6 +113,9 @@
 
 
 <div class="tempMeter">
+	<div class="temperature" style="left: {marginSides}; border: none;">
+		<span class="tempnumber text">0°C</span>
+	</div>
 	<div class="temperature" style="width: calc({tempWidthA} - 1px);">
 		<span class="tempnumber text">1,2°C</span>
 	</div>
@@ -128,12 +130,29 @@
 
 
 {#if firstText}
-	<TimelinePast></TimelinePast>
+	<div class="line left line10"></div>
+	<div class="line left line20"></div>
+	<div class="line left line30"></div>
+	<div class="line left line40"></div>
+	<div class="line left line50"></div>
+	<div class="line left line60"></div>
+	<div class="line left line70"></div>
+	<div class="line left line80"></div>
+
+	<div class="text years left line10">2010</div>
+	<div class="text years left line20">2000</div>
+	<div class="text years left line30">1990</div>
+	<div class="text years left line40">1980</div>
+	<div class="text years left line50">1970</div>
+	<div class="text years left line60">1960</div>
+	<div class="text years left line70">1950</div>
+	<div class="text years left line80">1940</div>
 
 	<div class="verticalLine fromTop" style="left: calc({marginSides} + {tempWidthA}); height: calc({distanceBLines} * 9);"></div>
 {/if}
 
 
+<div class="line left line0"></div>
 <div class="text years left line0">2020</div>
 
 
@@ -149,11 +168,52 @@
 
 
 {#if thirdText}
-	<TimelineFuture></TimelineFuture>
 	<div class="verticalLine fromTop" style="right: {marginSides}; height: calc({distanceBLines} * 9);"></div>
+
+	<div class="line right line0"></div>
+	<div class="line right line10"></div>
+	<div class="line right line20"></div>
+	<div class="line right line30"></div>
+	<div class="line right line40"></div>
+	<div class="line right line50"></div>
+	<div class="line right line60"></div>
+	<div class="line right line70"></div>
+	<div class="line right line80"></div>
+
 	<div class="text years right line0">2020</div>
+	<div class="text years right line10">2030</div>
+	<div class="text years right line20">2040</div>
+	<div class="text years right line30">2050</div>
+	<div class="text years right line40">2060</div>
+	<div class="text years right line50">2070</div>
+	<div class="text years right line60">2080</div>
+	<div class="text years right line70">2090</div>
+	<div class="text years right line80">2100</div>
 {/if}
 
+
+
+
+
+<!--     FOOTER     -->
+
+<div class="text bottomLine">
+	<!--{#if firstText}
+		<div class="bottomLineText">
+			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.
+		</div>
+	{/if}
+	{#if secondText}
+		<div class="bottomLineText">
+			Two-thirds of that warming happened in the last 45&nbsp;years.
+		</div>
+	{/if}
+	{#if thirdText}
+		<div class="bottomLineText">
+			The Paris Agreement aims to limit <i>future</i> warming to&nbsp;+&nbsp;1,5°C.
+		</div>
+	{/if}-->
+</div>
 
 
 
