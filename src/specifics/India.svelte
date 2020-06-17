@@ -234,7 +234,7 @@
 
 {#if sixthText}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		India, which will see an increase of X hot days in the next two decades, Y the two decades after that and Z in the two decades leading up to 2100 if business is left "as usual", is not devoid of environmentalism, and although India will need to take radical some climate action, the impact of India is not ranked high (better words!).
+		India &mdash; which will see an increase of X hot days in the next two decades, Y the two decades after that and Z in the two decades leading up to 2100 if business is left "as usual" &mdash; is not devoid of environmentalism, and although India will need to take radical some climate action, the impact of India is not ranked high (better words!).
 	</div>
 
 	<div class="tempMeterCountry">

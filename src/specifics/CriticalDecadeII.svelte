@@ -172,7 +172,7 @@
 	<div class="pagetext" style="transform: rotate({rotate});">Emissions have risen steadily since the industrial revolution.</div>
 {/if}
 {#if secondText}
-	<div class="pagetext" style="transform: rotate({rotate});">Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached our limit.</div>
+	<div class="pagetext" style="transform: rotate({rotate});">With our current level of emissions we have reached our limit.</div>
 {/if}
 {#if thirdText}
 	<div class="pagetext" style="transform: rotate({rotate});">From now on we must reduce.</div>
@@ -276,7 +276,7 @@
 
 
 {#if fourthText}
-	<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 6) - 1px);"></div>
+	<div class="horizontalLine left" style="width: 100%; top: calc({distanceBLines} * 6);"></div>
 	<div class="text years right line30">2050</div>
 {/if}
 
@@ -292,10 +292,10 @@
 
 
 {#if fifthText}
-	<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px);"></div>
+	<div class="horizontalLine left" style="width: 100%; top: calc({distanceBLines} * 8);"></div>
 {/if}
 {#if sixthText}
-	<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
+	<div class="horizontalLine left" style="width: 100%; top: calc({distanceBLines} * 8); border-top: 1px solid blue;"></div>
 	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">This is a Critical Decade.</div>
 {/if}
 

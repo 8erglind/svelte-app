@@ -309,9 +309,12 @@
 	}
 	.eraPhoto2 {
 		background-size: contain !important;
-		background-size: 50% !important;
+		background-size: 40% !important;
+		width: 90vw !important;
+		height: 97% !important;
 		background-position: bottom right;
 		/*background-image: url('https://png.pngtree.com/element_our/png_detail/20181123/traditional-korean-gourmet-chicken-soup-png_242812.jpg');*/
+		background-image: url('../imgs/soup3.png');
 	}
 
 

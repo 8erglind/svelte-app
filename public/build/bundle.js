@@ -4919,7 +4919,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t = text("Emissions have risen steadily since the industrial revolution. With our current level of emissions we have reached our limit.");
+    			t = text("With our current level of emissions we have reached our limit.");
     			attr_dev(div, "class", "pagetext");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div, file$9, 174, 1, 3434);
@@ -4960,7 +4960,7 @@ var app = (function () {
     			t = text("From now on we must reduce.");
     			attr_dev(div, "class", "pagetext");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 177, 1, 3648);
+    			add_location(div, file$9, 177, 1, 3585);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5005,11 +5005,11 @@ var app = (function () {
     			t2 = text(" emissions must have reached");
     			br = element("br");
     			t3 = text("net-zero by 2050.");
-    			add_location(sub, file$9, 180, 96, 3860);
-    			add_location(br, file$9, 180, 136, 3900);
+    			add_location(sub, file$9, 180, 96, 3797);
+    			add_location(br, file$9, 180, 136, 3837);
     			attr_dev(div, "class", "pagetext");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 180, 1, 3765);
+    			add_location(div, file$9, 180, 1, 3702);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5051,7 +5051,7 @@ var app = (function () {
     			t = text("To reach net-zero by 2050, emissions must be halved by 2030.");
     			attr_dev(div, "class", "pagetext");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 183, 1, 3961);
+    			add_location(div, file$9, 183, 1, 3898);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5089,12 +5089,12 @@ var app = (function () {
     			polyline = svg_element("polyline");
     			attr_dev(polyline, "class", "cls-1 svelte-1q3kq9g");
     			attr_dev(polyline, "points", "365 748.07 0 748.07 0 0 68.47 0 78.61 94.09 111.59 187 148.35 280 194.96 374.03 224.21 467.1 252.83 561.07 331.85 654.03");
-    			add_location(polyline, file$9, 195, 3, 4288);
+    			add_location(polyline, file$9, 195, 3, 4225);
     			attr_dev(svg, "class", "graph");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 748.07");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 194, 2, 4178);
+    			add_location(svg, file$9, 194, 2, 4115);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -5127,12 +5127,12 @@ var app = (function () {
     			polygon = svg_element("polygon");
     			attr_dev(polygon, "class", "cls-2");
     			attr_dev(polygon, "points", "365 748.07 0 748.07 0 467.1 365 748.07");
-    			add_location(polygon, file$9, 200, 3, 4590);
+    			add_location(polygon, file$9, 200, 3, 4527);
     			attr_dev(svg, "class", "graph");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 748.07");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 199, 2, 4480);
+    			add_location(svg, file$9, 199, 2, 4417);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -5165,12 +5165,12 @@ var app = (function () {
     			polygon = svg_element("polygon");
     			attr_dev(polygon, "class", "cls-2");
     			attr_dev(polygon, "points", "365 748.07 0 748.07 0 467.1 182.5 654.03 365 748.07");
-    			add_location(polygon, file$9, 205, 3, 4808);
+    			add_location(polygon, file$9, 205, 3, 4745);
     			attr_dev(svg, "class", "graph");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 748.07");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 204, 2, 4698);
+    			add_location(svg, file$9, 204, 2, 4635);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -5200,7 +5200,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "temperature fullMeter svelte-1q3kq9g");
-    			add_location(div, file$9, 216, 2, 4965);
+    			add_location(div, file$9, 216, 2, 4902);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5229,7 +5229,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "temperature halfMeter svelte-1q3kq9g");
-    			add_location(div, file$9, 219, 2, 5033);
+    			add_location(div, file$9, 219, 2, 4970);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5341,44 +5341,44 @@ var app = (function () {
     			div18 = element("div");
     			t27 = text("↑");
     			attr_dev(div0, "class", "line left line0 svelte-1q3kq9g");
-    			add_location(div0, file$9, 229, 1, 5269);
+    			add_location(div0, file$9, 229, 1, 5206);
     			attr_dev(div1, "class", "line left line10 svelte-1q3kq9g");
-    			add_location(div1, file$9, 230, 1, 5306);
+    			add_location(div1, file$9, 230, 1, 5243);
     			attr_dev(div2, "class", "line left line20 svelte-1q3kq9g");
-    			add_location(div2, file$9, 231, 1, 5344);
+    			add_location(div2, file$9, 231, 1, 5281);
     			attr_dev(div3, "class", "line left line30 svelte-1q3kq9g");
-    			add_location(div3, file$9, 232, 1, 5382);
+    			add_location(div3, file$9, 232, 1, 5319);
     			attr_dev(div4, "class", "line left line40 svelte-1q3kq9g");
-    			add_location(div4, file$9, 233, 1, 5420);
+    			add_location(div4, file$9, 233, 1, 5357);
     			attr_dev(div5, "class", "line left line50 svelte-1q3kq9g");
-    			add_location(div5, file$9, 234, 1, 5458);
+    			add_location(div5, file$9, 234, 1, 5395);
     			attr_dev(div6, "class", "line left line60 svelte-1q3kq9g");
-    			add_location(div6, file$9, 235, 1, 5496);
+    			add_location(div6, file$9, 235, 1, 5433);
     			attr_dev(div7, "class", "line left line70 svelte-1q3kq9g");
-    			add_location(div7, file$9, 236, 1, 5534);
+    			add_location(div7, file$9, 236, 1, 5471);
     			attr_dev(div8, "class", "line left line80 svelte-1q3kq9g");
-    			add_location(div8, file$9, 237, 1, 5572);
+    			add_location(div8, file$9, 237, 1, 5509);
     			attr_dev(div9, "class", "text years left line0 svelte-1q3kq9g");
-    			add_location(div9, file$9, 239, 1, 5611);
+    			add_location(div9, file$9, 239, 1, 5548);
     			attr_dev(div10, "class", "text years left line10 svelte-1q3kq9g");
-    			add_location(div10, file$9, 240, 1, 5658);
+    			add_location(div10, file$9, 240, 1, 5595);
     			attr_dev(div11, "class", "text years left line20 svelte-1q3kq9g");
-    			add_location(div11, file$9, 241, 1, 5706);
+    			add_location(div11, file$9, 241, 1, 5643);
     			attr_dev(div12, "class", "text years left line30 svelte-1q3kq9g");
-    			add_location(div12, file$9, 242, 1, 5754);
+    			add_location(div12, file$9, 242, 1, 5691);
     			attr_dev(div13, "class", "text years left line40 svelte-1q3kq9g");
-    			add_location(div13, file$9, 243, 1, 5802);
+    			add_location(div13, file$9, 243, 1, 5739);
     			attr_dev(div14, "class", "text years left line50 svelte-1q3kq9g");
-    			add_location(div14, file$9, 244, 1, 5850);
+    			add_location(div14, file$9, 244, 1, 5787);
     			attr_dev(div15, "class", "text years left line60 svelte-1q3kq9g");
-    			add_location(div15, file$9, 245, 1, 5898);
+    			add_location(div15, file$9, 245, 1, 5835);
     			attr_dev(div16, "class", "text years left line70 svelte-1q3kq9g");
-    			add_location(div16, file$9, 246, 1, 5946);
+    			add_location(div16, file$9, 246, 1, 5883);
     			attr_dev(div17, "class", "text years left line80 svelte-1q3kq9g");
-    			add_location(div17, file$9, 247, 1, 5994);
+    			add_location(div17, file$9, 247, 1, 5931);
     			attr_dev(div18, "class", "arrow text svelte-1q3kq9g");
     			set_style(div18, "width", /*marginSides*/ ctx[17]);
-    			add_location(div18, file$9, 249, 1, 6043);
+    			add_location(div18, file$9, 249, 1, 5980);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5549,37 +5549,37 @@ var app = (function () {
     			div15 = element("div");
     			div15.textContent = "2100";
     			attr_dev(div0, "class", "line right line10 svelte-1q3kq9g");
-    			add_location(div0, file$9, 253, 1, 6134);
+    			add_location(div0, file$9, 253, 1, 6071);
     			attr_dev(div1, "class", "line right line20 svelte-1q3kq9g");
-    			add_location(div1, file$9, 254, 1, 6173);
+    			add_location(div1, file$9, 254, 1, 6110);
     			attr_dev(div2, "class", "line right line30 svelte-1q3kq9g");
-    			add_location(div2, file$9, 255, 1, 6212);
+    			add_location(div2, file$9, 255, 1, 6149);
     			attr_dev(div3, "class", "line right line40 svelte-1q3kq9g");
-    			add_location(div3, file$9, 256, 1, 6251);
+    			add_location(div3, file$9, 256, 1, 6188);
     			attr_dev(div4, "class", "line right line50 svelte-1q3kq9g");
-    			add_location(div4, file$9, 257, 1, 6290);
+    			add_location(div4, file$9, 257, 1, 6227);
     			attr_dev(div5, "class", "line right line60 svelte-1q3kq9g");
-    			add_location(div5, file$9, 258, 1, 6329);
+    			add_location(div5, file$9, 258, 1, 6266);
     			attr_dev(div6, "class", "line right line70 svelte-1q3kq9g");
-    			add_location(div6, file$9, 259, 1, 6368);
+    			add_location(div6, file$9, 259, 1, 6305);
     			attr_dev(div7, "class", "line right line80 svelte-1q3kq9g");
-    			add_location(div7, file$9, 260, 1, 6407);
+    			add_location(div7, file$9, 260, 1, 6344);
     			attr_dev(div8, "class", "text years right line10 svelte-1q3kq9g");
-    			add_location(div8, file$9, 262, 1, 6447);
+    			add_location(div8, file$9, 262, 1, 6384);
     			attr_dev(div9, "class", "text years right line20 svelte-1q3kq9g");
-    			add_location(div9, file$9, 263, 1, 6496);
+    			add_location(div9, file$9, 263, 1, 6433);
     			attr_dev(div10, "class", "text years right line30 svelte-1q3kq9g");
-    			add_location(div10, file$9, 264, 1, 6545);
+    			add_location(div10, file$9, 264, 1, 6482);
     			attr_dev(div11, "class", "text years right line40 svelte-1q3kq9g");
-    			add_location(div11, file$9, 265, 1, 6594);
+    			add_location(div11, file$9, 265, 1, 6531);
     			attr_dev(div12, "class", "text years right line50 svelte-1q3kq9g");
-    			add_location(div12, file$9, 266, 1, 6643);
+    			add_location(div12, file$9, 266, 1, 6580);
     			attr_dev(div13, "class", "text years right line60 svelte-1q3kq9g");
-    			add_location(div13, file$9, 267, 1, 6692);
+    			add_location(div13, file$9, 267, 1, 6629);
     			attr_dev(div14, "class", "text years right line70 svelte-1q3kq9g");
-    			add_location(div14, file$9, 268, 1, 6741);
+    			add_location(div14, file$9, 268, 1, 6678);
     			attr_dev(div15, "class", "text years right line80 svelte-1q3kq9g");
-    			add_location(div15, file$9, 269, 1, 6790);
+    			add_location(div15, file$9, 269, 1, 6727);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5669,7 +5669,7 @@ var app = (function () {
     			div = element("div");
     			div.textContent = "2020";
     			attr_dev(div, "class", "text years right line0 svelte-1q3kq9g");
-    			add_location(div, file$9, 273, 1, 6859);
+    			add_location(div, file$9, 273, 1, 6796);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5704,10 +5704,10 @@ var app = (function () {
     			div1.textContent = "2050";
     			attr_dev(div0, "class", "horizontalLine left svelte-1q3kq9g");
     			set_style(div0, "width", "100%");
-    			set_style(div0, "top", "calc((" + /*distanceBLines*/ ctx[16] + " * 6) - 1px)");
-    			add_location(div0, file$9, 278, 1, 6932);
+    			set_style(div0, "top", "calc(" + /*distanceBLines*/ ctx[16] + " * 6)");
+    			add_location(div0, file$9, 278, 1, 6869);
     			attr_dev(div1, "class", "text years right line30 svelte-1q3kq9g");
-    			add_location(div1, file$9, 279, 1, 7035);
+    			add_location(div1, file$9, 279, 1, 6964);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5741,7 +5741,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "line right line30 svelte-1q3kq9g");
-    			add_location(div, file$9, 283, 1, 7104);
+    			add_location(div, file$9, 283, 1, 7033);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5775,9 +5775,9 @@ var app = (function () {
     			t1 = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "text years right line10 svelte-1q3kq9g");
-    			add_location(div0, file$9, 286, 1, 7162);
+    			add_location(div0, file$9, 286, 1, 7091);
     			attr_dev(div1, "class", "line right line10 svelte-1q3kq9g");
-    			add_location(div1, file$9, 287, 1, 7211);
+    			add_location(div1, file$9, 287, 1, 7140);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -5811,8 +5811,8 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "horizontalLine left svelte-1q3kq9g");
     			set_style(div, "width", "100%");
-    			set_style(div, "top", "calc((" + /*distanceBLines*/ ctx[16] + " * 8) - 1px)");
-    			add_location(div, file$9, 294, 1, 7276);
+    			set_style(div, "top", "calc(" + /*distanceBLines*/ ctx[16] + " * 8)");
+    			add_location(div, file$9, 294, 1, 7205);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -5849,14 +5849,14 @@ var app = (function () {
     			t1 = text("This is a Critical Decade.");
     			attr_dev(div0, "class", "horizontalLine left svelte-1q3kq9g");
     			set_style(div0, "width", "100%");
-    			set_style(div0, "top", "calc((" + /*distanceBLines*/ ctx[16] + " * 8) - 1px)");
+    			set_style(div0, "top", "calc(" + /*distanceBLines*/ ctx[16] + " * 8)");
     			set_style(div0, "border-top", "1px solid blue");
-    			add_location(div0, file$9, 297, 1, 7401);
+    			add_location(div0, file$9, 297, 1, 7322);
     			attr_dev(div1, "class", "text criticalText svelte-1q3kq9g");
     			set_style(div1, "left", /*marginSides*/ ctx[17]);
     			set_style(div1, "right", /*marginSides*/ ctx[17]);
     			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[16] + " * 8)");
-    			add_location(div1, file$9, 298, 1, 7532);
+    			add_location(div1, file$9, 298, 1, 7445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -6017,22 +6017,22 @@ var app = (function () {
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$9, 168, 0, 3182);
     			attr_dev(div1, "class", "backgroundBox svelte-1q3kq9g");
-    			add_location(div1, file$9, 192, 0, 4127);
+    			add_location(div1, file$9, 192, 0, 4064);
     			attr_dev(span0, "class", "tempnumber text svelte-1q3kq9g");
-    			add_location(span0, file$9, 222, 2, 5120);
+    			add_location(span0, file$9, 222, 2, 5057);
     			attr_dev(span1, "class", "tempnumber left text svelte-1q3kq9g");
-    			add_location(span1, file$9, 223, 2, 5183);
+    			add_location(span1, file$9, 223, 2, 5120);
     			attr_dev(div2, "class", "temperature infotext svelte-1q3kq9g");
-    			add_location(div2, file$9, 221, 1, 5083);
+    			add_location(div2, file$9, 221, 1, 5020);
     			attr_dev(div3, "class", "tempMeter svelte-1q3kq9g");
-    			add_location(div3, file$9, 214, 0, 4922);
+    			add_location(div3, file$9, 214, 0, 4859);
     			attr_dev(div4, "class", "activedot activedot6");
-    			add_location(div4, file$9, 310, 0, 7716);
+    			add_location(div4, file$9, 310, 0, 7629);
     			attr_dev(div5, "class", "progressline");
     			set_style(div5, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div5, file$9, 312, 1, 7798);
+    			add_location(div5, file$9, 312, 1, 7711);
     			attr_dev(div6, "class", "activedotnew activedotFan");
-    			add_location(div6, file$9, 311, 0, 7757);
+    			add_location(div6, file$9, 311, 0, 7670);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12478,7 +12478,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div0 = element("div");
-    			t0 = text("India, which will see an increase of X hot days in the next two decades, Y the two decades after that and Z in the two decades leading up to 2100 if business is left \"as usual\", is not devoid of environmentalism, and although India will need to take radical some climate action, the impact of India is not ranked high (better words!).");
+    			t0 = text("India — which will see an increase of X hot days in the next two decades, Y the two decades after that and Z in the two decades leading up to 2100 if business is left \"as usual\" — is not devoid of environmentalism, and although India will need to take radical some climate action, the impact of India is not ranked high (better words!).");
     			t1 = space();
     			div2 = element("div");
     			div1 = element("div");
@@ -12489,11 +12489,11 @@ var app = (function () {
     			add_location(div0, file$f, 235, 1, 6621);
     			attr_dev(span, "class", "tempnumber left text svelte-3u49s8");
     			set_style(span, "z-index", "99999999");
-    			add_location(span, file$f, 241, 3, 7099);
+    			add_location(span, file$f, 241, 3, 7113);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$f, 240, 2, 7061);
+    			add_location(div1, file$f, 240, 2, 7075);
     			attr_dev(div2, "class", "tempMeterCountry svelte-3u49s8");
-    			add_location(div2, file$f, 239, 1, 7028);
+    			add_location(div2, file$f, 239, 1, 7042);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -12568,28 +12568,28 @@ var app = (function () {
     			div6 = element("div");
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200.5 365 900.5 347 900.5 347 1200.5 365 1200.5");
-    			add_location(polygon, file$f, 258, 2, 7352);
+    			add_location(polygon, file$f, 258, 2, 7366);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$f, 257, 1, 7243);
+    			add_location(svg, file$f, 257, 1, 7257);
     			attr_dev(div0, "class", "temperature firstMeter svelte-3u49s8");
-    			add_location(div0, file$f, 262, 2, 7482);
+    			add_location(div0, file$f, 262, 2, 7496);
     			attr_dev(span, "class", "tempnumber rightFirst text svelte-3u49s8");
-    			add_location(span, file$f, 264, 3, 7565);
+    			add_location(span, file$f, 264, 3, 7579);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$f, 263, 2, 7527);
+    			add_location(div1, file$f, 263, 2, 7541);
     			attr_dev(div2, "class", "tempMeterCountry svelte-3u49s8");
-    			add_location(div2, file$f, 261, 1, 7449);
+    			add_location(div2, file$f, 261, 1, 7463);
     			attr_dev(div3, "class", "text years right line0 svelte-3u49s8");
-    			add_location(div3, file$f, 268, 1, 7640);
+    			add_location(div3, file$f, 268, 1, 7654);
     			attr_dev(div4, "class", "horizontalLine full right line0 svelte-3u49s8");
-    			add_location(div4, file$f, 269, 1, 7688);
+    			add_location(div4, file$f, 269, 1, 7702);
     			attr_dev(div5, "class", "text years right line20 svelte-3u49s8");
-    			add_location(div5, file$f, 270, 1, 7741);
+    			add_location(div5, file$f, 270, 1, 7755);
     			attr_dev(div6, "class", "horizontalLine full right line20 svelte-3u49s8");
-    			add_location(div6, file$f, 271, 1, 7790);
+    			add_location(div6, file$f, 271, 1, 7804);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -12677,28 +12677,28 @@ var app = (function () {
     			div6 = element("div");
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200.5 365 900.5 365 600.5 326 600.5 326 900.5 347 900.5 347 1200.5 365 1200.5");
-    			add_location(polygon, file$f, 275, 2, 7978);
+    			add_location(polygon, file$f, 275, 2, 7992);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$f, 274, 1, 7869);
+    			add_location(svg, file$f, 274, 1, 7883);
     			attr_dev(div0, "class", "temperature midMeter svelte-3u49s8");
-    			add_location(div0, file$f, 279, 2, 8138);
+    			add_location(div0, file$f, 279, 2, 8152);
     			attr_dev(span, "class", "tempnumber rightMid text svelte-3u49s8");
-    			add_location(span, file$f, 281, 3, 8219);
+    			add_location(span, file$f, 281, 3, 8233);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$f, 280, 2, 8181);
+    			add_location(div1, file$f, 280, 2, 8195);
     			attr_dev(div2, "class", "tempMeterCountry svelte-3u49s8");
-    			add_location(div2, file$f, 278, 1, 8105);
+    			add_location(div2, file$f, 278, 1, 8119);
     			attr_dev(div3, "class", "text years right line40 svelte-3u49s8");
-    			add_location(div3, file$f, 285, 1, 8292);
+    			add_location(div3, file$f, 285, 1, 8306);
     			attr_dev(div4, "class", "horizontalLine full right line40 svelte-3u49s8");
-    			add_location(div4, file$f, 286, 1, 8341);
+    			add_location(div4, file$f, 286, 1, 8355);
     			attr_dev(div5, "class", "text years right line20 svelte-3u49s8");
-    			add_location(div5, file$f, 287, 1, 8395);
+    			add_location(div5, file$f, 287, 1, 8409);
     			attr_dev(div6, "class", "horizontalLine full right line20 svelte-3u49s8");
-    			add_location(div6, file$f, 288, 1, 8444);
+    			add_location(div6, file$f, 288, 1, 8458);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -12794,32 +12794,32 @@ var app = (function () {
     			div8 = element("div");
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200.5 365 900.5 365 600.5 365 300.5 365 0.5 263 0.5 263 300.5 326 600.5 326 900.5 347 900.5 347 1200.5 365 1200.5");
-    			add_location(polygon, file$f, 292, 2, 8631);
+    			add_location(polygon, file$f, 292, 2, 8645);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$f, 291, 1, 8522);
+    			add_location(svg, file$f, 291, 1, 8536);
     			attr_dev(div0, "class", "temperature endMeter svelte-3u49s8");
-    			add_location(div0, file$f, 296, 2, 8827);
+    			add_location(div0, file$f, 296, 2, 8841);
     			attr_dev(span, "class", "tempnumber rightEnd text svelte-3u49s8");
-    			add_location(span, file$f, 298, 3, 8908);
+    			add_location(span, file$f, 298, 3, 8922);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$f, 297, 2, 8870);
+    			add_location(div1, file$f, 297, 2, 8884);
     			attr_dev(div2, "class", "tempMeterCountry svelte-3u49s8");
-    			add_location(div2, file$f, 295, 1, 8794);
+    			add_location(div2, file$f, 295, 1, 8808);
     			attr_dev(div3, "class", "text years right line60 svelte-3u49s8");
-    			add_location(div3, file$f, 302, 1, 8982);
+    			add_location(div3, file$f, 302, 1, 8996);
     			attr_dev(div4, "class", "horizontalLine full right line60 svelte-3u49s8");
-    			add_location(div4, file$f, 303, 1, 9031);
+    			add_location(div4, file$f, 303, 1, 9045);
     			attr_dev(div5, "class", "line right line60 svelte-3u49s8");
-    			add_location(div5, file$f, 304, 1, 9085);
+    			add_location(div5, file$f, 304, 1, 9099);
     			attr_dev(div6, "class", "text years right line80 svelte-3u49s8");
-    			add_location(div6, file$f, 305, 1, 9124);
+    			add_location(div6, file$f, 305, 1, 9138);
     			attr_dev(div7, "class", "horizontalLine full right line80 svelte-3u49s8");
-    			add_location(div7, file$f, 306, 1, 9173);
+    			add_location(div7, file$f, 306, 1, 9187);
     			attr_dev(div8, "class", "line right line80 svelte-3u49s8");
-    			add_location(div8, file$f, 307, 1, 9227);
+    			add_location(div8, file$f, 307, 1, 9241);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -13029,19 +13029,19 @@ var app = (function () {
     			set_style(div1, "width", "100%");
     			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[14] + " * 8) - 1px)");
     			set_style(div1, "border-top", "1px solid blue");
-    			add_location(div1, file$f, 316, 0, 9278);
+    			add_location(div1, file$f, 316, 0, 9292);
     			attr_dev(a, "class", "svelte-3u49s8");
-    			add_location(a, file$f, 322, 3, 9522);
+    			add_location(a, file$f, 322, 3, 9536);
     			attr_dev(div2, "class", "bottomLineText text svelte-3u49s8");
     			set_style(div2, "text-align", "right");
-    			add_location(div2, file$f, 321, 2, 9458);
+    			add_location(div2, file$f, 321, 2, 9472);
     			attr_dev(div3, "class", "text bottomLine svelte-3u49s8");
-    			add_location(div3, file$f, 320, 0, 9426);
+    			add_location(div3, file$f, 320, 0, 9440);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
-    			add_location(div4, file$f, 329, 1, 9612);
+    			add_location(div4, file$f, 329, 1, 9626);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$f, 328, 0, 9571);
+    			add_location(div5, file$f, 328, 0, 9585);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16336,7 +16336,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "eraPhoto svelte-1ompexb");
+    			attr_dev(div, "class", "eraPhoto svelte-enfgs6");
     			add_location(div, file$h, 160, 17, 3725);
     		},
     		m: function mount(target, anchor) {
@@ -16421,7 +16421,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "eraPhoto eraPhoto2 svelte-1ompexb");
+    			attr_dev(div, "class", "eraPhoto eraPhoto2 svelte-enfgs6");
     			add_location(div, file$h, 166, 16, 4232);
     		},
     		m: function mount(target, anchor) {
@@ -16468,11 +16468,11 @@ var app = (function () {
     			attr_dev(div0, "class", "pagetext");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$h, 168, 1, 4295);
-    			attr_dev(div1, "class", "text years right line0 svelte-1ompexb");
+    			attr_dev(div1, "class", "text years right line0 svelte-enfgs6");
     			add_location(div1, file$h, 171, 1, 4570);
-    			attr_dev(div2, "class", "line right line0 svelte-1ompexb");
+    			attr_dev(div2, "class", "line right line0 svelte-enfgs6");
     			add_location(div2, file$h, 172, 1, 4618);
-    			attr_dev(div3, "class", "horizontalLine full right line0 svelte-1ompexb");
+    			attr_dev(div3, "class", "horizontalLine full right line0 svelte-enfgs6");
     			add_location(div3, file$h, 173, 1, 4656);
     		},
     		m: function mount(target, anchor) {
@@ -16528,11 +16528,11 @@ var app = (function () {
     			div1 = element("div");
     			t2 = space();
     			div2 = element("div");
-    			attr_dev(div0, "class", "text years right line20 svelte-1ompexb");
+    			attr_dev(div0, "class", "text years right line20 svelte-enfgs6");
     			add_location(div0, file$h, 176, 1, 4734);
-    			attr_dev(div1, "class", "line right line20 svelte-1ompexb");
+    			attr_dev(div1, "class", "line right line20 svelte-enfgs6");
     			add_location(div1, file$h, 177, 1, 4783);
-    			attr_dev(div2, "class", "horizontalLine full right line20 svelte-1ompexb");
+    			attr_dev(div2, "class", "horizontalLine full right line20 svelte-enfgs6");
     			add_location(div2, file$h, 178, 1, 4822);
     		},
     		m: function mount(target, anchor) {
@@ -16587,11 +16587,11 @@ var app = (function () {
     			attr_dev(div0, "class", "pagetext");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$h, 181, 1, 4899);
-    			attr_dev(div1, "class", "text years right line40 svelte-1ompexb");
+    			attr_dev(div1, "class", "text years right line40 svelte-enfgs6");
     			add_location(div1, file$h, 184, 1, 5054);
-    			attr_dev(div2, "class", "line right line40 svelte-1ompexb");
+    			attr_dev(div2, "class", "line right line40 svelte-enfgs6");
     			add_location(div2, file$h, 185, 1, 5103);
-    			attr_dev(div3, "class", "horizontalLine full right line40 svelte-1ompexb");
+    			attr_dev(div3, "class", "horizontalLine full right line40 svelte-enfgs6");
     			add_location(div3, file$h, 186, 1, 5142);
     		},
     		m: function mount(target, anchor) {
@@ -16669,17 +16669,17 @@ var app = (function () {
     			attr_dev(div0, "class", "pagetext");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$h, 189, 1, 5219);
-    			attr_dev(div1, "class", "text years right line60 svelte-1ompexb");
+    			attr_dev(div1, "class", "text years right line60 svelte-enfgs6");
     			add_location(div1, file$h, 192, 1, 5348);
-    			attr_dev(div2, "class", "line right line60 svelte-1ompexb");
+    			attr_dev(div2, "class", "line right line60 svelte-enfgs6");
     			add_location(div2, file$h, 193, 1, 5397);
-    			attr_dev(div3, "class", "horizontalLine full right line60 svelte-1ompexb");
+    			attr_dev(div3, "class", "horizontalLine full right line60 svelte-enfgs6");
     			add_location(div3, file$h, 194, 1, 5436);
-    			attr_dev(div4, "class", "text years right line80 svelte-1ompexb");
+    			attr_dev(div4, "class", "text years right line80 svelte-enfgs6");
     			add_location(div4, file$h, 195, 1, 5490);
-    			attr_dev(div5, "class", "line right line80 svelte-1ompexb");
+    			attr_dev(div5, "class", "line right line80 svelte-enfgs6");
     			add_location(div5, file$h, 196, 1, 5539);
-    			attr_dev(div6, "class", "horizontalLine full right line80 svelte-1ompexb");
+    			attr_dev(div6, "class", "horizontalLine full right line80 svelte-enfgs6");
     			add_location(div6, file$h, 197, 1, 5578);
     		},
     		m: function mount(target, anchor) {
@@ -16765,12 +16765,12 @@ var app = (function () {
     			t4 = space();
     			span = element("span");
     			t5 = text("365 days");
-    			attr_dev(span, "class", "tempnumber left text svelte-1ompexb");
+    			attr_dev(span, "class", "tempnumber left text svelte-enfgs6");
     			attr_dev(span, "style", span_style_value = "/*left: " + /*marginSides*/ ctx[15] + ";*/");
     			add_location(span, file$h, 220, 3, 6222);
-    			attr_dev(div0, "class", "temperature infotext svelte-1ompexb");
+    			attr_dev(div0, "class", "temperature infotext svelte-enfgs6");
     			add_location(div0, file$h, 210, 2, 5825);
-    			attr_dev(div1, "class", "tempMeter svelte-1ompexb");
+    			attr_dev(div1, "class", "tempMeter svelte-enfgs6");
     			add_location(div1, file$h, 203, 1, 5657);
     		},
     		m: function mount(target, anchor) {
@@ -16879,7 +16879,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "temperature midMeter svelte-1ompexb");
+    			attr_dev(div, "class", "temperature midMeter svelte-enfgs6");
     			add_location(div, file$h, 205, 3, 5703);
     		},
     		m: function mount(target, anchor) {
@@ -16908,7 +16908,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "temperature endMeter svelte-1ompexb");
+    			attr_dev(div, "class", "temperature endMeter svelte-enfgs6");
     			add_location(div, file$h, 208, 3, 5774);
     		},
     		m: function mount(target, anchor) {
@@ -16940,7 +16940,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text("0 days");
-    			attr_dev(span, "class", "tempnumber right text svelte-1ompexb");
+    			attr_dev(span, "class", "tempnumber right text svelte-enfgs6");
     			attr_dev(span, "style", span_style_value = "/*right: " + /*marginSides*/ ctx[15] + ";*/");
     			add_location(span, file$h, 212, 4, 5885);
     		},
@@ -16975,7 +16975,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text("2 days");
-    			attr_dev(span, "class", "tempnumber rightMid text svelte-1ompexb");
+    			attr_dev(span, "class", "tempnumber rightMid text svelte-enfgs6");
     			attr_dev(span, "style", span_style_value = "/*right: " + /*marginSides*/ ctx[15] + ";*/");
     			add_location(span, file$h, 215, 4, 6002);
     		},
@@ -17010,7 +17010,7 @@ var app = (function () {
     		c: function create() {
     			span = element("span");
     			t = text("19 days");
-    			attr_dev(span, "class", "tempnumber rightEnd text svelte-1ompexb");
+    			attr_dev(span, "class", "tempnumber rightEnd text svelte-enfgs6");
     			attr_dev(span, "style", span_style_value = "/*right: " + /*marginSides*/ ctx[15] + ";*/");
     			add_location(span, file$h, 218, 4, 6122);
     		},
@@ -17051,7 +17051,7 @@ var app = (function () {
     		c: function create() {
     			svg = svg_element("svg");
     			if_block.c();
-    			attr_dev(svg, "class", "hotDays svelte-1ompexb");
+    			attr_dev(svg, "class", "hotDays svelte-enfgs6");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
@@ -17096,7 +17096,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			polygon = svg_element("polygon");
-    			attr_dev(polygon, "class", "cls-1 svelte-1ompexb");
+    			attr_dev(polygon, "class", "cls-1 svelte-enfgs6");
     			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 346 0 346 300 363 600 363 900 365 900 365 1200 365 1200");
     			add_location(polygon, file$h, 233, 3, 6583);
     		},
@@ -17126,7 +17126,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			polyline = svg_element("polyline");
-    			attr_dev(polyline, "class", "cls-1 svelte-1ompexb");
+    			attr_dev(polyline, "class", "cls-1 svelte-enfgs6");
     			attr_dev(polyline, "points", "363 600 363 900 365 900 365 1200 365 1200 365 900 365 600");
     			add_location(polyline, file$h, 231, 3, 6477);
     		},
@@ -17163,7 +17163,7 @@ var app = (function () {
     			t2 = text(".");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "href", "");
-    			attr_dev(a, "class", "svelte-1ompexb");
+    			attr_dev(a, "class", "svelte-enfgs6");
     			add_location(a, file$h, 251, 33, 6988);
     		},
     		m: function mount(target, anchor) {
@@ -17304,10 +17304,10 @@ var app = (function () {
     			attr_dev(div0, "class", "pagetitle");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
     			add_location(div0, file$h, 148, 0, 3060);
-    			attr_dev(div1, "class", "bottomLineText text svelte-1ompexb");
+    			attr_dev(div1, "class", "bottomLineText text svelte-enfgs6");
     			set_style(div1, "text-align", "right");
     			add_location(div1, file$h, 250, 2, 6894);
-    			attr_dev(div2, "class", "text bottomLine svelte-1ompexb");
+    			attr_dev(div2, "class", "text bottomLine svelte-enfgs6");
     			add_location(div2, file$h, 249, 0, 6862);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + " + 11.25deg))");
