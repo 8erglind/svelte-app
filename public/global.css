@@ -88,7 +88,7 @@ body {
 	top: 0px;
 	border-right: 1px solid rgb(70,70,70);
 	width: 10px;
-	height: calc(100% + 10%);
+	height: 100vh;
 }
 .content:before {
 	content: '';
@@ -97,7 +97,7 @@ body {
 	top: 0px;
 	border-left: 1px solid rgb(70,70,70);
 	width: 10px;
-	height: calc(100% + 10%);
+	height: 100vh;
 }
 
 .activedot {
