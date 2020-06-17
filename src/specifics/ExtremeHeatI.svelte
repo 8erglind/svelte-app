@@ -79,10 +79,11 @@
 
 <!--    CONTENT    -->
 
-<div class="sweatdrop falling"></div>
-<div class="sweatdrop falling2"></div>
+
 
 {#if firstSetup}
+	<div class="sweatdrop falling"></div>
+	<div class="sweatdrop falling2"></div>
 	<!--<div class="backgroundBox">
 		<svg class="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" preserveAspectRatio="none">
 			<polygon class="caution" style="background-color: yellow;" points="0 0 250 0 250 100 200 100 200 200 150 200 150 400 100 400 100 500 50 500 50 700 0 700 0 0"/>
@@ -114,9 +115,9 @@
 	<div class="text celcius" style="bottom: calc({distanceBLines} * 8); right: calc({celciusWidth} * 1);">41.1 °C</div>
 
 	{#if temp}
-		<div class="text celcius inGraph" style="top: calc({distanceBLines} * 1.5); left: {celciusWidth}; transform: rotate({rotate});">Caution</div>
+		<div class="text celcius inGraph" style="top: calc({distanceBLines} + 15px); left: calc({celciusWidth} + 15px); /*transform: rotate({rotate});*/">Caution</div>
 	{/if}
-	<div class="text celcius inGraph" style="bottom: calc({distanceBLines} * 1); right: {celciusWidth}; transform: rotate({rotate});">Extreme Danger</div>
+	<div class="text celcius inGraph" style="bottom: 15px; right: calc({celciusWidth} + 15px); /*transform: rotate({rotate});*/">Extreme Danger</div>
 {/if}
 
 
@@ -125,7 +126,13 @@
 
 
 
-<!--    DOTS    -->
+<!--    FOOTER    -->
+
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			Source <a target="_blank" href="">[1]</a>.
+		</div>
+</div>
 
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
@@ -139,15 +146,24 @@
 <style>
 
 	.text {color: darkred;}
-	.caution {fill: /*yellow*/ rgb(240,240,240);}
-	.extremeCaution {fill: /*orange*/ rgb(235,235,235);}
-	.danger {fill: /*darkorange*/ rgb(230,230,230);}
-	.extremeDanger {fill: /*red*/ rgb(225,225,225);}
-	.backgroundBox {overflow: hidden; border-top-left-radius: 0px; border-right: 1px solid darkred; border-bottom: 1px solid darkred;}
+	.text a {color: darkred}
+	.caution {fill: /*yellow*/ rgba(229,83,20,0.01);}
+	.extremeCaution {fill: /*orange*/ rgba(229,83,20,.05);}
+	.danger {fill: /*darkorange*/ rgba(229,83,20,.09);}
+	.extremeDanger {fill: /*red*/ rgba(229,83,20,.13);}
+	.backgroundBox {overflow: hidden; border-top-left-radius: 0px; border-right: 1px solid darkred; border-bottom: 1px solid darkred;background-color: rgb(245,245,245);}
 
 	.celcius, .humidity {position: absolute;}
 	.celciusTop {width: 100%; text-align: center;}
-	.humidityTop {writing-mode: vertical-rl; text-orientation: upright; line-height: 5px; height: 100%; text-align: center;}
+	.humidityTop {
+		writing-mode: vertical-rl; 
+		-webkit-writing-mode: vertical-rl;
+		text-orientation: upright;
+		-webkit-text-orientation: upright; 
+		line-height: 5px; 
+		height: 100%; 
+		text-align: center;
+	}
 	.inGraph {font-family: arial; text-transform: uppercase;}
 
 

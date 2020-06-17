@@ -245,7 +245,13 @@
 
 
 
-<!-- DOTS  -->
+<!--    FOOTER    -->
+
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if firstSetup}{:else}Source <a target="_blank" href="">[1]</a>.{/if}
+		</div>
+</div>
 
 
 <div class="activedotnew activedotFan">
@@ -288,7 +294,7 @@
 		border-top-left-radius: 0px;
 		border-left: 1px dotted purple;
 	}
-	.midMeter {width: calc(((100% / 365) * 2) - 1px);}
+	.midMeter {width: calc(((100% / 365) * 2) - 1px); border: none;}
 	.endMeter {width: calc(((100% / 365) * 19) - 1px);}
 	/*.cls-1 {fill: beige !important;}*/
 	.rightMid {right: calc(((100vw / 365) * 2) - 1px);}
@@ -305,7 +311,7 @@
 		background-size: contain !important;
 		background-size: 50% !important;
 		background-position: bottom right;
-		background-image: url('https://png.pngtree.com/element_our/png_detail/20181123/traditional-korean-gourmet-chicken-soup-png_242812.jpg');
+		/*background-image: url('https://png.pngtree.com/element_our/png_detail/20181123/traditional-korean-gourmet-chicken-soup-png_242812.jpg');*/
 	}
 
 

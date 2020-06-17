@@ -39,6 +39,7 @@ body {
 	/*-webkit-overflow-scrolling: touch;*/
 	box-sizing: border-box;
 	margin: 0;
+	/*overflow-y: hidden;*/
 
 }
 
@@ -268,8 +269,8 @@ body {
 	bottom: 65%;
 	/*top: 20%;*/
 
-	-webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
-	-webkit-text-stroke-width: .5px;
+	-webkit-text-fill-color: /*rgba(0,0,0,0)*/ rgb(70,70,70); /* Will override color (regardless of order) */
+	-webkit-text-stroke-width: /*.5px*/ 0px;
 	-webkit-text-stroke-color: black /*purple*/;
 }
 .pagetitle .text {
@@ -286,9 +287,9 @@ body {
     position: absolute;
     z-index: 9;
 
-	left: 0px;
+	left: 2vw;
 	right: 0px;
-	width: 100vw;
+	width: 95vw;
 	text-align: center;
 
 	/*bottom: 45%;*/
@@ -298,8 +299,11 @@ body {
 	color: rgb(70,70,70);
 
 	/*font-size: 5.5vw !important;*/
-	font-size: 5vw !important;
+	/*font-size: 5vw !important;
 	line-height: 6.5vw !important;
+	font-family: ortica;*/
+	font-size: 4.5vw !important;
+	line-height: 5.5vw !important;
 	font-family: ortica;
 }
 .text {font: 12px ortica;}
