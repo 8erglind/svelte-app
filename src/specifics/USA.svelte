@@ -8,41 +8,26 @@
 	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
-
-
-	let firstSetup = true;
-	let secondSetupA = false;
-	let secondSetupB = false;
+	let firstSetup = true;	
+	let secondSetup = false;
 	let thirdSetup = false;
-
+	let fourthSetup = false;
+	let fifthSetup = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
-		secondSetupA = false;
-		secondSetupB = false;
-		thirdSetup = false;
-
+		secondSetup = false;
 	}
-
-	const togglesecondASetup = () => {
+	const togglesecondSetup = () => {
 		firstSetup = false;
-		secondSetupA = true;
-		secondSetupB = false;
+		secondSetup = true;
 		thirdSetup = false;
 	}
-
-	const togglesecondBSetup = () => {
-		firstSetup = false;
-		secondSetupA = true;
-		secondSetupB = true;
+	const togglethirdSetup = () => {
+		secondSetup = false;
 		thirdSetup = true;
 	}
-
-
 </script>
-
-
-
 
 
 
@@ -50,73 +35,124 @@
 
 
 {#if firstSetup}
-	<div class="buttonNext" on:click={togglesecondASetup}></div>
+	<div class="buttonNext" on:click={togglesecondSetup}></div>
 	<a class="buttonPrev" href="{next}"></a>
 {/if}
-{#if secondSetupA}
-	<div class="buttonNext" on:click={togglesecondBSetup}></div>
+{#if secondSetup}
+	<div class="buttonNext" on:click={togglethirdSetup}></div>
 	<div class="buttonPrev" on:click={togglefirstSetup}></div>
 {/if}
-{#if secondSetupB}
-	<a class="buttonNext" href="{prev}"></a>
-	<div class="buttonPrev" on:click={togglesecondASetup}></div>
+{#if thirdSetup}
+	<!--<div class="buttonNext" on:click={togglefourthSetup}></div>-->
+	<div class="buttonPrev" on:click={togglesecondSetup}></div>
 {/if}
+<!--{#if fourthSetup}
+	<div class="buttonNext" on:click={togglefifthSetup}></div>
+	<div class="buttonPrev" on:click={togglethirdSetup}></div>
+{/if}
+{#if fifthSetup}
+	<div class="buttonNext" on:click={togglesixthSetup}></div>
+	<div class="buttonPrev" on:click={togglefourthSetup}></div>
+{/if}
+{#if sixthSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={togglefifthSetup}></div>
+{/if}-->
 
 
 
 
+<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
 
-
-
-
-<!--    TEXT    -->
-
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	<div class="text">At the this is written, protests are happening all over the U.S. (and the world), calling for an end to racial injustice and defunding/abolishion of the police.</div>
-</div>
-
-
-
-
-
-
-
-<!--    CONTENT    -->
 
 {#if firstSetup}
-	<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
-	<!--<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">This is a Critical Decade.</div>-->
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Text about Ghana.
+	</div>	
 {/if}
-{#if secondSetupA}
-	<div class="fullpage" style="top: {distanceBLines};"></div>
+
+
+
+
+
+
+
+
+<!-- GRAPH -->
+
+	<div class="tempMeterCountry">
+		<div class="temperature infotext">
+			<span class="tempnumber left text" style="z-index: 99999999;">365 days</span>
+		</div>
+	</div>
+
+{#if firstSetup}
+	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
+		<polygon class="cls-1" points="365 1200 365 900 353 900 353 1200 365 1200"/>
+	</svg>
+
+	<div class="tempMeterCountry">
+		<div class="temperature firstMeter"></div>
+		<div class="temperature infotext">
+			<span class="tempnumber rightFirst text">12 days</span>
+		</div>
+	</div>
+
+	<div class="text years right line0">2020</div>
+	<div class="horizontalLine full right line0"></div>
+	<div class="text years right line20">2040</div>
+	<div class="horizontalLine full right line20"></div>
 {/if}
-{#if secondSetupB}
+
+{#if secondSetup}
+	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
+		<polygon class="cls-1" points="365 1200 365 900 365 600 340 600 340 900 353 900 353 1200 365 1200"/>
+	</svg>
+
+	<div class="tempMeterCountry">
+		<div class="temperature midMeter"></div>
+		<div class="temperature infotext">
+			<span class="tempnumber rightMid text">25 days</span>
+		</div>
+	</div>
+
+	<div class="text years right line40">2060</div>
+	<div class="horizontalLine full right line40"></div>
+	<div class="text years right line20">2040</div>
+	<div class="horizontalLine full right line20"></div>
+{/if}
+
+{#if thirdSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 305 0 305 300 340 600 340 900 353 900 353 1200 365 1200"/>
 	</svg>
+
+	<div class="tempMeterCountry">
+		<div class="temperature endMeter"></div>
+		<div class="temperature infotext">
+			<span class="tempnumber rightEnd text">60 days</span>
+		</div>
+	</div>
+
+	<div class="text years right line60">2080</div>
+	<div class="horizontalLine full right line60"></div>
+	<div class="line right line60"></div>
+	<div class="text years right line80">2100</div>
+	<div class="horizontalLine full right line80"></div>
+	<div class="line right line80"></div>
 {/if}
 
-<!--<div class="backgroundBox">
-		<svg class="graph" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
-			<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 305 0 305 300 340 600 340 900 353 900 353 1200 365 1200"/>
-		</svg>
-		{#if secondSetup}
-			<div class="fullpage"></div>
-		{/if}
-</div>-->
 
 
 
 
 
+<!-- FOOTER + STATIC -->
+
+<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
 
 
-<!--    DOTS    -->
 
-
-
-<div class="activedot activedot15"></div>
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>
@@ -126,25 +162,24 @@
 
 
 
-
 <style>
 
-.fullpage {
-	position: absolute;
-	z-index: -2;
-	bottom: 0%;
-	left: 0%;
-	width: 100%;
-
-	background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2020/06/07/13/aerial-protests-0.jpg');
-	background-size: cover;
-	background-position: center center;
-}
-
-/*.pagetitle {
-	-webkit-text-fill-color: white;
-	z-index: 9;
-}*/
+.text {color: red !important;}
+	.text a {color: red;}
+	.verticalLine {border-right: 1px dotted red;}
+	.horizontalLine {border-top: 1px dotted red;}
+	.line {background-color: red;}
+	.tempMeterCountry {
+		border-left: 1px solid red; 
+		border-right: 1px solid red;
+	}
+	.firstMeter, .midMeter, .endMeter {border-left: 1px dotted red;}
+	.firstMeter {width: calc(((100% / 365) * 12) - 1px);}
+	.midMeter {width: calc(((100% / 365) * 25) - 1px);}
+	.endMeter {width: calc(((100% / 365) * 60) - 1px);}
+	.rightFirst {right: calc(((100vw / 365) * 12) - 1px);}
+	.rightMid {right: calc(((100vw / 365) * 25) - 1px);}
+	.rightEnd {right: calc(((100vw / 365) * 60) - 1px);}
 
 
 </style>

@@ -330,6 +330,7 @@
 		border-left: 1px solid blue; 
 		border-right: 1px solid blue;
 	}
+	.cls-1 {fill: rgb(230,230,230) !important;}
 
 	.tempMeter {
 		border-left: 1px solid blue; 

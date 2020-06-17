@@ -259,13 +259,14 @@
 
 <style>
 
-	.text {color: purple;}
+	.text {color: purple !important;}
+	.text a {color: purple;}
 	.horizontalLine {border-top: 1px dotted purple;}
 	.line {background-color: purple;}
 	.tempMeter {
 		border-left: 1px solid /*rgb(70,70,70)*/ purple; 
 		border-right: 1px solid /*rgb(70,70,70)*/ purple;
-		/*background-color: rgba(0,0,0,0);*/
+		background-color: rgba(0,0,0,0);
 		width: calc(100vw - 4px);
 		left: 0%;
 	}
@@ -275,10 +276,11 @@
 		background-color: rgba(0,0,0,0) !important; 
 		border: none;
 	}
+	.cls-1, .hotDays {fill: white !important;}
 	.midMeter, .endMeter {
 		right: 0px;
 		left: auto; 
-		background-color: rgb(230,230,230) !important; 
+		background-color: white !important; 
 		border-top: 1px solid rgba(0,0,0,0); 
 		border-bottom-right-radius: 20px; 
 		border-top-right-radius: 20px;
@@ -294,9 +296,10 @@
 
 	.eraPhoto {
 		background-size: contain !important;
-		background-size: 50% !important;
-		background-position: top left;
-		background-image: url('https://lh3.googleusercontent.com/proxy/3szPE2OTXcgGTMWl72hiFAc7444IgpZ98gH8joKneVKL5kysG6ipruAmdkPYpNvmnJFO0VwckziwrtngPltCa48G7qcS8O0X5aGpTjglDuqcIm2c');
+		background-size: 60% !important;
+		background-position: 10% 20%;
+		/*background-image: url('https://lh3.googleusercontent.com/proxy/3szPE2OTXcgGTMWl72hiFAc7444IgpZ98gH8joKneVKL5kysG6ipruAmdkPYpNvmnJFO0VwckziwrtngPltCa48G7qcS8O0X5aGpTjglDuqcIm2c');*/
+		background-image: url('../imgs/jukbuin light.png');
 	}
 	.eraPhoto2 {
 		background-size: contain !important;

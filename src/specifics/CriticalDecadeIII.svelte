@@ -1,6 +1,12 @@
 <script>
 	export let pagetitleText;
 	export let rotate;
+	export let next;
+	export let prev;
+
+
+	let distanceBLines = 'calc((100% - 1px) / 9 * 1)';
+	let marginSides = 'calc(100vw / 16)';
 </script>
 
 
@@ -19,6 +25,9 @@
 </div>
 
 
+
+<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
+<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">Sign pledge</div>
 
 
 

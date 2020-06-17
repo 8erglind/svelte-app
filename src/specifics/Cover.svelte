@@ -18,15 +18,12 @@
 
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	<!--<div class="text">Swipe<br>&uarr;</div>-->
-</div>
+<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}<sub>2</sub></div>
 
 
 
 
-<img style="position: absolute; bottom: 10%; width: 80%; left: 10%;" src="imgs/fanRaw.png">
+<img style="position: absolute; bottom: 5%; width: 80%; left: 10%;" src="imgs/fanHalf.png">
 
 
 
