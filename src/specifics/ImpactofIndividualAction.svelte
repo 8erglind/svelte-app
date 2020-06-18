@@ -73,7 +73,10 @@
 
 <!--    TEXT    -->
 
-<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">Impact of<br>Individual<br>Action</div>
+
+
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
@@ -103,7 +106,7 @@
 		<span class="text">Algeria, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, China, Denmark, Equatorial Guinea, Finland, France, Greece, Hungary, Iran, Iraq, Ireland, Israel, Italy, Lybia, Malaysia, Morocco, New Zealand, Norway, Poland, Portugal, Serbia, Slovakia, Slovenia, South&nbsp;Africa, Spain, Turkey,&nbsp;the&nbsp;U.K.</span>
 	</div>	
 
-	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);">If you live in one of these countries your personal climate action (or lack there of) counts,<br>greatly.</div>
+	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->personal climate action (or lack there of) counts,<br>greatly.</div>
 {/if}
 
 {#if fifthSetup}
@@ -112,7 +115,7 @@
 		<span class="text">Australia, Canada, Czech, Estonia, Germany, <i>Iceland</i>, Japan, Kazakhstan, Mongolia, Oman, Qatar, Russia, <i>Saudi Arabia</i>, <i>South&nbsp;Korea</i>, <i>The&nbsp;Netherlands</i>, Trinidad and Tobago, Turkmenistan, <i>The&nbsp;U.S.</i>, United Arab&nbsp;Emirates.</span>
 	</div>	
 
-	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);">If you live in one of these countries your personal climate action (or lack there of) counts,<br>very&nbsp;greatly!</div>
+	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->personal climate action (or lack there of) counts,<br>very&nbsp;greatly!</div>
 {/if}
 
 

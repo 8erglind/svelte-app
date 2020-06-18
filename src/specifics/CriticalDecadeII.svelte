@@ -25,6 +25,8 @@
 	let line30 = false;
 	let sixthText = false;
 
+	let fourthSource = false;
+
 
 	const togglefirstSetup = () => {
 		firstText = true;
@@ -72,6 +74,8 @@
 		line30 = false;
 		year20 = true;
 		sixthText = false;
+
+		fourthSource = false;
 	}
 
 	const togglefourthSetup = () => {
@@ -88,6 +92,8 @@
 		line30 = false;
 		year20 = true;
 		sixthText = false;
+
+		fourthSource = true;
 	}
 
 	const togglefifthSetup = () => {
@@ -104,6 +110,8 @@
 		line30 = true;
 		year20 = true;
 		sixthText = false;
+
+		fourthSource = true;
 	}
 
 	const togglesixthSetup = () => {
@@ -120,6 +128,8 @@
 		line30 = true;
 		year20 = true;
 		sixthText = true;
+
+		fourthSource = true;
 	}
 
 </script>
@@ -166,7 +176,9 @@
 
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">The<br>Critical<br>Decade:<br>II</div>
+
 
 {#if firstText}
 	<div class="pagetext" style="transform: rotate({rotate});">Emissions have risen steadily since the industrial revolution.</div>
@@ -305,10 +317,14 @@
 
 
 
-<!--    DOTS    -->
+<!--    FOOTER    -->
 
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if firstText}{:else}<a target="_blank" href="">[more]</a>{/if}{#if fourthSource}<a target="_blank" href="">&ensp;[more]</a>{/if}
+		</div>
+</div>
 
-<div class="activedot activedot6"></div>
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>
@@ -320,7 +336,7 @@
 
 <style>
 
-	.text {color: blue;}
+	.text, .text a, .pagetext {color: blue !important;}
 	.arrow {text-align: center;}
 	.line {background-color: blue;}
 	.backgroundBox {

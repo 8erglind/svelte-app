@@ -9,14 +9,10 @@
 	let marginSides = 'calc(100vw / 16)';
 
 	let firstSetup = true;
-	let firstPics = true;
 	let secondSetup = false;
-	let secondPics = false;
 	let secondLines = false;
 	let thirdSetup = false;
-	let thirdPics = false;
 	let seventyFive = false;
-	let CambRock = false;
 	let fourthSetup = false;
 	let fourthText = false;
 	let fourthLines = false;
@@ -26,82 +22,55 @@
 	let fourthSticky = false;
 	let fifthSticky = false;
 
-	let hotDays = false;
-
-	const togglehotDays = () => {
-		hotDays = !hotDays;
-	}
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
-		firstPics = true;
 		secondSetup = false;
-		secondPics = false;
 		seventyFive = false;
-		CambRock = false;
 		secondLines = false;
 	}
 	const togglesecondSetup = () => {
 		firstSetup = false;
-		firstPics = false;
 		secondSetup = true;
-		secondPics = true;
 		secondLines = true;
 		thirdSetup = false;
-		thirdPics = false;
 		seventyFive = true;
-		CambRock = true;
 	}
 	const togglethirdSetup = () => {
 		secondSetup = false;
-		secondPics = false;
 		secondLines = true;
 		thirdSetup = true;
-		thirdPics = true;
 		seventyFive = true;
-		CambRock = false;
 		fourthSetup = false;
 		fourthText = false;
 		fourthLines = false;
 		hotDays = false;
 	}
 	const togglefourthSetup = () => {
-		firstPics = false;
-		secondPics = false;
 		thirdSetup = false;
-		thirdPics = false;
 		seventyFive = false;
 		secondLines = true;
 		fourthSetup = true;
 		fourthText = true;
 		fourthLines = true;
-		hotDays = true;
 		fifthSetup = false;
 		fourthSticky = true;
 		fifthSticky = false;
 	}
 	const togglefifthSetup = () => {
-		firstPics = true;
-		secondPics = true;
-		thirdPics = true;
 		secondLines = true;
 		fourthSetup = false;
 		fourthText = true;
 		fourthLines = true;
-		hotDays = true;
 		fifthSetup = true;
 		sixthSetup = false;
 		fourthSticky = true;
 		fifthSticky = true;
 	}
 	const togglesixthSetup = () => {
-		firstPics = true;
-		secondPics = true;
-		thirdPics = true;
 		secondLines = true;
 		fourthText = true;
 		fourthLines = true;
-		hotDays = true;
 		fifthSetup = false;
 		sixthSetup = true;
 		fourthSticky = true;
@@ -152,17 +121,19 @@
 	<div class="pagetext" style="transform: rotate({rotate});">
 		Travelling on west (and south) from S-Korea, we reach Cambodia, a former french colony which gained independance in 1953.
 	</div>	
+
+	<img style="position: absolute; height: 20vw; right: 5%; bottom: 10%;" src="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2017/08/17/4b764522-818f-11e7-a767-bc310e55dd10_1280x720_145203.JPG?itok=-KNK72jk">
+	<img style="position: absolute; width: 25%; left: 13%; top: 0%;" src="https://i.pinimg.com/564x/e2/95/98/e29598f213c862f21bf9e9b02d1a2587.jpg">
 {/if}
 
-{#if firstPics}
-	<img style="position: absolute; height: 20vw; right: 5%; bottom: 10%;" src="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2017/08/17/4b764522-818f-11e7-a767-bc310e55dd10_1280x720_145203.JPG?itok=-KNK72jk">
-
-	<img style="position: absolute; width: 25%; left: 13%; top: 0%;" src="https://i.pinimg.com/564x/e2/95/98/e29598f213c862f21bf9e9b02d1a2587.jpg">
-
-	<!--<iframe style="position: absolute; left: 10%; width: 20vw; height: 20vw; bottom: calc({distanceBLines} * 4);" src="https://www.youtube.com/embed/eDv6yaNUZYc?controls=0&amp;start=10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
-
-	<!--<img style="position: absolute; width: 25%; left: 3%; bottom: 35%;" src="https://i.pinimg.com/564x/c3/4a/e1/c34ae1670daa741cab865f26116620c9.jpg">
-	<img style="position: absolute; width: 25%; left: 3%; bottom: 35%;" src="https://i.pinimg.com/564x/3b/1c/67/3b1c677bf388c9c4fab55ba00700d6e8.jpg">-->
+{#if firstSetup}
+{:else}
+	<div class="prePics" style="top: calc({distanceBLines} * 0); left: calc({marginSides} + 5px);">
+		<img class="smallPic" src="https://i.pinimg.com/564x/e2/95/98/e29598f213c862f21bf9e9b02d1a2587.jpg">
+	</div>
+	<div class="prePics" style="bottom: calc({distanceBLines} * .5); left: calc({marginSides} + 5px);">
+		<img class="smallPic" src="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2017/08/17/4b764522-818f-11e7-a767-bc310e55dd10_1280x720_145203.JPG?itok=-KNK72jk">
+	</div>
 {/if}
 
 
@@ -173,23 +144,30 @@
 
 	<div class="horizontalLine left line60" style="width: 100%;"></div>
 	<div class="text years left line60">1960</div>	
-{/if}
-
-{#if secondPics}
-	<!--<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/133659972?autoplay=1&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>-->
-
-	<!--<img style="position: absolute; width: 25%; left: 2%; bottom: 35%;" src="https://lastfm.freetls.fastly.net/i/u/770x0/32806982967ca8e6e7f97ba67f184f4d.webp#32806982967ca8e6e7f97ba67f184f4d">-->
 
 	<img style="position: absolute; width: 25%; left: 22%; top: 30%;" src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/57407288_2227425770672919_6336639571349995520_o.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_ohc=FD7UY8v07GYAX9lFo_d&_nc_ht=scontent-amt2-1.xx&oh=09b60e207ed1900b280264d73ed4ce73&oe=5F0CD97E">
-
 	<img style="position: absolute; width: 25%; right: 2%; bottom: 3%;" src="https://i.pinimg.com/564x/e5/ea/52/e5ea5295c095e1f907de4df7c8c95c5d.jpg">
-
 	<img style="position: absolute; width: 25%; right: 23%; bottom: 1%;" src="https://i.pinimg.com/originals/21/4e/2f/214e2fb4fb9a47147dac718f17ef4eef.jpg">
-
 	<img style="position: absolute; width: 25%; left: 2%; bottom: 35%;" src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/87072599_2806093836139440_6201700379038580736_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=BKrGBjxdU_kAX9qajCI&_nc_ht=scontent-ams4-1.xx&oh=685a5f80c9b372c0250c745daf98254f&oe=5F0B1374">
-
 	<img style="position: absolute; width: 25%; left: 15%; top: 5%;" src="http://img-196.uamulet.com/uauctions/AU383/2020/1/23/U18089286371538349680210271.jpg">
 {/if}
+
+{#if firstSetup}
+{:else}
+	{#if secondSetup}
+	{:else}
+		<div class="prePics" style="top: calc({distanceBLines} * 2.75); left: calc({marginSides} + 5px);">
+			<img class="smallPic" src="http://img-196.uamulet.com/uauctions/AU383/2020/1/23/U18089286371538349680210271.jpg">
+			<img class="smallPic" src="https://i.pinimg.com/564x/e5/ea/52/e5ea5295c095e1f907de4df7c8c95c5d.jpg">
+			<img class="smallPic" src="https://i.pinimg.com/originals/21/4e/2f/214e2fb4fb9a47147dac718f17ef4eef.jpg">
+		</div>
+		<div class="prePics" style="bottom: calc({distanceBLines} * 4.25); left: calc({marginSides} + 5px);">
+			<img class="smallPic" src="https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-9/57407288_2227425770672919_6336639571349995520_o.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_ohc=FD7UY8v07GYAX9lFo_d&_nc_ht=scontent-amt2-1.xx&oh=09b60e207ed1900b280264d73ed4ce73&oe=5F0CD97E">
+			<img class="smallPic" src="https://scontent-ams4-1.xx.fbcdn.net/v/t1.0-9/87072599_2806093836139440_6201700379038580736_o.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_ohc=BKrGBjxdU_kAX9qajCI&_nc_ht=scontent-ams4-1.xx&oh=685a5f80c9b372c0250c745daf98254f&oe=5F0B1374">
+		</div>
+	{/if}
+{/if}
+
 
 {#if seventyFive}
 	<div class="horizontalLine left line45" style="width: 100%;"></div>
@@ -205,10 +183,28 @@
 	<div class="horizontalLine left line41" style="width: 100%;"></div>
 	<div class="text years left line41">1979</div>
 	<div class="line left line41"></div>
+
+	<img style="position: absolute; height: 40vw; right: 5%; top: 12%;" src="https://i1.trekearth.com/photos/86613/victims_of_khmer_rouge.jpg">	
 {/if}
 
-{#if thirdPics}
-	<img style="position: absolute; height: 40vw; right: 5%; top: 12%;" src="https://i1.trekearth.com/photos/86613/victims_of_khmer_rouge.jpg">	
+
+{#if firstSetup}
+{:else}
+	{#if secondSetup}
+	{:else}
+		{#if thirdSetup}
+		{:else}
+			<div class="prePics" style="bottom: calc({distanceBLines} * 3.9); left: calc({marginSides} + 5px);">
+				<img class="smallPic" src="https://i1.trekearth.com/photos/86613/victims_of_khmer_rouge.jpg">
+			</div>
+
+			<div class="tempMeterCountry">
+				<div class="temperature infotext">
+					<span class="tempnumber left text" style="z-index: 99999999;">365 days</span>
+				</div>
+			</div>
+		{/if}
+	{/if}
 {/if}
 
 {#if fourthLines}
@@ -217,34 +213,17 @@
 
 
 
-<!--    Graph    -->
-{#if hotDays}
-	<div class="tempMeterCountry">
-		<div class="temperature infotext">
-			<span class="tempnumber left text" style="z-index: 99999999;">365 days</span>
-		</div>
-	</div>
-{/if}
-
-
-
-
-{#if fourthText}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		Cambodia has not seen the end of suffering, as it is one of the countries of the world that will feel the most extreme heat increase in the next decades due to man-made climate&nbsp;change.
-	</div>
-{/if}
-
-
 {#if fourthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Cambodia <!--has not seen the end of suffering, as it -->is one of the countries of the world that will feel the most extreme heat increase in the next decades due to man-made climate&nbsp;change. In the next two decades Cambodia will endure 34 additional extremely hot days resulting in around 2.414 deaths per year.
+	</div>
+
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polyline class="cls-1" points="331 900 331 1200 365 1200 365 900"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightFirst text">34 days</span>
-		</div>
+		<div class="temperature firstMeter"><span class="deathToll text narrow">&#10013; 2.414</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightFirst text">34 days</span></div>
 	</div>
 
 	<div class="text years right line0">2020</div>
@@ -259,14 +238,16 @@
 {/if}
 
 {#if fifthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		In the next two decades the additional extremely hot days will have risen to 65 per year with a consequent additional 5.510 deaths per year.
+	</div>
+
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polyline class="cls-1" points="300 600 300 900 331 900 331 1200 365 1200 365 900 365 600"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightMid text">65 days</span>
-		</div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013; 5.510</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightMid text">65 days</span></div>
 	</div>
 
 	<div class="text years right line40">2060</div>
@@ -280,14 +261,16 @@
 {/if}
 
 {#if sixthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		And the last decades of the century will have additional 181 extremely hot days a year. Meaning ca. half of the year will be dangerously hot, killing around 15.957 people per year.
+	</div>
+
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 184 0 184 300 300 600 300 900 331 900 331 1200 365 1200"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightEnd text">181 days</span>
-		</div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013; 15.957</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightEnd text">181 days</span></div>
 	</div>
 
 	<div class="text years right line60">2080</div>
@@ -316,48 +299,16 @@
 
 
 
-
-
-
-<!--    CONTENT    -->
-
-<!--<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>-->
-
-<!--
-	<div class="horizontalLine left line45" style="width: 100%;"></div>
-	<div class="text years left line45">1975</div>
-
-	<div class="horizontalLine left line70" style="width: 100%;"></div>
-	<div class="era firstera"></div>
-	<div class="text years left line70">1950</div>
-	<div class="text years left line66">1954</div>
-	<div class="horizontalLine left line66" style="width: 100%;"></div>
--->
-
 {#if firstSetup}
 	<div class="horizontalLine left line67" style="width: 100%;"></div>
 	<div class="text years left line67">1953</div>	
 {/if}
 <div class="line left line67"></div>
-{#if CambRock}
-	<!--<div class="eraPhoto eraPhoto1"></div>-->
-{/if}
+
 {#if secondLines}
 	<div class="line left line60"></div>
 	<div class="line left line45"></div>
 {/if}
-<!--{#if secondSetup}
-	<div class="horizontalLine left line50" style="width: 100%;"></div>
-	<div class="text years left line50">1970</div>
-
-	
-{/if}
-{#if thirdSetup}
-	<div class="eraPhoto"></div>
-	<div class="horizontalLine left line50" style="width: 100%;"></div>
-	<div class="text years left line50">1970</div>
-{/if}-->
-
 
 
 <!--    Footer    -->
@@ -372,11 +323,10 @@
 
 
 <style>
-	.text {color: darkblue !important;}
-	.text a {color: darkblue;}darkblue
+	.text, .text a, .pagetext {color: darkblue !important;}
 	.verticalLine {border-right: 1px dotted darkblue;}
 	.horizontalLine {border-top: 1px dotted darkblue;}
-	.line {background-color: green;}
+	.line {background-color: darkblue;}
 
 	.firstera {
 		top: calc((100% - 1px) / 9 * 2); 
@@ -397,7 +347,10 @@
 	.firstMeter {width: calc(((100% / 365) * 34) - 0px);}
 	.midMeter {width: calc(((100% / 365) * 65) - 0px);}
 	.endMeter {width: calc(((100% / 365) * 181) - 0px);}
-	/*.cls-1 {fill: beige !important;}*/
+	
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted darkblue;}
+
+
 	.rightFirst {right: calc(((100vw / 365) * 34) - 0px);}
 	.rightMid {right: calc(((100vw / 365) * 65) - 0px);}
 	.rightEnd {right: calc(((100vw / 365) * 181) - 0px);}

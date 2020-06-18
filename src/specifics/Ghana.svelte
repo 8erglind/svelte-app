@@ -68,7 +68,13 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Text about Ghana.
+		Ghana on the other hand is one of the countries which rank low when it comes to the impact of individual climate action.
+	</div>	
+{/if}
+
+{#if secondSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Ghana is a former British colony, which gained independance in 1957.
 	</div>	
 {/if}
 
@@ -93,10 +99,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightFirst text">23 days</span>
-		</div>
+		<div class="temperature firstMeter"><span class="deathToll text">&#10013; 3.170</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightFirst text">23 days</span></div>
 	</div>
 
 	<div class="text years right line0">2020</div>
@@ -111,10 +115,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightMid text">45 days</span>
-		</div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013; 8.721</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightMid text">45 days</span></div>
 	</div>
 
 	<div class="text years right line40">2060</div>
@@ -129,10 +131,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightEnd text">127 days</span>
-		</div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013; 38.157</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightEnd text">127 days</span></div>
 	</div>
 
 	<div class="text years right line60">2080</div>
@@ -165,9 +165,8 @@
 
 
 <style>
-
-	.text {color: yellowgreen !important;}
-	.text a {color: yellowgreen;}
+	.text, .text a, .pagetext/*, .pagetitle*/ {color: yellowgreen !important;}
+	/*.pagetitle {color: white !important;}*/
 	.verticalLine {border-right: 1px dotted yellowgreen;}
 	.horizontalLine {border-top: 1px dotted yellowgreen;}
 	.line {background-color: yellowgreen;}
@@ -179,6 +178,7 @@
 	.firstMeter {width: calc(((100% / 365) * 23) - 1px);}
 	.midMeter {width: calc(((100% / 365) * 45) - 1px);}
 	.endMeter {width: calc(((100% / 365) * 127) - 1px);}
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted yellowgreen;}
 	.rightFirst {right: calc(((100vw / 365) * 23) - 1px);}
 	.rightMid {right: calc(((100vw / 365) * 45) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 127) - 1px);}

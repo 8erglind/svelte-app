@@ -7,10 +7,8 @@
 
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	<div class="text"></div>
-</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">Environmental<br>Justice</div>
 
 <div class="activedot activedot13"></div>
 <div class="activedotnew activedotFan">

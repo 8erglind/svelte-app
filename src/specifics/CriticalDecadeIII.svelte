@@ -13,10 +13,9 @@
 
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">
- 	{pagetitleText}
- 	<div class="text"></div>
-</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">The<br>Critical<br>Decade:<br>III</div>
+
 
 <div class="activedot activedot16"></div>
 <div class="activedotnew activedotFan">

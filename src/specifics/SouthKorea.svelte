@@ -180,7 +180,7 @@
 {/if}
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	 	... hot days will increase by only two per year in the 20 years after&nbsp;that...
+	 	... hot days will increase by only two per year in the 20 years after&nbsp;that, nevertheless killing around 386 people per year...
 	</div>
 	<div class="text years right line40">2060</div>
 	<div class="line right line40"></div>
@@ -188,7 +188,7 @@
 {/if}
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	 	... and 19 days per year in the end of the&nbsp;century.
+	 	... and 19 days per year in the end of the&nbsp;century, killing around 2.442 people per year.
 	</div>
 	<div class="text years right line60">2080</div>
 	<div class="line right line60"></div>
@@ -202,23 +202,13 @@
 
 {#if tempMeter}
 	<div class="tempMeter">
-		{#if fifthSetup}
-			<div class="temperature midMeter"></div>
-		{/if}
-		{#if sixthSetup}
-			<div class="temperature endMeter"></div>
-		{/if}
+		{#if fifthSetup}<div class="temperature midMeter"><span class="deathToll text narrow">&#10013; 386</span></div>{/if}
+		{#if sixthSetup}<div class="temperature endMeter"><span class="deathToll text narrow">&#10013; 2.442</span></div>{/if}
 		<div class="temperature infotext">
-			{#if fourthSetup}
-				<span class="tempnumber right text" style="/*right: {marginSides};*/">0 days</span>
-			{/if}
-			{#if fifthSetup}
-				<span class="tempnumber rightMid text" style="/*right: {marginSides};*/">2 days</span>
-			{/if}
-			{#if sixthSetup}
-				<span class="tempnumber rightEnd text" style="/*right: {marginSides};*/">19 days</span>
-			{/if}
-			<span class="tempnumber left text" style="/*left: {marginSides};*/">365 days</span>
+			{#if fourthSetup}<span class="tempnumber right text">0 days</span>{/if}
+			{#if fifthSetup}<span class="tempnumber rightMid text">2 days</span>{/if}
+			{#if sixthSetup}<span class="tempnumber rightEnd text">19 days</span>{/if}
+			<span class="tempnumber left text">365 days</span>
 		</div>
 	</div>
 {/if}
@@ -264,9 +254,7 @@
 
 
 <style>
-
-	.text {color: purple !important;}
-	.text a {color: purple;}
+	.text, .text a, .pagetext/*, .pagetitle*/ {color: purple !important;}
 	.horizontalLine {border-top: 1px dotted purple;}
 	.line {background-color: purple;}
 	.tempMeter {
@@ -276,7 +264,6 @@
 		width: calc(100vw - 4px);
 		left: 0%;
 	}
-	/*.temperature {border: 1px dotted purple;}*/
 	.infotext {
 		width: 100%; 
 		background-color: rgba(0,0,0,0) !important; 
@@ -296,7 +283,7 @@
 	}
 	.midMeter {width: calc(((100% / 365) * 2) - 1px); border: none;}
 	.endMeter {width: calc(((100% / 365) * 19) - 1px);}
-	/*.cls-1 {fill: beige !important;}*/
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted purple;}
 	.rightMid {right: calc(((100vw / 365) * 2) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 19) - 1px);}
 

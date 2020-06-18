@@ -1,6 +1,4 @@
 <script>
-	//import TimelinePast from './TimelinePast.svelte';
-	//import TimelineFuture from './TimelineFuture.svelte';
 	export let pagetitleText;
 	export let rotate;
 	export let next;
@@ -74,31 +72,24 @@
 <!--    TEXT    -->
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">The<br>Critical<br>Decade:<br>I</div>
 
 {#if firstText}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
-		<br>
-		<span class="transp">
-			Two-thirds of that warming happened in the last 45&nbsp;years. The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
-		</span>
+		
 	</div>
 {/if}
 {#if secondText}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		<span class="transp">
-			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
-			<br>
-		</span>
+		
 		Two-thirds of that warming happened in the last 45&nbsp;years. 
-		<span class="transp">
-			The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.
-		</span>
+		
 	</div>
 {/if}
 {#if thirdText}
-	<div class="pagetext" style="transform: rotate({rotate});"><span class="transp">Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.<br> Two-thirds of that warming happened in the last 45&nbsp;years. </span>The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.</div>
+	<div class="pagetext" style="transform: rotate({rotate});">The Paris Agreement aims to limit warming to&nbsp;+&nbsp;1,5°C.</div>
 {/if}
 
 
@@ -236,7 +227,7 @@
 <style>
 
 	/*.pagetitle .text {/*-webkit-text-fill-color: rgb(190,190,190) purple;} */
-	.text {color: darkorange;}
+	.text, .text a, .pagetext {color: darkorange !important;}
 	.arrow {text-align: center;}
 	.line {background-color: darkorange;}
 	.backgroundBox {background-color: rgb(245,245,245);}

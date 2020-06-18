@@ -47,8 +47,8 @@
 
 <!--    TEXT    -->
 
-
-<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">Extreme<br>Heat:<br>II</div>
 
 
 {#if firstSetup}
@@ -109,8 +109,7 @@
 
 <style>
 
-	.text {color: darkred;}
-	.text a {color: darkred}
+	.text, .text a, .pagetext {color: darkred !important;}
 	.backgroundBox {overflow: hidden; border-radius: 0px; background-color: rgb(245,245,245); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
 	.celcius {position: absolute;}
 	.celciusTop {width: 100%; text-align: center;}

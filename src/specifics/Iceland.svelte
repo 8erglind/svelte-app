@@ -79,19 +79,15 @@
 <!-- GRAPH -->
 
 	<div class="tempMeterCountry">
-		<div class="temperature infotext">
-			<span class="tempnumber left text" style="z-index: 99999999;">365 days</span>
-		</div>
+		<div class="temperature infotext"><span class="tempnumber left text" style="z-index: 99999999;">365 days</span></div>
+	</div>
+	<div class="tempMeterCountry">
+		<div class="temperature midMeter"><span class="deathToll text narrow">&#10013; 0</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightFirst text">0 days</span></div>
 	</div>
 
 
 {#if firstSetup}
-	<div class="tempMeterCountry">
-		<div class="temperature infotext">
-			<span class="tempnumber rightFirst text">0 days</span>
-		</div>
-	</div>
-
 	<div class="text years right line0">2020</div>
 	<div class="horizontalLine full right line0"></div>
 	<div class="text years right line20">2040</div>
@@ -99,12 +95,6 @@
 {/if}
 
 {#if secondSetup}
-	<div class="tempMeterCountry">
-		<div class="temperature infotext">
-			<span class="tempnumber rightMid text">0 days</span>
-		</div>
-	</div>
-
 	<div class="text years right line40">2060</div>
 	<div class="horizontalLine full right line40"></div>
 	<div class="text years right line20">2040</div>
@@ -112,12 +102,6 @@
 {/if}
 
 {#if thirdSetup}
-	<div class="tempMeterCountry">
-		<div class="temperature infotext">
-			<span class="tempnumber rightEnd text">0 days</span>
-		</div>
-	</div>
-
 	<div class="text years right line60">2080</div>
 	<div class="horizontalLine full right line60"></div>
 	<div class="line right line60"></div>
@@ -157,6 +141,9 @@
 		border-left: 1px solid /*rgb(70,70,70)*/ mediumblue; 
 		border-right: 1px solid /*rgb(70,70,70)*/ mediumblue;
 	}
+	.midMeter {width: calc(((100% / 365) * 0) - 1px);}
+	.midMeter:after {border-right: 1px dotted mediumblue;}
+
 	.rightFirst {right: calc(((100vw / 365) * 0) - 1px);}
 	.rightMid {right: calc(((100vw / 365) * 0) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 0) - 1px);}

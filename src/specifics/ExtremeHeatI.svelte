@@ -59,7 +59,9 @@
 <!--    TEXT    -->
 
 
-<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
+<!--<div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>-->
+<div class="pagetitle" style="transform: rotate({rotate});">Extreme<br>Heat:<br>I</div>
+
 
 
 {#if firstSetup}
@@ -145,8 +147,7 @@
 
 <style>
 
-	.text {color: darkred;}
-	.text a {color: darkred}
+	.text, .text a, .pagetext {color: darkred !important;}
 	.caution {fill: /*yellow*/ rgba(229,83,20,0.01);}
 	.extremeCaution {fill: /*orange*/ rgba(229,83,20,.05);}
 	.danger {fill: /*darkorange*/ rgba(229,83,20,.09);}

@@ -92,10 +92,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightFirst text">12 days</span>
-		</div>
+		<div class="temperature firstMeter"><span class="deathToll text">&#10013; 16.335</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightFirst text">12 days</span></div>
 	</div>
 
 	<div class="text years right line0">2020</div>
@@ -110,10 +108,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightMid text">25 days</span>
-		</div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013; 37.300</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightMid text">25 days</span></div>
 	</div>
 
 	<div class="text years right line40">2060</div>
@@ -128,10 +124,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightEnd text">60 days</span>
-		</div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013; 101.882</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightEnd text">60 days</span></div>
 	</div>
 
 	<div class="text years right line60">2080</div>
@@ -177,6 +171,7 @@
 	.firstMeter {width: calc(((100% / 365) * 12) - 1px);}
 	.midMeter {width: calc(((100% / 365) * 25) - 1px);}
 	.endMeter {width: calc(((100% / 365) * 60) - 1px);}
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted red;}
 	.rightFirst {right: calc(((100vw / 365) * 12) - 1px);}
 	.rightMid {right: calc(((100vw / 365) * 25) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 60) - 1px);}

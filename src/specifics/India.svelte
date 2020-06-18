@@ -18,27 +18,19 @@
 	let seventhSetup = false;
 	let eighthSetup = false;
 
-	let secondPics = false;
-
 	const togglefirstSetup = () => {
 		firstSetup = true;
 		secondSetup = false;
-
-		secondPics = false;
 	}
 	const togglesecondSetup = () => {
 		firstSetup = false;
 		secondSetup = true;
 		thirdSetup = false;
-
-		secondPics = true;
 	}
 	const togglethirdSetup = () => {
 		secondSetup = false;
 		thirdSetup = true;
 		fourthSetup = false;
-
-		secondPics = false;
 	}
 	const togglefourthSetup = () => {
 		thirdSetup = false;
@@ -51,8 +43,6 @@
 		sixthSetup = false;
 
 		sixthText = false;
-
-		secondPics = false;
 	}
 	const togglesixthSetup = () => {
 		fifthSetup = false;
@@ -60,8 +50,6 @@
 		seventhSetup = false;
 
 		sixthText = true;
-
-		secondPics = true;
 	}
 	const toggleseventhSetup = () => {
 		sixthSetup = false;
@@ -69,16 +57,12 @@
 		eighthSetup = false;
 
 		sixthText = true;
-
-		secondPics = true;
 	}
 	const toggleeighthSetup = () => {
 		seventhSetup = false;
 		eighthSetup = true;
 
 		sixthText = true;
-
-		secondPics = true;
 	}
 
 </script>
@@ -149,17 +133,13 @@
 	<div class="horizontalLine left line55" style="width: 100%;"></div>
 	<div class="text years left line55">1965</div>
 	
+	<img style="position: absolute; width: 50%; right: 5%; top: 23%;" src="https://i0.wp.com/notsocommon.in/wp-content/uploads/2020/03/EDx-TkVUwAANds0.jpg">
 {/if}
 
 {#if firstSetup}
 {:else}
 	<div class="line left line73"></div>
 	<div class="line left line55"></div>
-{/if}
-
-
-{#if secondPics}
-	<img style="position: absolute; width: 50%; right: 5%; top: 23%;" src="https://i0.wp.com/notsocommon.in/wp-content/uploads/2020/03/EDx-TkVUwAANds0.jpg">
 {/if}
 
 
@@ -177,6 +157,10 @@
 	{#if secondSetup}
 	{:else}
 		<div class="line left line39"></div>
+
+		<div class="prePics" style="top: calc({distanceBLines} * 2.45); left: calc({marginSides} + 5px);">
+			<img class="smallPic" src="https://i0.wp.com/notsocommon.in/wp-content/uploads/2020/03/EDx-TkVUwAANds0.jpg">
+		</div>
 	{/if}
 {/if}
 
@@ -260,10 +244,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightFirst text">18 days</span>
-		</div>
+		<div class="temperature firstMeter"><span class="deathToll text narrow">&#10013; 103.811</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightFirst text">18 days</span></div>
 	</div>
 
 	<div class="text years right line0">2020</div>
@@ -277,10 +259,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightMid text">39 days</span>
-		</div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013; 252.086</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightMid text">39 days</span></div>
 	</div>
 
 	<div class="text years right line40">2060</div>
@@ -294,10 +274,8 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"></div>
-		<div class="temperature infotext">
-			<span class="tempnumber rightEnd text">102 days</span>
-		</div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013; 617.903</span></div>
+		<div class="temperature infotext"><span class="tempnumber rightEnd text">102 days</span></div>
 	</div>
 
 	<div class="text years right line60">2080</div>
@@ -325,7 +303,6 @@
 </div>
 
 
-
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
 </div>
@@ -336,23 +313,21 @@
 
 <style>
 
-	.text {color: darkorange !important;}
-	.text a {color: darkorange;}
+	.text, .text a, .pagetext {color: darkorange !important;}
 	.verticalLine {border-right: 1px dotted darkorange;}
 	.horizontalLine {border-top: 1px dotted darkorange;}
 	.line {background-color: darkorange;}
 
-	/*.cls-1, .hotDays {fill: beige !important;}*/
 
 	.tempMeterCountry {
-		border-left: 1px solid /*rgb(70,70,70)*/ darkorange; 
-		border-right: 1px solid /*rgb(70,70,70)*/ darkorange;
+		border-left: 1px solid darkorange; 
+		border-right: 1px solid darkorange;
 	}
 	.firstMeter, .midMeter, .endMeter {border-left: 1px dotted darkorange;}
 	.firstMeter {width: calc(((100% / 365) * 18) - 1px);}
 	.midMeter {width: calc(((100% / 365) * 39) - 1px);}
 	.endMeter {width: calc(((100% / 365) * 102) - 1px);}
-	/*.cls-1 {fill: beige !important;}*/
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted darkorange;}
 	.rightFirst {right: calc(((100vw / 365) * 18) - 1px);}
 	.rightMid {right: calc(((100vw / 365) * 39) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 102) - 1px);}
