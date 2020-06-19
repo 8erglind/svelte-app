@@ -78,14 +78,11 @@
 {#if firstText}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C. 
-		
 	</div>
 {/if}
 {#if secondText}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		
 		Two-thirds of that warming happened in the last 45&nbsp;years. 
-		
 	</div>
 {/if}
 {#if thirdText}
@@ -216,7 +213,7 @@
 
 <div class="activedot activedot5"></div>
 <div class="activedotnew activedotFan">
-	<div class="progressline" style="transform: rotate(calc(0deg - {rotate} + 11.25deg));"></div>
+	<div class="progressline" style="transform: rotate(calc(0deg - {rotate}));"></div>
 </div>
 
 

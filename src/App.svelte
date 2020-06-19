@@ -70,21 +70,21 @@
 	{/each}-->
 
 	<div class="content"><CriticalDecadeIII pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
-	<div class="content country"><USA pagetitleText="The U.S." rotate="78.75deg" next="#page3" prev="#page1"></USA></div>
-	<div class="content country"><Brazil pagetitleText="Brazil" rotate="67.5deg" next="#page4" prev="#page2"></Brazil></div>
-	<div class="content"><EnvironmentalJustice pagetitleText="Environmental Justice" rotate="56.25deg" next="#page5" prev="#page3"></EnvironmentalJustice></div>
-	<div class="content country"><Iceland pagetitleText="Iceland" rotate="45deg" next="#page6" prev="#page4"></Iceland></div>
-	<div class="content country"><Ghana pagetitleText="Ghana" rotate="33.75deg" next="#page7" prev="#page5"></Ghana></div>
-	<div class="content country"><SaudiArabia pagetitleText="Saudi Arabia" rotate="22.5deg" next="#page8" prev="#page6"></SaudiArabia></div>
-	<div class="content"><ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="11.25deg" next="#page9" prev="#page7"></ImpactofIndividualAction></div>
-	<div class="content country"><India pagetitleText="India" rotate="0deg" next="#page10" prev="#page8"></India></div>
-	<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-11.25deg" next="#page11" prev="#page9"></CriticalDecadeII></div>
-	<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-22.5deg" next="#page12" prev="#page10"></CriticalDecadeI></div>
-	<div class="content country"><Cambodia pagetitleText="Cambodia" rotate="-33.75deg" next="#page13" prev="#page11"></Cambodia></div>
-	<div class="content country"><SouthKorea pagetitleText="South Korea" rotate="-45deg" next="#page14" prev="#page12"></SouthKorea></div>
-	<div class="content"><ExtremeHeatII pagetitleText="Extreme heat:&emsp;II" rotate="-56.25deg" next="#page15" prev="#page13"></ExtremeHeatII></div>
-	<div class="content"><ExtremeHeatI pagetitleText="Extreme heat:&emsp;I" rotate="-67.5deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
-	<div class="content"><Cover pagetitleText="now & then" rotate="-78.75deg" prev="#page15"></Cover></div>
+	<div class="content country"><USA pagetitleText="The U.S." rotate="78deg" next="#page3" prev="#page1"></USA></div>
+	<div class="content country"><Brazil pagetitleText="Brazil" rotate="66deg" next="#page4" prev="#page2"></Brazil></div>
+	<div class="content"><EnvironmentalJustice pagetitleText="Environmental Justice" rotate="54deg" next="#page5" prev="#page3"></EnvironmentalJustice></div>
+	<div class="content country"><Iceland pagetitleText="Iceland" rotate="42deg" next="#page6" prev="#page4"></Iceland></div>
+	<div class="content country"><Ghana pagetitleText="Ghana" rotate="30deg" next="#page7" prev="#page5"></Ghana></div>
+	<div class="content country"><SaudiArabia pagetitleText="Saudi Arabia" rotate="18deg" next="#page8" prev="#page6"></SaudiArabia></div>
+	<div class="content"><ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="6deg" next="#page9" prev="#page7"></ImpactofIndividualAction></div>
+	<div class="content country"><India pagetitleText="India" rotate="-6deg" next="#page10" prev="#page8"></India></div>
+	<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-18deg" next="#page11" prev="#page9"></CriticalDecadeII></div>
+	<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-30deg" next="#page12" prev="#page10"></CriticalDecadeI></div>
+	<div class="content country"><Cambodia pagetitleText="Cambodia" rotate="-42deg" next="#page13" prev="#page11"></Cambodia></div>
+	<div class="content country"><SouthKorea pagetitleText="South Korea" rotate="-54deg" next="#page14" prev="#page12"></SouthKorea></div>
+	<div class="content"><ExtremeHeatII pagetitleText="Extreme heat:&emsp;II" rotate="-66deg" next="#page15" prev="#page13"></ExtremeHeatII></div>
+	<div class="content"><ExtremeHeatI pagetitleText="Extreme heat:&emsp;I" rotate="-78deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
+	<div class="content"><Cover pagetitleText="now & then" rotate="-90deg" prev="#page15"></Cover></div>
 
 
 

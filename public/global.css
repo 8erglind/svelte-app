@@ -227,6 +227,7 @@ body {
 	.line50 {bottom: calc((100% - 1px) / 9 * 5);}
 	.line55 {bottom: calc((100% - 1px) / 9 * 5.5);}
 	.line60 {bottom: calc((100% - 1px) / 9 * 6);}
+	.line63 {bottom: calc((100% - 1px) / 9 * 6.3);}
 	.line66 {bottom: calc((100% - 1px) / 9 * 6.6);}
 	.line67 {bottom: calc((100% - 1px) / 9 * 6.7);}
 	.line70 {bottom: calc((100% - 1px) / 9 * 7);}
