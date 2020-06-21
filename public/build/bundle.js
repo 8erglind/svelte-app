@@ -1946,7 +1946,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("It’s June, after the warmest May on record. Its getting warmer, and Extreme heat is becoming more and more common.");
-    			attr_dev(div, "class", "pagetext svelte-wcvsx4");
+    			attr_dev(div, "class", "pagetext svelte-ryynyx");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$3, 96, 1, 1836);
     		},
@@ -1984,7 +1984,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("The dangers of heat depend on temperature and humidity. High humidity makes it harder for sweat to evaporate from the body, which can cause it to overheat.");
-    			attr_dev(div, "class", "pagetext svelte-wcvsx4");
+    			attr_dev(div, "class", "pagetext svelte-ryynyx");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$3, 101, 1, 2045);
     		},
@@ -2022,7 +2022,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("When the temperature start to approach that of the human body, they become extremely dangerous. Heat of 35°C, especially when humid, can only be endured for several hours at a time before it becomes fatal.");
-    			attr_dev(div, "class", "pagetext svelte-wcvsx4");
+    			attr_dev(div, "class", "pagetext svelte-ryynyx");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			set_style(div, "font-weight", "normal");
     			set_style(div, "font-style", "normal");
@@ -2062,7 +2062,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("With each eccess extremely hot day of 35°C, mortality rates increase by ~ 0,0004%.");
-    			attr_dev(div, "class", "pagetext svelte-wcvsx4");
+    			attr_dev(div, "class", "pagetext svelte-ryynyx");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			set_style(div, "font-weight", "normal");
     			set_style(div, "font-style", "normal");
@@ -2104,9 +2104,9 @@ var app = (function () {
     			div0 = element("div");
     			t = space();
     			div1 = element("div");
-    			attr_dev(div0, "class", "sweatdrop falling svelte-wcvsx4");
+    			attr_dev(div0, "class", "sweatdrop falling svelte-ryynyx");
     			add_location(div0, file$3, 127, 1, 2905);
-    			attr_dev(div1, "class", "sweatdrop falling2 svelte-wcvsx4");
+    			attr_dev(div1, "class", "sweatdrop falling2 svelte-ryynyx");
     			add_location(div1, file$3, 128, 1, 2944);
     		},
     		m: function mount(target, anchor) {
@@ -2147,11 +2147,11 @@ var app = (function () {
     			t1 = space();
     			div1 = element("div");
     			t2 = text("41.1 °C");
-    			attr_dev(div0, "class", "text celcius svelte-wcvsx4");
+    			attr_dev(div0, "class", "text celcius svelte-ryynyx");
     			set_style(div0, "bottom", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			set_style(div0, "left", /*celciusWidth*/ ctx[12]);
     			add_location(div0, file$3, 133, 1, 3016);
-    			attr_dev(div1, "class", "text celcius svelte-wcvsx4");
+    			attr_dev(div1, "class", "text celcius svelte-ryynyx");
     			set_style(div1, "bottom", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			set_style(div1, "right", "calc(" + /*celciusWidth*/ ctx[12] + " * 1)");
     			add_location(div1, file$3, 134, 1, 3123);
@@ -2246,17 +2246,17 @@ var app = (function () {
     			t8 = space();
     			div4 = element("div");
     			t9 = text("Extreme Danger");
-    			attr_dev(polygon0, "class", "caution svelte-wcvsx4");
+    			attr_dev(polygon0, "class", "caution svelte-ryynyx");
     			set_style(polygon0, "background-color", "yellow");
     			attr_dev(polygon0, "points", "0 0 250 0 250 100 200 100 200 200 150 200 150 400 100 400 100 500 50 500 50 700 0 700 0 0");
     			add_location(polygon0, file$3, 140, 3, 3403);
-    			attr_dev(polygon1, "class", "extremeCaution svelte-wcvsx4");
+    			attr_dev(polygon1, "class", "extremeCaution svelte-ryynyx");
     			attr_dev(polygon1, "points", "450 0 450 100 400 100 400 200 300 200 300 300 250 300 250 400 200 400 200 500 150 500 150 700 50 700 50 500 100 500 100 400 150 400 150 200 200 200 200 100 250 100 250 0 450 0");
     			add_location(polygon1, file$3, 141, 3, 3566);
-    			attr_dev(polygon2, "class", "danger svelte-wcvsx4");
+    			attr_dev(polygon2, "class", "danger svelte-ryynyx");
     			attr_dev(polygon2, "points", "450 0 700 0 700 100 600 100 600 200 500 200 500 300 400 300 400 400 350 400 350 500 300 500 300 600 250 600 250 700 150 700 150 500 200 500 200 400 250 400 250 300 300 300 300 200 400 200 400 100 450 100 450 0");
     			add_location(polygon2, file$3, 142, 3, 3788);
-    			attr_dev(polyline, "class", "extremeDanger svelte-wcvsx4");
+    			attr_dev(polyline, "class", "extremeDanger svelte-ryynyx");
     			attr_dev(polyline, "points", "800 700 250 700 250 600 300 600 300 500 350 500 350 400 400 400 400 300 500 300 500 200 600 200 600 100 700 100 700 0 800 0 800 700");
     			add_location(polyline, file$3, 143, 3, 4036);
     			attr_dev(svg, "class", "graph");
@@ -2264,22 +2264,22 @@ var app = (function () {
     			attr_dev(svg, "viewBox", "0 0 800 700");
     			attr_dev(svg, "preserveAspectRatio", "none");
     			add_location(svg, file$3, 139, 2, 3296);
-    			attr_dev(div0, "class", "backgroundBox svelte-wcvsx4");
+    			attr_dev(div0, "class", "backgroundBox svelte-ryynyx");
     			add_location(div0, file$3, 138, 1, 3266);
-    			attr_dev(div1, "class", "text humidity humidityTop svelte-wcvsx4");
+    			attr_dev(div1, "class", "text humidity humidityTop svelte-ryynyx");
     			set_style(div1, "top", "calc(" + /*distanceBLines*/ ctx[10] + " * 1)");
     			set_style(div1, "right", "calc(100vw - " + /*marginSides*/ ctx[11] + ")");
     			set_style(div1, "height", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			add_location(div1, file$3, 150, 1, 4344);
-    			attr_dev(div2, "class", "text humidity svelte-wcvsx4");
+    			attr_dev(div2, "class", "text humidity svelte-ryynyx");
     			set_style(div2, "top", "calc(" + /*distanceBLines*/ ctx[10] + " * 1)");
     			set_style(div2, "left", "5px");
     			add_location(div2, file$3, 151, 1, 4512);
-    			attr_dev(div3, "class", "text humidity svelte-wcvsx4");
+    			attr_dev(div3, "class", "text humidity svelte-ryynyx");
     			set_style(div3, "bottom", "0%");
     			set_style(div3, "left", "5px");
     			add_location(div3, file$3, 152, 1, 4601);
-    			attr_dev(div4, "class", "text celcius inGraph svelte-wcvsx4");
+    			attr_dev(div4, "class", "text celcius inGraph svelte-ryynyx");
     			attr_dev(div4, "style", div4_style_value = "bottom: 15px; right: calc(" + /*celciusWidth*/ ctx[12] + " + 15px); /*transform: rotate(" + /*rotate*/ ctx[0] + ");*/");
     			add_location(div4, file$3, 157, 1, 4853);
     		},
@@ -2374,7 +2374,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("Temp.");
-    			attr_dev(div, "class", "text celcius celciusTop svelte-wcvsx4");
+    			attr_dev(div, "class", "text celcius celciusTop svelte-ryynyx");
     			set_style(div, "bottom", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			add_location(div, file$3, 148, 2, 4243);
     		},
@@ -2409,7 +2409,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("Caution");
-    			attr_dev(div, "class", "text celcius inGraph svelte-wcvsx4");
+    			attr_dev(div, "class", "text celcius inGraph svelte-ryynyx");
     			attr_dev(div, "style", div_style_value = "top: calc(" + /*distanceBLines*/ ctx[10] + " + 15px); left: calc(" + /*celciusWidth*/ ctx[12] + " + 15px); /*transform: rotate(" + /*rotate*/ ctx[0] + ");*/");
     			add_location(div, file$3, 155, 2, 4685);
     		},
@@ -2469,9 +2469,9 @@ var app = (function () {
     			t5 = text("body");
     			br = element("br");
     			t6 = text("temp.");
-    			attr_dev(div0, "class", "backgroundBoxII svelte-wcvsx4");
+    			attr_dev(div0, "class", "backgroundBoxII svelte-ryynyx");
     			add_location(div0, file$3, 161, 1, 5027);
-    			attr_dev(div1, "class", "text celcius svelte-wcvsx4");
+    			attr_dev(div1, "class", "text celcius svelte-ryynyx");
     			set_style(div1, "bottom", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			set_style(div1, "left", "calc(" + /*celciusWidth*/ ctx[12] + " * 9.5)");
     			add_location(div1, file$3, 163, 1, 5065);
@@ -2482,14 +2482,14 @@ var app = (function () {
     			set_style(div2, "height", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			set_style(div2, "top", "calc(" + /*distanceBLines*/ ctx[10] + " * 1)");
     			add_location(div2, file$3, 165, 1, 5182);
-    			attr_dev(div3, "class", "bodyTemp svelte-wcvsx4");
+    			attr_dev(div3, "class", "bodyTemp svelte-ryynyx");
     			set_style(div3, "top", /*distanceBLines*/ ctx[10]);
     			set_style(div3, "left", "calc(" + /*celciusWidth*/ ctx[12] + " * 11)");
     			set_style(div3, "right", "calc(" + /*celciusWidth*/ ctx[12] + " * 5)");
     			set_style(div3, "height", "calc(" + /*distanceBLines*/ ctx[10] + " * 8)");
     			add_location(div3, file$3, 167, 1, 5372);
     			add_location(br, file$3, 169, 137, 5672);
-    			attr_dev(div4, "class", "text celcius svelte-wcvsx4");
+    			attr_dev(div4, "class", "text celcius svelte-ryynyx");
     			set_style(div4, "bottom", "0%");
     			set_style(div4, "left", "calc(" + /*celciusWidth*/ ctx[12] + " * 11)");
     			set_style(div4, "right", "calc(" + /*celciusWidth*/ ctx[12] + " * 5)");
@@ -2548,7 +2548,7 @@ var app = (function () {
     			a.textContent = "[2]";
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "href", "");
-    			attr_dev(a, "class", "svelte-wcvsx4");
+    			attr_dev(a, "class", "svelte-ryynyx");
     			add_location(a, file$3, 181, 63, 5879);
     		},
     		m: function mount(target, anchor) {
@@ -2666,12 +2666,12 @@ var app = (function () {
     			add_location(div0, file$3, 91, 0, 1733);
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "href", "");
-    			attr_dev(a, "class", "svelte-wcvsx4");
+    			attr_dev(a, "class", "svelte-ryynyx");
     			add_location(a, file$3, 181, 10, 5826);
-    			attr_dev(div1, "class", "bottomLineText text svelte-wcvsx4");
+    			attr_dev(div1, "class", "bottomLineText text svelte-ryynyx");
     			set_style(div1, "text-align", "right");
     			add_location(div1, file$3, 180, 2, 5755);
-    			attr_dev(div2, "class", "text bottomLine svelte-wcvsx4");
+    			attr_dev(div2, "class", "text bottomLine svelte-ryynyx");
     			add_location(div2, file$3, 179, 0, 5723);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
@@ -7549,14 +7549,14 @@ var app = (function () {
     			add_location(div2, file$6, 82, 1, 1685);
     			attr_dev(div3, "class", "horizontalLine left svelte-wtwv6a");
     			set_style(div3, "width", "100%");
-    			set_style(div3, "top", "calc((" + /*distanceBLines*/ ctx[6] + " * 8) - 1px)");
+    			set_style(div3, "top", "calc(" + /*distanceBLines*/ ctx[6] + " * 8)");
     			set_style(div3, "border-top", "1px solid blue");
     			add_location(div3, file$6, 145, 0, 4040);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div4, file$6, 150, 1, 4214);
+    			add_location(div4, file$6, 150, 1, 4206);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$6, 149, 0, 4173);
+    			add_location(div5, file$6, 149, 0, 4165);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10019,8 +10019,8 @@ var app = (function () {
 
     const file$8 = "src/specifics/Iceland.svelte";
 
-    // (37:0) {#if firstSetup}
-    function create_if_block_6$6(ctx) {
+    // (86:0) {#if firstSetup}
+    function create_if_block_37(ctx) {
     	let div;
     	let t;
     	let a;
@@ -10033,10 +10033,10 @@ var app = (function () {
     			t = space();
     			a = element("a");
     			attr_dev(div, "class", "buttonNext");
-    			add_location(div, file$8, 37, 1, 636);
+    			add_location(div, file$8, 86, 1, 1729);
     			attr_dev(a, "class", "buttonPrev");
     			attr_dev(a, "href", /*next*/ ctx[2]);
-    			add_location(a, file$8, 38, 1, 697);
+    			add_location(a, file$8, 87, 1, 1790);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -10044,7 +10044,7 @@ var app = (function () {
     			insert_dev(target, a, anchor);
 
     			if (!mounted) {
-    				dispose = listen_dev(div, "click", /*togglesecondSetup*/ ctx[8], false, false, false);
+    				dispose = listen_dev(div, "click", /*togglesecondSetup*/ ctx[17], false, false, false);
     				mounted = true;
     			}
     		},
@@ -10064,17 +10064,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_6$6.name,
+    		id: create_if_block_37.name,
     		type: "if",
-    		source: "(37:0) {#if firstSetup}",
+    		source: "(86:0) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (41:0) {#if secondSetup}
-    function create_if_block_5$6(ctx) {
+    // (90:0) {#if secondSetup}
+    function create_if_block_36(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -10087,9 +10087,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$8, 41, 1, 763);
+    			add_location(div0, file$8, 90, 1, 1856);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$8, 42, 1, 823);
+    			add_location(div1, file$8, 91, 1, 1916);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -10098,8 +10098,8 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(div0, "click", /*togglethirdSetup*/ ctx[9], false, false, false),
-    					listen_dev(div1, "click", /*togglefirstSetup*/ ctx[7], false, false, false)
+    					listen_dev(div0, "click", /*togglethirdSetup*/ ctx[18], false, false, false),
+    					listen_dev(div1, "click", /*togglefirstSetup*/ ctx[16], false, false, false)
     				];
 
     				mounted = true;
@@ -10117,37 +10117,476 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_5$6.name,
+    		id: create_if_block_36.name,
     		type: "if",
-    		source: "(41:0) {#if secondSetup}",
+    		source: "(90:0) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (45:0) {#if thirdSetup}
-    function create_if_block_4$6(ctx) {
+    // (94:0) {#if thirdSetup}
+    function create_if_block_35(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 94, 1, 1999);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 95, 1, 2060);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*togglefourthSetup*/ ctx[19], false, false, false),
+    					listen_dev(div1, "click", /*togglesecondSetup*/ ctx[17], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_35.name,
+    		type: "if",
+    		source: "(94:0) {#if thirdSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (98:0) {#if fourthSetup}
+    function create_if_block_34(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 98, 1, 2145);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 99, 1, 2205);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*togglefifthSetup*/ ctx[20], false, false, false),
+    					listen_dev(div1, "click", /*togglethirdSetup*/ ctx[18], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_34.name,
+    		type: "if",
+    		source: "(98:0) {#if fourthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (102:0) {#if fifthSetup}
+    function create_if_block_33(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 102, 1, 2288);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 103, 1, 2348);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*togglesixthSetup*/ ctx[21], false, false, false),
+    					listen_dev(div1, "click", /*togglefourthSetup*/ ctx[19], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_33.name,
+    		type: "if",
+    		source: "(102:0) {#if fifthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (106:0) {#if sixthSetup}
+    function create_if_block_32(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 106, 1, 2432);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 107, 1, 2494);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*toggleseventhSetup*/ ctx[22], false, false, false),
+    					listen_dev(div1, "click", /*togglefifthSetup*/ ctx[20], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_32.name,
+    		type: "if",
+    		source: "(106:0) {#if sixthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (110:0) {#if seventhSetup}
+    function create_if_block_31(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 110, 1, 2579);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 111, 1, 2640);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*toggleeighthSetup*/ ctx[23], false, false, false),
+    					listen_dev(div1, "click", /*togglesixthSetup*/ ctx[21], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_31.name,
+    		type: "if",
+    		source: "(110:0) {#if seventhSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (114:0) {#if eightthSetup}
+    function create_if_block_30(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 114, 1, 2725);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 115, 1, 2786);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*toggleninethSetup*/ ctx[24], false, false, false),
+    					listen_dev(div1, "click", /*toggleseventhSetup*/ ctx[22], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_30.name,
+    		type: "if",
+    		source: "(114:0) {#if eightthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (118:0) {#if ninethSetup}
+    function create_if_block_29(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 118, 1, 2872);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 119, 1, 2932);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*toggletenthSetup*/ ctx[25], false, false, false),
+    					listen_dev(div1, "click", /*toggleeighthSetup*/ ctx[23], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_29.name,
+    		type: "if",
+    		source: "(118:0) {#if ninethSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (123:0) {#if tenthSetup}
+    function create_if_block_28(ctx) {
+    	let div0;
+    	let t;
+    	let div1;
+    	let mounted;
+    	let dispose;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t = space();
+    			div1 = element("div");
+    			attr_dev(div0, "class", "buttonNext");
+    			add_location(div0, file$8, 123, 1, 3017);
+    			attr_dev(div1, "class", "buttonPrev");
+    			add_location(div1, file$8, 124, 1, 3080);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			insert_dev(target, t, anchor);
+    			insert_dev(target, div1, anchor);
+
+    			if (!mounted) {
+    				dispose = [
+    					listen_dev(div0, "click", /*toggleeleventhSetup*/ ctx[26], false, false, false),
+    					listen_dev(div1, "click", /*toggleninethSetup*/ ctx[24], false, false, false)
+    				];
+
+    				mounted = true;
+    			}
+    		},
+    		p: noop,
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t);
+    			if (detaching) detach_dev(div1);
+    			mounted = false;
+    			run_all(dispose);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_28.name,
+    		type: "if",
+    		source: "(123:0) {#if tenthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (127:0) {#if eleventhSetup}
+    function create_if_block_27(ctx) {
+    	let a;
+    	let t;
     	let div;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
+    			a = element("a");
+    			t = space();
     			div = element("div");
+    			attr_dev(a, "class", "buttonNext");
+    			attr_dev(a, "href", /*prev*/ ctx[3]);
+    			add_location(a, file$8, 127, 1, 3167);
     			attr_dev(div, "class", "buttonPrev");
-    			add_location(div, file$8, 46, 1, 974);
+    			add_location(div, file$8, 128, 1, 3209);
     		},
     		m: function mount(target, anchor) {
+    			insert_dev(target, a, anchor);
+    			insert_dev(target, t, anchor);
     			insert_dev(target, div, anchor);
 
     			if (!mounted) {
-    				dispose = listen_dev(div, "click", /*togglesecondSetup*/ ctx[8], false, false, false);
+    				dispose = listen_dev(div, "click", /*toggletenthSetup*/ ctx[25], false, false, false);
     				mounted = true;
     			}
     		},
-    		p: noop,
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*prev*/ 8) {
+    				attr_dev(a, "href", /*prev*/ ctx[3]);
+    			}
+    		},
     		d: function destroy(detaching) {
+    			if (detaching) detach_dev(a);
+    			if (detaching) detach_dev(t);
     			if (detaching) detach_dev(div);
     			mounted = false;
     			dispose();
@@ -10156,27 +10595,951 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_4$6.name,
+    		id: create_if_block_27.name,
     		type: "if",
-    		source: "(45:0) {#if thirdSetup}",
+    		source: "(127:0) {#if eleventhSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (68:0) {#if firstSetup}
-    function create_if_block_3$6(ctx) {
+    // (139:0) {#if firstSetup}
+    function create_if_block_26(ctx) {
+    	let div0;
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let t6;
+    	let div4;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = text("Iceland is a high consumer of fast fashion, since 2010 the Red Cross recieves tonnes of used clothing annually, most of which is exported either for recycling in Eurpe or to devoloping countries.");
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "2010";
+    			t3 = space();
+    			div2 = element("div");
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "2020";
+    			t6 = space();
+    			div4 = element("div");
+    			attr_dev(div0, "class", "pagetext svelte-avaxn7");
+    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div0, file$8, 139, 1, 3381);
+    			attr_dev(div1, "class", "text years left line10 svelte-avaxn7");
+    			add_location(div1, file$8, 142, 1, 3649);
+    			attr_dev(div2, "class", "horizontalLine full left line10 svelte-avaxn7");
+    			add_location(div2, file$8, 143, 1, 3697);
+    			attr_dev(div3, "class", "text years left line0 now svelte-avaxn7");
+    			add_location(div3, file$8, 144, 1, 3750);
+    			attr_dev(div4, "class", "horizontalLine full left line0 svelte-avaxn7");
+    			add_location(div4, file$8, 145, 1, 3801);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div3, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div4, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div4);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_26.name,
+    		type: "if",
+    		source: "(139:0) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (152:0) {#if secondSetup}
+    function create_if_block_25$1(ctx) {
+    	let div0;
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let div2;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = text("Icelanders were a former colony of Denmark, and gained full Independance in 1944.");
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "1944";
+    			t3 = space();
+    			div2 = element("div");
+    			attr_dev(div0, "class", "pagetext svelte-avaxn7");
+    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div0, file$8, 152, 1, 3988);
+    			attr_dev(div1, "class", "text years left line76 svelte-avaxn7");
+    			add_location(div1, file$8, 156, 1, 4143);
+    			attr_dev(div2, "class", "horizontalLine full left line76 svelte-avaxn7");
+    			add_location(div2, file$8, 157, 1, 4191);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_25$1.name,
+    		type: "if",
+    		source: "(152:0) {#if secondSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (161:16) {:else}
+    function create_else_block_9(ctx) {
+    	let div;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			attr_dev(div, "class", "line left line76 svelte-avaxn7");
+    			add_location(div, file$8, 161, 1, 4275);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_9.name,
+    		type: "else",
+    		source: "(161:16) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (161:0) {#if firstSetup}
+    function create_if_block_24$2(ctx) {
+    	const block = { c: noop, m: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_24$2.name,
+    		type: "if",
+    		source: "(161:0) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (165:0) {#if thirdSetup}
+    function create_if_block_23$2(ctx) {
+    	let div0;
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let div2;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = text("Four years earlier, a few months into World War II, Iceland was occupied by the British military. Most of the soldiers resided in the capital, causing young male soldiers to become around 1/3 of the population.");
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "1940";
+    			t3 = space();
+    			div2 = element("div");
+    			attr_dev(div0, "class", "pagetext svelte-avaxn7");
+    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div0, file$8, 165, 1, 4337);
+    			attr_dev(div1, "class", "text years left line80 svelte-avaxn7");
+    			add_location(div1, file$8, 169, 1, 4621);
+    			attr_dev(div2, "class", "horizontalLine full left line80 svelte-avaxn7");
+    			add_location(div2, file$8, 170, 1, 4669);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_23$2.name,
+    		type: "if",
+    		source: "(165:0) {#if thirdSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (174:16) {:else}
+    function create_else_block_7(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_2(ctx, dirty) {
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_22$2;
+    		return create_else_block_8;
+    	}
+
+    	let current_block_type = select_block_type_2(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_2(ctx))) {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_7.name,
+    		type: "else",
+    		source: "(174:16) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (174:0) {#if firstSetup}
+    function create_if_block_21$2(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_21$2.name,
+    		type: "if",
+    		source: "(174:0) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (175:18) {:else}
+    function create_else_block_8(ctx) {
+    	let div;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			attr_dev(div, "class", "line left line80 svelte-avaxn7");
+    			add_location(div, file$8, 175, 2, 4780);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_8.name,
+    		type: "else",
+    		source: "(175:18) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (175:1) {#if secondSetup}
+    function create_if_block_22$2(ctx) {
+    	const block = { c: noop, m: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_22$2.name,
+    		type: "if",
+    		source: "(175:1) {#if secondSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (180:0) {#if fourthSetup}
+    function create_if_block_20$2(ctx) {
+    	let div0;
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let t6;
+    	let div4;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = text("This caused what was called Ástandið (The Situation), in which single women started hanging out with soldiers to much dismay of the wider public and the government, which’s main concern was that Icelandic women would birth mixed children which would “pollute” the pure Icelandic race. Women who were in the “situation” were spyed on by a police-team which documented their conduct in what was the largest spying opperation ever conducted in Iceland, for a short period, laws were even changed so that the age of “independance” became 20 instead of 16.");
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "1940";
+    			t3 = space();
+    			div2 = element("div");
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "1945";
+    			t6 = space();
+    			div4 = element("div");
+    			attr_dev(div0, "class", "pagetext svelte-avaxn7");
+    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div0, file$8, 180, 1, 4850);
+    			attr_dev(div1, "class", "text years left line80 svelte-avaxn7");
+    			add_location(div1, file$8, 184, 1, 5475);
+    			attr_dev(div2, "class", "horizontalLine full left line80 svelte-avaxn7");
+    			add_location(div2, file$8, 185, 1, 5523);
+    			attr_dev(div3, "class", "text years left line75 svelte-avaxn7");
+    			add_location(div3, file$8, 187, 1, 5577);
+    			attr_dev(div4, "class", "horizontalLine full left line75 svelte-avaxn7");
+    			add_location(div4, file$8, 188, 1, 5625);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div3, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div4, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div4);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_20$2.name,
+    		type: "if",
+    		source: "(180:0) {#if fourthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (192:16) {:else}
+    function create_else_block_4(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_4(ctx, dirty) {
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_18$2;
+    		return create_else_block_5;
+    	}
+
+    	let current_block_type = select_block_type_4(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_4(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_4.name,
+    		type: "else",
+    		source: "(192:16) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (192:0) {#if firstSetup}
+    function create_if_block_17$2(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_17$2.name,
+    		type: "if",
+    		source: "(192:0) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (193:18) {:else}
+    function create_else_block_5(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_5(ctx, dirty) {
+    		if (/*thirdSetup*/ ctx[6]) return create_if_block_19$2;
+    		return create_else_block_6;
+    	}
+
+    	let current_block_type = select_block_type_5(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_5(ctx))) {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_5.name,
+    		type: "else",
+    		source: "(193:18) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (193:1) {#if secondSetup}
+    function create_if_block_18$2(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_18$2.name,
+    		type: "if",
+    		source: "(193:1) {#if secondSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (194:18) {:else}
+    function create_else_block_6(ctx) {
+    	let div;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			attr_dev(div, "class", "line left line75 svelte-avaxn7");
+    			add_location(div, file$8, 194, 3, 5763);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_6.name,
+    		type: "else",
+    		source: "(194:18) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (194:2) {#if thirdSetup}
+    function create_if_block_19$2(ctx) {
+    	const block = { c: noop, m: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_19$2.name,
+    		type: "if",
+    		source: "(194:2) {#if thirdSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (200:0) {#if fifthSetup}
+    function create_if_block_16$2(ctx) {
+    	let div0;
+    	let t0;
+    	let t1;
+    	let div1;
+    	let t3;
+    	let div2;
+    	let t4;
+    	let div3;
+    	let t6;
+    	let div4;
+
+    	const block = {
+    		c: function create() {
+    			div0 = element("div");
+    			t0 = text("In 1941, when the U.S. army replaced the British, the Icelandic government requested specifically that black soldiers would not be sent to Iceland. An oral agreement of that matter was kept until 1963, when a chosen few, “three or four” black family-men where allowed over.");
+    			t1 = space();
+    			div1 = element("div");
+    			div1.textContent = "1941";
+    			t3 = space();
+    			div2 = element("div");
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "1963";
+    			t6 = space();
+    			div4 = element("div");
+    			attr_dev(div0, "class", "pagetext svelte-avaxn7");
+    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div0, file$8, 200, 1, 5840);
+    			attr_dev(div1, "class", "text years left line79 svelte-avaxn7");
+    			add_location(div1, file$8, 204, 1, 6187);
+    			attr_dev(div2, "class", "horizontalLine full left line79 svelte-avaxn7");
+    			add_location(div2, file$8, 205, 1, 6235);
+    			attr_dev(div3, "class", "text years left line57 svelte-avaxn7");
+    			add_location(div3, file$8, 207, 1, 6289);
+    			attr_dev(div4, "class", "horizontalLine full left line57 svelte-avaxn7");
+    			add_location(div4, file$8, 208, 1, 6337);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div1, anchor);
+    			insert_dev(target, t3, anchor);
+    			insert_dev(target, div2, anchor);
+    			insert_dev(target, t4, anchor);
+    			insert_dev(target, div3, anchor);
+    			insert_dev(target, t6, anchor);
+    			insert_dev(target, div4, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div1);
+    			if (detaching) detach_dev(t3);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
+    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t6);
+    			if (detaching) detach_dev(div4);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_16$2.name,
+    		type: "if",
+    		source: "(200:0) {#if fifthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (212:16) {:else}
+    function create_else_block$3(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_7(ctx, dirty) {
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_13$3;
+    		return create_else_block_1$1;
+    	}
+
+    	let current_block_type = select_block_type_7(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_7(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block$3.name,
+    		type: "else",
+    		source: "(212:16) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (212:0) {#if firstSetup}
+    function create_if_block_12$3(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_12$3.name,
+    		type: "if",
+    		source: "(212:0) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (213:18) {:else}
+    function create_else_block_1$1(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_8(ctx, dirty) {
+    		if (/*thirdSetup*/ ctx[6]) return create_if_block_14$3;
+    		return create_else_block_2;
+    	}
+
+    	let current_block_type = select_block_type_8(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type === (current_block_type = select_block_type_8(ctx)) && if_block) {
+    				if_block.p(ctx, dirty);
+    			} else {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_1$1.name,
+    		type: "else",
+    		source: "(213:18) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (213:1) {#if secondSetup}
+    function create_if_block_13$3(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_13$3.name,
+    		type: "if",
+    		source: "(213:1) {#if secondSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (214:18) {:else}
+    function create_else_block_2(ctx) {
+    	let if_block_anchor;
+
+    	function select_block_type_9(ctx, dirty) {
+    		if (/*fourthSetup*/ ctx[7]) return create_if_block_15$2;
+    		return create_else_block_3;
+    	}
+
+    	let current_block_type = select_block_type_9(ctx);
+    	let if_block = current_block_type(ctx);
+
+    	const block = {
+    		c: function create() {
+    			if_block.c();
+    			if_block_anchor = empty();
+    		},
+    		m: function mount(target, anchor) {
+    			if_block.m(target, anchor);
+    			insert_dev(target, if_block_anchor, anchor);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (current_block_type !== (current_block_type = select_block_type_9(ctx))) {
+    				if_block.d(1);
+    				if_block = current_block_type(ctx);
+
+    				if (if_block) {
+    					if_block.c();
+    					if_block.m(if_block_anchor.parentNode, if_block_anchor);
+    				}
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if_block.d(detaching);
+    			if (detaching) detach_dev(if_block_anchor);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_2.name,
+    		type: "else",
+    		source: "(214:18) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (214:2) {#if thirdSetup}
+    function create_if_block_14$3(ctx) {
+    	const block = { c: noop, m: noop, p: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_14$3.name,
+    		type: "if",
+    		source: "(214:2) {#if thirdSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (215:20) {:else}
+    function create_else_block_3(ctx) {
+    	let div;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			attr_dev(div, "class", "line left line57 svelte-avaxn7");
+    			add_location(div, file$8, 215, 4, 6504);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_else_block_3.name,
+    		type: "else",
+    		source: "(215:20) {:else}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (215:3) {#if fourthSetup}
+    function create_if_block_15$2(ctx) {
+    	const block = { c: noop, m: noop, d: noop };
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_15$2.name,
+    		type: "if",
+    		source: "(215:3) {#if fourthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (222:0) {#if sixthSetup}
+    function create_if_block_11$3(ctx) {
     	let div;
     	let t;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t = text("Text about Iceland. Really lucky geographically.");
-    			attr_dev(div, "class", "pagetext");
+    			t = text("During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. TÓNLIST TÓNLIST TÓNLIST");
+    			attr_dev(div, "class", "pagetext svelte-avaxn7");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$8, 68, 1, 1566);
+    			add_location(div, file$8, 222, 1, 6590);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -10194,62 +11557,422 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_3$6.name,
+    		id: create_if_block_11$3.name,
     		type: "if",
-    		source: "(68:0) {#if firstSetup}",
+    		source: "(222:0) {#if sixthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (90:0) {#if firstSetup}
-    function create_if_block_2$6(ctx) {
-    	let div0;
-    	let t1;
-    	let div1;
-    	let t2;
-    	let div2;
-    	let t4;
-    	let div3;
+    // (228:0) {#if seventhSetup}
+    function create_if_block_10$4(ctx) {
+    	let div;
+    	let t;
 
     	const block = {
     		c: function create() {
-    			div0 = element("div");
-    			div0.textContent = "2020";
-    			t1 = space();
-    			div1 = element("div");
-    			t2 = space();
-    			div2 = element("div");
-    			div2.textContent = "2040";
-    			t4 = space();
-    			div3 = element("div");
-    			attr_dev(div0, "class", "text years right line0 now svelte-1k4pvpk");
-    			add_location(div0, file$8, 90, 1, 2135);
-    			attr_dev(div1, "class", "horizontalLine full right line0 svelte-1k4pvpk");
-    			add_location(div1, file$8, 91, 1, 2187);
-    			attr_dev(div2, "class", "text years right line20 svelte-1k4pvpk");
-    			add_location(div2, file$8, 92, 1, 2240);
-    			attr_dev(div3, "class", "horizontalLine full right line20 svelte-1k4pvpk");
-    			add_location(div3, file$8, 93, 1, 2289);
+    			div = element("div");
+    			t = text("TÓNLIST TÓNLIST TÓNLIST 1");
+    			attr_dev(div, "class", "pagetext svelte-avaxn7");
+    			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div, file$8, 228, 1, 6864);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div2, anchor);
-    			insert_dev(target, t4, anchor);
-    			insert_dev(target, div3, anchor);
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_10$4.name,
+    		type: "if",
+    		source: "(228:0) {#if seventhSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (234:0) {#if eightthSetup}
+    function create_if_block_9$5(ctx) {
+    	let div;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			t = text("TÓNLIST TÓNLIST TÓNLIST 2");
+    			attr_dev(div, "class", "pagetext svelte-avaxn7");
+    			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div, file$8, 234, 1, 6987);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_9$5.name,
+    		type: "if",
+    		source: "(234:0) {#if eightthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (240:0) {#if ninethSetup}
+    function create_if_block_8$5(ctx) {
+    	let div;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			t = text("Although it is branded as a green/clean country, Iceland is one of the largest polluters /CO2 emitters per capita. Despite a 99% renewable energy supply, it’s Consumption-Based Carbon Footprint (CBCF) (as explained briefly in India’s page) is similar to or higher than most EU nations. A majority of Icelandic household CBCF is linked to imported goods, meaning the CO2 burden of Icelandic consumption falls to a large extent on developing nations.");
+    			attr_dev(div, "class", "pagetext svelte-avaxn7");
+    			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div, file$8, 240, 1, 7109);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_8$5.name,
+    		type: "if",
+    		source: "(240:0) {#if ninethSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (246:0) {#if tenthSetup}
+    function create_if_block_7$5(ctx) {
+    	let div;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			div = element("div");
+    			t = text("One migh assume that Iceland's disregard for actual sustainability could be linked to the fact that warming in Iceland will not reach extreme hights in the forseeable future, and it's position as an island way up north allows it to close itself off to those affected...");
+    			attr_dev(div, "class", "pagetext svelte-avaxn7");
+    			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			add_location(div, file$8, 246, 1, 7653);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div, anchor);
+    			append_dev(div, t);
+    		},
+    		p: function update(ctx, dirty) {
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(div);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_7$5.name,
+    		type: "if",
+    		source: "(246:0) {#if tenthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (252:0) {#if eleventhSetup}
+    function create_if_block_6$6(ctx) {
+    	let div1;
+    	let div0;
+    	let span0;
+    	let t1;
+    	let div4;
+    	let div2;
+    	let span1;
+    	let t3;
+    	let div3;
+    	let span2;
+    	let t5;
+    	let div5;
+    	let t7;
+    	let div6;
+    	let t8;
+    	let div7;
+    	let t10;
+    	let div8;
+    	let t11;
+    	let div9;
+
+    	const block = {
+    		c: function create() {
+    			div1 = element("div");
+    			div0 = element("div");
+    			span0 = element("span");
+    			span0.textContent = "365 days";
+    			t1 = space();
+    			div4 = element("div");
+    			div2 = element("div");
+    			span1 = element("span");
+    			span1.textContent = "✝︎ 0";
+    			t3 = space();
+    			div3 = element("div");
+    			span2 = element("span");
+    			span2.textContent = "0 days";
+    			t5 = space();
+    			div5 = element("div");
+    			div5.textContent = "2020";
+    			t7 = space();
+    			div6 = element("div");
+    			t8 = space();
+    			div7 = element("div");
+    			div7.textContent = "2100";
+    			t10 = space();
+    			div8 = element("div");
+    			t11 = space();
+    			div9 = element("div");
+    			attr_dev(span0, "class", "tempnumber left text svelte-avaxn7");
+    			set_style(span0, "z-index", "99999999");
+    			add_location(span0, file$8, 253, 36, 8089);
+    			attr_dev(div0, "class", "temperature infotext");
+    			add_location(div0, file$8, 253, 2, 8055);
+    			attr_dev(div1, "class", "tempMeterCountry svelte-avaxn7");
+    			add_location(div1, file$8, 252, 1, 8022);
+    			attr_dev(span1, "class", "deathToll text narrow svelte-avaxn7");
+    			add_location(span1, file$8, 256, 36, 8249);
+    			attr_dev(div2, "class", "temperature midMeter svelte-avaxn7");
+    			add_location(div2, file$8, 256, 2, 8215);
+    			attr_dev(span2, "class", "tempnumber rightFirst text svelte-avaxn7");
+    			add_location(span2, file$8, 257, 36, 8353);
+    			attr_dev(div3, "class", "temperature infotext");
+    			add_location(div3, file$8, 257, 2, 8319);
+    			attr_dev(div4, "class", "tempMeterCountry svelte-avaxn7");
+    			add_location(div4, file$8, 255, 1, 8182);
+    			attr_dev(div5, "class", "text years right line0 now svelte-avaxn7");
+    			add_location(div5, file$8, 260, 1, 8424);
+    			attr_dev(div6, "class", "horizontalLine full right line0 svelte-avaxn7");
+    			add_location(div6, file$8, 261, 1, 8476);
+    			attr_dev(div7, "class", "text years right line80 svelte-avaxn7");
+    			add_location(div7, file$8, 263, 1, 8530);
+    			attr_dev(div8, "class", "horizontalLine full right line80 svelte-avaxn7");
+    			add_location(div8, file$8, 264, 1, 8579);
+    			attr_dev(div9, "class", "line right line80 svelte-avaxn7");
+    			add_location(div9, file$8, 265, 1, 8633);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, div1, anchor);
+    			append_dev(div1, div0);
+    			append_dev(div0, span0);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div2);
+    			append_dev(div2, span1);
+    			append_dev(div4, t3);
+    			append_dev(div4, div3);
+    			append_dev(div3, span2);
+    			insert_dev(target, t5, anchor);
+    			insert_dev(target, div5, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, div6, anchor);
+    			insert_dev(target, t8, anchor);
+    			insert_dev(target, div7, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, div8, anchor);
+    			insert_dev(target, t11, anchor);
+    			insert_dev(target, div9, anchor);
+    		},
+    		d: function destroy(detaching) {
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div2);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(t5);
+    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(div6);
+    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(div7);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(div8);
+    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(div9);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_6$6.name,
+    		type: "if",
+    		source: "(252:0) {#if eleventhSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (279:3) {#if firstSetup}
+    function create_if_block_5$6(ctx) {
+    	let a;
+
+    	const block = {
+    		c: function create() {
+    			a = element("a");
+    			a.textContent = "[more ↗]";
+    			attr_dev(a, "href", "https://skemman.is/bitstream/1946/28057/1/%C3%81hrif%20neysluhyggju%20%C3%A1%20t%C3%ADsku%20og%20fatai%C3%B0na%C3%B0%20.pdf");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-avaxn7");
+    			add_location(a, file$8, 278, 19, 8822);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, a, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(a);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_5$6.name,
+    		type: "if",
+    		source: "(279:3) {#if firstSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (281:3) {#if thirdSetup}
+    function create_if_block_4$6(ctx) {
+    	let a;
+
+    	const block = {
+    		c: function create() {
+    			a = element("a");
+    			a.textContent = "[more ↗]";
+    			attr_dev(a, "href", "https://skemman.is/bitstream/1946/15010/1/MA_snidmat-Alma.pdf");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-avaxn7");
+    			add_location(a, file$8, 280, 19, 9016);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, a, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(a);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_4$6.name,
+    		type: "if",
+    		source: "(281:3) {#if thirdSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (283:3) {#if fourthSetup}
+    function create_if_block_3$6(ctx) {
+    	let a0;
+    	let t1;
+    	let a1;
+
+    	const block = {
+    		c: function create() {
+    			a0 = element("a");
+    			a0.textContent = "[more ↗]";
+    			t1 = space();
+    			a1 = element("a");
+    			a1.textContent = "[more ↗]";
+    			attr_dev(a0, "href", "https://www.ruv.is/thaettir/astandsborn");
+    			attr_dev(a0, "target", "_blank");
+    			attr_dev(a0, "class", "svelte-avaxn7");
+    			add_location(a0, file$8, 282, 20, 9149);
+    			attr_dev(a1, "href", "https://www.ruv.is/frett/stridsarin-a-islandi-fyrsti-thattur");
+    			attr_dev(a1, "target", "_blank");
+    			attr_dev(a1, "class", "svelte-avaxn7");
+    			add_location(a1, file$8, 282, 105, 9234);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, a0, anchor);
+    			insert_dev(target, t1, anchor);
+    			insert_dev(target, a1, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(a0);
+    			if (detaching) detach_dev(t1);
+    			if (detaching) detach_dev(a1);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_if_block_3$6.name,
+    		type: "if",
+    		source: "(283:3) {#if fourthSetup}",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (285:3) {#if fifthSetup}
+    function create_if_block_2$6(ctx) {
+    	let a;
+
+    	const block = {
+    		c: function create() {
+    			a = element("a");
+    			a.textContent = "[more ↗]";
+    			attr_dev(a, "href", "https://timarit.is/page/3428779#page/n17/mode/2up");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-avaxn7");
+    			add_location(a, file$8, 284, 19, 9365);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, a, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(a);
     		}
     	};
 
@@ -10257,60 +11980,31 @@ var app = (function () {
     		block,
     		id: create_if_block_2$6.name,
     		type: "if",
-    		source: "(90:0) {#if firstSetup}",
+    		source: "(285:3) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (97:0) {#if secondSetup}
+    // (287:3) {#if ninethSetup}
     function create_if_block_1$6(ctx) {
-    	let div0;
-    	let t1;
-    	let div1;
-    	let t2;
-    	let div2;
-    	let t4;
-    	let div3;
+    	let a;
 
     	const block = {
     		c: function create() {
-    			div0 = element("div");
-    			div0.textContent = "2060";
-    			t1 = space();
-    			div1 = element("div");
-    			t2 = space();
-    			div2 = element("div");
-    			div2.textContent = "2040";
-    			t4 = space();
-    			div3 = element("div");
-    			attr_dev(div0, "class", "text years right line40 svelte-1k4pvpk");
-    			add_location(div0, file$8, 97, 1, 2368);
-    			attr_dev(div1, "class", "horizontalLine full right line40 svelte-1k4pvpk");
-    			add_location(div1, file$8, 98, 1, 2417);
-    			attr_dev(div2, "class", "text years right line20 svelte-1k4pvpk");
-    			add_location(div2, file$8, 99, 1, 2471);
-    			attr_dev(div3, "class", "horizontalLine full right line20 svelte-1k4pvpk");
-    			add_location(div3, file$8, 100, 1, 2520);
+    			a = element("a");
+    			a.textContent = "[more ↗]";
+    			attr_dev(a, "href", "https://www.sciencedirect.com/science/article/pii/S0959652617318267");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-avaxn7");
+    			add_location(a, file$8, 286, 20, 9486);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div2, anchor);
-    			insert_dev(target, t4, anchor);
-    			insert_dev(target, div3, anchor);
+    			insert_dev(target, a, anchor);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div2);
-    			if (detaching) detach_dev(t4);
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(a);
     		}
     	};
 
@@ -10318,80 +12012,31 @@ var app = (function () {
     		block,
     		id: create_if_block_1$6.name,
     		type: "if",
-    		source: "(97:0) {#if secondSetup}",
+    		source: "(287:3) {#if ninethSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:0) {#if thirdSetup}
+    // (289:3) {#if eleventhSetup}
     function create_if_block$6(ctx) {
-    	let div0;
-    	let t1;
-    	let div1;
-    	let t2;
-    	let div2;
-    	let t3;
-    	let div3;
-    	let t5;
-    	let div4;
-    	let t6;
-    	let div5;
+    	let a;
 
     	const block = {
     		c: function create() {
-    			div0 = element("div");
-    			div0.textContent = "2080";
-    			t1 = space();
-    			div1 = element("div");
-    			t2 = space();
-    			div2 = element("div");
-    			t3 = space();
-    			div3 = element("div");
-    			div3.textContent = "2100";
-    			t5 = space();
-    			div4 = element("div");
-    			t6 = space();
-    			div5 = element("div");
-    			attr_dev(div0, "class", "text years right line60 svelte-1k4pvpk");
-    			add_location(div0, file$8, 104, 1, 2598);
-    			attr_dev(div1, "class", "horizontalLine full right line60 svelte-1k4pvpk");
-    			add_location(div1, file$8, 105, 1, 2647);
-    			attr_dev(div2, "class", "line right line60 svelte-1k4pvpk");
-    			add_location(div2, file$8, 106, 1, 2701);
-    			attr_dev(div3, "class", "text years right line80 svelte-1k4pvpk");
-    			add_location(div3, file$8, 107, 1, 2740);
-    			attr_dev(div4, "class", "horizontalLine full right line80 svelte-1k4pvpk");
-    			add_location(div4, file$8, 108, 1, 2789);
-    			attr_dev(div5, "class", "line right line80 svelte-1k4pvpk");
-    			add_location(div5, file$8, 109, 1, 2843);
+    			a = element("a");
+    			a.textContent = "[more ↗]";
+    			attr_dev(a, "href", "http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-avaxn7");
+    			add_location(a, file$8, 288, 22, 9627);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
-    			insert_dev(target, t1, anchor);
-    			insert_dev(target, div1, anchor);
-    			insert_dev(target, t2, anchor);
-    			insert_dev(target, div2, anchor);
-    			insert_dev(target, t3, anchor);
-    			insert_dev(target, div3, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, div4, anchor);
-    			insert_dev(target, t6, anchor);
-    			insert_dev(target, div5, anchor);
+    			insert_dev(target, a, anchor);
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t1);
-    			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div2);
-    			if (detaching) detach_dev(t3);
-    			if (detaching) detach_dev(div3);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(div4);
-    			if (detaching) detach_dev(t6);
-    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(a);
     		}
     	};
 
@@ -10399,7 +12044,7 @@ var app = (function () {
     		block,
     		id: create_if_block$6.name,
     		type: "if",
-    		source: "(104:0) {#if thirdSetup}",
+    		source: "(289:3) {#if eleventhSetup}",
     		ctx
     	});
 
@@ -10410,35 +12055,110 @@ var app = (function () {
     	let t0;
     	let t1;
     	let t2;
-    	let div0;
     	let t3;
     	let t4;
     	let t5;
-    	let div2;
-    	let div1;
-    	let span0;
+    	let t6;
     	let t7;
-    	let div5;
-    	let div3;
-    	let span1;
+    	let t8;
     	let t9;
-    	let div4;
-    	let span2;
+    	let t10;
+    	let div0;
     	let t11;
     	let t12;
     	let t13;
+    	let div1;
     	let t14;
-    	let div6;
+    	let div2;
     	let t15;
+    	let div3;
+    	let t16;
+    	let t17;
+    	let t18;
+    	let t19;
+    	let t20;
+    	let t21;
+    	let t22;
+    	let t23;
+    	let t24;
+    	let t25;
+    	let t26;
+    	let t27;
+    	let t28;
+    	let t29;
+    	let t30;
+    	let div5;
+    	let div4;
+    	let t31;
+    	let t32;
+    	let t33;
+    	let t34;
+    	let t35;
+    	let t36;
+    	let div6;
+    	let t37;
     	let div8;
     	let div7;
-    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_6$6(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_5$6(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_4$6(ctx);
-    	let if_block3 = /*firstSetup*/ ctx[3] && create_if_block_3$6(ctx);
-    	let if_block4 = /*firstSetup*/ ctx[3] && create_if_block_2$6(ctx);
-    	let if_block5 = /*secondSetup*/ ctx[4] && create_if_block_1$6(ctx);
-    	let if_block6 = /*thirdSetup*/ ctx[5] && create_if_block$6(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_37(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_36(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_35(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_34(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_33(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_32(ctx);
+    	let if_block6 = /*seventhSetup*/ ctx[10] && create_if_block_31(ctx);
+    	let if_block7 = /*eightthSetup*/ ctx[11] && create_if_block_30(ctx);
+    	let if_block8 = /*ninethSetup*/ ctx[12] && create_if_block_29(ctx);
+    	let if_block9 = /*tenthSetup*/ ctx[13] && create_if_block_28(ctx);
+    	let if_block10 = /*eleventhSetup*/ ctx[14] && create_if_block_27(ctx);
+    	let if_block11 = /*firstSetup*/ ctx[4] && create_if_block_26(ctx);
+    	let if_block12 = /*secondSetup*/ ctx[5] && create_if_block_25$1(ctx);
+
+    	function select_block_type(ctx, dirty) {
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_24$2;
+    		return create_else_block_9;
+    	}
+
+    	let current_block_type = select_block_type(ctx);
+    	let if_block13 = current_block_type(ctx);
+    	let if_block14 = /*thirdSetup*/ ctx[6] && create_if_block_23$2(ctx);
+
+    	function select_block_type_1(ctx, dirty) {
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_21$2;
+    		return create_else_block_7;
+    	}
+
+    	let current_block_type_1 = select_block_type_1(ctx);
+    	let if_block15 = current_block_type_1(ctx);
+    	let if_block16 = /*fourthSetup*/ ctx[7] && create_if_block_20$2(ctx);
+
+    	function select_block_type_3(ctx, dirty) {
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_17$2;
+    		return create_else_block_4;
+    	}
+
+    	let current_block_type_2 = select_block_type_3(ctx);
+    	let if_block17 = current_block_type_2(ctx);
+    	let if_block18 = /*fifthSetup*/ ctx[8] && create_if_block_16$2(ctx);
+
+    	function select_block_type_6(ctx, dirty) {
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_12$3;
+    		return create_else_block$3;
+    	}
+
+    	let current_block_type_3 = select_block_type_6(ctx);
+    	let if_block19 = current_block_type_3(ctx);
+    	let if_block20 = /*sixthSetup*/ ctx[9] && create_if_block_11$3(ctx);
+    	let if_block21 = /*seventhSetup*/ ctx[10] && create_if_block_10$4(ctx);
+    	let if_block22 = /*eightthSetup*/ ctx[11] && create_if_block_9$5(ctx);
+    	let if_block23 = /*ninethSetup*/ ctx[12] && create_if_block_8$5(ctx);
+    	let if_block24 = /*tenthSetup*/ ctx[13] && create_if_block_7$5(ctx);
+    	let if_block25 = /*eleventhSetup*/ ctx[14] && create_if_block_6$6(ctx);
+    	let if_block26 = /*firstSetup*/ ctx[4] && create_if_block_5$6(ctx);
+    	let if_block27 = /*thirdSetup*/ ctx[6] && create_if_block_4$6(ctx);
+    	let if_block28 = /*fourthSetup*/ ctx[7] && create_if_block_3$6(ctx);
+    	let if_block29 = /*fifthSetup*/ ctx[8] && create_if_block_2$6(ctx);
+    	let if_block30 = /*ninethSetup*/ ctx[12] && create_if_block_1$6(ctx);
+    	let if_block31 = /*eleventhSetup*/ ctx[14] && create_if_block$6(ctx);
 
     	const block = {
     		c: function create() {
@@ -10448,65 +12168,103 @@ var app = (function () {
     			t1 = space();
     			if (if_block2) if_block2.c();
     			t2 = space();
-    			div0 = element("div");
-    			t3 = text(/*pagetitleText*/ ctx[0]);
-    			t4 = space();
     			if (if_block3) if_block3.c();
-    			t5 = space();
-    			div2 = element("div");
-    			div1 = element("div");
-    			span0 = element("span");
-    			span0.textContent = "365 days";
-    			t7 = space();
-    			div5 = element("div");
-    			div3 = element("div");
-    			span1 = element("span");
-    			span1.textContent = "✝︎ 0";
-    			t9 = space();
-    			div4 = element("div");
-    			span2 = element("span");
-    			span2.textContent = "0 days";
-    			t11 = space();
+    			t3 = space();
     			if (if_block4) if_block4.c();
-    			t12 = space();
+    			t4 = space();
     			if (if_block5) if_block5.c();
-    			t13 = space();
+    			t5 = space();
     			if (if_block6) if_block6.c();
+    			t6 = space();
+    			if (if_block7) if_block7.c();
+    			t7 = space();
+    			if (if_block8) if_block8.c();
+    			t8 = space();
+    			if (if_block9) if_block9.c();
+    			t9 = space();
+    			if (if_block10) if_block10.c();
+    			t10 = space();
+    			div0 = element("div");
+    			t11 = text(/*pagetitleText*/ ctx[0]);
+    			t12 = space();
+    			if (if_block11) if_block11.c();
+    			t13 = space();
+    			div1 = element("div");
     			t14 = space();
-    			div6 = element("div");
+    			div2 = element("div");
     			t15 = space();
+    			div3 = element("div");
+    			t16 = space();
+    			if (if_block12) if_block12.c();
+    			t17 = space();
+    			if_block13.c();
+    			t18 = space();
+    			if (if_block14) if_block14.c();
+    			t19 = space();
+    			if_block15.c();
+    			t20 = space();
+    			if (if_block16) if_block16.c();
+    			t21 = space();
+    			if_block17.c();
+    			t22 = space();
+    			if (if_block18) if_block18.c();
+    			t23 = space();
+    			if_block19.c();
+    			t24 = space();
+    			if (if_block20) if_block20.c();
+    			t25 = space();
+    			if (if_block21) if_block21.c();
+    			t26 = space();
+    			if (if_block22) if_block22.c();
+    			t27 = space();
+    			if (if_block23) if_block23.c();
+    			t28 = space();
+    			if (if_block24) if_block24.c();
+    			t29 = space();
+    			if (if_block25) if_block25.c();
+    			t30 = space();
+    			div5 = element("div");
+    			div4 = element("div");
+    			if (if_block26) if_block26.c();
+    			t31 = space();
+    			if (if_block27) if_block27.c();
+    			t32 = space();
+    			if (if_block28) if_block28.c();
+    			t33 = space();
+    			if (if_block29) if_block29.c();
+    			t34 = space();
+    			if (if_block30) if_block30.c();
+    			t35 = space();
+    			if (if_block31) if_block31.c();
+    			t36 = space();
+    			div6 = element("div");
+    			t37 = space();
     			div8 = element("div");
     			div7 = element("div");
     			attr_dev(div0, "class", "pagetitle");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div0, file$8, 64, 0, 1464);
-    			attr_dev(span0, "class", "tempnumber left text svelte-1k4pvpk");
-    			set_style(span0, "z-index", "99999999");
-    			add_location(span0, file$8, 81, 36, 1782);
-    			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$8, 81, 2, 1748);
-    			attr_dev(div2, "class", "tempMeterCountry svelte-1k4pvpk");
-    			add_location(div2, file$8, 80, 1, 1715);
-    			attr_dev(span1, "class", "deathToll text narrow svelte-1k4pvpk");
-    			add_location(span1, file$8, 84, 36, 1942);
-    			attr_dev(div3, "class", "temperature midMeter svelte-1k4pvpk");
-    			add_location(div3, file$8, 84, 2, 1908);
-    			attr_dev(span2, "class", "tempnumber rightFirst text svelte-1k4pvpk");
-    			add_location(span2, file$8, 85, 36, 2046);
-    			attr_dev(div4, "class", "temperature infotext");
-    			add_location(div4, file$8, 85, 2, 2012);
-    			attr_dev(div5, "class", "tempMeterCountry svelte-1k4pvpk");
-    			add_location(div5, file$8, 83, 1, 1875);
-    			attr_dev(div6, "class", "horizontalLine left svelte-1k4pvpk");
+    			add_location(div0, file$8, 135, 0, 3279);
+    			attr_dev(div1, "class", "line left line10 svelte-avaxn7");
+    			add_location(div1, file$8, 147, 0, 3858);
+    			attr_dev(div2, "class", "line left line0 svelte-avaxn7");
+    			add_location(div2, file$8, 148, 0, 3895);
+    			attr_dev(div3, "class", "line right line0 svelte-avaxn7");
+    			add_location(div3, file$8, 149, 0, 3931);
+    			attr_dev(div4, "class", "bottomLineText text svelte-avaxn7");
+    			set_style(div4, "text-align", "right");
+    			add_location(div4, file$8, 277, 2, 8742);
+    			attr_dev(div5, "class", "text bottomLine svelte-avaxn7");
+    			add_location(div5, file$8, 276, 0, 8710);
+    			attr_dev(div6, "class", "horizontalLine left svelte-avaxn7");
     			set_style(div6, "width", "100%");
-    			set_style(div6, "top", "calc((" + /*distanceBLines*/ ctx[6] + " * 8) - 1px)");
+    			set_style(div6, "top", "calc(" + /*distanceBLines*/ ctx[15] + " * 8)");
     			set_style(div6, "border-top", "1px solid blue");
-    			add_location(div6, file$8, 120, 0, 2920);
+    			add_location(div6, file$8, 293, 0, 9842);
     			attr_dev(div7, "class", "progressline");
     			set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div7, file$8, 124, 1, 3093);
+    			add_location(div7, file$8, 297, 1, 10007);
     			attr_dev(div8, "class", "activedotnew activedotFan");
-    			add_location(div8, file$8, 123, 0, 3052);
+    			add_location(div8, file$8, 296, 0, 9966);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -10518,39 +12276,86 @@ var app = (function () {
     			insert_dev(target, t1, anchor);
     			if (if_block2) if_block2.m(target, anchor);
     			insert_dev(target, t2, anchor);
-    			insert_dev(target, div0, anchor);
-    			append_dev(div0, t3);
-    			insert_dev(target, t4, anchor);
     			if (if_block3) if_block3.m(target, anchor);
-    			insert_dev(target, t5, anchor);
-    			insert_dev(target, div2, anchor);
-    			append_dev(div2, div1);
-    			append_dev(div1, span0);
-    			insert_dev(target, t7, anchor);
-    			insert_dev(target, div5, anchor);
-    			append_dev(div5, div3);
-    			append_dev(div3, span1);
-    			append_dev(div5, t9);
-    			append_dev(div5, div4);
-    			append_dev(div4, span2);
-    			insert_dev(target, t11, anchor);
+    			insert_dev(target, t3, anchor);
     			if (if_block4) if_block4.m(target, anchor);
-    			insert_dev(target, t12, anchor);
+    			insert_dev(target, t4, anchor);
     			if (if_block5) if_block5.m(target, anchor);
-    			insert_dev(target, t13, anchor);
+    			insert_dev(target, t5, anchor);
     			if (if_block6) if_block6.m(target, anchor);
+    			insert_dev(target, t6, anchor);
+    			if (if_block7) if_block7.m(target, anchor);
+    			insert_dev(target, t7, anchor);
+    			if (if_block8) if_block8.m(target, anchor);
+    			insert_dev(target, t8, anchor);
+    			if (if_block9) if_block9.m(target, anchor);
+    			insert_dev(target, t9, anchor);
+    			if (if_block10) if_block10.m(target, anchor);
+    			insert_dev(target, t10, anchor);
+    			insert_dev(target, div0, anchor);
+    			append_dev(div0, t11);
+    			insert_dev(target, t12, anchor);
+    			if (if_block11) if_block11.m(target, anchor);
+    			insert_dev(target, t13, anchor);
+    			insert_dev(target, div1, anchor);
     			insert_dev(target, t14, anchor);
-    			insert_dev(target, div6, anchor);
+    			insert_dev(target, div2, anchor);
     			insert_dev(target, t15, anchor);
+    			insert_dev(target, div3, anchor);
+    			insert_dev(target, t16, anchor);
+    			if (if_block12) if_block12.m(target, anchor);
+    			insert_dev(target, t17, anchor);
+    			if_block13.m(target, anchor);
+    			insert_dev(target, t18, anchor);
+    			if (if_block14) if_block14.m(target, anchor);
+    			insert_dev(target, t19, anchor);
+    			if_block15.m(target, anchor);
+    			insert_dev(target, t20, anchor);
+    			if (if_block16) if_block16.m(target, anchor);
+    			insert_dev(target, t21, anchor);
+    			if_block17.m(target, anchor);
+    			insert_dev(target, t22, anchor);
+    			if (if_block18) if_block18.m(target, anchor);
+    			insert_dev(target, t23, anchor);
+    			if_block19.m(target, anchor);
+    			insert_dev(target, t24, anchor);
+    			if (if_block20) if_block20.m(target, anchor);
+    			insert_dev(target, t25, anchor);
+    			if (if_block21) if_block21.m(target, anchor);
+    			insert_dev(target, t26, anchor);
+    			if (if_block22) if_block22.m(target, anchor);
+    			insert_dev(target, t27, anchor);
+    			if (if_block23) if_block23.m(target, anchor);
+    			insert_dev(target, t28, anchor);
+    			if (if_block24) if_block24.m(target, anchor);
+    			insert_dev(target, t29, anchor);
+    			if (if_block25) if_block25.m(target, anchor);
+    			insert_dev(target, t30, anchor);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div4);
+    			if (if_block26) if_block26.m(div4, null);
+    			append_dev(div4, t31);
+    			if (if_block27) if_block27.m(div4, null);
+    			append_dev(div4, t32);
+    			if (if_block28) if_block28.m(div4, null);
+    			append_dev(div4, t33);
+    			if (if_block29) if_block29.m(div4, null);
+    			append_dev(div4, t34);
+    			if (if_block30) if_block30.m(div4, null);
+    			append_dev(div4, t35);
+    			if (if_block31) if_block31.m(div4, null);
+    			insert_dev(target, t36, anchor);
+    			insert_dev(target, div6, anchor);
+    			insert_dev(target, t37, anchor);
     			insert_dev(target, div8, anchor);
     			append_dev(div8, div7);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (/*firstSetup*/ ctx[3]) {
+    			if (/*firstSetup*/ ctx[4]) {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_6$6(ctx);
+    					if_block0 = create_if_block_37(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -10559,11 +12364,11 @@ var app = (function () {
     				if_block0 = null;
     			}
 
-    			if (/*secondSetup*/ ctx[4]) {
+    			if (/*secondSetup*/ ctx[5]) {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_5$6(ctx);
+    					if_block1 = create_if_block_36(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -10572,11 +12377,11 @@ var app = (function () {
     				if_block1 = null;
     			}
 
-    			if (/*thirdSetup*/ ctx[5]) {
+    			if (/*thirdSetup*/ ctx[6]) {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_4$6(ctx);
+    					if_block2 = create_if_block_35(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -10585,56 +12390,367 @@ var app = (function () {
     				if_block2 = null;
     			}
 
-    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t3, /*pagetitleText*/ ctx[0]);
-
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			}
-
-    			if (/*firstSetup*/ ctx[3]) {
+    			if (/*fourthSetup*/ ctx[7]) {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_3$6(ctx);
+    					if_block3 = create_if_block_34(ctx);
     					if_block3.c();
-    					if_block3.m(t5.parentNode, t5);
+    					if_block3.m(t3.parentNode, t3);
     				}
     			} else if (if_block3) {
     				if_block3.d(1);
     				if_block3 = null;
     			}
 
-    			if (/*firstSetup*/ ctx[3]) {
-    				if (if_block4) ; else {
-    					if_block4 = create_if_block_2$6(ctx);
+    			if (/*fifthSetup*/ ctx[8]) {
+    				if (if_block4) {
+    					if_block4.p(ctx, dirty);
+    				} else {
+    					if_block4 = create_if_block_33(ctx);
     					if_block4.c();
-    					if_block4.m(t12.parentNode, t12);
+    					if_block4.m(t4.parentNode, t4);
     				}
     			} else if (if_block4) {
     				if_block4.d(1);
     				if_block4 = null;
     			}
 
-    			if (/*secondSetup*/ ctx[4]) {
-    				if (if_block5) ; else {
-    					if_block5 = create_if_block_1$6(ctx);
+    			if (/*sixthSetup*/ ctx[9]) {
+    				if (if_block5) {
+    					if_block5.p(ctx, dirty);
+    				} else {
+    					if_block5 = create_if_block_32(ctx);
     					if_block5.c();
-    					if_block5.m(t13.parentNode, t13);
+    					if_block5.m(t5.parentNode, t5);
     				}
     			} else if (if_block5) {
     				if_block5.d(1);
     				if_block5 = null;
     			}
 
-    			if (/*thirdSetup*/ ctx[5]) {
-    				if (if_block6) ; else {
-    					if_block6 = create_if_block$6(ctx);
+    			if (/*seventhSetup*/ ctx[10]) {
+    				if (if_block6) {
+    					if_block6.p(ctx, dirty);
+    				} else {
+    					if_block6 = create_if_block_31(ctx);
     					if_block6.c();
-    					if_block6.m(t14.parentNode, t14);
+    					if_block6.m(t6.parentNode, t6);
     				}
     			} else if (if_block6) {
     				if_block6.d(1);
     				if_block6 = null;
+    			}
+
+    			if (/*eightthSetup*/ ctx[11]) {
+    				if (if_block7) {
+    					if_block7.p(ctx, dirty);
+    				} else {
+    					if_block7 = create_if_block_30(ctx);
+    					if_block7.c();
+    					if_block7.m(t7.parentNode, t7);
+    				}
+    			} else if (if_block7) {
+    				if_block7.d(1);
+    				if_block7 = null;
+    			}
+
+    			if (/*ninethSetup*/ ctx[12]) {
+    				if (if_block8) {
+    					if_block8.p(ctx, dirty);
+    				} else {
+    					if_block8 = create_if_block_29(ctx);
+    					if_block8.c();
+    					if_block8.m(t8.parentNode, t8);
+    				}
+    			} else if (if_block8) {
+    				if_block8.d(1);
+    				if_block8 = null;
+    			}
+
+    			if (/*tenthSetup*/ ctx[13]) {
+    				if (if_block9) {
+    					if_block9.p(ctx, dirty);
+    				} else {
+    					if_block9 = create_if_block_28(ctx);
+    					if_block9.c();
+    					if_block9.m(t9.parentNode, t9);
+    				}
+    			} else if (if_block9) {
+    				if_block9.d(1);
+    				if_block9 = null;
+    			}
+
+    			if (/*eleventhSetup*/ ctx[14]) {
+    				if (if_block10) {
+    					if_block10.p(ctx, dirty);
+    				} else {
+    					if_block10 = create_if_block_27(ctx);
+    					if_block10.c();
+    					if_block10.m(t10.parentNode, t10);
+    				}
+    			} else if (if_block10) {
+    				if_block10.d(1);
+    				if_block10 = null;
+    			}
+
+    			if (dirty & /*pagetitleText*/ 1) set_data_dev(t11, /*pagetitleText*/ ctx[0]);
+
+    			if (dirty & /*rotate*/ 2) {
+    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
+    			}
+
+    			if (/*firstSetup*/ ctx[4]) {
+    				if (if_block11) {
+    					if_block11.p(ctx, dirty);
+    				} else {
+    					if_block11 = create_if_block_26(ctx);
+    					if_block11.c();
+    					if_block11.m(t13.parentNode, t13);
+    				}
+    			} else if (if_block11) {
+    				if_block11.d(1);
+    				if_block11 = null;
+    			}
+
+    			if (/*secondSetup*/ ctx[5]) {
+    				if (if_block12) {
+    					if_block12.p(ctx, dirty);
+    				} else {
+    					if_block12 = create_if_block_25$1(ctx);
+    					if_block12.c();
+    					if_block12.m(t17.parentNode, t17);
+    				}
+    			} else if (if_block12) {
+    				if_block12.d(1);
+    				if_block12 = null;
+    			}
+
+    			if (current_block_type !== (current_block_type = select_block_type(ctx))) {
+    				if_block13.d(1);
+    				if_block13 = current_block_type(ctx);
+
+    				if (if_block13) {
+    					if_block13.c();
+    					if_block13.m(t18.parentNode, t18);
+    				}
+    			}
+
+    			if (/*thirdSetup*/ ctx[6]) {
+    				if (if_block14) {
+    					if_block14.p(ctx, dirty);
+    				} else {
+    					if_block14 = create_if_block_23$2(ctx);
+    					if_block14.c();
+    					if_block14.m(t19.parentNode, t19);
+    				}
+    			} else if (if_block14) {
+    				if_block14.d(1);
+    				if_block14 = null;
+    			}
+
+    			if (current_block_type_1 === (current_block_type_1 = select_block_type_1(ctx)) && if_block15) {
+    				if_block15.p(ctx, dirty);
+    			} else {
+    				if_block15.d(1);
+    				if_block15 = current_block_type_1(ctx);
+
+    				if (if_block15) {
+    					if_block15.c();
+    					if_block15.m(t20.parentNode, t20);
+    				}
+    			}
+
+    			if (/*fourthSetup*/ ctx[7]) {
+    				if (if_block16) {
+    					if_block16.p(ctx, dirty);
+    				} else {
+    					if_block16 = create_if_block_20$2(ctx);
+    					if_block16.c();
+    					if_block16.m(t21.parentNode, t21);
+    				}
+    			} else if (if_block16) {
+    				if_block16.d(1);
+    				if_block16 = null;
+    			}
+
+    			if (current_block_type_2 === (current_block_type_2 = select_block_type_3(ctx)) && if_block17) {
+    				if_block17.p(ctx, dirty);
+    			} else {
+    				if_block17.d(1);
+    				if_block17 = current_block_type_2(ctx);
+
+    				if (if_block17) {
+    					if_block17.c();
+    					if_block17.m(t22.parentNode, t22);
+    				}
+    			}
+
+    			if (/*fifthSetup*/ ctx[8]) {
+    				if (if_block18) {
+    					if_block18.p(ctx, dirty);
+    				} else {
+    					if_block18 = create_if_block_16$2(ctx);
+    					if_block18.c();
+    					if_block18.m(t23.parentNode, t23);
+    				}
+    			} else if (if_block18) {
+    				if_block18.d(1);
+    				if_block18 = null;
+    			}
+
+    			if (current_block_type_3 === (current_block_type_3 = select_block_type_6(ctx)) && if_block19) {
+    				if_block19.p(ctx, dirty);
+    			} else {
+    				if_block19.d(1);
+    				if_block19 = current_block_type_3(ctx);
+
+    				if (if_block19) {
+    					if_block19.c();
+    					if_block19.m(t24.parentNode, t24);
+    				}
+    			}
+
+    			if (/*sixthSetup*/ ctx[9]) {
+    				if (if_block20) {
+    					if_block20.p(ctx, dirty);
+    				} else {
+    					if_block20 = create_if_block_11$3(ctx);
+    					if_block20.c();
+    					if_block20.m(t25.parentNode, t25);
+    				}
+    			} else if (if_block20) {
+    				if_block20.d(1);
+    				if_block20 = null;
+    			}
+
+    			if (/*seventhSetup*/ ctx[10]) {
+    				if (if_block21) {
+    					if_block21.p(ctx, dirty);
+    				} else {
+    					if_block21 = create_if_block_10$4(ctx);
+    					if_block21.c();
+    					if_block21.m(t26.parentNode, t26);
+    				}
+    			} else if (if_block21) {
+    				if_block21.d(1);
+    				if_block21 = null;
+    			}
+
+    			if (/*eightthSetup*/ ctx[11]) {
+    				if (if_block22) {
+    					if_block22.p(ctx, dirty);
+    				} else {
+    					if_block22 = create_if_block_9$5(ctx);
+    					if_block22.c();
+    					if_block22.m(t27.parentNode, t27);
+    				}
+    			} else if (if_block22) {
+    				if_block22.d(1);
+    				if_block22 = null;
+    			}
+
+    			if (/*ninethSetup*/ ctx[12]) {
+    				if (if_block23) {
+    					if_block23.p(ctx, dirty);
+    				} else {
+    					if_block23 = create_if_block_8$5(ctx);
+    					if_block23.c();
+    					if_block23.m(t28.parentNode, t28);
+    				}
+    			} else if (if_block23) {
+    				if_block23.d(1);
+    				if_block23 = null;
+    			}
+
+    			if (/*tenthSetup*/ ctx[13]) {
+    				if (if_block24) {
+    					if_block24.p(ctx, dirty);
+    				} else {
+    					if_block24 = create_if_block_7$5(ctx);
+    					if_block24.c();
+    					if_block24.m(t29.parentNode, t29);
+    				}
+    			} else if (if_block24) {
+    				if_block24.d(1);
+    				if_block24 = null;
+    			}
+
+    			if (/*eleventhSetup*/ ctx[14]) {
+    				if (if_block25) ; else {
+    					if_block25 = create_if_block_6$6(ctx);
+    					if_block25.c();
+    					if_block25.m(t30.parentNode, t30);
+    				}
+    			} else if (if_block25) {
+    				if_block25.d(1);
+    				if_block25 = null;
+    			}
+
+    			if (/*firstSetup*/ ctx[4]) {
+    				if (if_block26) ; else {
+    					if_block26 = create_if_block_5$6(ctx);
+    					if_block26.c();
+    					if_block26.m(div4, t31);
+    				}
+    			} else if (if_block26) {
+    				if_block26.d(1);
+    				if_block26 = null;
+    			}
+
+    			if (/*thirdSetup*/ ctx[6]) {
+    				if (if_block27) ; else {
+    					if_block27 = create_if_block_4$6(ctx);
+    					if_block27.c();
+    					if_block27.m(div4, t32);
+    				}
+    			} else if (if_block27) {
+    				if_block27.d(1);
+    				if_block27 = null;
+    			}
+
+    			if (/*fourthSetup*/ ctx[7]) {
+    				if (if_block28) ; else {
+    					if_block28 = create_if_block_3$6(ctx);
+    					if_block28.c();
+    					if_block28.m(div4, t33);
+    				}
+    			} else if (if_block28) {
+    				if_block28.d(1);
+    				if_block28 = null;
+    			}
+
+    			if (/*fifthSetup*/ ctx[8]) {
+    				if (if_block29) ; else {
+    					if_block29 = create_if_block_2$6(ctx);
+    					if_block29.c();
+    					if_block29.m(div4, t34);
+    				}
+    			} else if (if_block29) {
+    				if_block29.d(1);
+    				if_block29 = null;
+    			}
+
+    			if (/*ninethSetup*/ ctx[12]) {
+    				if (if_block30) ; else {
+    					if_block30 = create_if_block_1$6(ctx);
+    					if_block30.c();
+    					if_block30.m(div4, t35);
+    				}
+    			} else if (if_block30) {
+    				if_block30.d(1);
+    				if_block30 = null;
+    			}
+
+    			if (/*eleventhSetup*/ ctx[14]) {
+    				if (if_block31) ; else {
+    					if_block31 = create_if_block$6(ctx);
+    					if_block31.c();
+    					if_block31.m(div4, null);
+    				}
+    			} else if (if_block31) {
+    				if_block31.d(1);
+    				if_block31 = null;
     			}
 
     			if (dirty & /*rotate*/ 2) {
@@ -10650,22 +12766,70 @@ var app = (function () {
     			if (detaching) detach_dev(t1);
     			if (if_block2) if_block2.d(detaching);
     			if (detaching) detach_dev(t2);
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t4);
     			if (if_block3) if_block3.d(detaching);
-    			if (detaching) detach_dev(t5);
-    			if (detaching) detach_dev(div2);
-    			if (detaching) detach_dev(t7);
-    			if (detaching) detach_dev(div5);
-    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(t3);
     			if (if_block4) if_block4.d(detaching);
-    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(t4);
     			if (if_block5) if_block5.d(detaching);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t5);
     			if (if_block6) if_block6.d(detaching);
+    			if (detaching) detach_dev(t6);
+    			if (if_block7) if_block7.d(detaching);
+    			if (detaching) detach_dev(t7);
+    			if (if_block8) if_block8.d(detaching);
+    			if (detaching) detach_dev(t8);
+    			if (if_block9) if_block9.d(detaching);
+    			if (detaching) detach_dev(t9);
+    			if (if_block10) if_block10.d(detaching);
+    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(div0);
+    			if (detaching) detach_dev(t12);
+    			if (if_block11) if_block11.d(detaching);
+    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(div1);
     			if (detaching) detach_dev(t14);
-    			if (detaching) detach_dev(div6);
+    			if (detaching) detach_dev(div2);
     			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(t16);
+    			if (if_block12) if_block12.d(detaching);
+    			if (detaching) detach_dev(t17);
+    			if_block13.d(detaching);
+    			if (detaching) detach_dev(t18);
+    			if (if_block14) if_block14.d(detaching);
+    			if (detaching) detach_dev(t19);
+    			if_block15.d(detaching);
+    			if (detaching) detach_dev(t20);
+    			if (if_block16) if_block16.d(detaching);
+    			if (detaching) detach_dev(t21);
+    			if_block17.d(detaching);
+    			if (detaching) detach_dev(t22);
+    			if (if_block18) if_block18.d(detaching);
+    			if (detaching) detach_dev(t23);
+    			if_block19.d(detaching);
+    			if (detaching) detach_dev(t24);
+    			if (if_block20) if_block20.d(detaching);
+    			if (detaching) detach_dev(t25);
+    			if (if_block21) if_block21.d(detaching);
+    			if (detaching) detach_dev(t26);
+    			if (if_block22) if_block22.d(detaching);
+    			if (detaching) detach_dev(t27);
+    			if (if_block23) if_block23.d(detaching);
+    			if (detaching) detach_dev(t28);
+    			if (if_block24) if_block24.d(detaching);
+    			if (detaching) detach_dev(t29);
+    			if (if_block25) if_block25.d(detaching);
+    			if (detaching) detach_dev(t30);
+    			if (detaching) detach_dev(div5);
+    			if (if_block26) if_block26.d();
+    			if (if_block27) if_block27.d();
+    			if (if_block28) if_block28.d();
+    			if (if_block29) if_block29.d();
+    			if (if_block30) if_block30.d();
+    			if (if_block31) if_block31.d();
+    			if (detaching) detach_dev(t36);
+    			if (detaching) detach_dev(div6);
+    			if (detaching) detach_dev(t37);
     			if (detaching) detach_dev(div8);
     		}
     	};
@@ -10693,21 +12857,78 @@ var app = (function () {
     	let thirdSetup = false;
     	let fourthSetup = false;
     	let fifthSetup = false;
+    	let sixthSetup = false;
+    	let seventhSetup = false;
+    	let eightthSetup = false;
+    	let ninethSetup = false;
+    	let tenthSetup = false;
+    	let eleventhSetup = false;
+    	let twelvethSetup = false;
+    	let thirteenthSetup = false;
+    	let fourteenthSetup = false;
 
     	const togglefirstSetup = () => {
-    		$$invalidate(3, firstSetup = true);
-    		$$invalidate(4, secondSetup = false);
+    		$$invalidate(4, firstSetup = true);
+    		$$invalidate(5, secondSetup = false);
     	};
 
     	const togglesecondSetup = () => {
-    		$$invalidate(3, firstSetup = false);
-    		$$invalidate(4, secondSetup = true);
-    		$$invalidate(5, thirdSetup = false);
+    		$$invalidate(4, firstSetup = false);
+    		$$invalidate(5, secondSetup = true);
+    		$$invalidate(6, thirdSetup = false);
     	};
 
     	const togglethirdSetup = () => {
-    		$$invalidate(4, secondSetup = false);
-    		$$invalidate(5, thirdSetup = true);
+    		$$invalidate(5, secondSetup = false);
+    		$$invalidate(6, thirdSetup = true);
+    		$$invalidate(7, fourthSetup = false);
+    	};
+
+    	const togglefourthSetup = () => {
+    		$$invalidate(6, thirdSetup = false);
+    		$$invalidate(7, fourthSetup = true);
+    		$$invalidate(8, fifthSetup = false);
+    	};
+
+    	const togglefifthSetup = () => {
+    		$$invalidate(7, fourthSetup = false);
+    		$$invalidate(8, fifthSetup = true);
+    		$$invalidate(9, sixthSetup = false);
+    	};
+
+    	const togglesixthSetup = () => {
+    		$$invalidate(8, fifthSetup = false);
+    		$$invalidate(9, sixthSetup = true);
+    		$$invalidate(10, seventhSetup = false);
+    	};
+
+    	const toggleseventhSetup = () => {
+    		$$invalidate(9, sixthSetup = false);
+    		$$invalidate(10, seventhSetup = true);
+    		$$invalidate(11, eightthSetup = false);
+    	};
+
+    	const toggleeighthSetup = () => {
+    		$$invalidate(10, seventhSetup = false);
+    		$$invalidate(11, eightthSetup = true);
+    		$$invalidate(12, ninethSetup = false);
+    	};
+
+    	const toggleninethSetup = () => {
+    		$$invalidate(11, eightthSetup = false);
+    		$$invalidate(12, ninethSetup = true);
+    		$$invalidate(13, tenthSetup = false);
+    	};
+
+    	const toggletenthSetup = () => {
+    		$$invalidate(12, ninethSetup = false);
+    		$$invalidate(13, tenthSetup = true);
+    		$$invalidate(14, eleventhSetup = false);
+    	};
+
+    	const toggleeleventhSetup = () => {
+    		$$invalidate(13, tenthSetup = true);
+    		$$invalidate(14, eleventhSetup = true);
     	};
 
     	const writable_props = ["pagetitleText", "rotate", "next", "prev"];
@@ -10723,7 +12944,7 @@ var app = (function () {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     		if ("next" in $$props) $$invalidate(2, next = $$props.next);
-    		if ("prev" in $$props) $$invalidate(10, prev = $$props.prev);
+    		if ("prev" in $$props) $$invalidate(3, prev = $$props.prev);
     	};
 
     	$$self.$capture_state = () => ({
@@ -10738,23 +12959,49 @@ var app = (function () {
     		thirdSetup,
     		fourthSetup,
     		fifthSetup,
+    		sixthSetup,
+    		seventhSetup,
+    		eightthSetup,
+    		ninethSetup,
+    		tenthSetup,
+    		eleventhSetup,
+    		twelvethSetup,
+    		thirteenthSetup,
+    		fourteenthSetup,
     		togglefirstSetup,
     		togglesecondSetup,
-    		togglethirdSetup
+    		togglethirdSetup,
+    		togglefourthSetup,
+    		togglefifthSetup,
+    		togglesixthSetup,
+    		toggleseventhSetup,
+    		toggleeighthSetup,
+    		toggleninethSetup,
+    		toggletenthSetup,
+    		toggleeleventhSetup
     	});
 
     	$$self.$inject_state = $$props => {
     		if ("pagetitleText" in $$props) $$invalidate(0, pagetitleText = $$props.pagetitleText);
     		if ("rotate" in $$props) $$invalidate(1, rotate = $$props.rotate);
     		if ("next" in $$props) $$invalidate(2, next = $$props.next);
-    		if ("prev" in $$props) $$invalidate(10, prev = $$props.prev);
-    		if ("distanceBLines" in $$props) $$invalidate(6, distanceBLines = $$props.distanceBLines);
+    		if ("prev" in $$props) $$invalidate(3, prev = $$props.prev);
+    		if ("distanceBLines" in $$props) $$invalidate(15, distanceBLines = $$props.distanceBLines);
     		if ("marginSides" in $$props) marginSides = $$props.marginSides;
-    		if ("firstSetup" in $$props) $$invalidate(3, firstSetup = $$props.firstSetup);
-    		if ("secondSetup" in $$props) $$invalidate(4, secondSetup = $$props.secondSetup);
-    		if ("thirdSetup" in $$props) $$invalidate(5, thirdSetup = $$props.thirdSetup);
-    		if ("fourthSetup" in $$props) fourthSetup = $$props.fourthSetup;
-    		if ("fifthSetup" in $$props) fifthSetup = $$props.fifthSetup;
+    		if ("firstSetup" in $$props) $$invalidate(4, firstSetup = $$props.firstSetup);
+    		if ("secondSetup" in $$props) $$invalidate(5, secondSetup = $$props.secondSetup);
+    		if ("thirdSetup" in $$props) $$invalidate(6, thirdSetup = $$props.thirdSetup);
+    		if ("fourthSetup" in $$props) $$invalidate(7, fourthSetup = $$props.fourthSetup);
+    		if ("fifthSetup" in $$props) $$invalidate(8, fifthSetup = $$props.fifthSetup);
+    		if ("sixthSetup" in $$props) $$invalidate(9, sixthSetup = $$props.sixthSetup);
+    		if ("seventhSetup" in $$props) $$invalidate(10, seventhSetup = $$props.seventhSetup);
+    		if ("eightthSetup" in $$props) $$invalidate(11, eightthSetup = $$props.eightthSetup);
+    		if ("ninethSetup" in $$props) $$invalidate(12, ninethSetup = $$props.ninethSetup);
+    		if ("tenthSetup" in $$props) $$invalidate(13, tenthSetup = $$props.tenthSetup);
+    		if ("eleventhSetup" in $$props) $$invalidate(14, eleventhSetup = $$props.eleventhSetup);
+    		if ("twelvethSetup" in $$props) twelvethSetup = $$props.twelvethSetup;
+    		if ("thirteenthSetup" in $$props) thirteenthSetup = $$props.thirteenthSetup;
+    		if ("fourteenthSetup" in $$props) fourteenthSetup = $$props.fourteenthSetup;
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -10765,14 +13012,30 @@ var app = (function () {
     		pagetitleText,
     		rotate,
     		next,
+    		prev,
     		firstSetup,
     		secondSetup,
     		thirdSetup,
+    		fourthSetup,
+    		fifthSetup,
+    		sixthSetup,
+    		seventhSetup,
+    		eightthSetup,
+    		ninethSetup,
+    		tenthSetup,
+    		eleventhSetup,
     		distanceBLines,
     		togglefirstSetup,
     		togglesecondSetup,
     		togglethirdSetup,
-    		prev
+    		togglefourthSetup,
+    		togglefifthSetup,
+    		togglesixthSetup,
+    		toggleseventhSetup,
+    		toggleeighthSetup,
+    		toggleninethSetup,
+    		toggletenthSetup,
+    		toggleeleventhSetup
     	];
     }
 
@@ -10784,7 +13047,7 @@ var app = (function () {
     			pagetitleText: 0,
     			rotate: 1,
     			next: 2,
-    			prev: 10
+    			prev: 3
     		});
 
     		dispatch_dev("SvelteRegisterComponent", {
@@ -10809,7 +13072,7 @@ var app = (function () {
     			console.warn("<Iceland> was created without expected prop 'next'");
     		}
 
-    		if (/*prev*/ ctx[10] === undefined && !("prev" in props)) {
+    		if (/*prev*/ ctx[3] === undefined && !("prev" in props)) {
     			console.warn("<Iceland> was created without expected prop 'prev'");
     		}
     	}
@@ -10852,7 +13115,7 @@ var app = (function () {
     const file$9 = "src/specifics/Ghana.svelte";
 
     // (72:0) {#if firstSetup}
-    function create_if_block_30(ctx) {
+    function create_if_block_30$1(ctx) {
     	let div;
     	let t;
     	let a;
@@ -10896,7 +13159,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_30.name,
+    		id: create_if_block_30$1.name,
     		type: "if",
     		source: "(72:0) {#if firstSetup}",
     		ctx
@@ -10906,7 +13169,7 @@ var app = (function () {
     }
 
     // (76:0) {#if secondSetup}
-    function create_if_block_29(ctx) {
+    function create_if_block_29$1(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -10949,7 +13212,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_29.name,
+    		id: create_if_block_29$1.name,
     		type: "if",
     		source: "(76:0) {#if secondSetup}",
     		ctx
@@ -10959,7 +13222,7 @@ var app = (function () {
     }
 
     // (80:0) {#if thirdSetup}
-    function create_if_block_28(ctx) {
+    function create_if_block_28$1(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11002,7 +13265,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_28.name,
+    		id: create_if_block_28$1.name,
     		type: "if",
     		source: "(80:0) {#if thirdSetup}",
     		ctx
@@ -11012,7 +13275,7 @@ var app = (function () {
     }
 
     // (84:0) {#if fourthSetup}
-    function create_if_block_27(ctx) {
+    function create_if_block_27$1(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11055,7 +13318,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_27.name,
+    		id: create_if_block_27$1.name,
     		type: "if",
     		source: "(84:0) {#if fourthSetup}",
     		ctx
@@ -11065,7 +13328,7 @@ var app = (function () {
     }
 
     // (88:0) {#if fifthSetup}
-    function create_if_block_26(ctx) {
+    function create_if_block_26$1(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11108,7 +13371,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_26.name,
+    		id: create_if_block_26$1.name,
     		type: "if",
     		source: "(88:0) {#if fifthSetup}",
     		ctx
@@ -11118,7 +13381,7 @@ var app = (function () {
     }
 
     // (92:0) {#if sixthSetup}
-    function create_if_block_25$1(ctx) {
+    function create_if_block_25$2(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11161,7 +13424,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_25$1.name,
+    		id: create_if_block_25$2.name,
     		type: "if",
     		source: "(92:0) {#if sixthSetup}",
     		ctx
@@ -11171,7 +13434,7 @@ var app = (function () {
     }
 
     // (96:0) {#if seventhSetup}
-    function create_if_block_24$2(ctx) {
+    function create_if_block_24$3(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11214,7 +13477,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_24$2.name,
+    		id: create_if_block_24$3.name,
     		type: "if",
     		source: "(96:0) {#if seventhSetup}",
     		ctx
@@ -11224,7 +13487,7 @@ var app = (function () {
     }
 
     // (100:0) {#if eightthSetup}
-    function create_if_block_23$2(ctx) {
+    function create_if_block_23$3(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -11267,7 +13530,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23$2.name,
+    		id: create_if_block_23$3.name,
     		type: "if",
     		source: "(100:0) {#if eightthSetup}",
     		ctx
@@ -11277,7 +13540,7 @@ var app = (function () {
     }
 
     // (104:0) {#if ninethSetup}
-    function create_if_block_22$2(ctx) {
+    function create_if_block_22$3(ctx) {
     	let a;
     	let t;
     	let div;
@@ -11321,7 +13584,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$2.name,
+    		id: create_if_block_22$3.name,
     		type: "if",
     		source: "(104:0) {#if ninethSetup}",
     		ctx
@@ -11331,7 +13594,7 @@ var app = (function () {
     }
 
     // (117:0) {#if firstSetup}
-    function create_if_block_21$2(ctx) {
+    function create_if_block_21$3(ctx) {
     	let div;
     	let t;
 
@@ -11359,7 +13622,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$2.name,
+    		id: create_if_block_21$3.name,
     		type: "if",
     		source: "(117:0) {#if firstSetup}",
     		ctx
@@ -11369,7 +13632,7 @@ var app = (function () {
     }
 
     // (123:0) {#if secondSetup}
-    function create_if_block_20$2(ctx) {
+    function create_if_block_20$3(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -11418,7 +13681,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$2.name,
+    		id: create_if_block_20$3.name,
     		type: "if",
     		source: "(123:0) {#if secondSetup}",
     		ctx
@@ -11428,7 +13691,7 @@ var app = (function () {
     }
 
     // (133:0) {:else}
-    function create_else_block_2(ctx) {
+    function create_else_block_2$1(ctx) {
     	let div;
 
     	const block = {
@@ -11447,7 +13710,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2.name,
+    		id: create_else_block_2$1.name,
     		type: "else",
     		source: "(133:0) {:else}",
     		ctx
@@ -11457,12 +13720,12 @@ var app = (function () {
     }
 
     // (132:0) {#if firstSetup}
-    function create_if_block_19$2(ctx) {
+    function create_if_block_19$3(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$2.name,
+    		id: create_if_block_19$3.name,
     		type: "if",
     		source: "(132:0) {#if firstSetup}",
     		ctx
@@ -11472,7 +13735,7 @@ var app = (function () {
     }
 
     // (138:0) {#if thirdSetup}
-    function create_if_block_18$2(ctx) {
+    function create_if_block_18$3(ctx) {
     	let div;
     	let t;
 
@@ -11500,7 +13763,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$2.name,
+    		id: create_if_block_18$3.name,
     		type: "if",
     		source: "(138:0) {#if thirdSetup}",
     		ctx
@@ -11510,7 +13773,7 @@ var app = (function () {
     }
 
     // (144:0) {#if fourthSetup}
-    function create_if_block_17$2(ctx) {
+    function create_if_block_17$3(ctx) {
     	let div;
     	let t;
 
@@ -11538,7 +13801,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$2.name,
+    		id: create_if_block_17$3.name,
     		type: "if",
     		source: "(144:0) {#if fourthSetup}",
     		ctx
@@ -11548,7 +13811,7 @@ var app = (function () {
     }
 
     // (150:0) {#if fifthSetup}
-    function create_if_block_16$2(ctx) {
+    function create_if_block_16$3(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -11597,7 +13860,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$2.name,
+    		id: create_if_block_16$3.name,
     		type: "if",
     		source: "(150:0) {#if fifthSetup}",
     		ctx
@@ -11607,7 +13870,7 @@ var app = (function () {
     }
 
     // (166:3) {:else}
-    function create_else_block_1$1(ctx) {
+    function create_else_block_1$2(ctx) {
     	let div;
 
     	const block = {
@@ -11626,7 +13889,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$1.name,
+    		id: create_else_block_1$2.name,
     		type: "else",
     		source: "(166:3) {:else}",
     		ctx
@@ -11636,12 +13899,12 @@ var app = (function () {
     }
 
     // (165:3) {#if firstSetup}
-    function create_if_block_15$2(ctx) {
+    function create_if_block_15$3(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$2.name,
+    		id: create_if_block_15$3.name,
     		type: "if",
     		source: "(165:3) {#if firstSetup}",
     		ctx
@@ -11651,12 +13914,12 @@ var app = (function () {
     }
 
     // (163:2) {#if secondSetup}
-    function create_if_block_14$3(ctx) {
+    function create_if_block_14$4(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$3.name,
+    		id: create_if_block_14$4.name,
     		type: "if",
     		source: "(163:2) {#if secondSetup}",
     		ctx
@@ -11666,12 +13929,12 @@ var app = (function () {
     }
 
     // (161:1) {#if thirdSetup}
-    function create_if_block_13$3(ctx) {
+    function create_if_block_13$4(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$3.name,
+    		id: create_if_block_13$4.name,
     		type: "if",
     		source: "(161:1) {#if thirdSetup}",
     		ctx
@@ -11681,12 +13944,12 @@ var app = (function () {
     }
 
     // (159:0) {#if fourthSetup}
-    function create_if_block_12$3(ctx) {
+    function create_if_block_12$4(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$3.name,
+    		id: create_if_block_12$4.name,
     		type: "if",
     		source: "(159:0) {#if fourthSetup}",
     		ctx
@@ -11696,7 +13959,7 @@ var app = (function () {
     }
 
     // (173:0) {#if sixthSetup}
-    function create_if_block_11$3(ctx) {
+    function create_if_block_11$4(ctx) {
     	let div;
     	let t;
 
@@ -11724,7 +13987,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$3.name,
+    		id: create_if_block_11$4.name,
     		type: "if",
     		source: "(173:0) {#if sixthSetup}",
     		ctx
@@ -11734,7 +13997,7 @@ var app = (function () {
     }
 
     // (179:0) {#if seventhSetup}
-    function create_if_block_10$4(ctx) {
+    function create_if_block_10$5(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -11858,7 +14121,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$4.name,
+    		id: create_if_block_10$5.name,
     		type: "if",
     		source: "(179:0) {#if seventhSetup}",
     		ctx
@@ -11868,7 +14131,7 @@ var app = (function () {
     }
 
     // (210:5) {:else}
-    function create_else_block$3(ctx) {
+    function create_else_block$4(ctx) {
     	let div1;
     	let div0;
     	let span;
@@ -11899,7 +14162,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$3.name,
+    		id: create_else_block$4.name,
     		type: "else",
     		source: "(210:5) {:else}",
     		ctx
@@ -11909,12 +14172,12 @@ var app = (function () {
     }
 
     // (209:5) {#if firstSetup}
-    function create_if_block_9$5(ctx) {
+    function create_if_block_9$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$5.name,
+    		id: create_if_block_9$6.name,
     		type: "if",
     		source: "(209:5) {#if firstSetup}",
     		ctx
@@ -11924,12 +14187,12 @@ var app = (function () {
     }
 
     // (207:4) {#if secondSetup}
-    function create_if_block_8$5(ctx) {
+    function create_if_block_8$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$5.name,
+    		id: create_if_block_8$6.name,
     		type: "if",
     		source: "(207:4) {#if secondSetup}",
     		ctx
@@ -11939,12 +14202,12 @@ var app = (function () {
     }
 
     // (205:3) {#if thirdSetup}
-    function create_if_block_7$5(ctx) {
+    function create_if_block_7$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$5.name,
+    		id: create_if_block_7$6.name,
     		type: "if",
     		source: "(205:3) {#if thirdSetup}",
     		ctx
@@ -12355,50 +14618,50 @@ var app = (function () {
     	let t25;
     	let div5;
     	let div4;
-    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_30(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_29(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_28(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_27(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_26(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_25$1(ctx);
-    	let if_block6 = /*seventhSetup*/ ctx[10] && create_if_block_24$2(ctx);
-    	let if_block7 = /*eightthSetup*/ ctx[11] && create_if_block_23$2(ctx);
-    	let if_block8 = /*ninethSetup*/ ctx[12] && create_if_block_22$2(ctx);
-    	let if_block9 = /*firstSetup*/ ctx[4] && create_if_block_21$2(ctx);
-    	let if_block10 = /*secondSetup*/ ctx[5] && create_if_block_20$2(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_30$1(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_29$1(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_28$1(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_27$1(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_26$1(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_25$2(ctx);
+    	let if_block6 = /*seventhSetup*/ ctx[10] && create_if_block_24$3(ctx);
+    	let if_block7 = /*eightthSetup*/ ctx[11] && create_if_block_23$3(ctx);
+    	let if_block8 = /*ninethSetup*/ ctx[12] && create_if_block_22$3(ctx);
+    	let if_block9 = /*firstSetup*/ ctx[4] && create_if_block_21$3(ctx);
+    	let if_block10 = /*secondSetup*/ ctx[5] && create_if_block_20$3(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_19$2;
-    		return create_else_block_2;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_19$3;
+    		return create_else_block_2$1;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block11 = current_block_type(ctx);
-    	let if_block12 = /*thirdSetup*/ ctx[6] && create_if_block_18$2(ctx);
-    	let if_block13 = /*fourthSetup*/ ctx[7] && create_if_block_17$2(ctx);
-    	let if_block14 = /*fifthSetup*/ ctx[8] && create_if_block_16$2(ctx);
+    	let if_block12 = /*thirdSetup*/ ctx[6] && create_if_block_18$3(ctx);
+    	let if_block13 = /*fourthSetup*/ ctx[7] && create_if_block_17$3(ctx);
+    	let if_block14 = /*fifthSetup*/ ctx[8] && create_if_block_16$3(ctx);
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*fourthSetup*/ ctx[7]) return create_if_block_12$3;
-    		if (/*thirdSetup*/ ctx[6]) return create_if_block_13$3;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$3;
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_15$2;
-    		return create_else_block_1$1;
+    		if (/*fourthSetup*/ ctx[7]) return create_if_block_12$4;
+    		if (/*thirdSetup*/ ctx[6]) return create_if_block_13$4;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$4;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_15$3;
+    		return create_else_block_1$2;
     	}
 
     	let current_block_type_1 = select_block_type_1(ctx);
     	let if_block15 = current_block_type_1(ctx);
-    	let if_block16 = /*sixthSetup*/ ctx[9] && create_if_block_11$3(ctx);
-    	let if_block17 = /*seventhSetup*/ ctx[10] && create_if_block_10$4(ctx);
+    	let if_block16 = /*sixthSetup*/ ctx[9] && create_if_block_11$4(ctx);
+    	let if_block17 = /*seventhSetup*/ ctx[10] && create_if_block_10$5(ctx);
 
     	function select_block_type_2(ctx, dirty) {
     		if (/*sixthSetup*/ ctx[9]) return create_if_block_4$7;
     		if (/*fifthSetup*/ ctx[8]) return create_if_block_5$7;
     		if (/*fourthSetup*/ ctx[7]) return create_if_block_6$7;
-    		if (/*thirdSetup*/ ctx[6]) return create_if_block_7$5;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_8$5;
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$5;
-    		return create_else_block$3;
+    		if (/*thirdSetup*/ ctx[6]) return create_if_block_7$6;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_8$6;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$6;
+    		return create_else_block$4;
     	}
 
     	let current_block_type_2 = select_block_type_2(ctx);
@@ -12475,14 +14738,14 @@ var app = (function () {
     			add_location(div2, file$9, 266, 0, 8189);
     			attr_dev(div3, "class", "horizontalLine left svelte-1x9g4so");
     			set_style(div3, "width", "100%");
-    			set_style(div3, "top", "calc((" + /*distanceBLines*/ ctx[13] + " * 8) - 1px)");
+    			set_style(div3, "top", "calc(" + /*distanceBLines*/ ctx[13] + " * 8)");
     			set_style(div3, "border-top", "1px solid blue");
     			add_location(div3, file$9, 274, 0, 8606);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div4, file$9, 278, 1, 8779);
+    			add_location(div4, file$9, 278, 1, 8771);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$9, 277, 0, 8738);
+    			add_location(div5, file$9, 277, 0, 8730);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12549,7 +14812,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_30(ctx);
+    					if_block0 = create_if_block_30$1(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -12562,7 +14825,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_29(ctx);
+    					if_block1 = create_if_block_29$1(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -12575,7 +14838,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_28(ctx);
+    					if_block2 = create_if_block_28$1(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -12588,7 +14851,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_27(ctx);
+    					if_block3 = create_if_block_27$1(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -12601,7 +14864,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_26(ctx);
+    					if_block4 = create_if_block_26$1(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -12614,7 +14877,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_25$1(ctx);
+    					if_block5 = create_if_block_25$2(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -12627,7 +14890,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_24$2(ctx);
+    					if_block6 = create_if_block_24$3(ctx);
     					if_block6.c();
     					if_block6.m(t6.parentNode, t6);
     				}
@@ -12640,7 +14903,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_23$2(ctx);
+    					if_block7 = create_if_block_23$3(ctx);
     					if_block7.c();
     					if_block7.m(t7.parentNode, t7);
     				}
@@ -12653,7 +14916,7 @@ var app = (function () {
     				if (if_block8) {
     					if_block8.p(ctx, dirty);
     				} else {
-    					if_block8 = create_if_block_22$2(ctx);
+    					if_block8 = create_if_block_22$3(ctx);
     					if_block8.c();
     					if_block8.m(t8.parentNode, t8);
     				}
@@ -12672,7 +14935,7 @@ var app = (function () {
     				if (if_block9) {
     					if_block9.p(ctx, dirty);
     				} else {
-    					if_block9 = create_if_block_21$2(ctx);
+    					if_block9 = create_if_block_21$3(ctx);
     					if_block9.c();
     					if_block9.m(t11.parentNode, t11);
     				}
@@ -12685,7 +14948,7 @@ var app = (function () {
     				if (if_block10) {
     					if_block10.p(ctx, dirty);
     				} else {
-    					if_block10 = create_if_block_20$2(ctx);
+    					if_block10 = create_if_block_20$3(ctx);
     					if_block10.c();
     					if_block10.m(t12.parentNode, t12);
     				}
@@ -12708,7 +14971,7 @@ var app = (function () {
     				if (if_block12) {
     					if_block12.p(ctx, dirty);
     				} else {
-    					if_block12 = create_if_block_18$2(ctx);
+    					if_block12 = create_if_block_18$3(ctx);
     					if_block12.c();
     					if_block12.m(t14.parentNode, t14);
     				}
@@ -12721,7 +14984,7 @@ var app = (function () {
     				if (if_block13) {
     					if_block13.p(ctx, dirty);
     				} else {
-    					if_block13 = create_if_block_17$2(ctx);
+    					if_block13 = create_if_block_17$3(ctx);
     					if_block13.c();
     					if_block13.m(t15.parentNode, t15);
     				}
@@ -12734,7 +14997,7 @@ var app = (function () {
     				if (if_block14) {
     					if_block14.p(ctx, dirty);
     				} else {
-    					if_block14 = create_if_block_16$2(ctx);
+    					if_block14 = create_if_block_16$3(ctx);
     					if_block14.c();
     					if_block14.m(t16.parentNode, t16);
     				}
@@ -12757,7 +15020,7 @@ var app = (function () {
     				if (if_block16) {
     					if_block16.p(ctx, dirty);
     				} else {
-    					if_block16 = create_if_block_11$3(ctx);
+    					if_block16 = create_if_block_11$4(ctx);
     					if_block16.c();
     					if_block16.m(t18.parentNode, t18);
     				}
@@ -12770,7 +15033,7 @@ var app = (function () {
     				if (if_block17) {
     					if_block17.p(ctx, dirty);
     				} else {
-    					if_block17 = create_if_block_10$4(ctx);
+    					if_block17 = create_if_block_10$5(ctx);
     					if_block17.c();
     					if_block17.m(t19.parentNode, t19);
     				}
@@ -13142,7 +15405,7 @@ var app = (function () {
     const file$a = "src/specifics/SaudiArabia.svelte";
 
     // (70:0) {#if firstSetup}
-    function create_if_block_17$3(ctx) {
+    function create_if_block_17$4(ctx) {
     	let div;
     	let t;
     	let a;
@@ -13186,7 +15449,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$3.name,
+    		id: create_if_block_17$4.name,
     		type: "if",
     		source: "(70:0) {#if firstSetup}",
     		ctx
@@ -13196,7 +15459,7 @@ var app = (function () {
     }
 
     // (74:0) {#if secondSetup}
-    function create_if_block_16$3(ctx) {
+    function create_if_block_16$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13239,7 +15502,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$3.name,
+    		id: create_if_block_16$4.name,
     		type: "if",
     		source: "(74:0) {#if secondSetup}",
     		ctx
@@ -13249,7 +15512,7 @@ var app = (function () {
     }
 
     // (78:0) {#if thirdSetup}
-    function create_if_block_15$3(ctx) {
+    function create_if_block_15$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13292,7 +15555,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$3.name,
+    		id: create_if_block_15$4.name,
     		type: "if",
     		source: "(78:0) {#if thirdSetup}",
     		ctx
@@ -13302,7 +15565,7 @@ var app = (function () {
     }
 
     // (82:0) {#if fourthSetup}
-    function create_if_block_14$4(ctx) {
+    function create_if_block_14$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13345,7 +15608,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$4.name,
+    		id: create_if_block_14$5.name,
     		type: "if",
     		source: "(82:0) {#if fourthSetup}",
     		ctx
@@ -13355,7 +15618,7 @@ var app = (function () {
     }
 
     // (86:0) {#if fifthSetup}
-    function create_if_block_13$4(ctx) {
+    function create_if_block_13$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13398,7 +15661,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$4.name,
+    		id: create_if_block_13$5.name,
     		type: "if",
     		source: "(86:0) {#if fifthSetup}",
     		ctx
@@ -13408,7 +15671,7 @@ var app = (function () {
     }
 
     // (90:0) {#if sixthSetup}
-    function create_if_block_12$4(ctx) {
+    function create_if_block_12$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13451,7 +15714,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$4.name,
+    		id: create_if_block_12$5.name,
     		type: "if",
     		source: "(90:0) {#if sixthSetup}",
     		ctx
@@ -13461,7 +15724,7 @@ var app = (function () {
     }
 
     // (94:0) {#if seventhSetup}
-    function create_if_block_11$4(ctx) {
+    function create_if_block_11$5(ctx) {
     	let a;
     	let t;
     	let div;
@@ -13505,7 +15768,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$4.name,
+    		id: create_if_block_11$5.name,
     		type: "if",
     		source: "(94:0) {#if seventhSetup}",
     		ctx
@@ -13515,7 +15778,7 @@ var app = (function () {
     }
 
     // (112:0) {#if firstSetup}
-    function create_if_block_10$5(ctx) {
+    function create_if_block_10$6(ctx) {
     	let div;
     	let t;
 
@@ -13543,7 +15806,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$5.name,
+    		id: create_if_block_10$6.name,
     		type: "if",
     		source: "(112:0) {#if firstSetup}",
     		ctx
@@ -13553,7 +15816,7 @@ var app = (function () {
     }
 
     // (134:1) {:else}
-    function create_else_block_1$2(ctx) {
+    function create_else_block_1$3(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13583,7 +15846,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$2.name,
+    		id: create_else_block_1$3.name,
     		type: "else",
     		source: "(134:1) {:else}",
     		ctx
@@ -13593,12 +15856,12 @@ var app = (function () {
     }
 
     // (133:1) {#if firstSetup}
-    function create_if_block_9$6(ctx) {
+    function create_if_block_9$7(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$6.name,
+    		id: create_if_block_9$7.name,
     		type: "if",
     		source: "(133:1) {#if firstSetup}",
     		ctx
@@ -13608,7 +15871,7 @@ var app = (function () {
     }
 
     // (118:0) {#if secondSetup}
-    function create_if_block_8$6(ctx) {
+    function create_if_block_8$7(ctx) {
     	let div0;
     	let t0;
     	let br;
@@ -13707,7 +15970,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$6.name,
+    		id: create_if_block_8$7.name,
     		type: "if",
     		source: "(118:0) {#if secondSetup}",
     		ctx
@@ -13717,7 +15980,7 @@ var app = (function () {
     }
 
     // (158:2) {:else}
-    function create_else_block$4(ctx) {
+    function create_else_block$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -13747,7 +16010,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$4.name,
+    		id: create_else_block$5.name,
     		type: "else",
     		source: "(158:2) {:else}",
     		ctx
@@ -13757,12 +16020,12 @@ var app = (function () {
     }
 
     // (157:2) {#if secondSetup}
-    function create_if_block_7$6(ctx) {
+    function create_if_block_7$7(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$6.name,
+    		id: create_if_block_7$7.name,
     		type: "if",
     		source: "(157:2) {#if secondSetup}",
     		ctx
@@ -14357,19 +16620,19 @@ var app = (function () {
     	let t17;
     	let div3;
     	let div2;
-    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_17$3(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_16$3(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_15$3(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_14$4(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_13$4(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_12$4(ctx);
-    	let if_block6 = /*seventhSetup*/ ctx[10] && create_if_block_11$4(ctx);
-    	let if_block7 = /*firstSetup*/ ctx[4] && create_if_block_10$5(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_17$4(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_16$4(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_15$4(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_14$5(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_13$5(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_12$5(ctx);
+    	let if_block6 = /*seventhSetup*/ ctx[10] && create_if_block_11$5(ctx);
+    	let if_block7 = /*firstSetup*/ ctx[4] && create_if_block_10$6(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_8$6;
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$6;
-    		return create_else_block_1$2;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_8$7;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$7;
+    		return create_else_block_1$3;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -14378,8 +16641,8 @@ var app = (function () {
     	function select_block_type_1(ctx, dirty) {
     		if (/*thirdSetup*/ ctx[6]) return create_if_block_5$8;
     		if (/*firstSetup*/ ctx[4]) return create_if_block_6$8;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_7$6;
-    		return create_else_block$4;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_7$7;
+    		return create_else_block$5;
     	}
 
     	let current_block_type_1 = select_block_type_1(ctx);
@@ -14434,14 +16697,14 @@ var app = (function () {
     			add_location(div0, file$a, 105, 0, 2187);
     			attr_dev(div1, "class", "horizontalLine left svelte-15xrd9f");
     			set_style(div1, "width", "100%");
-    			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[12] + " * 8) - 1px)");
+    			set_style(div1, "top", "calc(" + /*distanceBLines*/ ctx[12] + " * 8)");
     			set_style(div1, "border-top", "1px solid blue");
     			add_location(div1, file$a, 256, 0, 8089);
     			attr_dev(div2, "class", "progressline");
     			set_style(div2, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div2, file$a, 260, 1, 8262);
+    			add_location(div2, file$a, 260, 1, 8254);
     			attr_dev(div3, "class", "activedotnew activedotFan");
-    			add_location(div3, file$a, 259, 0, 8221);
+    			add_location(div3, file$a, 259, 0, 8213);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -14490,7 +16753,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_17$3(ctx);
+    					if_block0 = create_if_block_17$4(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -14503,7 +16766,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_16$3(ctx);
+    					if_block1 = create_if_block_16$4(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -14516,7 +16779,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_15$3(ctx);
+    					if_block2 = create_if_block_15$4(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -14529,7 +16792,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_14$4(ctx);
+    					if_block3 = create_if_block_14$5(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -14542,7 +16805,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_13$4(ctx);
+    					if_block4 = create_if_block_13$5(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -14555,7 +16818,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_12$4(ctx);
+    					if_block5 = create_if_block_12$5(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -14568,7 +16831,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_11$4(ctx);
+    					if_block6 = create_if_block_11$5(ctx);
     					if_block6.c();
     					if_block6.m(t6.parentNode, t6);
     				}
@@ -14587,7 +16850,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_10$5(ctx);
+    					if_block7 = create_if_block_10$6(ctx);
     					if_block7.c();
     					if_block7.m(t9.parentNode, t9);
     				}
@@ -14955,7 +17218,7 @@ var app = (function () {
     const file$b = "src/specifics/India.svelte";
 
     // (76:0) {#if firstSetup}
-    function create_if_block_26$1(ctx) {
+    function create_if_block_26$2(ctx) {
     	let div;
     	let t;
     	let a;
@@ -14999,7 +17262,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_26$1.name,
+    		id: create_if_block_26$2.name,
     		type: "if",
     		source: "(76:0) {#if firstSetup}",
     		ctx
@@ -15009,7 +17272,7 @@ var app = (function () {
     }
 
     // (80:0) {#if secondSetup}
-    function create_if_block_25$2(ctx) {
+    function create_if_block_25$3(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15052,7 +17315,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_25$2.name,
+    		id: create_if_block_25$3.name,
     		type: "if",
     		source: "(80:0) {#if secondSetup}",
     		ctx
@@ -15062,7 +17325,7 @@ var app = (function () {
     }
 
     // (84:0) {#if thirdSetup}
-    function create_if_block_24$3(ctx) {
+    function create_if_block_24$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15105,7 +17368,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_24$3.name,
+    		id: create_if_block_24$4.name,
     		type: "if",
     		source: "(84:0) {#if thirdSetup}",
     		ctx
@@ -15115,7 +17378,7 @@ var app = (function () {
     }
 
     // (88:0) {#if fourthSetup}
-    function create_if_block_23$3(ctx) {
+    function create_if_block_23$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15158,7 +17421,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23$3.name,
+    		id: create_if_block_23$4.name,
     		type: "if",
     		source: "(88:0) {#if fourthSetup}",
     		ctx
@@ -15168,7 +17431,7 @@ var app = (function () {
     }
 
     // (92:0) {#if fifthSetup}
-    function create_if_block_22$3(ctx) {
+    function create_if_block_22$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15211,7 +17474,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$3.name,
+    		id: create_if_block_22$4.name,
     		type: "if",
     		source: "(92:0) {#if fifthSetup}",
     		ctx
@@ -15221,7 +17484,7 @@ var app = (function () {
     }
 
     // (96:0) {#if sixthSetup}
-    function create_if_block_21$3(ctx) {
+    function create_if_block_21$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15264,7 +17527,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$3.name,
+    		id: create_if_block_21$4.name,
     		type: "if",
     		source: "(96:0) {#if sixthSetup}",
     		ctx
@@ -15274,7 +17537,7 @@ var app = (function () {
     }
 
     // (100:0) {#if seventhSetup}
-    function create_if_block_20$3(ctx) {
+    function create_if_block_20$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15317,7 +17580,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$3.name,
+    		id: create_if_block_20$4.name,
     		type: "if",
     		source: "(100:0) {#if seventhSetup}",
     		ctx
@@ -15327,7 +17590,7 @@ var app = (function () {
     }
 
     // (104:0) {#if eighthSetup}
-    function create_if_block_19$3(ctx) {
+    function create_if_block_19$4(ctx) {
     	let a;
     	let t;
     	let div;
@@ -15371,7 +17634,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$3.name,
+    		id: create_if_block_19$4.name,
     		type: "if",
     		source: "(104:0) {#if eighthSetup}",
     		ctx
@@ -15381,7 +17644,7 @@ var app = (function () {
     }
 
     // (117:0) {#if firstSetup}
-    function create_if_block_18$3(ctx) {
+    function create_if_block_18$4(ctx) {
     	let div;
     	let t;
 
@@ -15409,7 +17672,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$3.name,
+    		id: create_if_block_18$4.name,
     		type: "if",
     		source: "(117:0) {#if firstSetup}",
     		ctx
@@ -15419,7 +17682,7 @@ var app = (function () {
     }
 
     // (124:0) {#if secondSetup}
-    function create_if_block_17$4(ctx) {
+    function create_if_block_17$5(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -15506,7 +17769,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$4.name,
+    		id: create_if_block_17$5.name,
     		type: "if",
     		source: "(124:0) {#if secondSetup}",
     		ctx
@@ -15516,7 +17779,7 @@ var app = (function () {
     }
 
     // (140:0) {:else}
-    function create_else_block_3(ctx) {
+    function create_else_block_3$1(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15545,7 +17808,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_3.name,
+    		id: create_else_block_3$1.name,
     		type: "else",
     		source: "(140:0) {:else}",
     		ctx
@@ -15555,12 +17818,12 @@ var app = (function () {
     }
 
     // (139:0) {#if firstSetup}
-    function create_if_block_16$4(ctx) {
+    function create_if_block_16$5(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$4.name,
+    		id: create_if_block_16$5.name,
     		type: "if",
     		source: "(139:0) {#if firstSetup}",
     		ctx
@@ -15570,7 +17833,7 @@ var app = (function () {
     }
 
     // (146:0) {#if thirdSetup}
-    function create_if_block_15$4(ctx) {
+    function create_if_block_15$5(ctx) {
     	let div0;
     	let t0;
     	let span;
@@ -15629,7 +17892,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$4.name,
+    		id: create_if_block_15$5.name,
     		type: "if",
     		source: "(146:0) {#if thirdSetup}",
     		ctx
@@ -15639,7 +17902,7 @@ var app = (function () {
     }
 
     // (158:1) {:else}
-    function create_else_block_2$1(ctx) {
+    function create_else_block_2$2(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15678,7 +17941,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2$1.name,
+    		id: create_else_block_2$2.name,
     		type: "else",
     		source: "(158:1) {:else}",
     		ctx
@@ -15688,12 +17951,12 @@ var app = (function () {
     }
 
     // (157:1) {#if secondSetup}
-    function create_if_block_14$5(ctx) {
+    function create_if_block_14$6(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$5.name,
+    		id: create_if_block_14$6.name,
     		type: "if",
     		source: "(157:1) {#if secondSetup}",
     		ctx
@@ -15703,12 +17966,12 @@ var app = (function () {
     }
 
     // (155:0) {#if firstSetup}
-    function create_if_block_13$5(ctx) {
+    function create_if_block_13$6(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$5.name,
+    		id: create_if_block_13$6.name,
     		type: "if",
     		source: "(155:0) {#if firstSetup}",
     		ctx
@@ -15718,7 +17981,7 @@ var app = (function () {
     }
 
     // (168:0) {#if fourthSetup}
-    function create_if_block_12$5(ctx) {
+    function create_if_block_12$6(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -15768,7 +18031,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$5.name,
+    		id: create_if_block_12$6.name,
     		type: "if",
     		source: "(168:0) {#if fourthSetup}",
     		ctx
@@ -15778,7 +18041,7 @@ var app = (function () {
     }
 
     // (184:2) {:else}
-    function create_else_block_1$3(ctx) {
+    function create_else_block_1$4(ctx) {
     	let div;
 
     	const block = {
@@ -15797,7 +18060,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$3.name,
+    		id: create_else_block_1$4.name,
     		type: "else",
     		source: "(184:2) {:else}",
     		ctx
@@ -15807,12 +18070,12 @@ var app = (function () {
     }
 
     // (183:2) {#if thirdSetup}
-    function create_if_block_11$5(ctx) {
+    function create_if_block_11$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$5.name,
+    		id: create_if_block_11$6.name,
     		type: "if",
     		source: "(183:2) {#if thirdSetup}",
     		ctx
@@ -15822,12 +18085,12 @@ var app = (function () {
     }
 
     // (181:1) {#if secondSetup}
-    function create_if_block_10$6(ctx) {
+    function create_if_block_10$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$6.name,
+    		id: create_if_block_10$7.name,
     		type: "if",
     		source: "(181:1) {#if secondSetup}",
     		ctx
@@ -15837,12 +18100,12 @@ var app = (function () {
     }
 
     // (179:0) {#if firstSetup}
-    function create_if_block_9$7(ctx) {
+    function create_if_block_9$8(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$7.name,
+    		id: create_if_block_9$8.name,
     		type: "if",
     		source: "(179:0) {#if firstSetup}",
     		ctx
@@ -15852,7 +18115,7 @@ var app = (function () {
     }
 
     // (191:0) {#if fifthSetup}
-    function create_if_block_8$7(ctx) {
+    function create_if_block_8$8(ctx) {
     	let div0;
     	let t0;
     	let span;
@@ -15933,7 +18196,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$7.name,
+    		id: create_if_block_8$8.name,
     		type: "if",
     		source: "(191:0) {#if fifthSetup}",
     		ctx
@@ -15943,7 +18206,7 @@ var app = (function () {
     }
 
     // (210:3) {:else}
-    function create_else_block$5(ctx) {
+    function create_else_block$6(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -15972,7 +18235,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$5.name,
+    		id: create_else_block$6.name,
     		type: "else",
     		source: "(210:3) {:else}",
     		ctx
@@ -15982,12 +18245,12 @@ var app = (function () {
     }
 
     // (209:3) {#if fourthSetup}
-    function create_if_block_7$7(ctx) {
+    function create_if_block_7$8(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$7.name,
+    		id: create_if_block_7$8.name,
     		type: "if",
     		source: "(209:3) {#if fourthSetup}",
     		ctx
@@ -16499,53 +18762,53 @@ var app = (function () {
     	let t25;
     	let div5;
     	let div4;
-    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_26$1(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_25$2(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_24$3(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_23$3(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_22$3(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_21$3(ctx);
-    	let if_block6 = /*seventhSetup*/ ctx[11] && create_if_block_20$3(ctx);
-    	let if_block7 = /*eighthSetup*/ ctx[12] && create_if_block_19$3(ctx);
-    	let if_block8 = /*firstSetup*/ ctx[4] && create_if_block_18$3(ctx);
-    	let if_block9 = /*secondSetup*/ ctx[5] && create_if_block_17$4(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_26$2(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_25$3(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[6] && create_if_block_24$4(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[7] && create_if_block_23$4(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[8] && create_if_block_22$4(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[9] && create_if_block_21$4(ctx);
+    	let if_block6 = /*seventhSetup*/ ctx[11] && create_if_block_20$4(ctx);
+    	let if_block7 = /*eighthSetup*/ ctx[12] && create_if_block_19$4(ctx);
+    	let if_block8 = /*firstSetup*/ ctx[4] && create_if_block_18$4(ctx);
+    	let if_block9 = /*secondSetup*/ ctx[5] && create_if_block_17$5(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_16$4;
-    		return create_else_block_3;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_16$5;
+    		return create_else_block_3$1;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block10 = current_block_type(ctx);
-    	let if_block11 = /*thirdSetup*/ ctx[6] && create_if_block_15$4(ctx);
+    	let if_block11 = /*thirdSetup*/ ctx[6] && create_if_block_15$5(ctx);
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_13$5;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$5;
-    		return create_else_block_2$1;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_13$6;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$6;
+    		return create_else_block_2$2;
     	}
 
     	let current_block_type_1 = select_block_type_1(ctx);
     	let if_block12 = current_block_type_1(ctx);
-    	let if_block13 = /*fourthSetup*/ ctx[7] && create_if_block_12$5(ctx);
+    	let if_block13 = /*fourthSetup*/ ctx[7] && create_if_block_12$6(ctx);
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$7;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_10$6;
-    		if (/*thirdSetup*/ ctx[6]) return create_if_block_11$5;
-    		return create_else_block_1$3;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_9$8;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_10$7;
+    		if (/*thirdSetup*/ ctx[6]) return create_if_block_11$6;
+    		return create_else_block_1$4;
     	}
 
     	let current_block_type_2 = select_block_type_2(ctx);
     	let if_block14 = current_block_type_2(ctx);
-    	let if_block15 = /*fifthSetup*/ ctx[8] && create_if_block_8$7(ctx);
+    	let if_block15 = /*fifthSetup*/ ctx[8] && create_if_block_8$8(ctx);
 
     	function select_block_type_3(ctx, dirty) {
     		if (/*firstSetup*/ ctx[4]) return create_if_block_4$9;
     		if (/*secondSetup*/ ctx[5]) return create_if_block_5$9;
     		if (/*thirdSetup*/ ctx[6]) return create_if_block_6$9;
-    		if (/*fourthSetup*/ ctx[7]) return create_if_block_7$7;
-    		return create_else_block$5;
+    		if (/*fourthSetup*/ ctx[7]) return create_if_block_7$8;
+    		return create_else_block$6;
     	}
 
     	let current_block_type_3 = select_block_type_3(ctx);
@@ -16616,21 +18879,21 @@ var app = (function () {
     			add_location(div0, file$b, 115, 0, 2480);
     			attr_dev(div1, "class", "horizontalLine left svelte-p2xnez");
     			set_style(div1, "width", "100%");
-    			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[13] + " * 8) - 1px)");
+    			set_style(div1, "top", "calc(" + /*distanceBLines*/ ctx[13] + " * 8)");
     			set_style(div1, "border-top", "1px solid blue");
     			add_location(div1, file$b, 294, 0, 9477);
     			attr_dev(a, "class", "svelte-p2xnez");
-    			add_location(a, file$b, 300, 3, 9721);
+    			add_location(a, file$b, 300, 3, 9713);
     			attr_dev(div2, "class", "bottomLineText text svelte-p2xnez");
     			set_style(div2, "text-align", "right");
-    			add_location(div2, file$b, 299, 2, 9657);
+    			add_location(div2, file$b, 299, 2, 9649);
     			attr_dev(div3, "class", "text bottomLine svelte-p2xnez");
-    			add_location(div3, file$b, 298, 0, 9625);
+    			add_location(div3, file$b, 298, 0, 9617);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div4, file$b, 306, 1, 9810);
+    			add_location(div4, file$b, 306, 1, 9802);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$b, 305, 0, 9769);
+    			add_location(div5, file$b, 305, 0, 9761);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16695,7 +18958,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_26$1(ctx);
+    					if_block0 = create_if_block_26$2(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -16708,7 +18971,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_25$2(ctx);
+    					if_block1 = create_if_block_25$3(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -16721,7 +18984,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_24$3(ctx);
+    					if_block2 = create_if_block_24$4(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -16734,7 +18997,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_23$3(ctx);
+    					if_block3 = create_if_block_23$4(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -16747,7 +19010,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_22$3(ctx);
+    					if_block4 = create_if_block_22$4(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -16760,7 +19023,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_21$3(ctx);
+    					if_block5 = create_if_block_21$4(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -16773,7 +19036,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_20$3(ctx);
+    					if_block6 = create_if_block_20$4(ctx);
     					if_block6.c();
     					if_block6.m(t6.parentNode, t6);
     				}
@@ -16786,7 +19049,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_19$3(ctx);
+    					if_block7 = create_if_block_19$4(ctx);
     					if_block7.c();
     					if_block7.m(t7.parentNode, t7);
     				}
@@ -16805,7 +19068,7 @@ var app = (function () {
     				if (if_block8) {
     					if_block8.p(ctx, dirty);
     				} else {
-    					if_block8 = create_if_block_18$3(ctx);
+    					if_block8 = create_if_block_18$4(ctx);
     					if_block8.c();
     					if_block8.m(t10.parentNode, t10);
     				}
@@ -16818,7 +19081,7 @@ var app = (function () {
     				if (if_block9) {
     					if_block9.p(ctx, dirty);
     				} else {
-    					if_block9 = create_if_block_17$4(ctx);
+    					if_block9 = create_if_block_17$5(ctx);
     					if_block9.c();
     					if_block9.m(t11.parentNode, t11);
     				}
@@ -16841,7 +19104,7 @@ var app = (function () {
     				if (if_block11) {
     					if_block11.p(ctx, dirty);
     				} else {
-    					if_block11 = create_if_block_15$4(ctx);
+    					if_block11 = create_if_block_15$5(ctx);
     					if_block11.c();
     					if_block11.m(t13.parentNode, t13);
     				}
@@ -16866,7 +19129,7 @@ var app = (function () {
     				if (if_block13) {
     					if_block13.p(ctx, dirty);
     				} else {
-    					if_block13 = create_if_block_12$5(ctx);
+    					if_block13 = create_if_block_12$6(ctx);
     					if_block13.c();
     					if_block13.m(t15.parentNode, t15);
     				}
@@ -16889,7 +19152,7 @@ var app = (function () {
     				if (if_block15) {
     					if_block15.p(ctx, dirty);
     				} else {
-    					if_block15 = create_if_block_8$7(ctx);
+    					if_block15 = create_if_block_8$8(ctx);
     					if_block15.c();
     					if_block15.m(t17.parentNode, t17);
     				}
@@ -17258,7 +19521,7 @@ var app = (function () {
     const file$c = "src/specifics/Cambodia.svelte";
 
     // (88:0) {#if firstSetup}
-    function create_if_block_23$4(ctx) {
+    function create_if_block_23$5(ctx) {
     	let div;
     	let t;
     	let a;
@@ -17302,7 +19565,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23$4.name,
+    		id: create_if_block_23$5.name,
     		type: "if",
     		source: "(88:0) {#if firstSetup}",
     		ctx
@@ -17312,7 +19575,7 @@ var app = (function () {
     }
 
     // (92:0) {#if secondSetup}
-    function create_if_block_22$4(ctx) {
+    function create_if_block_22$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -17355,7 +19618,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$4.name,
+    		id: create_if_block_22$5.name,
     		type: "if",
     		source: "(92:0) {#if secondSetup}",
     		ctx
@@ -17365,7 +19628,7 @@ var app = (function () {
     }
 
     // (96:0) {#if thirdSetup}
-    function create_if_block_21$4(ctx) {
+    function create_if_block_21$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -17408,7 +19671,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$4.name,
+    		id: create_if_block_21$5.name,
     		type: "if",
     		source: "(96:0) {#if thirdSetup}",
     		ctx
@@ -17418,7 +19681,7 @@ var app = (function () {
     }
 
     // (100:0) {#if fourthSetup}
-    function create_if_block_20$4(ctx) {
+    function create_if_block_20$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -17461,7 +19724,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$4.name,
+    		id: create_if_block_20$5.name,
     		type: "if",
     		source: "(100:0) {#if fourthSetup}",
     		ctx
@@ -17471,7 +19734,7 @@ var app = (function () {
     }
 
     // (104:0) {#if fifthSetup}
-    function create_if_block_19$4(ctx) {
+    function create_if_block_19$5(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -17514,7 +19777,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$4.name,
+    		id: create_if_block_19$5.name,
     		type: "if",
     		source: "(104:0) {#if fifthSetup}",
     		ctx
@@ -17524,7 +19787,7 @@ var app = (function () {
     }
 
     // (108:0) {#if sixthSetup}
-    function create_if_block_18$4(ctx) {
+    function create_if_block_18$5(ctx) {
     	let a;
     	let t;
     	let div;
@@ -17568,7 +19831,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$4.name,
+    		id: create_if_block_18$5.name,
     		type: "if",
     		source: "(108:0) {#if sixthSetup}",
     		ctx
@@ -17578,7 +19841,7 @@ var app = (function () {
     }
 
     // (120:0) {#if firstSetup}
-    function create_if_block_17$5(ctx) {
+    function create_if_block_17$6(ctx) {
     	let div;
     	let t0;
     	let t1;
@@ -17636,7 +19899,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$5.name,
+    		id: create_if_block_17$6.name,
     		type: "if",
     		source: "(120:0) {#if firstSetup}",
     		ctx
@@ -17646,7 +19909,7 @@ var app = (function () {
     }
 
     // (130:0) {:else}
-    function create_else_block_2$2(ctx) {
+    function create_else_block_2$3(ctx) {
     	let div0;
     	let img0;
     	let img0_src_value;
@@ -17694,7 +19957,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2$2.name,
+    		id: create_else_block_2$3.name,
     		type: "else",
     		source: "(130:0) {:else}",
     		ctx
@@ -17704,12 +19967,12 @@ var app = (function () {
     }
 
     // (129:0) {#if firstSetup}
-    function create_if_block_16$5(ctx) {
+    function create_if_block_16$6(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$5.name,
+    		id: create_if_block_16$6.name,
     		type: "if",
     		source: "(129:0) {#if firstSetup}",
     		ctx
@@ -17719,7 +19982,7 @@ var app = (function () {
     }
 
     // (140:0) {#if secondSetup}
-    function create_if_block_15$5(ctx) {
+    function create_if_block_15$6(ctx) {
     	let div0;
     	let t0;
     	let span0;
@@ -17862,7 +20125,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$5.name,
+    		id: create_if_block_15$6.name,
     		type: "if",
     		source: "(140:0) {#if secondSetup}",
     		ctx
@@ -17872,7 +20135,7 @@ var app = (function () {
     }
 
     // (158:1) {:else}
-    function create_else_block_1$4(ctx) {
+    function create_else_block_1$5(ctx) {
     	let div0;
     	let img0;
     	let img0_src_value;
@@ -17950,7 +20213,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$4.name,
+    		id: create_else_block_1$5.name,
     		type: "else",
     		source: "(158:1) {:else}",
     		ctx
@@ -17960,12 +20223,12 @@ var app = (function () {
     }
 
     // (157:1) {#if secondSetup}
-    function create_if_block_14$6(ctx) {
+    function create_if_block_14$7(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$6.name,
+    		id: create_if_block_14$7.name,
     		type: "if",
     		source: "(157:1) {#if secondSetup}",
     		ctx
@@ -17975,12 +20238,12 @@ var app = (function () {
     }
 
     // (155:0) {#if firstSetup}
-    function create_if_block_13$6(ctx) {
+    function create_if_block_13$7(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$6.name,
+    		id: create_if_block_13$7.name,
     		type: "if",
     		source: "(155:0) {#if firstSetup}",
     		ctx
@@ -17990,7 +20253,7 @@ var app = (function () {
     }
 
     // (172:0) {#if seventyFive}
-    function create_if_block_12$6(ctx) {
+    function create_if_block_12$7(ctx) {
     	let div0;
     	let t0;
     	let div1;
@@ -18021,7 +20284,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$6.name,
+    		id: create_if_block_12$7.name,
     		type: "if",
     		source: "(172:0) {#if seventyFive}",
     		ctx
@@ -18031,7 +20294,7 @@ var app = (function () {
     }
 
     // (178:0) {#if thirdSetup}
-    function create_if_block_11$6(ctx) {
+    function create_if_block_11$7(ctx) {
     	let div0;
     	let t0;
     	let span0;
@@ -18124,7 +20387,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$6.name,
+    		id: create_if_block_11$7.name,
     		type: "if",
     		source: "(178:0) {#if thirdSetup}",
     		ctx
@@ -18134,7 +20397,7 @@ var app = (function () {
     }
 
     // (196:2) {:else}
-    function create_else_block$6(ctx) {
+    function create_else_block$7(ctx) {
     	let div0;
     	let img;
     	let img_src_value;
@@ -18185,7 +20448,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$6.name,
+    		id: create_else_block$7.name,
     		type: "else",
     		source: "(196:2) {:else}",
     		ctx
@@ -18195,12 +20458,12 @@ var app = (function () {
     }
 
     // (195:2) {#if thirdSetup}
-    function create_if_block_10$7(ctx) {
+    function create_if_block_10$8(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$7.name,
+    		id: create_if_block_10$8.name,
     		type: "if",
     		source: "(195:2) {#if thirdSetup}",
     		ctx
@@ -18210,12 +20473,12 @@ var app = (function () {
     }
 
     // (193:1) {#if secondSetup}
-    function create_if_block_9$8(ctx) {
+    function create_if_block_9$9(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$8.name,
+    		id: create_if_block_9$9.name,
     		type: "if",
     		source: "(193:1) {#if secondSetup}",
     		ctx
@@ -18225,12 +20488,12 @@ var app = (function () {
     }
 
     // (191:0) {#if firstSetup}
-    function create_if_block_8$8(ctx) {
+    function create_if_block_8$9(ctx) {
     	const block = { c: noop, m: noop, p: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$8.name,
+    		id: create_if_block_8$9.name,
     		type: "if",
     		source: "(191:0) {#if firstSetup}",
     		ctx
@@ -18240,7 +20503,7 @@ var app = (function () {
     }
 
     // (210:0) {#if fourthLines}
-    function create_if_block_7$8(ctx) {
+    function create_if_block_7$9(ctx) {
     	let div;
 
     	const block = {
@@ -18259,7 +20522,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$8.name,
+    		id: create_if_block_7$9.name,
     		type: "if",
     		source: "(210:0) {#if fourthLines}",
     		ctx
@@ -18835,44 +21098,44 @@ var app = (function () {
     	let t27;
     	let div5;
     	let div4;
-    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_23$4(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_22$4(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[7] && create_if_block_21$4(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[9] && create_if_block_20$4(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[11] && create_if_block_19$4(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[12] && create_if_block_18$4(ctx);
-    	let if_block6 = /*firstSetup*/ ctx[4] && create_if_block_17$5(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_23$5(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_22$5(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[7] && create_if_block_21$5(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[9] && create_if_block_20$5(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[11] && create_if_block_19$5(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[12] && create_if_block_18$5(ctx);
+    	let if_block6 = /*firstSetup*/ ctx[4] && create_if_block_17$6(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_16$5;
-    		return create_else_block_2$2;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_16$6;
+    		return create_else_block_2$3;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block7 = current_block_type(ctx);
-    	let if_block8 = /*secondSetup*/ ctx[5] && create_if_block_15$5(ctx);
+    	let if_block8 = /*secondSetup*/ ctx[5] && create_if_block_15$6(ctx);
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_13$6;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$6;
-    		return create_else_block_1$4;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_13$7;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_14$7;
+    		return create_else_block_1$5;
     	}
 
     	let current_block_type_1 = select_block_type_1(ctx);
     	let if_block9 = current_block_type_1(ctx);
-    	let if_block10 = /*seventyFive*/ ctx[8] && create_if_block_12$6(ctx);
-    	let if_block11 = /*thirdSetup*/ ctx[7] && create_if_block_11$6(ctx);
+    	let if_block10 = /*seventyFive*/ ctx[8] && create_if_block_12$7(ctx);
+    	let if_block11 = /*thirdSetup*/ ctx[7] && create_if_block_11$7(ctx);
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*firstSetup*/ ctx[4]) return create_if_block_8$8;
-    		if (/*secondSetup*/ ctx[5]) return create_if_block_9$8;
-    		if (/*thirdSetup*/ ctx[7]) return create_if_block_10$7;
-    		return create_else_block$6;
+    		if (/*firstSetup*/ ctx[4]) return create_if_block_8$9;
+    		if (/*secondSetup*/ ctx[5]) return create_if_block_9$9;
+    		if (/*thirdSetup*/ ctx[7]) return create_if_block_10$8;
+    		return create_else_block$7;
     	}
 
     	let current_block_type_2 = select_block_type_2(ctx);
     	let if_block12 = current_block_type_2(ctx);
-    	let if_block13 = /*fourthLines*/ ctx[10] && create_if_block_7$8(ctx);
+    	let if_block13 = /*fourthLines*/ ctx[10] && create_if_block_7$9(ctx);
     	let if_block14 = /*fourthSetup*/ ctx[9] && create_if_block_6$a(ctx);
     	let if_block15 = /*fourthSticky*/ ctx[13] && create_if_block_5$a(ctx);
     	let if_block16 = /*fifthSetup*/ ctx[11] && create_if_block_4$a(ctx);
@@ -19022,7 +21285,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_23$4(ctx);
+    					if_block0 = create_if_block_23$5(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -19035,7 +21298,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_22$4(ctx);
+    					if_block1 = create_if_block_22$5(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -19048,7 +21311,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_21$4(ctx);
+    					if_block2 = create_if_block_21$5(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -19061,7 +21324,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_20$4(ctx);
+    					if_block3 = create_if_block_20$5(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -19074,7 +21337,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_19$4(ctx);
+    					if_block4 = create_if_block_19$5(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -19087,7 +21350,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_18$4(ctx);
+    					if_block5 = create_if_block_18$5(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -19106,7 +21369,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_17$5(ctx);
+    					if_block6 = create_if_block_17$6(ctx);
     					if_block6.c();
     					if_block6.m(t8.parentNode, t8);
     				}
@@ -19131,7 +21394,7 @@ var app = (function () {
     				if (if_block8) {
     					if_block8.p(ctx, dirty);
     				} else {
-    					if_block8 = create_if_block_15$5(ctx);
+    					if_block8 = create_if_block_15$6(ctx);
     					if_block8.c();
     					if_block8.m(t10.parentNode, t10);
     				}
@@ -19154,7 +21417,7 @@ var app = (function () {
 
     			if (/*seventyFive*/ ctx[8]) {
     				if (if_block10) ; else {
-    					if_block10 = create_if_block_12$6(ctx);
+    					if_block10 = create_if_block_12$7(ctx);
     					if_block10.c();
     					if_block10.m(t12.parentNode, t12);
     				}
@@ -19167,7 +21430,7 @@ var app = (function () {
     				if (if_block11) {
     					if_block11.p(ctx, dirty);
     				} else {
-    					if_block11 = create_if_block_11$6(ctx);
+    					if_block11 = create_if_block_11$7(ctx);
     					if_block11.c();
     					if_block11.m(t13.parentNode, t13);
     				}
@@ -19190,7 +21453,7 @@ var app = (function () {
 
     			if (/*fourthLines*/ ctx[10]) {
     				if (if_block13) ; else {
-    					if_block13 = create_if_block_7$8(ctx);
+    					if_block13 = create_if_block_7$9(ctx);
     					if_block13.c();
     					if_block13.m(t15.parentNode, t15);
     				}
@@ -19602,7 +21865,7 @@ var app = (function () {
     const file$d = "src/specifics/SouthKorea.svelte";
 
     // (118:0) {#if firstSetup}
-    function create_if_block_23$5(ctx) {
+    function create_if_block_23$6(ctx) {
     	let div;
     	let t;
     	let a;
@@ -19646,7 +21909,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_23$5.name,
+    		id: create_if_block_23$6.name,
     		type: "if",
     		source: "(118:0) {#if firstSetup}",
     		ctx
@@ -19656,7 +21919,7 @@ var app = (function () {
     }
 
     // (122:0) {#if secondSetup}
-    function create_if_block_22$5(ctx) {
+    function create_if_block_22$6(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -19699,7 +21962,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$5.name,
+    		id: create_if_block_22$6.name,
     		type: "if",
     		source: "(122:0) {#if secondSetup}",
     		ctx
@@ -19709,7 +21972,7 @@ var app = (function () {
     }
 
     // (126:0) {#if thirdSetup}
-    function create_if_block_21$5(ctx) {
+    function create_if_block_21$6(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -19752,7 +22015,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$5.name,
+    		id: create_if_block_21$6.name,
     		type: "if",
     		source: "(126:0) {#if thirdSetup}",
     		ctx
@@ -19762,7 +22025,7 @@ var app = (function () {
     }
 
     // (130:0) {#if fourthSetup}
-    function create_if_block_20$5(ctx) {
+    function create_if_block_20$6(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -19805,7 +22068,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$5.name,
+    		id: create_if_block_20$6.name,
     		type: "if",
     		source: "(130:0) {#if fourthSetup}",
     		ctx
@@ -19815,7 +22078,7 @@ var app = (function () {
     }
 
     // (134:0) {#if fifthSetup}
-    function create_if_block_19$5(ctx) {
+    function create_if_block_19$6(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -19858,7 +22121,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$5.name,
+    		id: create_if_block_19$6.name,
     		type: "if",
     		source: "(134:0) {#if fifthSetup}",
     		ctx
@@ -19868,7 +22131,7 @@ var app = (function () {
     }
 
     // (138:0) {#if sixthSetup}
-    function create_if_block_18$5(ctx) {
+    function create_if_block_18$6(ctx) {
     	let a;
     	let t;
     	let div;
@@ -19912,7 +22175,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$5.name,
+    		id: create_if_block_18$6.name,
     		type: "if",
     		source: "(138:0) {#if sixthSetup}",
     		ctx
@@ -19922,7 +22185,7 @@ var app = (function () {
     }
 
     // (151:0) {#if firstSetup}
-    function create_if_block_17$6(ctx) {
+    function create_if_block_17$7(ctx) {
     	let div;
     	let t;
 
@@ -19950,7 +22213,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$6.name,
+    		id: create_if_block_17$7.name,
     		type: "if",
     		source: "(151:0) {#if firstSetup}",
     		ctx
@@ -19960,7 +22223,7 @@ var app = (function () {
     }
 
     // (156:0) {#if secondSetup}
-    function create_if_block_16$6(ctx) {
+    function create_if_block_16$7(ctx) {
     	let div;
     	let t0;
     	let span;
@@ -19997,7 +22260,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$6.name,
+    		id: create_if_block_16$7.name,
     		type: "if",
     		source: "(156:0) {#if secondSetup}",
     		ctx
@@ -20007,7 +22270,7 @@ var app = (function () {
     }
 
     // (161:0) {#if secondPhoto}
-    function create_if_block_15$6(ctx) {
+    function create_if_block_15$7(ctx) {
     	let div;
 
     	const block = {
@@ -20026,7 +22289,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$6.name,
+    		id: create_if_block_15$7.name,
     		type: "if",
     		source: "(161:0) {#if secondPhoto}",
     		ctx
@@ -20036,7 +22299,7 @@ var app = (function () {
     }
 
     // (162:0) {#if thirdSetup}
-    function create_if_block_14$7(ctx) {
+    function create_if_block_14$8(ctx) {
     	let div;
     	let t0;
     	let span0;
@@ -20082,7 +22345,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$7.name,
+    		id: create_if_block_14$8.name,
     		type: "if",
     		source: "(162:0) {#if thirdSetup}",
     		ctx
@@ -20092,7 +22355,7 @@ var app = (function () {
     }
 
     // (167:0) {#if thirdPhoto}
-    function create_if_block_13$7(ctx) {
+    function create_if_block_13$8(ctx) {
     	let div;
 
     	const block = {
@@ -20111,7 +22374,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$7.name,
+    		id: create_if_block_13$8.name,
     		type: "if",
     		source: "(167:0) {#if thirdPhoto}",
     		ctx
@@ -20121,7 +22384,7 @@ var app = (function () {
     }
 
     // (168:0) {#if fourthSetup}
-    function create_if_block_12$7(ctx) {
+    function create_if_block_12$8(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -20180,7 +22443,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$7.name,
+    		id: create_if_block_12$8.name,
     		type: "if",
     		source: "(168:0) {#if fourthSetup}",
     		ctx
@@ -20190,7 +22453,7 @@ var app = (function () {
     }
 
     // (176:0) {#if twentyfourty}
-    function create_if_block_11$7(ctx) {
+    function create_if_block_11$8(ctx) {
     	let div0;
     	let t1;
     	let div1;
@@ -20230,7 +22493,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$7.name,
+    		id: create_if_block_11$8.name,
     		type: "if",
     		source: "(176:0) {#if twentyfourty}",
     		ctx
@@ -20240,7 +22503,7 @@ var app = (function () {
     }
 
     // (181:0) {#if fifthSetup}
-    function create_if_block_10$8(ctx) {
+    function create_if_block_10$9(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -20299,7 +22562,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$8.name,
+    		id: create_if_block_10$9.name,
     		type: "if",
     		source: "(181:0) {#if fifthSetup}",
     		ctx
@@ -20309,7 +22572,7 @@ var app = (function () {
     }
 
     // (189:0) {#if sixthSetup}
-    function create_if_block_9$9(ctx) {
+    function create_if_block_9$a(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -20399,7 +22662,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$9.name,
+    		id: create_if_block_9$a.name,
     		type: "if",
     		source: "(189:0) {#if sixthSetup}",
     		ctx
@@ -20418,8 +22681,8 @@ var app = (function () {
     	let t3;
     	let t4;
     	let span;
-    	let if_block0 = /*fifthSetup*/ ctx[11] && create_if_block_8$9(ctx);
-    	let if_block1 = /*sixthSetup*/ ctx[13] && create_if_block_7$9(ctx);
+    	let if_block0 = /*fifthSetup*/ ctx[11] && create_if_block_8$a(ctx);
+    	let if_block1 = /*sixthSetup*/ ctx[13] && create_if_block_7$a(ctx);
     	let if_block2 = /*fourthSetup*/ ctx[9] && create_if_block_6$b(ctx);
     	let if_block3 = /*fifthSetup*/ ctx[11] && create_if_block_5$b(ctx);
     	let if_block4 = /*sixthSetup*/ ctx[13] && create_if_block_4$b(ctx);
@@ -20465,7 +22728,7 @@ var app = (function () {
     		p: function update(ctx, dirty) {
     			if (/*fifthSetup*/ ctx[11]) {
     				if (if_block0) ; else {
-    					if_block0 = create_if_block_8$9(ctx);
+    					if_block0 = create_if_block_8$a(ctx);
     					if_block0.c();
     					if_block0.m(div1, t0);
     				}
@@ -20476,7 +22739,7 @@ var app = (function () {
 
     			if (/*sixthSetup*/ ctx[13]) {
     				if (if_block1) ; else {
-    					if_block1 = create_if_block_7$9(ctx);
+    					if_block1 = create_if_block_7$a(ctx);
     					if_block1.c();
     					if_block1.m(div1, t1);
     				}
@@ -20540,7 +22803,7 @@ var app = (function () {
     }
 
     // (205:2) {#if fifthSetup}
-    function create_if_block_8$9(ctx) {
+    function create_if_block_8$a(ctx) {
     	let div;
     	let span;
 
@@ -20565,7 +22828,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$9.name,
+    		id: create_if_block_8$a.name,
     		type: "if",
     		source: "(205:2) {#if fifthSetup}",
     		ctx
@@ -20575,7 +22838,7 @@ var app = (function () {
     }
 
     // (206:2) {#if sixthSetup}
-    function create_if_block_7$9(ctx) {
+    function create_if_block_7$a(ctx) {
     	let div;
     	let span;
 
@@ -20600,7 +22863,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$9.name,
+    		id: create_if_block_7$a.name,
     		type: "if",
     		source: "(206:2) {#if sixthSetup}",
     		ctx
@@ -20705,7 +22968,7 @@ var app = (function () {
 
     	function select_block_type(ctx, dirty) {
     		if (/*fifthSetup*/ ctx[11]) return create_if_block_2$b;
-    		return create_else_block_1$5;
+    		return create_else_block_1$6;
     	}
 
     	let current_block_type = select_block_type(ctx);
@@ -20754,7 +23017,7 @@ var app = (function () {
     }
 
     // (223:2) {:else}
-    function create_else_block_1$5(ctx) {
+    function create_else_block_1$6(ctx) {
     	let polygon;
 
     	const block = {
@@ -20774,7 +23037,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$5.name,
+    		id: create_else_block_1$6.name,
     		type: "else",
     		source: "(223:2) {:else}",
     		ctx
@@ -20814,7 +23077,7 @@ var app = (function () {
     }
 
     // (242:19) {:else}
-    function create_else_block$7(ctx) {
+    function create_else_block$8(ctx) {
     	let t0;
     	let a;
     	let t2;
@@ -20844,7 +23107,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$7.name,
+    		id: create_else_block$8.name,
     		type: "else",
     		source: "(242:19) {:else}",
     		ctx
@@ -20894,27 +23157,27 @@ var app = (function () {
     	let t19;
     	let div4;
     	let div3;
-    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_23$5(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_22$5(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[7] && create_if_block_21$5(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[9] && create_if_block_20$5(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[11] && create_if_block_19$5(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[13] && create_if_block_18$5(ctx);
-    	let if_block6 = /*firstSetup*/ ctx[4] && create_if_block_17$6(ctx);
-    	let if_block7 = /*secondSetup*/ ctx[5] && create_if_block_16$6(ctx);
-    	let if_block8 = /*secondPhoto*/ ctx[6] && create_if_block_15$6(ctx);
-    	let if_block9 = /*thirdSetup*/ ctx[7] && create_if_block_14$7(ctx);
-    	let if_block10 = /*thirdPhoto*/ ctx[8] && create_if_block_13$7(ctx);
-    	let if_block11 = /*fourthSetup*/ ctx[9] && create_if_block_12$7(ctx);
-    	let if_block12 = /*twentyfourty*/ ctx[14] && create_if_block_11$7(ctx);
-    	let if_block13 = /*fifthSetup*/ ctx[11] && create_if_block_10$8(ctx);
-    	let if_block14 = /*sixthSetup*/ ctx[13] && create_if_block_9$9(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[4] && create_if_block_23$6(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[5] && create_if_block_22$6(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[7] && create_if_block_21$6(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[9] && create_if_block_20$6(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[11] && create_if_block_19$6(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[13] && create_if_block_18$6(ctx);
+    	let if_block6 = /*firstSetup*/ ctx[4] && create_if_block_17$7(ctx);
+    	let if_block7 = /*secondSetup*/ ctx[5] && create_if_block_16$7(ctx);
+    	let if_block8 = /*secondPhoto*/ ctx[6] && create_if_block_15$7(ctx);
+    	let if_block9 = /*thirdSetup*/ ctx[7] && create_if_block_14$8(ctx);
+    	let if_block10 = /*thirdPhoto*/ ctx[8] && create_if_block_13$8(ctx);
+    	let if_block11 = /*fourthSetup*/ ctx[9] && create_if_block_12$8(ctx);
+    	let if_block12 = /*twentyfourty*/ ctx[14] && create_if_block_11$8(ctx);
+    	let if_block13 = /*fifthSetup*/ ctx[11] && create_if_block_10$9(ctx);
+    	let if_block14 = /*sixthSetup*/ ctx[13] && create_if_block_9$a(ctx);
     	let if_block15 = /*tempMeter*/ ctx[10] && create_if_block_3$b(ctx);
     	let if_block16 = /*hotDays*/ ctx[12] && create_if_block_1$b(ctx);
 
     	function select_block_type_1(ctx, dirty) {
     		if (/*firstSetup*/ ctx[4]) return create_if_block$b;
-    		return create_else_block$7;
+    		return create_else_block$8;
     	}
 
     	let current_block_type = select_block_type_1(ctx);
@@ -21032,7 +23295,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_23$5(ctx);
+    					if_block0 = create_if_block_23$6(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -21045,7 +23308,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_22$5(ctx);
+    					if_block1 = create_if_block_22$6(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -21058,7 +23321,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_21$5(ctx);
+    					if_block2 = create_if_block_21$6(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -21071,7 +23334,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_20$5(ctx);
+    					if_block3 = create_if_block_20$6(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -21084,7 +23347,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_19$5(ctx);
+    					if_block4 = create_if_block_19$6(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -21097,7 +23360,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_18$5(ctx);
+    					if_block5 = create_if_block_18$6(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -21116,7 +23379,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_17$6(ctx);
+    					if_block6 = create_if_block_17$7(ctx);
     					if_block6.c();
     					if_block6.m(t8.parentNode, t8);
     				}
@@ -21129,7 +23392,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_16$6(ctx);
+    					if_block7 = create_if_block_16$7(ctx);
     					if_block7.c();
     					if_block7.m(t9.parentNode, t9);
     				}
@@ -21140,7 +23403,7 @@ var app = (function () {
 
     			if (/*secondPhoto*/ ctx[6]) {
     				if (if_block8) ; else {
-    					if_block8 = create_if_block_15$6(ctx);
+    					if_block8 = create_if_block_15$7(ctx);
     					if_block8.c();
     					if_block8.m(t10.parentNode, t10);
     				}
@@ -21153,7 +23416,7 @@ var app = (function () {
     				if (if_block9) {
     					if_block9.p(ctx, dirty);
     				} else {
-    					if_block9 = create_if_block_14$7(ctx);
+    					if_block9 = create_if_block_14$8(ctx);
     					if_block9.c();
     					if_block9.m(t11.parentNode, t11);
     				}
@@ -21164,7 +23427,7 @@ var app = (function () {
 
     			if (/*thirdPhoto*/ ctx[8]) {
     				if (if_block10) ; else {
-    					if_block10 = create_if_block_13$7(ctx);
+    					if_block10 = create_if_block_13$8(ctx);
     					if_block10.c();
     					if_block10.m(t12.parentNode, t12);
     				}
@@ -21177,7 +23440,7 @@ var app = (function () {
     				if (if_block11) {
     					if_block11.p(ctx, dirty);
     				} else {
-    					if_block11 = create_if_block_12$7(ctx);
+    					if_block11 = create_if_block_12$8(ctx);
     					if_block11.c();
     					if_block11.m(t13.parentNode, t13);
     				}
@@ -21188,7 +23451,7 @@ var app = (function () {
 
     			if (/*twentyfourty*/ ctx[14]) {
     				if (if_block12) ; else {
-    					if_block12 = create_if_block_11$7(ctx);
+    					if_block12 = create_if_block_11$8(ctx);
     					if_block12.c();
     					if_block12.m(t14.parentNode, t14);
     				}
@@ -21201,7 +23464,7 @@ var app = (function () {
     				if (if_block13) {
     					if_block13.p(ctx, dirty);
     				} else {
-    					if_block13 = create_if_block_10$8(ctx);
+    					if_block13 = create_if_block_10$9(ctx);
     					if_block13.c();
     					if_block13.m(t15.parentNode, t15);
     				}
@@ -21214,7 +23477,7 @@ var app = (function () {
     				if (if_block14) {
     					if_block14.p(ctx, dirty);
     				} else {
-    					if_block14 = create_if_block_9$9(ctx);
+    					if_block14 = create_if_block_9$a(ctx);
     					if_block14.c();
     					if_block14.m(t16.parentNode, t16);
     				}
@@ -21593,7 +23856,7 @@ var app = (function () {
     const file$e = "src/specifics/EnvironmentalJustice.svelte";
 
     // (52:0) {#if firstSetup}
-    function create_if_block_22$6(ctx) {
+    function create_if_block_22$7(ctx) {
     	let div;
     	let t;
     	let a;
@@ -21637,7 +23900,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_22$6.name,
+    		id: create_if_block_22$7.name,
     		type: "if",
     		source: "(52:0) {#if firstSetup}",
     		ctx
@@ -21647,7 +23910,7 @@ var app = (function () {
     }
 
     // (56:0) {#if secondSetup}
-    function create_if_block_21$6(ctx) {
+    function create_if_block_21$7(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -21690,7 +23953,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_21$6.name,
+    		id: create_if_block_21$7.name,
     		type: "if",
     		source: "(56:0) {#if secondSetup}",
     		ctx
@@ -21700,7 +23963,7 @@ var app = (function () {
     }
 
     // (60:0) {#if thirdSetup}
-    function create_if_block_20$6(ctx) {
+    function create_if_block_20$7(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -21743,7 +24006,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_20$6.name,
+    		id: create_if_block_20$7.name,
     		type: "if",
     		source: "(60:0) {#if thirdSetup}",
     		ctx
@@ -21753,7 +24016,7 @@ var app = (function () {
     }
 
     // (64:0) {#if fourthSetup}
-    function create_if_block_19$6(ctx) {
+    function create_if_block_19$7(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -21796,7 +24059,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_19$6.name,
+    		id: create_if_block_19$7.name,
     		type: "if",
     		source: "(64:0) {#if fourthSetup}",
     		ctx
@@ -21806,7 +24069,7 @@ var app = (function () {
     }
 
     // (68:0) {#if fifthSetup}
-    function create_if_block_18$6(ctx) {
+    function create_if_block_18$7(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -21849,7 +24112,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_18$6.name,
+    		id: create_if_block_18$7.name,
     		type: "if",
     		source: "(68:0) {#if fifthSetup}",
     		ctx
@@ -21859,7 +24122,7 @@ var app = (function () {
     }
 
     // (72:0) {#if sixthSetup}
-    function create_if_block_17$7(ctx) {
+    function create_if_block_17$8(ctx) {
     	let a;
     	let t;
     	let div;
@@ -21903,7 +24166,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$7.name,
+    		id: create_if_block_17$8.name,
     		type: "if",
     		source: "(72:0) {#if sixthSetup}",
     		ctx
@@ -21913,7 +24176,7 @@ var app = (function () {
     }
 
     // (84:0) {#if firstSetup}
-    function create_if_block_16$7(ctx) {
+    function create_if_block_16$8(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -21962,7 +24225,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$7.name,
+    		id: create_if_block_16$8.name,
     		type: "if",
     		source: "(84:0) {#if firstSetup}",
     		ctx
@@ -21972,7 +24235,7 @@ var app = (function () {
     }
 
     // (97:0) {#if secondSetup}
-    function create_if_block_15$7(ctx) {
+    function create_if_block_15$8(ctx) {
     	let div;
     	let t;
 
@@ -22000,7 +24263,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$7.name,
+    		id: create_if_block_15$8.name,
     		type: "if",
     		source: "(97:0) {#if secondSetup}",
     		ctx
@@ -22010,7 +24273,7 @@ var app = (function () {
     }
 
     // (103:0) {#if thirdSetup}
-    function create_if_block_14$8(ctx) {
+    function create_if_block_14$9(ctx) {
     	let div0;
     	let t0;
     	let br;
@@ -22108,7 +24371,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$8.name,
+    		id: create_if_block_14$9.name,
     		type: "if",
     		source: "(103:0) {#if thirdSetup}",
     		ctx
@@ -22118,7 +24381,7 @@ var app = (function () {
     }
 
     // (122:1) {:else}
-    function create_else_block_2$3(ctx) {
+    function create_else_block_2$4(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -22147,7 +24410,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_2$3.name,
+    		id: create_else_block_2$4.name,
     		type: "else",
     		source: "(122:1) {:else}",
     		ctx
@@ -22157,12 +24420,12 @@ var app = (function () {
     }
 
     // (121:1) {#if firstSetup}
-    function create_if_block_13$8(ctx) {
+    function create_if_block_13$9(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$8.name,
+    		id: create_if_block_13$9.name,
     		type: "if",
     		source: "(121:1) {#if firstSetup}",
     		ctx
@@ -22172,12 +24435,12 @@ var app = (function () {
     }
 
     // (119:0) {#if secondSetup}
-    function create_if_block_12$8(ctx) {
+    function create_if_block_12$9(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$8.name,
+    		id: create_if_block_12$9.name,
     		type: "if",
     		source: "(119:0) {#if secondSetup}",
     		ctx
@@ -22187,7 +24450,7 @@ var app = (function () {
     }
 
     // (128:0) {#if fourthSetup}
-    function create_if_block_11$8(ctx) {
+    function create_if_block_11$9(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -22236,7 +24499,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$8.name,
+    		id: create_if_block_11$9.name,
     		type: "if",
     		source: "(128:0) {#if fourthSetup}",
     		ctx
@@ -22246,7 +24509,7 @@ var app = (function () {
     }
 
     // (142:2) {:else}
-    function create_else_block_1$6(ctx) {
+    function create_else_block_1$7(ctx) {
     	let div;
 
     	const block = {
@@ -22265,7 +24528,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block_1$6.name,
+    		id: create_else_block_1$7.name,
     		type: "else",
     		source: "(142:2) {:else}",
     		ctx
@@ -22275,12 +24538,12 @@ var app = (function () {
     }
 
     // (141:2) {#if firstSetup}
-    function create_if_block_10$9(ctx) {
+    function create_if_block_10$a(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$9.name,
+    		id: create_if_block_10$a.name,
     		type: "if",
     		source: "(141:2) {#if firstSetup}",
     		ctx
@@ -22290,12 +24553,12 @@ var app = (function () {
     }
 
     // (139:1) {#if secondSetup}
-    function create_if_block_9$a(ctx) {
+    function create_if_block_9$b(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$a.name,
+    		id: create_if_block_9$b.name,
     		type: "if",
     		source: "(139:1) {#if secondSetup}",
     		ctx
@@ -22305,12 +24568,12 @@ var app = (function () {
     }
 
     // (137:0) {#if thirdSetup}
-    function create_if_block_8$a(ctx) {
+    function create_if_block_8$b(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$a.name,
+    		id: create_if_block_8$b.name,
     		type: "if",
     		source: "(137:0) {#if thirdSetup}",
     		ctx
@@ -22320,7 +24583,7 @@ var app = (function () {
     }
 
     // (148:0) {#if fifthSetup}
-    function create_if_block_7$a(ctx) {
+    function create_if_block_7$b(ctx) {
     	let div0;
     	let t0;
     	let t1;
@@ -22369,7 +24632,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$a.name,
+    		id: create_if_block_7$b.name,
     		type: "if",
     		source: "(148:0) {#if fifthSetup}",
     		ctx
@@ -22379,7 +24642,7 @@ var app = (function () {
     }
 
     // (165:3) {:else}
-    function create_else_block$8(ctx) {
+    function create_else_block$9(ctx) {
     	let div;
 
     	const block = {
@@ -22398,7 +24661,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_else_block$8.name,
+    		id: create_else_block$9.name,
     		type: "else",
     		source: "(165:3) {:else}",
     		ctx
@@ -22622,43 +24885,43 @@ var app = (function () {
     	let t23;
     	let div7;
     	let div6;
-    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_22$6(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_21$6(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_20$6(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[6] && create_if_block_19$6(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[7] && create_if_block_18$6(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[8] && create_if_block_17$7(ctx);
-    	let if_block6 = /*firstSetup*/ ctx[3] && create_if_block_16$7(ctx);
-    	let if_block7 = /*secondSetup*/ ctx[4] && create_if_block_15$7(ctx);
-    	let if_block8 = /*thirdSetup*/ ctx[5] && create_if_block_14$8(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_22$7(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_21$7(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_20$7(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[6] && create_if_block_19$7(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[7] && create_if_block_18$7(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[8] && create_if_block_17$8(ctx);
+    	let if_block6 = /*firstSetup*/ ctx[3] && create_if_block_16$8(ctx);
+    	let if_block7 = /*secondSetup*/ ctx[4] && create_if_block_15$8(ctx);
+    	let if_block8 = /*thirdSetup*/ ctx[5] && create_if_block_14$9(ctx);
 
     	function select_block_type(ctx, dirty) {
-    		if (/*secondSetup*/ ctx[4]) return create_if_block_12$8;
-    		if (/*firstSetup*/ ctx[3]) return create_if_block_13$8;
-    		return create_else_block_2$3;
+    		if (/*secondSetup*/ ctx[4]) return create_if_block_12$9;
+    		if (/*firstSetup*/ ctx[3]) return create_if_block_13$9;
+    		return create_else_block_2$4;
     	}
 
     	let current_block_type = select_block_type(ctx);
     	let if_block9 = current_block_type(ctx);
-    	let if_block10 = /*fourthSetup*/ ctx[6] && create_if_block_11$8(ctx);
+    	let if_block10 = /*fourthSetup*/ ctx[6] && create_if_block_11$9(ctx);
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*thirdSetup*/ ctx[5]) return create_if_block_8$a;
-    		if (/*secondSetup*/ ctx[4]) return create_if_block_9$a;
-    		if (/*firstSetup*/ ctx[3]) return create_if_block_10$9;
-    		return create_else_block_1$6;
+    		if (/*thirdSetup*/ ctx[5]) return create_if_block_8$b;
+    		if (/*secondSetup*/ ctx[4]) return create_if_block_9$b;
+    		if (/*firstSetup*/ ctx[3]) return create_if_block_10$a;
+    		return create_else_block_1$7;
     	}
 
     	let current_block_type_1 = select_block_type_1(ctx);
     	let if_block11 = current_block_type_1(ctx);
-    	let if_block12 = /*fifthSetup*/ ctx[7] && create_if_block_7$a(ctx);
+    	let if_block12 = /*fifthSetup*/ ctx[7] && create_if_block_7$b(ctx);
 
     	function select_block_type_2(ctx, dirty) {
     		if (/*fourthSetup*/ ctx[6]) return create_if_block_3$c;
     		if (/*thirdSetup*/ ctx[5]) return create_if_block_4$c;
     		if (/*secondSetup*/ ctx[4]) return create_if_block_5$c;
     		if (/*firstSetup*/ ctx[3]) return create_if_block_6$c;
-    		return create_else_block$8;
+    		return create_else_block$9;
     	}
 
     	let current_block_type_2 = select_block_type_2(ctx);
@@ -22736,14 +24999,14 @@ var app = (function () {
     			add_location(div4, file$e, 183, 0, 6137);
     			attr_dev(div5, "class", "horizontalLine left svelte-hdpz2q");
     			set_style(div5, "width", "100%");
-    			set_style(div5, "top", "calc((" + /*distanceBLines*/ ctx[9] + " * 8) - 1px)");
+    			set_style(div5, "top", "calc(" + /*distanceBLines*/ ctx[9] + " * 8)");
     			set_style(div5, "border-top", "1px solid blue");
     			add_location(div5, file$e, 190, 0, 6460);
     			attr_dev(div6, "class", "progressline");
     			set_style(div6, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
-    			add_location(div6, file$e, 193, 1, 6632);
+    			add_location(div6, file$e, 193, 1, 6624);
     			attr_dev(div7, "class", "activedotnew activedotFan");
-    			add_location(div7, file$e, 192, 0, 6591);
+    			add_location(div7, file$e, 192, 0, 6583);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -22806,7 +25069,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_22$6(ctx);
+    					if_block0 = create_if_block_22$7(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -22819,7 +25082,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_21$6(ctx);
+    					if_block1 = create_if_block_21$7(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -22832,7 +25095,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_20$6(ctx);
+    					if_block2 = create_if_block_20$7(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -22845,7 +25108,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_19$6(ctx);
+    					if_block3 = create_if_block_19$7(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -22858,7 +25121,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_18$6(ctx);
+    					if_block4 = create_if_block_18$7(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -22871,7 +25134,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_17$7(ctx);
+    					if_block5 = create_if_block_17$8(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -22888,7 +25151,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_16$7(ctx);
+    					if_block6 = create_if_block_16$8(ctx);
     					if_block6.c();
     					if_block6.m(t10.parentNode, t10);
     				}
@@ -22901,7 +25164,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_15$7(ctx);
+    					if_block7 = create_if_block_15$8(ctx);
     					if_block7.c();
     					if_block7.m(t13.parentNode, t13);
     				}
@@ -22914,7 +25177,7 @@ var app = (function () {
     				if (if_block8) {
     					if_block8.p(ctx, dirty);
     				} else {
-    					if_block8 = create_if_block_14$8(ctx);
+    					if_block8 = create_if_block_14$9(ctx);
     					if_block8.c();
     					if_block8.m(t14.parentNode, t14);
     				}
@@ -22937,7 +25200,7 @@ var app = (function () {
     				if (if_block10) {
     					if_block10.p(ctx, dirty);
     				} else {
-    					if_block10 = create_if_block_11$8(ctx);
+    					if_block10 = create_if_block_11$9(ctx);
     					if_block10.c();
     					if_block10.m(t16.parentNode, t16);
     				}
@@ -22960,7 +25223,7 @@ var app = (function () {
     				if (if_block12) {
     					if_block12.p(ctx, dirty);
     				} else {
-    					if_block12 = create_if_block_7$a(ctx);
+    					if_block12 = create_if_block_7$b(ctx);
     					if_block12.c();
     					if_block12.m(t18.parentNode, t18);
     				}
@@ -23280,7 +25543,7 @@ var app = (function () {
     const file$f = "src/specifics/EnvironmentalJusticeII.svelte";
 
     // (63:0) {#if firstSetup}
-    function create_if_block_17$8(ctx) {
+    function create_if_block_17$9(ctx) {
     	let div;
     	let t;
     	let a;
@@ -23324,7 +25587,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_17$8.name,
+    		id: create_if_block_17$9.name,
     		type: "if",
     		source: "(63:0) {#if firstSetup}",
     		ctx
@@ -23334,7 +25597,7 @@ var app = (function () {
     }
 
     // (67:0) {#if secondSetup}
-    function create_if_block_16$8(ctx) {
+    function create_if_block_16$9(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23377,7 +25640,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_16$8.name,
+    		id: create_if_block_16$9.name,
     		type: "if",
     		source: "(67:0) {#if secondSetup}",
     		ctx
@@ -23387,7 +25650,7 @@ var app = (function () {
     }
 
     // (71:0) {#if thirdSetup}
-    function create_if_block_15$8(ctx) {
+    function create_if_block_15$9(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23430,7 +25693,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_15$8.name,
+    		id: create_if_block_15$9.name,
     		type: "if",
     		source: "(71:0) {#if thirdSetup}",
     		ctx
@@ -23440,7 +25703,7 @@ var app = (function () {
     }
 
     // (75:0) {#if fourthSetup}
-    function create_if_block_14$9(ctx) {
+    function create_if_block_14$a(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23483,7 +25746,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_14$9.name,
+    		id: create_if_block_14$a.name,
     		type: "if",
     		source: "(75:0) {#if fourthSetup}",
     		ctx
@@ -23493,7 +25756,7 @@ var app = (function () {
     }
 
     // (79:0) {#if fifthSetup}
-    function create_if_block_13$9(ctx) {
+    function create_if_block_13$a(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23536,7 +25799,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_13$9.name,
+    		id: create_if_block_13$a.name,
     		type: "if",
     		source: "(79:0) {#if fifthSetup}",
     		ctx
@@ -23546,7 +25809,7 @@ var app = (function () {
     }
 
     // (83:0) {#if sixthSetup}
-    function create_if_block_12$9(ctx) {
+    function create_if_block_12$a(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23589,7 +25852,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_12$9.name,
+    		id: create_if_block_12$a.name,
     		type: "if",
     		source: "(83:0) {#if sixthSetup}",
     		ctx
@@ -23599,7 +25862,7 @@ var app = (function () {
     }
 
     // (87:0) {#if seventhSetup}
-    function create_if_block_11$9(ctx) {
+    function create_if_block_11$a(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -23642,7 +25905,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_11$9.name,
+    		id: create_if_block_11$a.name,
     		type: "if",
     		source: "(87:0) {#if seventhSetup}",
     		ctx
@@ -23652,7 +25915,7 @@ var app = (function () {
     }
 
     // (91:0) {#if eightthSetup}
-    function create_if_block_10$a(ctx) {
+    function create_if_block_10$b(ctx) {
     	let a;
     	let t;
     	let div;
@@ -23696,7 +25959,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_10$a.name,
+    		id: create_if_block_10$b.name,
     		type: "if",
     		source: "(91:0) {#if eightthSetup}",
     		ctx
@@ -23706,7 +25969,7 @@ var app = (function () {
     }
 
     // (103:0) {#if firstSetup}
-    function create_if_block_9$b(ctx) {
+    function create_if_block_9$c(ctx) {
     	let div;
     	let t;
 
@@ -23734,7 +25997,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$b.name,
+    		id: create_if_block_9$c.name,
     		type: "if",
     		source: "(103:0) {#if firstSetup}",
     		ctx
@@ -23744,7 +26007,7 @@ var app = (function () {
     }
 
     // (109:0) {#if secondSetup}
-    function create_if_block_8$b(ctx) {
+    function create_if_block_8$c(ctx) {
     	let div;
     	let t0;
     	let br;
@@ -23779,7 +26042,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$b.name,
+    		id: create_if_block_8$c.name,
     		type: "if",
     		source: "(109:0) {#if secondSetup}",
     		ctx
@@ -23789,7 +26052,7 @@ var app = (function () {
     }
 
     // (116:0) {#if thirdSetup}
-    function create_if_block_7$b(ctx) {
+    function create_if_block_7$c(ctx) {
     	let div;
     	let t;
 
@@ -23817,7 +26080,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$b.name,
+    		id: create_if_block_7$c.name,
     		type: "if",
     		source: "(116:0) {#if thirdSetup}",
     		ctx
@@ -24115,17 +26378,17 @@ var app = (function () {
     	let t23;
     	let div5;
     	let div4;
-    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_17$8(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_16$8(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_15$8(ctx);
-    	let if_block3 = /*fourthSetup*/ ctx[6] && create_if_block_14$9(ctx);
-    	let if_block4 = /*fifthSetup*/ ctx[7] && create_if_block_13$9(ctx);
-    	let if_block5 = /*sixthSetup*/ ctx[8] && create_if_block_12$9(ctx);
-    	let if_block6 = /*seventhSetup*/ ctx[9] && create_if_block_11$9(ctx);
-    	let if_block7 = /*eightthSetup*/ ctx[10] && create_if_block_10$a(ctx);
-    	let if_block8 = /*firstSetup*/ ctx[3] && create_if_block_9$b(ctx);
-    	let if_block9 = /*secondSetup*/ ctx[4] && create_if_block_8$b(ctx);
-    	let if_block10 = /*thirdSetup*/ ctx[5] && create_if_block_7$b(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_17$9(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_16$9(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_15$9(ctx);
+    	let if_block3 = /*fourthSetup*/ ctx[6] && create_if_block_14$a(ctx);
+    	let if_block4 = /*fifthSetup*/ ctx[7] && create_if_block_13$a(ctx);
+    	let if_block5 = /*sixthSetup*/ ctx[8] && create_if_block_12$a(ctx);
+    	let if_block6 = /*seventhSetup*/ ctx[9] && create_if_block_11$a(ctx);
+    	let if_block7 = /*eightthSetup*/ ctx[10] && create_if_block_10$b(ctx);
+    	let if_block8 = /*firstSetup*/ ctx[3] && create_if_block_9$c(ctx);
+    	let if_block9 = /*secondSetup*/ ctx[4] && create_if_block_8$c(ctx);
+    	let if_block10 = /*thirdSetup*/ ctx[5] && create_if_block_7$c(ctx);
     	let if_block11 = /*fourthSetup*/ ctx[6] && create_if_block_6$d(ctx);
     	let if_block12 = /*fifthSetup*/ ctx[7] && create_if_block_5$d(ctx);
     	let if_block13 = /*sixthSetup*/ ctx[8] && create_if_block_4$d(ctx);
@@ -24200,14 +26463,14 @@ var app = (function () {
     			add_location(div2, file$f, 156, 0, 4937);
     			attr_dev(div3, "class", "horizontalLine left svelte-hdpz2q");
     			set_style(div3, "width", "100%");
-    			set_style(div3, "top", "calc((" + /*distanceBLines*/ ctx[11] + " * 8) - 1px)");
+    			set_style(div3, "top", "calc(" + /*distanceBLines*/ ctx[11] + " * 8)");
     			set_style(div3, "border-top", "1px solid blue");
     			add_location(div3, file$f, 163, 0, 5260);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
-    			add_location(div4, file$f, 166, 1, 5432);
+    			add_location(div4, file$f, 166, 1, 5424);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$f, 165, 0, 5391);
+    			add_location(div5, file$f, 165, 0, 5383);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -24270,7 +26533,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_17$8(ctx);
+    					if_block0 = create_if_block_17$9(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -24283,7 +26546,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_16$8(ctx);
+    					if_block1 = create_if_block_16$9(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -24296,7 +26559,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_15$8(ctx);
+    					if_block2 = create_if_block_15$9(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -24309,7 +26572,7 @@ var app = (function () {
     				if (if_block3) {
     					if_block3.p(ctx, dirty);
     				} else {
-    					if_block3 = create_if_block_14$9(ctx);
+    					if_block3 = create_if_block_14$a(ctx);
     					if_block3.c();
     					if_block3.m(t3.parentNode, t3);
     				}
@@ -24322,7 +26585,7 @@ var app = (function () {
     				if (if_block4) {
     					if_block4.p(ctx, dirty);
     				} else {
-    					if_block4 = create_if_block_13$9(ctx);
+    					if_block4 = create_if_block_13$a(ctx);
     					if_block4.c();
     					if_block4.m(t4.parentNode, t4);
     				}
@@ -24335,7 +26598,7 @@ var app = (function () {
     				if (if_block5) {
     					if_block5.p(ctx, dirty);
     				} else {
-    					if_block5 = create_if_block_12$9(ctx);
+    					if_block5 = create_if_block_12$a(ctx);
     					if_block5.c();
     					if_block5.m(t5.parentNode, t5);
     				}
@@ -24348,7 +26611,7 @@ var app = (function () {
     				if (if_block6) {
     					if_block6.p(ctx, dirty);
     				} else {
-    					if_block6 = create_if_block_11$9(ctx);
+    					if_block6 = create_if_block_11$a(ctx);
     					if_block6.c();
     					if_block6.m(t6.parentNode, t6);
     				}
@@ -24361,7 +26624,7 @@ var app = (function () {
     				if (if_block7) {
     					if_block7.p(ctx, dirty);
     				} else {
-    					if_block7 = create_if_block_10$a(ctx);
+    					if_block7 = create_if_block_10$b(ctx);
     					if_block7.c();
     					if_block7.m(t7.parentNode, t7);
     				}
@@ -24378,7 +26641,7 @@ var app = (function () {
     				if (if_block8) {
     					if_block8.p(ctx, dirty);
     				} else {
-    					if_block8 = create_if_block_9$b(ctx);
+    					if_block8 = create_if_block_9$c(ctx);
     					if_block8.c();
     					if_block8.m(t13.parentNode, t13);
     				}
@@ -24391,7 +26654,7 @@ var app = (function () {
     				if (if_block9) {
     					if_block9.p(ctx, dirty);
     				} else {
-    					if_block9 = create_if_block_8$b(ctx);
+    					if_block9 = create_if_block_8$c(ctx);
     					if_block9.c();
     					if_block9.m(t14.parentNode, t14);
     				}
@@ -24404,7 +26667,7 @@ var app = (function () {
     				if (if_block10) {
     					if_block10.p(ctx, dirty);
     				} else {
-    					if_block10 = create_if_block_7$b(ctx);
+    					if_block10 = create_if_block_7$c(ctx);
     					if_block10.c();
     					if_block10.m(t15.parentNode, t15);
     				}
@@ -24787,7 +27050,7 @@ var app = (function () {
     const file$g = "src/specifics/ImpactofIndividualAction.svelte";
 
     // (49:0) {#if firstSetup}
-    function create_if_block_9$c(ctx) {
+    function create_if_block_9$d(ctx) {
     	let div;
     	let t;
     	let a;
@@ -24831,7 +27094,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_9$c.name,
+    		id: create_if_block_9$d.name,
     		type: "if",
     		source: "(49:0) {#if firstSetup}",
     		ctx
@@ -24841,7 +27104,7 @@ var app = (function () {
     }
 
     // (53:0) {#if secondSetup}
-    function create_if_block_8$c(ctx) {
+    function create_if_block_8$d(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -24884,7 +27147,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_8$c.name,
+    		id: create_if_block_8$d.name,
     		type: "if",
     		source: "(53:0) {#if secondSetup}",
     		ctx
@@ -24894,7 +27157,7 @@ var app = (function () {
     }
 
     // (57:0) {#if thirdSetup}
-    function create_if_block_7$c(ctx) {
+    function create_if_block_7$d(ctx) {
     	let div0;
     	let t;
     	let div1;
@@ -24937,7 +27200,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_if_block_7$c.name,
+    		id: create_if_block_7$d.name,
     		type: "if",
     		source: "(57:0) {#if thirdSetup}",
     		ctx
@@ -25463,9 +27726,9 @@ var app = (function () {
     	let t18;
     	let div5;
     	let div4;
-    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_9$c(ctx);
-    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_8$c(ctx);
-    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_7$c(ctx);
+    	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_9$d(ctx);
+    	let if_block1 = /*secondSetup*/ ctx[4] && create_if_block_8$d(ctx);
+    	let if_block2 = /*thirdSetup*/ ctx[5] && create_if_block_7$d(ctx);
     	let if_block3 = /*fourthSetup*/ ctx[6] && create_if_block_6$e(ctx);
     	let if_block4 = /*fifthSetup*/ ctx[7] && create_if_block_5$e(ctx);
     	let if_block5 = /*firstSetup*/ ctx[3] && create_if_block_4$e(ctx);
@@ -25521,23 +27784,23 @@ var app = (function () {
     			add_location(div0, file$g, 76, 0, 1628);
     			attr_dev(div1, "class", "horizontalLine left");
     			set_style(div1, "width", "100%");
-    			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[8] + " * 8) - 1px)");
+    			set_style(div1, "top", "calc(" + /*distanceBLines*/ ctx[8] + " * 8)");
     			set_style(div1, "border-top", "1px solid blue");
     			add_location(div1, file$g, 127, 0, 5259);
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "href", "https://feu-us.org/impact-of-individual-action/");
     			attr_dev(a, "class", "svelte-wjk3lr");
-    			add_location(a, file$g, 133, 10, 5510);
+    			add_location(a, file$g, 133, 10, 5502);
     			attr_dev(div2, "class", "bottomLineText text svelte-wjk3lr");
     			set_style(div2, "text-align", "right");
-    			add_location(div2, file$g, 132, 2, 5439);
+    			add_location(div2, file$g, 132, 2, 5431);
     			attr_dev(div3, "class", "text bottomLine svelte-wjk3lr");
-    			add_location(div3, file$g, 131, 0, 5407);
+    			add_location(div3, file$g, 131, 0, 5399);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
-    			add_location(div4, file$g, 139, 1, 5652);
+    			add_location(div4, file$g, 139, 1, 5644);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$g, 138, 0, 5611);
+    			add_location(div5, file$g, 138, 0, 5603);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -25586,7 +27849,7 @@ var app = (function () {
     				if (if_block0) {
     					if_block0.p(ctx, dirty);
     				} else {
-    					if_block0 = create_if_block_9$c(ctx);
+    					if_block0 = create_if_block_9$d(ctx);
     					if_block0.c();
     					if_block0.m(t0.parentNode, t0);
     				}
@@ -25599,7 +27862,7 @@ var app = (function () {
     				if (if_block1) {
     					if_block1.p(ctx, dirty);
     				} else {
-    					if_block1 = create_if_block_8$c(ctx);
+    					if_block1 = create_if_block_8$d(ctx);
     					if_block1.c();
     					if_block1.m(t1.parentNode, t1);
     				}
@@ -25612,7 +27875,7 @@ var app = (function () {
     				if (if_block2) {
     					if_block2.p(ctx, dirty);
     				} else {
-    					if_block2 = create_if_block_7$c(ctx);
+    					if_block2 = create_if_block_7$d(ctx);
     					if_block2.c();
     					if_block2.m(t2.parentNode, t2);
     				}
@@ -26008,14 +28271,14 @@ var app = (function () {
     			add_location(div3, file$h, 20, 0, 433);
     			attr_dev(div4, "class", "horizontalLine left");
     			set_style(div4, "width", "100%");
-    			set_style(div4, "top", "calc((" + /*distanceBLines*/ ctx[1] + " * 8) - 1px)");
+    			set_style(div4, "top", "calc(" + /*distanceBLines*/ ctx[1] + " * 8)");
     			set_style(div4, "border-top", "1px solid blue");
-    			add_location(div4, file$h, 27, 0, 669);
+    			add_location(div4, file$h, 26, 0, 668);
     			attr_dev(div5, "class", "text criticalText");
     			set_style(div5, "left", /*marginSides*/ ctx[2]);
     			set_style(div5, "right", /*marginSides*/ ctx[2]);
     			set_style(div5, "top", "calc((" + /*distanceBLines*/ ctx[1] + " * 8)");
-    			add_location(div5, file$h, 28, 0, 799);
+    			add_location(div5, file$h, 27, 0, 790);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

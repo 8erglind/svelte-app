@@ -59,7 +59,6 @@ body {
 
 
 /*   APP.SVELTE ----- Main page    */
-
 .newmain {
 	position: absolute;
 	height: 100%;
@@ -231,12 +230,16 @@ body {
 	.line50 {bottom: calc((100% - 1px) / 9 * 5);}
 	.line52 {bottom: calc((100% - 1px) / 9 * 5.2);}
 	.line55 {bottom: calc((100% - 1px) / 9 * 5.5);}
+	.line57 {bottom: calc((100% - 1px) / 9 * 5.7);}
 	.line60 {bottom: calc((100% - 1px) / 9 * 6);}
 	.line63 {bottom: calc((100% - 1px) / 9 * 6.3);}
 	.line66 {bottom: calc((100% - 1px) / 9 * 6.6);}
 	.line67 {bottom: calc((100% - 1px) / 9 * 6.7);}
 	.line70 {bottom: calc((100% - 1px) / 9 * 7);}
 	.line73 {bottom: calc((100% - 1px) / 9 * 7.3);}
+	.line75 {bottom: calc((100% - 1px) / 9 * 7.5);}
+	.line76 {bottom: calc((100% - 1px) / 9 * 7.6);}
+	.line79 {bottom: calc((100% - 1px) / 9 * 7.9);}
 	.line80 {bottom: calc((100% - 1px) / 9 * 8);}
 
 
@@ -379,8 +382,20 @@ body {
 	left: calc(100vw / 16);
 	right: calc(100vw / 16);
 	bottom: 0%;
-	z-index: -1;
+	z-index: 0;
 	border-radius: 20px;
+}
+.backgroundBoxII {
+	position: absolute;
+	top: calc((100% - 1px) / 9 * 1);
+	left: calc(100vw / 16);
+	right: calc(100vw / 16);
+	bottom: 0%;
+	z-index: 0;
+	border-radius: 0px; 
+	background-color: rgb(245,245,245); 
+	border-bottom-left-radius: 20px; 
+	border-bottom-right-radius: 20px;
 }
 .content {
 	border-bottom-right-radius: 20px;

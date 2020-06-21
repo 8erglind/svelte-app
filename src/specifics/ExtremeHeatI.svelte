@@ -244,7 +244,7 @@
 
 
 
-	.backgroundBoxII {overflow: hidden; border-radius: 0px; background-color: rgb(245,245,245); border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;}
+	.backgroundBoxII {overflow: hidden;}
 	.bodyTemp {
 		position: absolute; 
 		bottom: 0%; 

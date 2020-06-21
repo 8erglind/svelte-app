@@ -13,6 +13,15 @@
 	let thirdSetup = false;
 	let fourthSetup = false;
 	let fifthSetup = false;
+	let sixthSetup = false;
+	let seventhSetup = false;
+	let eightthSetup = false;
+	let ninethSetup = false;
+	let tenthSetup = false;
+	let eleventhSetup = false;
+	let twelvethSetup = false;
+	let thirteenthSetup = false;
+	let fourteenthSetup = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
@@ -26,6 +35,46 @@
 	const togglethirdSetup = () => {
 		secondSetup = false;
 		thirdSetup = true;
+		fourthSetup = false;
+	}
+	const togglefourthSetup = () => {
+		thirdSetup = false;
+		fourthSetup = true;
+		fifthSetup = false;
+	}
+	const togglefifthSetup = () => {
+		fourthSetup = false;
+		fifthSetup = true;
+		sixthSetup = false;
+	}
+	const togglesixthSetup = () => {
+		fifthSetup = false;
+		sixthSetup = true;
+		seventhSetup = false;
+	}
+	const toggleseventhSetup = () => {
+		sixthSetup = false;
+		seventhSetup = true;
+		eightthSetup = false;
+	}
+	const toggleeighthSetup = () => {
+		seventhSetup = false;
+		eightthSetup = true;
+		ninethSetup = false;
+	}
+	const toggleninethSetup = () => {
+		eightthSetup = false;
+		ninethSetup = true;
+		tenthSetup = false;
+	}
+	const toggletenthSetup = () => {
+		ninethSetup = false;
+		tenthSetup = true;
+		eleventhSetup = false;
+	}
+	const toggleeleventhSetup = () => {
+		tenthSetup = true;
+		eleventhSetup = true;
 	}
 </script>
 
@@ -43,10 +92,10 @@
 	<div class="buttonPrev" on:click={togglefirstSetup}></div>
 {/if}
 {#if thirdSetup}
-	<!--<div class="buttonNext" on:click={togglefourthSetup}></div>-->
+	<div class="buttonNext" on:click={togglefourthSetup}></div>
 	<div class="buttonPrev" on:click={togglesecondSetup}></div>
 {/if}
-<!--{#if fourthSetup}
+{#if fourthSetup}
 	<div class="buttonNext" on:click={togglefifthSetup}></div>
 	<div class="buttonPrev" on:click={togglethirdSetup}></div>
 {/if}
@@ -55,9 +104,31 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click={toggleseventhSetup}></div>
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
-{/if}-->
+{/if}
+{#if seventhSetup}
+	<div class="buttonNext" on:click={toggleeighthSetup}></div>
+	<div class="buttonPrev" on:click={togglesixthSetup}></div>
+{/if}
+{#if eightthSetup}
+	<div class="buttonNext" on:click={toggleninethSetup}></div>
+	<div class="buttonPrev" on:click={toggleseventhSetup}></div>
+{/if}
+{#if ninethSetup}
+	<div class="buttonNext" on:click={toggletenthSetup}></div>
+	<div class="buttonPrev" on:click={toggleeighthSetup}></div>
+{/if}
+
+{#if tenthSetup}
+	<div class="buttonNext" on:click={toggleeleventhSetup}></div>
+	<div class="buttonPrev" on:click={toggleninethSetup}></div>
+{/if}
+{#if eleventhSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={toggletenthSetup}></div>
+{/if}
+
 
 
 
@@ -67,17 +138,118 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Text about Iceland. Really lucky geographically.
+		Iceland is a high consumer of fast fashion, since 2010 the Red Cross recieves tonnes of used clothing annually, most of which is exported either for recycling in Eurpe or to devoloping countries.
 	</div>	
+	<div class="text years left line10">2010</div>
+	<div class="horizontalLine full left line10"></div>
+	<div class="text years left line0 now">2020</div>
+	<div class="horizontalLine full left line0"></div>
+{/if}
+<div class="line left line10"></div>
+<div class="line left line0"></div>
+<div class="line right line0"></div>
+
+{#if secondSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Icelanders were a former colony of Denmark, and gained full Independance in 1944.
+	</div>	
+
+	<div class="text years left line76">1944</div>
+	<div class="horizontalLine full left line76"></div>
 {/if}
 
+{#if firstSetup}{:else}
+	<div class="line left line76"></div>
+{/if}
 
+{#if thirdSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Four years earlier, a few months into World War II, Iceland was occupied by the British military. Most of the soldiers resided in the capital, causing young male soldiers to become around 1/3 of the population.
+	</div>	
 
+	<div class="text years left line80">1940</div>
+	<div class="horizontalLine full left line80"></div>
+{/if}
 
+{#if firstSetup}{:else}
+	{#if secondSetup}{:else}
+		<div class="line left line80"></div>
+	{/if}
+{/if}
 
+{#if fourthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		This caused what was called Ástandið (The Situation), in which single women started hanging out with soldiers to much dismay of the wider public and the government, which’s main concern was that Icelandic women would birth mixed children which would “pollute” the pure Icelandic race. Women who were in the “situation” were spyed on by a police-team which documented their conduct in what was the largest spying opperation ever conducted in Iceland, for a short period, laws were even changed so that the age of “independance” became 20 instead of 16.
+	</div>	
 
-<!-- GRAPH -->
+	<div class="text years left line80">1940</div>
+	<div class="horizontalLine full left line80"></div>
 
+	<div class="text years left line75">1945</div>
+	<div class="horizontalLine full left line75"></div>
+{/if}
+
+{#if firstSetup}{:else}
+	{#if secondSetup}{:else}
+		{#if thirdSetup}{:else}
+			<div class="line left line75"></div>
+		{/if}
+	{/if}
+{/if}
+
+{#if fifthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		In 1941, when the U.S. army replaced the British, the Icelandic government requested specifically that black soldiers would not be sent to Iceland. An oral agreement of that matter was kept until 1963, when a chosen few, “three or four” black family-men where allowed over.
+	</div>	
+
+	<div class="text years left line79">1941</div>
+	<div class="horizontalLine full left line79"></div>
+
+	<div class="text years left line57">1963</div>
+	<div class="horizontalLine full left line57"></div>
+{/if}
+
+{#if firstSetup}{:else}
+	{#if secondSetup}{:else}
+		{#if thirdSetup}{:else}
+			{#if fourthSetup}{:else}
+				<div class="line left line57"></div>
+			{/if}
+		{/if}
+	{/if}
+{/if}
+
+{#if sixthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. TÓNLIST TÓNLIST TÓNLIST
+	</div>
+{/if}
+
+{#if seventhSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		TÓNLIST TÓNLIST TÓNLIST 1
+	</div>
+{/if}
+
+{#if eightthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		TÓNLIST TÓNLIST TÓNLIST 2
+	</div>
+{/if}
+
+{#if ninethSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Although it is branded as a green/clean country, Iceland is one of the largest polluters /CO2 emitters per capita. Despite a 99% renewable energy supply, it’s Consumption-Based Carbon Footprint (CBCF) (as explained briefly in India’s page) is similar to or higher than most EU nations. A majority of Icelandic household CBCF is linked to imported goods, meaning the CO2 burden of Icelandic consumption falls to a large extent on developing nations.
+	</div>
+{/if}
+
+{#if tenthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		One migh assume that Iceland's disregard for actual sustainability could be linked to the fact that warming in Iceland will not reach extreme hights in the forseeable future, and it's position as an island way up north allows it to close itself off to those affected... 
+	</div>
+{/if}
+
+{#if eleventhSetup}
 	<div class="tempMeterCountry">
 		<div class="temperature infotext"><span class="tempnumber left text" style="z-index: 99999999;">365 days</span></div>
 	</div>
@@ -86,25 +258,9 @@
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">0 days</span></div>
 	</div>
 
-
-{#if firstSetup}
 	<div class="text years right line0 now">2020</div>
 	<div class="horizontalLine full right line0"></div>
-	<div class="text years right line20">2040</div>
-	<div class="horizontalLine full right line20"></div>
-{/if}
 
-{#if secondSetup}
-	<div class="text years right line40">2060</div>
-	<div class="horizontalLine full right line40"></div>
-	<div class="text years right line20">2040</div>
-	<div class="horizontalLine full right line20"></div>
-{/if}
-
-{#if thirdSetup}
-	<div class="text years right line60">2080</div>
-	<div class="horizontalLine full right line60"></div>
-	<div class="line right line60"></div>
 	<div class="text years right line80">2100</div>
 	<div class="horizontalLine full right line80"></div>
 	<div class="line right line80"></div>
@@ -118,7 +274,24 @@
 
 <!-- FOOTER + STATIC -->
 
-<div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if firstSetup}<a href="https://skemman.is/bitstream/1946/28057/1/%C3%81hrif%20neysluhyggju%20%C3%A1%20t%C3%ADsku%20og%20fatai%C3%B0na%C3%B0%20.pdf" target="_blank">[more &nearr;]</a>{/if}
+
+			{#if thirdSetup}<a href="https://skemman.is/bitstream/1946/15010/1/MA_snidmat-Alma.pdf" target="_blank">[more &nearr;]</a>{/if}
+
+			{#if fourthSetup}<a href="https://www.ruv.is/thaettir/astandsborn" target="_blank">[more &nearr;]</a> <a href="https://www.ruv.is/frett/stridsarin-a-islandi-fyrsti-thattur" target="_blank">[more &nearr;]</a>{/if}
+
+			{#if fifthSetup}<a href="https://timarit.is/page/3428779#page/n17/mode/2up" target="_blank">[more &nearr;]</a>{/if}
+
+			{#if ninethSetup}<a href="https://www.sciencedirect.com/science/article/pii/S0959652617318267" target="_blank">[more &nearr;]</a>{/if}
+
+			{#if eleventhSetup}<a href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F" target="_blank">[more &nearr;]</a>{/if}
+		</div>
+</div>
+
+
+<div class="horizontalLine left" style="width: 100%; top: calc({distanceBLines} * 8); border-top: 1px solid blue;"></div>
 
 
 <div class="activedotnew activedotFan">
@@ -132,8 +305,7 @@
 
 <style>
 
-.text {color: mediumblue !important;}
-	.text a {color: mediumblue;}
+	.text, .text a, .pagetext {color: mediumblue !important;}
 	.verticalLine {border-right: 1px dotted mediumblue;}
 	.horizontalLine {border-top: 1px dotted mediumblue;}
 	.line {background-color: mediumblue;}
