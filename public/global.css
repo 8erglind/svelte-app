@@ -4,6 +4,7 @@ html {
 	scroll-snap-type: x mandatory;
 
 	overflow-y: hidden;
+	-webkit-overflow-y: hidden;
 }
 
 html, body {

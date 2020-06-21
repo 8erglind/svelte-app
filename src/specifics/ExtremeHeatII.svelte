@@ -1,5 +1,5 @@
 <script>
-	import TimelinePast from './TimelinePast.svelte';
+	//import TimelinePast from './TimelinePast.svelte';
 	export let pagetitleText;
 	export let rotate;
 	export let next;

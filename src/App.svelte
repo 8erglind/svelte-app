@@ -1,10 +1,10 @@
 <script>
 
 	//  specifics  //
-	import Timelines from './specifics/Timelines.svelte';
-	import TimelineFuture from './specifics/TimelineFuture.svelte';
-	import TimelinePast from './specifics/TimelinePast.svelte';
-	import Meter from './specifics/topMeter.svelte';
+	//import Timelines from './specifics/Timelines.svelte';
+	//import TimelineFuture from './specifics/TimelineFuture.svelte';
+	//import TimelinePast from './specifics/TimelinePast.svelte';
+	//import Meter from './specifics/topMeter.svelte';
 	import Footer from './footer.svelte';
 	import Header from './header.svelte';
 
