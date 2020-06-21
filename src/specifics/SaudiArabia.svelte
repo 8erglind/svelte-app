@@ -206,7 +206,7 @@
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">21 days</span></div>
 	</div>
 
-	<div class="text years right line0">2020</div>
+	<div class="text years right line0 now">2020</div>
 	<div class="horizontalLine full right line0"></div>
 	<div class="text years right line20">2040</div>
 	<div class="horizontalLine full right line20"></div>

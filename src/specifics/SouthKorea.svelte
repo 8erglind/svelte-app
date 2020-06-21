@@ -169,7 +169,7 @@
 	<div class="pagetext" style="transform: rotate({rotate});">
 	 	South Korea is conveniently located when it comes to future extreme heat increase. Following "business as usual", extremely hot days will not increase at all in South Korea for the next 20&nbsp;years...
 	</div>
-	<div class="text years right line0">2020</div>
+	<div class="text years right line0 now">2020</div>
 	<div class="line right line0"></div>
 	<div class="horizontalLine full right line0"></div>
 {/if}

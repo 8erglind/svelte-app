@@ -284,6 +284,7 @@
 
 {#if year20}
 	<div class="text years right line0">2020</div>
+	<div class="line right line0"></div>
 {/if}
 
 

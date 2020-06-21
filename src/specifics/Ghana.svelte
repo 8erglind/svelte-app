@@ -109,6 +109,8 @@
 
 
 
+<!-- CONTENT -->
+
 <div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
 
 
@@ -147,11 +149,11 @@
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The capital, Accra, is a port city. And to that port western countries ship their old clothes (to Accra’s overfilled second-hand markets) and e-waste (Agbogbloshie).<br>Kantamanto is Accra’s largest second-hand market, to which an average of 15 million clothing items (the population of Ghana is 30 million people) are sent every&nbsp;week.<!-- (Only around 20% of the retailers at the market make a profit,  a lot of the clothes is unsellable/unmendable and a large percentage is sent to landfill).-->
+		The capital, Accra, is a port city. And to that port western countries ship their old clothes. An average of 15 million clothing items (the population of Ghana is 30 million people) flow through Kantamanto, Accra’s largest second-hand market, every week. A lot of the clothes are unsellable/unmendable so much of it ends up in landfill and only around 20% of the market's retailers make a profit.
 	</div>	
 
 	<div class="horizontalLine left line0"></div>
-	<div class="text years left line0">2020</div>
+	<div class="text years left line0 now">2020</div>
 {/if}
 
 {#if fourthSetup}
@@ -188,7 +190,7 @@
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">23 days</span></div>
 	</div>
 
-	<div class="text years right line0">2020</div>
+	<div class="text years right line0 now">2020</div>
 	<div class="horizontalLine full right line0"></div>
 	<div class="text years right line20">2040</div>
 	<div class="horizontalLine full right line20"></div>
@@ -261,6 +263,14 @@
 
 
 <!-- FOOTER + STATIC -->
+
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if fifthSetup}<a href="https://deadwhitemansclothes.org/intro" target="_blank">[more &nearr;]</a>{/if}
+			{#if sixthSetup}<a href="https://www.instagram.com/p/B5VfzzlhmOv/" target="_blank">[more &nearr;] <a href="https://www.instagram.com/tv/B-Sltgypx7O/" target="_blank">[more &nearr;].</a></a>{/if}
+		</div>
+</div>
+
 
 <div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
 

@@ -14,6 +14,8 @@
 	let fourthSetup = false;
 	let fifthSetup = false;
 	let sixthSetup = false;
+	let seventhSetup = false;
+	let eightthSetup = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
@@ -44,6 +46,15 @@
 		sixthSetup = true;
 		seventhSetup = false;
 	}
+	const toggleseventhSetup = () => {
+		sixthSetup = false;
+		seventhSetup = true;
+		eightthSetup = false;
+	}
+	const toggleeighthSetup = () => {
+		seventhSetup = false;
+		eightthSetup = true;
+	}
 </script>
 
 <!--    BUTTONS    -->
@@ -70,8 +81,16 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click={toggleseventhSetup}></div>
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
+{/if}
+{#if seventhSetup}
+	<div class="buttonNext" on:click={toggleeighthSetup}></div>
+	<div class="buttonPrev" on:click={togglesixthSetup}></div>
+{/if}
+{#if eightthSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={toggleseventhSetup}></div>
 {/if}
 
 
@@ -79,102 +98,56 @@
 
 <!-- CONTENT -->
 
-<div class="pagetitle" style="transform: rotate({rotate});">Environmental<br>Justice:<br>I</div>
+<div class="pagetitle" style="transform: rotate({rotate});">Environ-<br>mental<br>Justice:<br>II</div>
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Last May &mdash; the hottest on record &mdash; Icelands Minister of Justice (ironically) resubmitted a controversial proposal to change asylum legislation. If going through the legislation will limit asylum seekers’s chances, chances that are already very low, of being granted asylum in Iceland. <!-- LINK IN ENGLISH https://grapevine.is/news/2020/06/18/seeking-asylum-in-iceland-in-the-time-of-covid-19/ -->
+		garment workers in other countries (“only an estimated 2% of garment workers around the globe are paid a living wage” -sustainablefashiondublin from fashion revolution)
 	</div>	
-
-	<div class="horizontalLine left line0"></div>
-	<div class="text years left line0 now">2020</div>
-	<!--<div class="text years right line0">2020</div>-->
 {/if}
-
-<div class="line left line0"></div>
-<div class="line right line0"></div>
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		This focus on securing borders and keeping people out has become a trend in European and U.S. politics at a time when more people than ever are forcibly displaced, many of which due to factors amplified by climate change, such as food insecurity, droughts, flooding, etc.. (all factors which can also lead to conflict that forces people to migrate)  <!-- LINK https://www.unhcr.org/figures-at-a-glance.html (also applies to next point, first sentence.)-->
+		Colonialism and Slavery were made possible by a system that rationalised the expoitation of certain groups of people, who were deamed ‘inferior’, for the economic growth of a ‘superior’ (white) group of people on a scale that would not be possible or sustainable without it.<br>
+		This system is still in place. 
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Between 2007 and 2010 Syria felt a massive drought that lead to crop failure, uprooting farmers and leading them to migrate to cities. The cities, lacking infrastructure to host so many people, became overcrowded and this (along with other factors) sparked the Syrian conflict. <!-- LINK https://theconversation.com/climate-change-and-drought-a-spark-in-igniting-syrias-civil-war-38275 -->
-		<br>
-		In the end of 2019, 6.6 million of the people displaced on Earth (the most people coming from a single country) came from Syria.
+		Climate action goes hand in hand with (global) human rights and racial and gender equality, it involves changing or dismantling the system of exponential growth of economic wealth (capital) built on exploitation of the resources, labour and lives of people who are deamed ‘inferior’ in a white supremacist patriarchy (doesn’t always go without saying). 
 	</div>	
-
-	<div class="horizontalLine left line13"></div>
-	<div class="text years left line13">2007</div>
-	<div class="horizontalLine left line10"></div>
-	<div class="text years left line10">2010</div>
-
-	<div class="horizontalLine left line0"></div>
-	<div class="text years left line0 now">2020</div>
-{/if}
-
-{#if secondSetup}
-{:else}
-	{#if firstSetup}
-	{:else}
-		<div class="line left line13"></div>
-		<div class="line left line10"></div>
-	{/if}
 {/if}
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The oposite of a drought is a flood, both are becoming more common with heating. Jakarta, Indonesia’s capital city and home to roughly 9 million people, is the fastest sinking city in the world and is estimated to be half underwater in 2030. <!-- LINK https://www.youtube.com/watch?v=dNE5aptbGyY -->
+	The first step (but not the last step) of climate action for a white westerner like myself is to practice empathy, to notice how my consumption, my practice and politics affect people in different positions of the (white supremacist, patriarchal) power structure, and to be eager to abandon or replace any habits that are having negative affects*. And if I hesitate to do this, to ask myself, what am I really fighting for? A livable future for whom?
 	</div>	
-
-	<div class="horizontalLine left line10"></div>
-	<div class="text years right line10">2030</div>
-{/if}
-
-{#if thirdSetup}
-{:else}
-	{#if secondSetup}
-	{:else}
-		{#if firstSetup}
-		{:else}
-			<div class="line right line10"></div>
-		{/if}
-	{/if}
 {/if}
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Estimations of the number of climate migrants in 2050 vary between 25 million and 1 billion, the most widely accepted number being 200 million, meaning around 1 in every 45 people will be displaced due to climate change.
-		<!-- LINK1 Migration and climate change IPCC   PDF -->
+	*Of course nobody is perfect... yariyari... but, in a system that is designed to benefit us (to variable a extent depending on class / disability / gender expression / sexuality / etc.), the least we can do is feal a bit guilty for not being perfect, guilt alone won’t kill us. We should strive to become guilt free, but untill then realise that guilt is a [fucking] privilage!
 	</div>	
-
-	<div class="horizontalLine left line40"></div>
-	<div class="text years right line40">2050</div>
-{/if}
-
-{#if fourthSetup}
-{:else}
-	{#if thirdSetup}
-	{:else}
-		{#if secondSetup}
-		{:else}
-			{#if firstSetup}
-			{:else}
-				<div class="line right line40"></div>
-			{/if}
-		{/if}
-	{/if}
 {/if}
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The climate crisis is already being felt by an increasingly large population (mostly non-white), yet no substancial measures to keep it under control have been taken. As it seems, more powder is being put into securing north-western borders and keeping the problem out of sight and out of mind. Out of mostly white and white governed high CO<sub>2</sub> emitting countries that take a very active part in fueling the crisis... like Iceland.
+	
 	</div>	
 {/if}
 
+{#if seventhSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+	
+	</div>	
+{/if}
+
+{#if eightthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+	
+	</div>	
+{/if}
 
 
 
