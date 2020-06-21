@@ -222,7 +222,7 @@
 		<polyline class="cls-1" points="331 900 331 1200 365 1200 365 900"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"><span class="deathToll text narrow">&#10013; 2.414</span></div>
+		<div class="temperature firstMeter"><span class="deathToll text narrow">&#10013;&#xFE0E; 2.414</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">34 days</span></div>
 	</div>
 
@@ -246,7 +246,7 @@
 		<polyline class="cls-1" points="300 600 300 900 331 900 331 1200 365 1200 365 900 365 600"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"><span class="deathToll text">&#10013; 5.510</span></div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013;&#xFE0E; 5.510</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightMid text">65 days</span></div>
 	</div>
 
@@ -269,7 +269,7 @@
 		<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 184 0 184 300 300 600 300 900 331 900 331 1200 365 1200"/>
 	</svg>
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"><span class="deathToll text">&#10013; 15.957</span></div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013;&#xFE0E; 15.957</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightEnd text">181 days</span></div>
 	</div>
 

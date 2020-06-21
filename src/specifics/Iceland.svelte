@@ -82,7 +82,7 @@
 		<div class="temperature infotext"><span class="tempnumber left text" style="z-index: 99999999;">365 days</span></div>
 	</div>
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"><span class="deathToll text narrow">&#10013; 0</span></div>
+		<div class="temperature midMeter"><span class="deathToll text narrow">&#10013;&#xFE0E; 0</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">0 days</span></div>
 	</div>
 

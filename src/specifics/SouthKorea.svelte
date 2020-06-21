@@ -202,8 +202,8 @@
 
 {#if tempMeter}
 	<div class="tempMeter">
-		{#if fifthSetup}<div class="temperature midMeter"><span class="deathToll text narrow">&#10013; 386</span></div>{/if}
-		{#if sixthSetup}<div class="temperature endMeter"><span class="deathToll text narrow">&#10013; 2.442</span></div>{/if}
+		{#if fifthSetup}<div class="temperature midMeter"><span class="deathToll text narrow">&#10013;&#xFE0E; 386</span></div>{/if}
+		{#if sixthSetup}<div class="temperature endMeter"><span class="deathToll text narrow">&#10013;&#xFE0E; 2.442</span></div>{/if}
 		<div class="temperature infotext">
 			{#if fourthSetup}<span class="tempnumber right text">0 days</span>{/if}
 			{#if fifthSetup}<span class="tempnumber rightMid text">2 days</span>{/if}

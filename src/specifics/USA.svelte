@@ -92,7 +92,7 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature firstMeter"><span class="deathToll text">&#10013; 16.335</span></div>
+		<div class="temperature firstMeter"><span class="deathToll text">&#10013;&#xFE0E; 16.335</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightFirst text">12 days</span></div>
 	</div>
 
@@ -108,7 +108,7 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature midMeter"><span class="deathToll text">&#10013; 37.300</span></div>
+		<div class="temperature midMeter"><span class="deathToll text">&#10013;&#xFE0E; 37.300</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightMid text">25 days</span></div>
 	</div>
 
