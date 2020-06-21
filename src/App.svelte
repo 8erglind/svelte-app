@@ -69,23 +69,54 @@
 			<{page.pageName} pagetitleText="{page.pagetitle}" rotate="{page.rotate}"></{page.pageName}>
 		</div>
 	{/each}-->
-
-	<div class="content"><CriticalDecadeIII pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
-	<div class="content"><EnvironmentalJusticeII pagetitleText="Environmental Justice:&emsp;II" rotate="78deg" next="#page3" prev="#page1"></EnvironmentalJusticeII></div>
-	<div class="content country"><USA pagetitleText="The U.S." rotate="66deg" next="#page4" prev="#page2"></USA></div>
-	<div class="content country"><Brazil pagetitleText="Brazil" rotate="54deg" next="#page5" prev="#page3"></Brazil></div>
-	<div class="content"><EnvironmentalJustice pagetitleText="Environmental Justice:&emsp;I" rotate="42deg" next="#page6" prev="#page4"></EnvironmentalJustice></div>
-	<div class="content country"><Iceland pagetitleText="Iceland" rotate="30deg" next="#page7" prev="#page5"></Iceland></div>
-	<div class="content country"><Ghana pagetitleText="Ghana" rotate="18deg" next="#page8" prev="#page6"></Ghana></div>
-	<div class="content country"><SaudiArabia pagetitleText="Saudi Arabia" rotate="6deg" next="#page9" prev="#page7"></SaudiArabia></div>
-	<div class="content"><ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="-6deg" next="#page10" prev="#page8"></ImpactofIndividualAction></div>
-	<div class="content country"><India pagetitleText="India" rotate="-18deg" next="#page11" prev="#page9"></India></div>
-	<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-30deg" next="#page12" prev="#page10"></CriticalDecadeII></div>
-	<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-42deg" next="#page13" prev="#page11"></CriticalDecadeI></div>
-	<div class="content country"><Cambodia pagetitleText="Cambodia" rotate="-54deg" next="#page14" prev="#page12"></Cambodia></div>
-	<div class="content country"><SouthKorea pagetitleText="South Korea" rotate="-66deg" next="#page15" prev="#page13"></SouthKorea></div>
-	<div class="content"><ExtremeHeatI pagetitleText="Extreme heat" rotate="-78deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
-	<div class="content"><Cover pagetitleText="now & then" rotate="-90deg" prev="#page15"></Cover></div>
+	<div class="overflowBreaker">
+		<div class="content"><CriticalDecadeIII pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><EnvironmentalJusticeII pagetitleText="Environmental Justice:&emsp;II" rotate="78deg" next="#page3" prev="#page1"></EnvironmentalJusticeII></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><USA pagetitleText="The U.S." rotate="66deg" next="#page4" prev="#page2"></USA></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><Brazil pagetitleText="Brazil" rotate="54deg" next="#page5" prev="#page3"></Brazil></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><EnvironmentalJustice pagetitleText="Environmental Justice:&emsp;I" rotate="42deg" next="#page6" prev="#page4"></EnvironmentalJustice></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><Iceland pagetitleText="Iceland" rotate="30deg" next="#page7" prev="#page5"></Iceland></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><Ghana pagetitleText="Ghana" rotate="18deg" next="#page8" prev="#page6"></Ghana></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><SaudiArabia pagetitleText="Saudi Arabia" rotate="6deg" next="#page9" prev="#page7"></SaudiArabia></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><ImpactofIndividualAction pagetitleText="Impact of Individual Action" rotate="-6deg" next="#page10" prev="#page8"></ImpactofIndividualAction></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><India pagetitleText="India" rotate="-18deg" next="#page11" prev="#page9"></India></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><CriticalDecadeII pagetitleText="The Critical Decade:&emsp;II" rotate="-30deg" next="#page12" prev="#page10"></CriticalDecadeII></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><CriticalDecadeI pagetitleText="The Critical Decade:&emsp;I" rotate="-42deg" next="#page13" prev="#page11"></CriticalDecadeI></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><Cambodia pagetitleText="Cambodia" rotate="-54deg" next="#page14" prev="#page12"></Cambodia></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content country"><SouthKorea pagetitleText="South Korea" rotate="-66deg" next="#page15" prev="#page13"></SouthKorea></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><ExtremeHeatI pagetitleText="Extreme heat" rotate="-78deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
+	</div>
+	<div class="overflowBreaker">
+		<div class="content"><Cover pagetitleText="now & then" rotate="-90deg" prev="#page15"></Cover></div>
+	</div>
 
 
 
@@ -108,37 +139,20 @@
 
 <style>
 
-/*.button {
-	position: fixed;
-	bottom: calc(5vh + 10px);
-	right: 10px;
-	width: 5vh;
-	height: 5vh;
-	border-radius: 50%;
-	border: 1px solid purple;
-	font-size: 22px;
-    font-family: meadow;
-    color: purple;
-}*/
-
-
-
+/*
 .dots {
 	position: fixed;
 	bottom: 0%;
 	height: 5%;
 	left: 0px;
 	width: 100vw;
-	/*border-left: 1px solid #444;*/
 	z-index: 99999;
 }
 .dot {
 	width: calc((100vw / 16) - 1px);
-	/*border-right: 1px solid #444;*/
 	height: calc(100% - 2px);
 	margin-top: 1px;
-	/*margin: 0 0px;*/
 	display: inline-block;
-
 }
+*/
 </style>

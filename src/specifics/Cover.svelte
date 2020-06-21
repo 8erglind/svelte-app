@@ -74,8 +74,8 @@
 
 <div class="pagetitle OneStuck" style="transform: rotate({rotate});">now</div>
 
-<div class="pagetitle then One leftOne" style="transform: rotate({rotate});"><span class="transp">&amp; </span>then</div>
-<div class="pagetitle then One rightOne" style="transform: rotate({rotate});"><span class="transp">&amp; </span>then</div>
+<div class="pagetitle then One leftOne" style="transform: rotate({rotate});">&amp; then</div>
+<div class="pagetitle then One rightOne" style="transform: rotate({rotate});">&amp; then</div>
 
 <div class="pagetitle then Two leftOne" style="transform: rotate({rotate});">&amp; then</div>
 <div class="pagetitle then Two rightOne" style="transform: rotate({rotate});">&amp; then</div>

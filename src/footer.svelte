@@ -10,7 +10,7 @@
 
 <style>
 	.footer {
-		position: fixed;
+		position: absolute;
 		/*border-top: 1px solid rgb(70,70,70);*/
 		border-bottom: 1px solid rgb(70,70,70);
 		/*border-right: 1px solid rgb(70,70,70);*/

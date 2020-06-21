@@ -123,12 +123,6 @@
 
 <div class="line left line52"></div>
 
-<!--{#if thirdSetup}
-{:else}
-	<div class="horizontalLine left line52"></div>
-	<div class="text years left line52">1968</div>
-{/if}-->
-
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
@@ -260,6 +254,14 @@
 
 
 <!-- FOOTER + STATIC -->
+
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if secondSetup}<a href="https://www.youtube.com/watch?v=DUPxYBNS750" target="_blank">[more &nearr;]</a>{/if}
+			{#if fifthSetup}<a href="https://www.litcharts.com/lit/pedagogy-of-the-oppressed/chapter-1" target="_blank">[more &nearr;]</a>{/if}
+		</div>
+</div>
+
 
 <div class="horizontalLine left" style="width: 100%; top: calc(({distanceBLines} * 8) - 1px); border-top: 1px solid blue;"></div>
 
