@@ -165,7 +165,7 @@
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		In the same year as Tropicália was released, 1968, Paulo Freire released the book ‘Pedogogy of the Oppressed.<br>
-		In it he writes about the problem of dehumanisation,  which is perpetrated through injustice, exploitation, oppression and violence. He states that humankind’s central focus should be &ndash; contrary to dehumanisation -- on humanization. He called the struggle of liberation an act of love, a radical love of recognising everybody’s humanity.
+		In it he writes about the problem of dehumanisation,  which is perpetrated through injustice, exploitation, oppression and violence. He states that humankind’s central focus should be &ndash; contrary to dehumanisation &ndash; on humanization. He called the struggle of liberation an act of love, a radical love of recognising everybody’s humanity.
 	</div>
 
 	<div class="horizontalLine left line52"></div>

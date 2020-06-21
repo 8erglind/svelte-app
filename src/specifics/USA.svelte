@@ -67,7 +67,7 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Text about Ghana.
+		&#x25C0;&#xFE0E;
 	</div>	
 {/if}
 
@@ -124,7 +124,7 @@
 	</svg>
 
 	<div class="tempMeterCountry">
-		<div class="temperature endMeter"><span class="deathToll text">&#10013; 101.882</span></div>
+		<div class="temperature endMeter"><span class="deathToll text">&#10013;&#xFE0E; 101.882</span></div>
 		<div class="temperature infotext"><span class="tempnumber rightEnd text">60 days</span></div>
 	</div>
 
