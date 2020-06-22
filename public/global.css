@@ -622,7 +622,7 @@ body {
     border-radius: 60px /*calc(((100vh - 1px) / 9 * 1) / 2)*/;
 
     transition: width 3s, height 3s, left 3s, top 3s;  
-    overflow: hidden;  
+    overflow: hidden !important;  
 }
 
 .sweatdropLarger:after{

@@ -12414,6 +12414,7 @@ var app = (function () {
     			set_style(iframe, "position", "absolute");
     			set_style(iframe, "width", "100%");
     			set_style(iframe, "height", "100%");
+    			set_style(iframe, "border-radius", "60px");
     			if (iframe.src !== (iframe_src_value = "https://www.youtube.com/embed/BBcweZR5PcE")) attr_dev(iframe, "src", iframe_src_value);
     			attr_dev(iframe, "frameborder", "0");
     			attr_dev(iframe, "allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
@@ -12465,7 +12466,7 @@ var app = (function () {
     			t = text("TÓNLIST TÓNLIST TÓNLIST 1");
     			attr_dev(div, "class", "pagetext svelte-75d38");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$8, 235, 1, 7220);
+    			add_location(div, file$8, 235, 1, 7241);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12503,7 +12504,7 @@ var app = (function () {
     			t = text("TÓNLIST TÓNLIST TÓNLIST 2");
     			attr_dev(div, "class", "pagetext svelte-75d38");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$8, 241, 1, 7343);
+    			add_location(div, file$8, 241, 1, 7364);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12541,7 +12542,7 @@ var app = (function () {
     			t = text("Although it is branded as a green/clean country, Iceland is one of the largest polluters /CO2 emitters per capita. Despite a 99% renewable energy supply, it’s Consumption-Based Carbon Footprint (CBCF) (as explained briefly in India’s page) is similar to or higher than most EU nations. A majority of Icelandic household CBCF is linked to imported goods, meaning the CO2 burden of Icelandic consumption falls to a large extent on developing nations.");
     			attr_dev(div, "class", "pagetext svelte-75d38");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$8, 247, 1, 7465);
+    			add_location(div, file$8, 247, 1, 7486);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12579,7 +12580,7 @@ var app = (function () {
     			t = text("One migh assume that Iceland's disregard for actual sustainability could be linked to the fact that warming in Iceland will not reach extreme hights in the forseeable future, and it's position as an island way up north allows it to close itself off to those affected...");
     			attr_dev(div, "class", "pagetext svelte-75d38");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$8, 253, 1, 8009);
+    			add_location(div, file$8, 253, 1, 8030);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -12658,31 +12659,31 @@ var app = (function () {
     			div9 = element("div");
     			attr_dev(span0, "class", "tempnumber left text svelte-75d38");
     			set_style(span0, "z-index", "99999999");
-    			add_location(span0, file$8, 260, 36, 8445);
+    			add_location(span0, file$8, 260, 36, 8466);
     			attr_dev(div0, "class", "temperature infotext");
-    			add_location(div0, file$8, 260, 2, 8411);
+    			add_location(div0, file$8, 260, 2, 8432);
     			attr_dev(div1, "class", "tempMeterCountry svelte-75d38");
-    			add_location(div1, file$8, 259, 1, 8378);
+    			add_location(div1, file$8, 259, 1, 8399);
     			attr_dev(span1, "class", "deathToll text narrow svelte-75d38");
-    			add_location(span1, file$8, 263, 36, 8605);
+    			add_location(span1, file$8, 263, 36, 8626);
     			attr_dev(div2, "class", "temperature midMeter svelte-75d38");
-    			add_location(div2, file$8, 263, 2, 8571);
+    			add_location(div2, file$8, 263, 2, 8592);
     			attr_dev(span2, "class", "tempnumber rightFirst text svelte-75d38");
-    			add_location(span2, file$8, 264, 36, 8709);
+    			add_location(span2, file$8, 264, 36, 8730);
     			attr_dev(div3, "class", "temperature infotext");
-    			add_location(div3, file$8, 264, 2, 8675);
+    			add_location(div3, file$8, 264, 2, 8696);
     			attr_dev(div4, "class", "tempMeterCountry svelte-75d38");
-    			add_location(div4, file$8, 262, 1, 8538);
+    			add_location(div4, file$8, 262, 1, 8559);
     			attr_dev(div5, "class", "text years right line0 now svelte-75d38");
-    			add_location(div5, file$8, 267, 1, 8780);
+    			add_location(div5, file$8, 267, 1, 8801);
     			attr_dev(div6, "class", "horizontalLine full right line0 svelte-75d38");
-    			add_location(div6, file$8, 268, 1, 8832);
+    			add_location(div6, file$8, 268, 1, 8853);
     			attr_dev(div7, "class", "text years right line80 svelte-75d38");
-    			add_location(div7, file$8, 270, 1, 8886);
+    			add_location(div7, file$8, 270, 1, 8907);
     			attr_dev(div8, "class", "horizontalLine full right line80 svelte-75d38");
-    			add_location(div8, file$8, 271, 1, 8935);
+    			add_location(div8, file$8, 271, 1, 8956);
     			attr_dev(div9, "class", "line right line80 svelte-75d38");
-    			add_location(div9, file$8, 272, 1, 8989);
+    			add_location(div9, file$8, 272, 1, 9010);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -12745,7 +12746,7 @@ var app = (function () {
     			attr_dev(a, "href", "https://skemman.is/bitstream/1946/28057/1/%C3%81hrif%20neysluhyggju%20%C3%A1%20t%C3%ADsku%20og%20fatai%C3%B0na%C3%B0%20.pdf");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-75d38");
-    			add_location(a, file$8, 285, 19, 9178);
+    			add_location(a, file$8, 285, 19, 9199);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -12777,7 +12778,7 @@ var app = (function () {
     			attr_dev(a, "href", "https://skemman.is/bitstream/1946/15010/1/MA_snidmat-Alma.pdf");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-75d38");
-    			add_location(a, file$8, 287, 19, 9372);
+    			add_location(a, file$8, 287, 19, 9393);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -12814,11 +12815,11 @@ var app = (function () {
     			attr_dev(a0, "href", "https://www.ruv.is/thaettir/astandsborn");
     			attr_dev(a0, "target", "_blank");
     			attr_dev(a0, "class", "svelte-75d38");
-    			add_location(a0, file$8, 289, 20, 9505);
+    			add_location(a0, file$8, 289, 20, 9526);
     			attr_dev(a1, "href", "https://www.ruv.is/frett/stridsarin-a-islandi-fyrsti-thattur");
     			attr_dev(a1, "target", "_blank");
     			attr_dev(a1, "class", "svelte-75d38");
-    			add_location(a1, file$8, 289, 105, 9590);
+    			add_location(a1, file$8, 289, 105, 9611);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a0, anchor);
@@ -12854,7 +12855,7 @@ var app = (function () {
     			attr_dev(a, "href", "https://timarit.is/page/3428779#page/n17/mode/2up");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-75d38");
-    			add_location(a, file$8, 291, 19, 9721);
+    			add_location(a, file$8, 291, 19, 9742);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -12886,7 +12887,7 @@ var app = (function () {
     			attr_dev(a, "href", "https://www.sciencedirect.com/science/article/pii/S0959652617318267");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-75d38");
-    			add_location(a, file$8, 293, 20, 9842);
+    			add_location(a, file$8, 293, 20, 9863);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -12918,7 +12919,7 @@ var app = (function () {
     			attr_dev(a, "href", "http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-75d38");
-    			add_location(a, file$8, 295, 22, 9983);
+    			add_location(a, file$8, 295, 22, 10004);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -13140,19 +13141,19 @@ var app = (function () {
     			add_location(div3, file$8, 152, 0, 3950);
     			attr_dev(div4, "class", "bottomLineText text svelte-75d38");
     			set_style(div4, "text-align", "right");
-    			add_location(div4, file$8, 284, 2, 9098);
+    			add_location(div4, file$8, 284, 2, 9119);
     			attr_dev(div5, "class", "text bottomLine svelte-75d38");
-    			add_location(div5, file$8, 283, 0, 9066);
+    			add_location(div5, file$8, 283, 0, 9087);
     			attr_dev(div6, "class", "horizontalLine left svelte-75d38");
     			set_style(div6, "width", "100%");
     			set_style(div6, "top", "calc(" + /*distanceBLines*/ ctx[15] + " * 8)");
     			set_style(div6, "border-top", "1px solid blue");
-    			add_location(div6, file$8, 300, 0, 10198);
+    			add_location(div6, file$8, 300, 0, 10219);
     			attr_dev(div7, "class", "progressline");
     			set_style(div7, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div7, file$8, 304, 1, 10363);
+    			add_location(div7, file$8, 304, 1, 10384);
     			attr_dev(div8, "class", "activedotnew activedotFan");
-    			add_location(div8, file$8, 303, 0, 10322);
+    			add_location(div8, file$8, 303, 0, 10343);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

@@ -228,7 +228,7 @@
 	</div>
 
 	<div class="sweatdropLarger" style="top: calc(({distanceBLines}*3.5) - 60px); left: 60vw;">
-		<iframe style="position: absolute; width: 100%; height: 100%;" src="https://www.youtube.com/embed/BBcweZR5PcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		<iframe style="position: absolute; width: 100%; height: 100%; border-radius: 60px;" src="https://www.youtube.com/embed/BBcweZR5PcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 {/if}
 
