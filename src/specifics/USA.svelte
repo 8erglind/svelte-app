@@ -13,6 +13,11 @@
 	let thirdSetup = false;
 	let fourthSetup = false;
 	let fifthSetup = false;
+	let sixthSetup = false;
+	let seventhSetup = false;
+	let eightthSetup = false;
+
+	let graph = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
@@ -26,7 +31,40 @@
 	const togglethirdSetup = () => {
 		secondSetup = false;
 		thirdSetup = true;
+		fourthSetup = false;
 	}
+	const togglefourthSetup = () => {
+		thirdSetup = false;
+		fourthSetup = true;
+		fifthSetup = false;
+	}
+	const togglefifthSetup = () => {
+		fourthSetup = false;
+		fifthSetup = true;
+		sixthSetup = false;
+
+		graph = false;
+	}
+	const togglesixthSetup = () => {
+		sixthSetup = true;
+		seventhSetup = false;
+
+		graph = true;
+	}
+	const toggleseventhSetup = () => {
+		sixthSetup = false;
+		seventhSetup = true;
+		eightthSetup = false;
+
+		graph = true;
+	}
+	const toggleeighthSetup = () => {
+		seventhSetup = false;
+		eightthSetup = true;
+
+		graph = true;
+	}
+
 </script>
 
 
@@ -43,10 +81,10 @@
 	<div class="buttonPrev" on:click={togglefirstSetup}></div>
 {/if}
 {#if thirdSetup}
-	<!--<div class="buttonNext" on:click={togglefourthSetup}></div>-->
+	<div class="buttonNext" on:click={togglefourthSetup}></div>
 	<div class="buttonPrev" on:click={togglesecondSetup}></div>
 {/if}
-<!--{#if fourthSetup}
+{#if fourthSetup}
 	<div class="buttonNext" on:click={togglefifthSetup}></div>
 	<div class="buttonPrev" on:click={togglethirdSetup}></div>
 {/if}
@@ -55,9 +93,17 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click={toggleseventhSetup}></div>
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
-{/if}-->
+{/if}
+{#if seventhSetup}
+	<div class="buttonNext" on:click={toggleeighthSetup}></div>
+	<div class="buttonPrev" on:click={togglesixthSetup}></div>
+{/if}
+{#if eightthSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={toggleseventhSetup}></div>
+{/if}
 
 
 
@@ -67,7 +113,35 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		&#x25C0;&#xFE0E;
+		These tactics are awfully similar to those use by powerforces today in the U.S. (and beyond), and can easily be mirrored in the medias portrayal of peaceful Black Lives Matter protests as being violent (or Trump’s calling peaceful protesters thugs).
+	</div>	
+{/if}
+
+{#if secondSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		The U.S. is built on oppression and dehumanisation. On stolen land with stolen labour. Angela Davies -> prison industial complex <!-- LINK spotify album --> [UNFINISHED]<br>
+		prison slavery (companies that use slave (prison) labour:
+		<br>ExxonMobile
+		<br>(some of the same companies (or at least similar) use cheap labour in the global south and prison labour in the US. (Slavery was never abolished, the 13th amendment allows the use of “involuntary servitude” as punishment for crime)))
+	</div>	
+{/if}
+
+{#if thirdSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		about oil industry
+	</div>	
+{/if}
+
+{#if fourthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		At the same time, music industry
+		Robert Johnson --> Muddy Waters --> Motown --> Disco and dance music --> hip hop. How the beatles were inspired by black music, and that music inspired the world. (Cultural apropriation) [UNFINISHED] --> the music of the oppressed shook the world.
+	</div>	
+{/if}
+
+{#if fifthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		bell hooks, who was friends with Freire, released the book ‘All About Love’ in 19XX?. In it she defines love by 6 characteristics: care, commitment, knowledge, responsibility, respect and trust. [UNFINISHED]
 	</div>	
 {/if}
 
@@ -79,14 +153,15 @@
 
 
 <!-- GRAPH -->
-
+{#if graph}
 	<div class="tempMeterCountry">
 		<div class="temperature infotext">
 			<span class="tempnumber left text" style="z-index: 99999999;">365 days</span>
 		</div>
 	</div>
+{/if}
 
-{#if firstSetup}
+{#if sixthSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -102,7 +177,7 @@
 	<div class="horizontalLine full right line20"></div>
 {/if}
 
-{#if secondSetup}
+{#if seventhSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 340 600 340 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -118,7 +193,7 @@
 	<div class="horizontalLine full right line20"></div>
 {/if}
 
-{#if thirdSetup}
+{#if eightthSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 305 0 305 300 340 600 340 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -143,6 +218,13 @@
 
 <!-- FOOTER + STATIC -->
 
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if fifthSetup}<a href="https://deadwhitemansclothes.org/intro" target="_blank">[more &nearr;]</a>{/if}
+			{#if sixthSetup}<a href="https://www.instagram.com/p/B5VfzzlhmOv/" target="_blank">[more &nearr;] <a href="https://www.instagram.com/tv/B-Sltgypx7O/" target="_blank">[more &nearr;].</a></a>{/if}
+		</div>
+</div>
+
 <div class="horizontalLine left" style="width: 100%; top: calc({distanceBLines} * 8); border-top: 1px solid blue;"></div>
 
 
@@ -158,8 +240,7 @@
 
 <style>
 
-.text {color: red !important;}
-	.text a {color: red;}
+	.text, .text a, .pagetext {color: red !important;}
 	.verticalLine {border-right: 1px dotted red;}
 	.horizontalLine {border-top: 1px dotted red;}
 	.line {background-color: red;}

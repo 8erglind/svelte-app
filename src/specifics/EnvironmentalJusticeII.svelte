@@ -102,32 +102,31 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		garment workers in other countries (“only an estimated 2% of garment workers around the globe are paid a living wage” -sustainablefashiondublin from fashion revolution)
+		
 	</div>	
 {/if}
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Colonialism and Slavery were made possible by a system that rationalised the expoitation of certain groups of people, who were deamed ‘inferior’, for the economic growth of a ‘superior’ (white) group of people on a scale that would not be possible or sustainable without it.<br>
-		This system is still in place. 
+		 
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Climate action goes hand in hand with (global) human rights and racial and gender equality, it involves changing or dismantling the system of exponential growth of economic wealth (capital) built on exploitation of the resources, labour and lives of people who are deamed ‘inferior’ in a white supremacist patriarchy (doesn’t always go without saying). 
+		
 	</div>	
 {/if}
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	The first step (but not the last step) of climate action for a white westerner like myself is to practice empathy, to notice how my consumption, my practice and politics affect people in different positions of the (white supremacist, patriarchal) power structure, and to be eager to abandon or replace any habits that are having negative affects*. And if I hesitate to do this, to ask myself, what am I really fighting for? A livable future for whom?
+	
 	</div>	
 {/if}
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	*Of course nobody is perfect... yariyari... but, in a system that is designed to benefit us (to variable a extent depending on class / disability / gender expression / sexuality / etc.), the least we can do is feal a bit guilty for not being perfect, guilt alone won’t kill us. We should strive to become guilt free, but untill then realise that guilt is a [fucking] privilage!
+	
 	</div>	
 {/if}
 

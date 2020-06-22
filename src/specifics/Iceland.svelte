@@ -133,6 +133,9 @@
 
 
 
+
+<!-- CONTENT -->
+
 <div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
 
 
@@ -222,6 +225,10 @@
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. TÓNLIST TÓNLIST TÓNLIST
+	</div>
+
+	<div class="sweatdropLarger" style="top: calc(({distanceBLines}*3.5) - 60px); left: 60vw;">
+		<iframe style="position: absolute; width: 100%; height: 100%;" src="https://www.youtube.com/embed/BBcweZR5PcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 {/if}
 
@@ -319,5 +326,34 @@
 	.rightFirst {right: calc(((100vw / 365) * 0) - 1px);}
 	.rightMid {right: calc(((100vw / 365) * 0) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 0) - 1px);}
+
+
+	.falling {top: 30%; left: 40vw;}
+	/*.falling {
+		animation-name: example; 
+    	transition-timing-function: ease-in-out;
+	    animation-duration: 10s;  
+	    animation-fill-mode: forwards;
+	    animation-delay: 2s;
+	    opacity: 0; top: 30%; left: 70vw;
+	}
+	@keyframes example {
+	  0% {top: 30%; left: 70vw; opacity: 0;}
+	  2% {opacity: 1;}
+	  100% {top: calc(90% - 85px); left: 0px; opacity: 1;}
+	}
+	.falling2 {
+		animation-name: exampletwo;
+    	animation-fill-mode: forwards;
+    	transition-timing-function: ease-in-out;
+	    animation-duration: 10s;  
+	    animation-delay: 7s;
+	    opacity: 0; top: 30%; left: 5vw;
+	}
+	@keyframes exampletwo {
+	  0% {top: 30%; left: 5vw; opacity: 0;}
+	  2% {opacity: 1;}
+	  100% {top: calc(97% - 85px); left: calc(100vw - 25px); opacity: 1;}
+	}*/
 
 </style>
