@@ -104,58 +104,46 @@
 	<div class="pagetext" style="transform: rotate({rotate});">
 		CARE<br>
 		In order to love, we must care.<br>
-		But care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse abuse.
+		But care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse abuse.<!-- [Careless love -- song] -->
 	</div>	
 {/if}
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		 2. Commitment<br>
-		- In order to love we must be eager and committed to abandoning or replacing abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether of yourself or another. Love is not for narcissistic but communal, “it requires conscious practice, a willingness to unite the way we think with the way we act.” <!--(U.N.I.T.Y. Queen Latifah)-->
- 		<br>
-		- *BONUS* garment workers in other countries (“only an estimated 2% of garment workers around the globe are paid a living wage.” <!-- -sustainablefashiondublin from fashion revolution)-->
+		To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional. Creating work for garment workers, and then only paying 2% of them a living wage, is abusive care. 
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		3. Knowledge:<br>
-		bell asks us as consumers to call for a more accurate portrayal of love in mass media. Mass media, which more most often is produced by patriarchal institutions, historically shows love as a mystery. Something undefinable. bell describes this as being linked to patriarchal values, which depend upon inferiority / superiority, which can better be represented through violence than through love. Mass media can’t define love because the creators don’t understand love, patriarchal ideas of love are scewed by dominance and violence.<br>
-		Representations of environmentalism in mass media is similarly under-developed, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is kids holding hands around a globe, then where does that lead us?<br>
-		What valuable knowledge are we missing out on?
+		COMMITMENT<br>
+		In order to love we must be eager and committed to abandoning abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether over yourself or another. Love is communal, “it requires conscious practice, a willingness to unite the way we think with the way we act.” <!--(U.N.I.T.Y. Queen Latifah)--> 
 	</div>	
-	<!-- LINK TO THESIS -->
 {/if}
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		4. Responsibility:<br>
-		bell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable, that way lending love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its meaning.”
-		<br>
-		This means that we can choose to love (although I’m not so sure we can choose to not love). Love or lack of love is an action, an actions with consequences. In a wider context -- as love exists in many forms and “sizes” -- when speaking of groups of people, we do not simply “not love” them, we choose to not love them. Whether we choose to love them or not love them, our choice has consequences, and we are responsible for those consequences. Love is not just a feeling that we cannot control, it is an intentional action.
+		KNOWLEDGE<br>
+		Mass media historically shows love as a mystery, something undefinable. This is linked to patriarchal values, according to bell, which depend upon inferiority/superiority, which can better be represented through violence than through love. Mass media can’t define love because the creators, mostly partriarchal institutions, don’t understand love, their ideas of love are scewed by dominance and violence.
 	</div>	
 {/if}
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	
+		Representations of environmentalism in mass media is similarly underdeveloped, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is <i>kids holding hands around a globe</i>, then where does that lead us? What valuable knowledge are we missing out on? <!-- LINK TO THESIS -->
 	</div>	
 {/if}
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Finally, love involves trust.
-		<br>
-		“Cultures of domination rely on the cultivation of fear as a way to ensure obedience. In our society we make much of love and say little about fear. Yet we are all terribly afraid most of the time. As a culture we are obsessed with the notion of safety. Yet we do not question why we live in states of extreme anxiety and dread. Fear is the primary force upholding structures of domination. It promotes the desire for separation, the desire not to be known. When we are taught that safety lies always with sameness, then difference, of any kind, will appear as a threat. When we choose to love we choose to move against fear-against alienation and separation. The choice to love is a choice to connect-to find ourselves in the other.
-		<br>
-		To love is to trust that the other will not harm us, that difference is not destructive. To not overpolice and exlude on the basis of fear.<br>
-		“Awakening to love can happen only as we let go of our obsession with power and domination.”
+		RESPONSIBILITY<br>
+		bell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable. This lends love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its meaning.”
 	</div>	
 {/if}
 
 {#if seventhSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	
+		“We can choose to love” (although I’m not so sure we can choose to not love). In a wider context &mdash; as love exists in many forms and “sizes” &mdash; when speaking of groups of people, we do not simply “not love” them, we choose to not love them, and that choice has consequences which we are responsible for. Love is not <i>just</i> a feeling that we cannot control, it is an intentional action.
 	</div>	
 {/if}
 
@@ -172,8 +160,9 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if fifthSetup}<a class="text" href="" target="_blank">[more &nearr;]</a>{/if}
-			{#if sixthSetup}<a class="text" href="" target="_blank">[more &nearr;] <a href="" target="_blank">[more &nearr;].</a></a>{/if}
+			{#if fifthSetup}<a class="text" href="https://kabk.github.io/go-theses-20-berglind-johannsdottir/" target="_blank"> [thesis &nearr;]</a>{/if}
+			<a class="text" href="https://www.youtube.com/watch?v=LTRDHb-8EF0" target="_blank"> [more &nearr;]</a>
+			<a class="text" href="https://abc.nl/book-details/all-about-love-new-visions/@9780060959470" target="_blank"> [more &nearr;]</a>
 		</div>
 </div>
 

@@ -31,8 +31,8 @@
 	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
-	let scrollToFront = true;
-	let Main = false;
+	let scrollToFront = false;
+	let Main = true;
 
 	const toggleHide = () => {
 		scrollToFront = false;
