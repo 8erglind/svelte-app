@@ -242,7 +242,7 @@
 			{#if secondSetup} <div>[from chat with Seojeong Youn]</div>{/if}
 			{#if thirdSetup} <div>[from chat with Seojeong Youn]</div>{/if}
 			{#if firstSetup}{:else}{#if secondSetup}{:else}{#if thirdSetup}{:else}
-			<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>{/if}{/if}{/if}
+			<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;&#xFE0E;]</a>{/if}{/if}{/if}
 		</div>
 </div>
 

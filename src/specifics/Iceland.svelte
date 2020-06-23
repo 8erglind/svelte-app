@@ -283,17 +283,17 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if firstSetup}<a href="https://skemman.is/bitstream/1946/28057/1/%C3%81hrif%20neysluhyggju%20%C3%A1%20t%C3%ADsku%20og%20fatai%C3%B0na%C3%B0%20.pdf" target="_blank">[more &nearr;]</a>{/if}
+			{#if firstSetup}<a href="https://skemman.is/bitstream/1946/28057/1/%C3%81hrif%20neysluhyggju%20%C3%A1%20t%C3%ADsku%20og%20fatai%C3%B0na%C3%B0%20.pdf" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if thirdSetup}<a href="https://skemman.is/bitstream/1946/15010/1/MA_snidmat-Alma.pdf" target="_blank">[more &nearr;]</a>{/if}
+			{#if thirdSetup}<a href="https://skemman.is/bitstream/1946/15010/1/MA_snidmat-Alma.pdf" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if fourthSetup}<a href="https://www.ruv.is/thaettir/astandsborn" target="_blank">[more &nearr;]</a> <a href="https://www.ruv.is/frett/stridsarin-a-islandi-fyrsti-thattur" target="_blank">[more &nearr;]</a>{/if}
+			{#if fourthSetup}<a href="https://www.ruv.is/thaettir/astandsborn" target="_blank">[more &nearr;&#xFE0E;]</a> <a href="https://www.ruv.is/frett/stridsarin-a-islandi-fyrsti-thattur" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if fifthSetup}<a href="https://timarit.is/page/3428779#page/n17/mode/2up" target="_blank">[more &nearr;]</a>{/if}
+			{#if fifthSetup}<a href="https://timarit.is/page/3428779#page/n17/mode/2up" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if ninethSetup}<a href="https://www.sciencedirect.com/science/article/pii/S0959652617318267" target="_blank">[more &nearr;]</a>{/if}
+			{#if ninethSetup}<a href="https://www.sciencedirect.com/science/article/pii/S0959652617318267" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if eleventhSetup}<a href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F" target="_blank">[more &nearr;]</a>{/if}
+			{#if eleventhSetup}<a href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 		</div>
 </div>
 

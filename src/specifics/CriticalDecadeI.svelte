@@ -187,9 +187,9 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if firstText} <a target="_blank" href="https://www.carbonbrief.org/state-of-the-climate-how-the-world-warmed-in-2019">[more &nearr;]</a>{/if}
-			{#if secondText} <a target="_blank" href="https://econofact.org/global-temperature-and-human-activity">[more &nearr;]</a>{/if}
-			{#if thirdText} <a target="_blank" href="https://climateactiontracker.org/global/cat-thermometer/">[more &nearr;]</a>{/if}
+			{#if firstText} <a target="_blank" href="https://www.carbonbrief.org/state-of-the-climate-how-the-world-warmed-in-2019">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if secondText} <a target="_blank" href="https://econofact.org/global-temperature-and-human-activity">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if thirdText} <a target="_blank" href="https://climateactiontracker.org/global/cat-thermometer/">[more &nearr;&#xFE0E;]</a>{/if}
 		</div>
 </div>
 

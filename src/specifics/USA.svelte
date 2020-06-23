@@ -220,8 +220,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if fifthSetup}<a href="https://deadwhitemansclothes.org/intro" target="_blank">[more &nearr;]</a>{/if}
-			{#if sixthSetup}<a href="https://www.instagram.com/p/B5VfzzlhmOv/" target="_blank">[more &nearr;] <a href="https://www.instagram.com/tv/B-Sltgypx7O/" target="_blank">[more &nearr;].</a></a>{/if}
+			{#if fifthSetup}<a href="https://deadwhitemansclothes.org/intro" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if sixthSetup}<a href="https://www.instagram.com/p/B5VfzzlhmOv/" target="_blank">[more &nearr;&#xFE0E;] <a href="https://www.instagram.com/tv/B-Sltgypx7O/" target="_blank">[more &nearr;&#xFE0E;].</a></a>{/if}
 		</div>
 </div>
 

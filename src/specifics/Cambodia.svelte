@@ -309,17 +309,17 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if secondSetup} <a target="_blank" href="https://vimeo.com/ondemand/dtif">[more &nearr;]</a> <a target="_blank" href="https://www.imdb.com/title/tt0069287/">[more &nearr;]</a>
+			{#if secondSetup} <a target="_blank" href="https://vimeo.com/ondemand/dtif">[more &nearr;&#xFE0E;]</a> <a target="_blank" href="https://www.imdb.com/title/tt0069287/">[more &nearr;&#xFE0E;]</a>
 			{/if}
-			{#if thirdSetup} <a target="_blank" href="https://www.cambodiatribunal.org/history/cambodian-history/khmer-rouge-history/">[more &nearr;]</a>{/if}
+			{#if thirdSetup} <a target="_blank" href="https://www.cambodiatribunal.org/history/cambodian-history/khmer-rouge-history/">[more &nearr;&#xFE0E;]</a>{/if}
 			{#if fourthSetup}
-				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;&#xFE0E;]</a>
 			{/if}
 			{#if fifthSetup}
-				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;&#xFE0E;]</a>
 			{/if}
 			{#if sixthSetup}
-				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;&#xFE0E;]</a>
 			{/if}
 
 		</div>

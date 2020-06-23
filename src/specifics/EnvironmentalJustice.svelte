@@ -182,8 +182,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if fifthSetup}<a class="text" href="https://www.weforum.org/agenda/2019/10/importance-of-disaster-risk-reduction/" target="_blank">[more &nearr;]</a>{/if}
-			<!--{#if sixthSetup}<a class="text" href="" target="_blank">[more &nearr;] <a href="" target="_blank">[more &nearr;].</a></a>{/if}-->
+			{#if fifthSetup}<a class="text" href="https://www.weforum.org/agenda/2019/10/importance-of-disaster-risk-reduction/" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
+			<!--{#if sixthSetup}<a class="text" href="" target="_blank">[more &nearr;] <a href="" target="_blank">[more &nearr;&#xFE0E;].</a></a>{/if}-->
 		</div>
 </div>
 

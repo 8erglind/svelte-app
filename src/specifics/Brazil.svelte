@@ -257,8 +257,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if secondSetup}<a href="https://www.youtube.com/watch?v=DUPxYBNS750" target="_blank">[more &nearr;]</a>{/if}
-			{#if fifthSetup}<a href="https://www.litcharts.com/lit/pedagogy-of-the-oppressed/chapter-1" target="_blank">[more &nearr;]</a>{/if}
+			{#if secondSetup}<a href="https://www.youtube.com/watch?v=DUPxYBNS750" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if fifthSetup}<a href="https://www.litcharts.com/lit/pedagogy-of-the-oppressed/chapter-1" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 		</div>
 </div>
 

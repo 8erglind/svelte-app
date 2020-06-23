@@ -131,7 +131,7 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			<a target="_blank" href="https://feu-us.org/impact-of-individual-action/">[more &nearr;]</a>.
+			<a target="_blank" href="https://feu-us.org/impact-of-individual-action/">[more &nearr;&#xFE0E;]</a>.
 		</div>
 </div>
 

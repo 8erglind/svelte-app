@@ -103,8 +103,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			<a href="https://www.glyphworld.online/" target="_blank">[font: GlyphWorld &nearr;]</a> 
-			<a href="http://collletttivo.it/" target="_blank">[font: Ortica &nearr;]</a>
+			<a href="https://www.glyphworld.online/" target="_blank">[font: GlyphWorld &nearr;&#xFE0E;]</a> 
+			<a href="http://collletttivo.it/" target="_blank">[font: Ortica &nearr;&#xFE0E;]</a>
 		</div>
 </div>
 	

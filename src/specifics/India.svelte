@@ -362,8 +362,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			<!--{#if fifthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;]</a>{/if}
-			{#if sixthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;]</a>{/if}-->
+			<!--{#if fifthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if sixthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;&#xFE0E;]</a>{/if}-->
 		</div>
 </div>
 

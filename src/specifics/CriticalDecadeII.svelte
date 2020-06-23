@@ -322,10 +322,10 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if secondText} <a target="_blank" href="https://www.iea.org/reports/global-energy-review-2020/global-energy-and-co2-emissions-in-2020#abstract">[more &nearr;]</a>{/if}
-			{#if fourthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;]</a>{/if}
-			{#if fifthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;]</a>{/if}
-			{#if sixthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;]</a>{/if}
+			{#if secondText} <a target="_blank" href="https://www.iea.org/reports/global-energy-review-2020/global-energy-and-co2-emissions-in-2020#abstract">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if fourthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if fifthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if sixthText} <a target="_blank" href="https://www.theguardian.com/environment/2020/feb/15/christiana-figueres-climate-emergency-this-is-the-decade-the-future-we-choose">[more &nearr;&#xFE0E;]</a>{/if}
 		</div>
 </div>
 

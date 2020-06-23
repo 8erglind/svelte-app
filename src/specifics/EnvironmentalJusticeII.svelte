@@ -149,7 +149,8 @@
 
 {#if eightthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	
+		RESPECT<br>
+		I read an article by David Wallace-Wells, where he describes an encounter he had with a middle aged business man after he had attended a panel discussion on the climate crisis which David was part of. The man asked him, in “an almost conspiratory” tone: “How bad is it going to&nbsp;be?”
 	</div>	
 {/if}
 
@@ -160,9 +161,10 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if fifthSetup}<a class="text" href="https://kabk.github.io/go-theses-20-berglind-johannsdottir/" target="_blank"> [thesis &nearr;]</a>{/if}
-			<a class="text" href="https://www.youtube.com/watch?v=LTRDHb-8EF0" target="_blank"> [more &nearr;]</a>
-			<a class="text" href="https://abc.nl/book-details/all-about-love-new-visions/@9780060959470" target="_blank"> [more &nearr;]</a>
+			{#if fifthSetup}<a class="text" href="https://kabk.github.io/go-theses-20-berglind-johannsdottir/" target="_blank"> [thesis &nearr;&#xFE0E;]</a>{/if}
+			{#if eightthSetup}<a class="text" href="https://nymag.com/intelligencer/2019/12/climate-change-worst-case-scenario-now-looks-unrealistic.html" target="_blank"> [more &nearr;&#xFE0E;]</a>{/if}
+			<a class="text" href="https://www.youtube.com/watch?v=LTRDHb-8EF0" target="_blank"> [more &nearr;&#xFE0E;]</a>
+			<a class="text" href="https://abc.nl/book-details/all-about-love-new-visions/@9780060959470" target="_blank"> [more &nearr;&#xFE0E;]</a>
 		</div>
 </div>
 
