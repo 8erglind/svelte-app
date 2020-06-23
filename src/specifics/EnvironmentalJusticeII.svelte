@@ -98,16 +98,13 @@
 
 <!-- CONTENT -->
 
-<div class="pagetitle" style="transform: rotate({rotate});">Environ-<br>mental<br>Justice:<br>II</div>
+<div class="pagetitle" style="transform: rotate({rotate});">Radical<br>love<br>...</div>
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		1. Care<br>
-		Care:
-		- In order to love, we must care.
-		- We must practice empathy, to notice how other people feel and how systems affect them, how our own habits/consumption/politics affect them -- and care.
-		- bell wrote of care as being an integral part of love, however, care alone does not constitute love. An abusive parent can care for their child, but abuse and love can not coexist -- abusive pathological love is not love and love cannot excuse abuse. [the action of abuse is counterproductive to the action of love.] (and codependency is not love, garment workers are codependent on us?)
-		- To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional.
+		CARE<br>
+		In order to love, we must care.<br>
+		But care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse abuse.
 	</div>	
 {/if}
 

@@ -14358,7 +14358,7 @@ var app = (function () {
 
     const file$9 = "src/specifics/Ghana.svelte";
 
-    // (72:0) {#if firstSetup}
+    // (74:0) {#if firstSetup}
     function create_if_block_30$1(ctx) {
     	let div;
     	let t;
@@ -14372,10 +14372,10 @@ var app = (function () {
     			t = space();
     			a = element("a");
     			attr_dev(div, "class", "buttonNext");
-    			add_location(div, file$9, 72, 1, 1376);
+    			add_location(div, file$9, 74, 1, 1417);
     			attr_dev(a, "class", "buttonPrev");
     			attr_dev(a, "href", /*next*/ ctx[2]);
-    			add_location(a, file$9, 73, 1, 1437);
+    			add_location(a, file$9, 75, 1, 1478);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -14405,14 +14405,14 @@ var app = (function () {
     		block,
     		id: create_if_block_30$1.name,
     		type: "if",
-    		source: "(72:0) {#if firstSetup}",
+    		source: "(74:0) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (76:0) {#if secondSetup}
+    // (78:0) {#if secondSetup}
     function create_if_block_29$1(ctx) {
     	let div0;
     	let t;
@@ -14426,9 +14426,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 76, 1, 1503);
+    			add_location(div0, file$9, 78, 1, 1544);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 77, 1, 1563);
+    			add_location(div1, file$9, 79, 1, 1604);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14458,14 +14458,14 @@ var app = (function () {
     		block,
     		id: create_if_block_29$1.name,
     		type: "if",
-    		source: "(76:0) {#if secondSetup}",
+    		source: "(78:0) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (80:0) {#if thirdSetup}
+    // (82:0) {#if thirdSetup}
     function create_if_block_28$1(ctx) {
     	let div0;
     	let t;
@@ -14479,9 +14479,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 80, 1, 1646);
+    			add_location(div0, file$9, 82, 1, 1687);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 81, 1, 1707);
+    			add_location(div1, file$9, 83, 1, 1748);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14511,14 +14511,14 @@ var app = (function () {
     		block,
     		id: create_if_block_28$1.name,
     		type: "if",
-    		source: "(80:0) {#if thirdSetup}",
+    		source: "(82:0) {#if thirdSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (84:0) {#if fourthSetup}
+    // (86:0) {#if fourthSetup}
     function create_if_block_27$2(ctx) {
     	let div0;
     	let t;
@@ -14532,9 +14532,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 84, 1, 1792);
+    			add_location(div0, file$9, 86, 1, 1833);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 85, 1, 1852);
+    			add_location(div1, file$9, 87, 1, 1893);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14564,14 +14564,14 @@ var app = (function () {
     		block,
     		id: create_if_block_27$2.name,
     		type: "if",
-    		source: "(84:0) {#if fourthSetup}",
+    		source: "(86:0) {#if fourthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (88:0) {#if fifthSetup}
+    // (90:0) {#if fifthSetup}
     function create_if_block_26$2(ctx) {
     	let div0;
     	let t;
@@ -14585,9 +14585,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 88, 1, 1935);
+    			add_location(div0, file$9, 90, 1, 1976);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 89, 1, 1995);
+    			add_location(div1, file$9, 91, 1, 2036);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14617,14 +14617,14 @@ var app = (function () {
     		block,
     		id: create_if_block_26$2.name,
     		type: "if",
-    		source: "(88:0) {#if fifthSetup}",
+    		source: "(90:0) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (92:0) {#if sixthSetup}
+    // (94:0) {#if sixthSetup}
     function create_if_block_25$2(ctx) {
     	let div0;
     	let t;
@@ -14638,9 +14638,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 92, 1, 2079);
+    			add_location(div0, file$9, 94, 1, 2120);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 93, 1, 2141);
+    			add_location(div1, file$9, 95, 1, 2182);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14670,14 +14670,14 @@ var app = (function () {
     		block,
     		id: create_if_block_25$2.name,
     		type: "if",
-    		source: "(92:0) {#if sixthSetup}",
+    		source: "(94:0) {#if sixthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (96:0) {#if seventhSetup}
+    // (98:0) {#if seventhSetup}
     function create_if_block_24$3(ctx) {
     	let div0;
     	let t;
@@ -14691,9 +14691,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 96, 1, 2226);
+    			add_location(div0, file$9, 98, 1, 2267);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 97, 1, 2287);
+    			add_location(div1, file$9, 99, 1, 2328);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14723,14 +14723,14 @@ var app = (function () {
     		block,
     		id: create_if_block_24$3.name,
     		type: "if",
-    		source: "(96:0) {#if seventhSetup}",
+    		source: "(98:0) {#if seventhSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (100:0) {#if eightthSetup}
+    // (102:0) {#if eightthSetup}
     function create_if_block_23$3(ctx) {
     	let div0;
     	let t;
@@ -14744,9 +14744,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "buttonNext");
-    			add_location(div0, file$9, 100, 1, 2372);
+    			add_location(div0, file$9, 102, 1, 2413);
     			attr_dev(div1, "class", "buttonPrev");
-    			add_location(div1, file$9, 101, 1, 2433);
+    			add_location(div1, file$9, 103, 1, 2474);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14776,14 +14776,14 @@ var app = (function () {
     		block,
     		id: create_if_block_23$3.name,
     		type: "if",
-    		source: "(100:0) {#if eightthSetup}",
+    		source: "(102:0) {#if eightthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (104:0) {#if ninethSetup}
+    // (106:0) {#if ninethSetup}
     function create_if_block_22$3(ctx) {
     	let a;
     	let t;
@@ -14798,9 +14798,9 @@ var app = (function () {
     			div = element("div");
     			attr_dev(a, "class", "buttonNext");
     			attr_dev(a, "href", /*prev*/ ctx[3]);
-    			add_location(a, file$9, 104, 1, 2519);
+    			add_location(a, file$9, 106, 1, 2560);
     			attr_dev(div, "class", "buttonPrev");
-    			add_location(div, file$9, 105, 1, 2561);
+    			add_location(div, file$9, 107, 1, 2602);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -14830,14 +14830,14 @@ var app = (function () {
     		block,
     		id: create_if_block_22$3.name,
     		type: "if",
-    		source: "(104:0) {#if ninethSetup}",
+    		source: "(106:0) {#if ninethSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (117:0) {#if firstSetup}
+    // (119:0) {#if firstSetup}
     function create_if_block_21$3(ctx) {
     	let div;
     	let t;
@@ -14848,7 +14848,7 @@ var app = (function () {
     			t = text("Ghana is one of countries which rank low when it comes to the impact of individual climate action.");
     			attr_dev(div, "class", "pagetext svelte-1x9g4so");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 117, 1, 2751);
+    			add_location(div, file$9, 119, 1, 2792);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -14868,14 +14868,14 @@ var app = (function () {
     		block,
     		id: create_if_block_21$3.name,
     		type: "if",
-    		source: "(117:0) {#if firstSetup}",
+    		source: "(119:0) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:0) {#if secondSetup}
+    // (125:0) {#if secondSetup}
     function create_if_block_20$3(ctx) {
     	let div0;
     	let t0;
@@ -14895,11 +14895,11 @@ var app = (function () {
     			div2.textContent = "1957";
     			attr_dev(div0, "class", "pagetext svelte-1x9g4so");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div0, file$9, 123, 1, 2947);
+    			add_location(div0, file$9, 125, 1, 2988);
     			attr_dev(div1, "class", "horizontalLine left line63 svelte-1x9g4so");
-    			add_location(div1, file$9, 127, 1, 3249);
+    			add_location(div1, file$9, 129, 1, 3290);
     			attr_dev(div2, "class", "text years left line63 svelte-1x9g4so");
-    			add_location(div2, file$9, 128, 1, 3297);
+    			add_location(div2, file$9, 130, 1, 3338);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -14927,14 +14927,14 @@ var app = (function () {
     		block,
     		id: create_if_block_20$3.name,
     		type: "if",
-    		source: "(123:0) {#if secondSetup}",
+    		source: "(125:0) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:0) {:else}
+    // (135:0) {:else}
     function create_else_block_2$1(ctx) {
     	let div;
 
@@ -14942,7 +14942,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "line left line63 svelte-1x9g4so");
-    			add_location(div, file$9, 133, 1, 3377);
+    			add_location(div, file$9, 135, 1, 3418);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -14956,14 +14956,14 @@ var app = (function () {
     		block,
     		id: create_else_block_2$1.name,
     		type: "else",
-    		source: "(133:0) {:else}",
+    		source: "(135:0) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (132:0) {#if firstSetup}
+    // (134:0) {#if firstSetup}
     function create_if_block_19$3(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -14971,14 +14971,14 @@ var app = (function () {
     		block,
     		id: create_if_block_19$3.name,
     		type: "if",
-    		source: "(132:0) {#if firstSetup}",
+    		source: "(134:0) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (138:0) {#if thirdSetup}
+    // (140:0) {#if thirdSetup}
     function create_if_block_18$4(ctx) {
     	let div;
     	let t;
@@ -14989,7 +14989,7 @@ var app = (function () {
     			t = text("Felicia Abban, Kwame Nkrumah’s official photographer, was the first professional woman photographer in Ghana. She ran a studio in Accra for decades and documented the evolution of Ghanian culture after it’s independence. She often photographed people, including herself. She photographed herself each night that she got dressed up to go out – for years.");
     			attr_dev(div, "class", "pagetext svelte-1x9g4so");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 138, 1, 3440);
+    			add_location(div, file$9, 140, 1, 3481);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15009,14 +15009,14 @@ var app = (function () {
     		block,
     		id: create_if_block_18$4.name,
     		type: "if",
-    		source: "(138:0) {#if thirdSetup}",
+    		source: "(140:0) {#if thirdSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (144:0) {#if fourthSetup}
+    // (146:0) {#if fourthSetup}
     function create_if_block_17$5(ctx) {
     	let div;
     	let t;
@@ -15024,10 +15024,10 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t = text("Ghana is the birthplace of Highlife, which is a certain type of guitar (dance) music. E.T. Mensah was the pioneer of highlife, and it is still going today through different styles.");
+    			t = text("Ghana is the birthplace of Highlife, which is a certain type of guitar (dance) music. E.T. Mensah was the pioneer of highlife, and it is still going today through different styles.");
     			attr_dev(div, "class", "pagetext svelte-1x9g4so");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 144, 1, 3897);
+    			add_location(div, file$9, 146, 1, 3938);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15047,14 +15047,14 @@ var app = (function () {
     		block,
     		id: create_if_block_17$5.name,
     		type: "if",
-    		source: "(144:0) {#if fourthSetup}",
+    		source: "(146:0) {#if fourthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (150:0) {#if fifthSetup}
+    // (152:0) {#if fifthSetup}
     function create_if_block_16$5(ctx) {
     	let div0;
     	let t0;
@@ -15074,11 +15074,11 @@ var app = (function () {
     			div2.textContent = "2020";
     			attr_dev(div0, "class", "pagetext svelte-1x9g4so");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div0, file$9, 150, 1, 4251);
+    			add_location(div0, file$9, 152, 1, 4297);
     			attr_dev(div1, "class", "horizontalLine left line0 svelte-1x9g4so");
-    			add_location(div1, file$9, 154, 1, 4721);
+    			add_location(div1, file$9, 156, 1, 4767);
     			attr_dev(div2, "class", "text years left line0 now svelte-1x9g4so");
-    			add_location(div2, file$9, 155, 1, 4768);
+    			add_location(div2, file$9, 157, 1, 4814);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -15106,14 +15106,14 @@ var app = (function () {
     		block,
     		id: create_if_block_16$5.name,
     		type: "if",
-    		source: "(150:0) {#if fifthSetup}",
+    		source: "(152:0) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (166:3) {:else}
+    // (168:3) {:else}
     function create_else_block_1$2(ctx) {
     	let div;
 
@@ -15121,7 +15121,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "line left line0 svelte-1x9g4so");
-    			add_location(div, file$9, 166, 4, 4943);
+    			add_location(div, file$9, 168, 4, 4989);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15135,14 +15135,14 @@ var app = (function () {
     		block,
     		id: create_else_block_1$2.name,
     		type: "else",
-    		source: "(166:3) {:else}",
+    		source: "(168:3) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (165:3) {#if firstSetup}
+    // (167:3) {#if firstSetup}
     function create_if_block_15$5(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15150,14 +15150,14 @@ var app = (function () {
     		block,
     		id: create_if_block_15$5.name,
     		type: "if",
-    		source: "(165:3) {#if firstSetup}",
+    		source: "(167:3) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (163:2) {#if secondSetup}
+    // (165:2) {#if secondSetup}
     function create_if_block_14$5(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15165,14 +15165,14 @@ var app = (function () {
     		block,
     		id: create_if_block_14$5.name,
     		type: "if",
-    		source: "(163:2) {#if secondSetup}",
+    		source: "(165:2) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (161:1) {#if thirdSetup}
+    // (163:1) {#if thirdSetup}
     function create_if_block_13$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15180,14 +15180,14 @@ var app = (function () {
     		block,
     		id: create_if_block_13$6.name,
     		type: "if",
-    		source: "(161:1) {#if thirdSetup}",
+    		source: "(163:1) {#if thirdSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:0) {#if fourthSetup}
+    // (161:0) {#if fourthSetup}
     function create_if_block_12$6(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15195,14 +15195,14 @@ var app = (function () {
     		block,
     		id: create_if_block_12$6.name,
     		type: "if",
-    		source: "(159:0) {#if fourthSetup}",
+    		source: "(161:0) {#if fourthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (173:0) {#if sixthSetup}
+    // (175:0) {#if sixthSetup}
     function create_if_block_11$6(ctx) {
     	let div;
     	let t;
@@ -15210,10 +15210,10 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t = text("The clothing, which is sent from the U.S., Canada and Europe, is called ‘Obroni w’awu’ (dead white mans clothing), because Ghanians first assumed the owners were deseased. Kayayei, the women who carry the clothing – in heavy bales on their heads – from the harbour to the market earn around 30 cents to $1 for each trip and are considered slaves of the fashion industry.");
+    			t = text("The clothing, which is sent from the U.S., Canada and Europe, is called ‘Obroni w’awu’ (dead white mans clothing), because Ghanians first assumed the owners were deseased. Kayayei, the women who carry the clothing – in heavy bales on their heads – from the harbour to the market earn around 30 cents to $1 for each trip.");
     			attr_dev(div, "class", "pagetext svelte-1x9g4so");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div, file$9, 173, 1, 5028);
+    			add_location(div, file$9, 175, 1, 5074);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -15233,133 +15233,114 @@ var app = (function () {
     		block,
     		id: create_if_block_11$6.name,
     		type: "if",
-    		source: "(173:0) {#if sixthSetup}",
+    		source: "(175:0) {#if sixthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (179:0) {#if seventhSetup}
+    // (181:0) {#if seventhSetup}
     function create_if_block_10$6(ctx) {
-    	let div0;
-    	let t0;
-    	let t1;
     	let svg;
     	let polygon;
-    	let t2;
-    	let div3;
-    	let div1;
-    	let span0;
-    	let t4;
+    	let t0;
     	let div2;
+    	let div0;
+    	let span0;
+    	let t2;
+    	let div1;
     	let span1;
+    	let t4;
+    	let div3;
     	let t6;
     	let div4;
-    	let t8;
+    	let t7;
     	let div5;
     	let t9;
     	let div6;
-    	let t11;
-    	let div7;
 
     	const block = {
     		c: function create() {
-    			div0 = element("div");
-    			t0 = text("sfsdfsf");
-    			t1 = space();
     			svg = svg_element("svg");
     			polygon = svg_element("polygon");
-    			t2 = space();
-    			div3 = element("div");
-    			div1 = element("div");
+    			t0 = space();
+    			div2 = element("div");
+    			div0 = element("div");
     			span0 = element("span");
     			span0.textContent = "✝︎ 3.170";
-    			t4 = space();
-    			div2 = element("div");
+    			t2 = space();
+    			div1 = element("div");
     			span1 = element("span");
     			span1.textContent = "23 days";
+    			t4 = space();
+    			div3 = element("div");
+    			div3.textContent = "2020";
     			t6 = space();
     			div4 = element("div");
-    			div4.textContent = "2020";
-    			t8 = space();
+    			t7 = space();
     			div5 = element("div");
+    			div5.textContent = "2040";
     			t9 = space();
     			div6 = element("div");
-    			div6.textContent = "2040";
-    			t11 = space();
-    			div7 = element("div");
-    			attr_dev(div0, "class", "pagetext svelte-1x9g4so");
-    			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div0, file$9, 179, 1, 5509);
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200 365 900 342 900 342 1200 365 1200");
-    			add_location(polygon, file$9, 184, 2, 5699);
+    			add_location(polygon, file$9, 182, 2, 5671);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 183, 1, 5590);
+    			add_location(svg, file$9, 181, 1, 5562);
     			attr_dev(span0, "class", "deathToll text svelte-1x9g4so");
-    			add_location(span0, file$9, 188, 38, 5855);
-    			attr_dev(div1, "class", "temperature firstMeter svelte-1x9g4so");
-    			add_location(div1, file$9, 188, 2, 5819);
+    			add_location(span0, file$9, 186, 38, 5827);
+    			attr_dev(div0, "class", "temperature firstMeter svelte-1x9g4so");
+    			add_location(div0, file$9, 186, 2, 5791);
     			attr_dev(span1, "class", "tempnumber rightFirst text svelte-1x9g4so");
-    			add_location(span1, file$9, 189, 36, 5956);
-    			attr_dev(div2, "class", "temperature infotext");
-    			add_location(div2, file$9, 189, 2, 5922);
-    			attr_dev(div3, "class", "tempMeterCountry svelte-1x9g4so");
-    			add_location(div3, file$9, 187, 1, 5786);
-    			attr_dev(div4, "class", "text years right line0 now svelte-1x9g4so");
-    			add_location(div4, file$9, 192, 1, 6028);
-    			attr_dev(div5, "class", "horizontalLine full right line0 svelte-1x9g4so");
-    			add_location(div5, file$9, 193, 1, 6080);
-    			attr_dev(div6, "class", "text years right line20 svelte-1x9g4so");
-    			add_location(div6, file$9, 194, 1, 6133);
-    			attr_dev(div7, "class", "horizontalLine full right line20 svelte-1x9g4so");
-    			add_location(div7, file$9, 195, 1, 6182);
+    			add_location(span1, file$9, 187, 36, 5928);
+    			attr_dev(div1, "class", "temperature infotext");
+    			add_location(div1, file$9, 187, 2, 5894);
+    			attr_dev(div2, "class", "tempMeterCountry svelte-1x9g4so");
+    			add_location(div2, file$9, 185, 1, 5758);
+    			attr_dev(div3, "class", "text years right line0 now svelte-1x9g4so");
+    			add_location(div3, file$9, 190, 1, 6000);
+    			attr_dev(div4, "class", "horizontalLine full right line0 svelte-1x9g4so");
+    			add_location(div4, file$9, 191, 1, 6052);
+    			attr_dev(div5, "class", "text years right line20 svelte-1x9g4so");
+    			add_location(div5, file$9, 192, 1, 6105);
+    			attr_dev(div6, "class", "horizontalLine full right line20 svelte-1x9g4so");
+    			add_location(div6, file$9, 193, 1, 6154);
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div0, anchor);
-    			append_dev(div0, t0);
-    			insert_dev(target, t1, anchor);
     			insert_dev(target, svg, anchor);
     			append_dev(svg, polygon);
-    			insert_dev(target, t2, anchor);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, div2, anchor);
+    			append_dev(div2, div0);
+    			append_dev(div0, span0);
+    			append_dev(div2, t2);
+    			append_dev(div2, div1);
+    			append_dev(div1, span1);
+    			insert_dev(target, t4, anchor);
     			insert_dev(target, div3, anchor);
-    			append_dev(div3, div1);
-    			append_dev(div1, span0);
-    			append_dev(div3, t4);
-    			append_dev(div3, div2);
-    			append_dev(div2, span1);
     			insert_dev(target, t6, anchor);
     			insert_dev(target, div4, anchor);
-    			insert_dev(target, t8, anchor);
+    			insert_dev(target, t7, anchor);
     			insert_dev(target, div5, anchor);
     			insert_dev(target, t9, anchor);
     			insert_dev(target, div6, anchor);
-    			insert_dev(target, t11, anchor);
-    			insert_dev(target, div7, anchor);
-    		},
-    		p: function update(ctx, dirty) {
-    			if (dirty & /*rotate*/ 2) {
-    				set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			}
     		},
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t1);
     			if (detaching) detach_dev(svg);
-    			if (detaching) detach_dev(t2);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(div2);
+    			if (detaching) detach_dev(t4);
     			if (detaching) detach_dev(div3);
     			if (detaching) detach_dev(t6);
     			if (detaching) detach_dev(div4);
-    			if (detaching) detach_dev(t8);
+    			if (detaching) detach_dev(t7);
     			if (detaching) detach_dev(div5);
     			if (detaching) detach_dev(t9);
     			if (detaching) detach_dev(div6);
-    			if (detaching) detach_dev(t11);
-    			if (detaching) detach_dev(div7);
     		}
     	};
 
@@ -15367,14 +15348,14 @@ var app = (function () {
     		block,
     		id: create_if_block_10$6.name,
     		type: "if",
-    		source: "(179:0) {#if seventhSetup}",
+    		source: "(181:0) {#if seventhSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (210:5) {:else}
+    // (208:5) {:else}
     function create_else_block$3(ctx) {
     	let div1;
     	let div0;
@@ -15388,11 +15369,11 @@ var app = (function () {
     			span.textContent = "365 days";
     			attr_dev(span, "class", "tempnumber left text svelte-1x9g4so");
     			set_style(span, "z-index", "99999999");
-    			add_location(span, file$9, 212, 8, 6511);
+    			add_location(span, file$9, 210, 8, 6483);
     			attr_dev(div0, "class", "temperature infotext");
-    			add_location(div0, file$9, 211, 7, 6468);
+    			add_location(div0, file$9, 209, 7, 6440);
     			attr_dev(div1, "class", "tempMeterCountry svelte-1x9g4so");
-    			add_location(div1, file$9, 210, 6, 6430);
+    			add_location(div1, file$9, 208, 6, 6402);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div1, anchor);
@@ -15408,14 +15389,14 @@ var app = (function () {
     		block,
     		id: create_else_block$3.name,
     		type: "else",
-    		source: "(210:5) {:else}",
+    		source: "(208:5) {:else}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (209:5) {#if firstSetup}
+    // (207:5) {#if firstSetup}
     function create_if_block_9$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15423,14 +15404,14 @@ var app = (function () {
     		block,
     		id: create_if_block_9$7.name,
     		type: "if",
-    		source: "(209:5) {#if firstSetup}",
+    		source: "(207:5) {#if firstSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (207:4) {#if secondSetup}
+    // (205:4) {#if secondSetup}
     function create_if_block_8$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15438,14 +15419,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8$7.name,
     		type: "if",
-    		source: "(207:4) {#if secondSetup}",
+    		source: "(205:4) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (205:3) {#if thirdSetup}
+    // (203:3) {#if thirdSetup}
     function create_if_block_7$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15453,14 +15434,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7$7.name,
     		type: "if",
-    		source: "(205:3) {#if thirdSetup}",
+    		source: "(203:3) {#if thirdSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (203:2) {#if fourthSetup}
+    // (201:2) {#if fourthSetup}
     function create_if_block_6$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15468,14 +15449,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6$7.name,
     		type: "if",
-    		source: "(203:2) {#if fourthSetup}",
+    		source: "(201:2) {#if fourthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (201:1) {#if fifthSetup}
+    // (199:1) {#if fifthSetup}
     function create_if_block_5$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15483,14 +15464,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5$7.name,
     		type: "if",
-    		source: "(201:1) {#if fifthSetup}",
+    		source: "(199:1) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (199:0) {#if sixthSetup}
+    // (197:0) {#if sixthSetup}
     function create_if_block_4$7(ctx) {
     	const block = { c: noop, m: noop, d: noop };
 
@@ -15498,14 +15479,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$7.name,
     		type: "if",
-    		source: "(199:0) {#if sixthSetup}",
+    		source: "(197:0) {#if sixthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (224:0) {#if eightthSetup}
+    // (222:0) {#if eightthSetup}
     function create_if_block_3$7(ctx) {
     	let svg;
     	let polygon;
@@ -15550,30 +15531,30 @@ var app = (function () {
     			div6 = element("div");
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200 365 900 365 600 320 600 320 900 342 900 342 1200 365 1200");
-    			add_location(polygon, file$9, 225, 2, 6798);
+    			add_location(polygon, file$9, 223, 2, 6770);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 224, 1, 6689);
+    			add_location(svg, file$9, 222, 1, 6661);
     			attr_dev(span0, "class", "deathToll text svelte-1x9g4so");
-    			add_location(span0, file$9, 229, 36, 6976);
+    			add_location(span0, file$9, 227, 36, 6948);
     			attr_dev(div0, "class", "temperature midMeter svelte-1x9g4so");
-    			add_location(div0, file$9, 229, 2, 6942);
+    			add_location(div0, file$9, 227, 2, 6914);
     			attr_dev(span1, "class", "tempnumber rightMid text svelte-1x9g4so");
-    			add_location(span1, file$9, 230, 36, 7077);
+    			add_location(span1, file$9, 228, 36, 7049);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$9, 230, 2, 7043);
+    			add_location(div1, file$9, 228, 2, 7015);
     			attr_dev(div2, "class", "tempMeterCountry svelte-1x9g4so");
-    			add_location(div2, file$9, 228, 1, 6909);
+    			add_location(div2, file$9, 226, 1, 6881);
     			attr_dev(div3, "class", "text years right line40 svelte-1x9g4so");
-    			add_location(div3, file$9, 233, 1, 7147);
+    			add_location(div3, file$9, 231, 1, 7119);
     			attr_dev(div4, "class", "horizontalLine full right line40 svelte-1x9g4so");
-    			add_location(div4, file$9, 234, 1, 7196);
+    			add_location(div4, file$9, 232, 1, 7168);
     			attr_dev(div5, "class", "text years right line20 svelte-1x9g4so");
-    			add_location(div5, file$9, 235, 1, 7250);
+    			add_location(div5, file$9, 233, 1, 7222);
     			attr_dev(div6, "class", "horizontalLine full right line20 svelte-1x9g4so");
-    			add_location(div6, file$9, 236, 1, 7299);
+    			add_location(div6, file$9, 234, 1, 7271);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -15613,14 +15594,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$7.name,
     		type: "if",
-    		source: "(224:0) {#if eightthSetup}",
+    		source: "(222:0) {#if eightthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (241:0) {#if ninethSetup}
+    // (239:0) {#if ninethSetup}
     function create_if_block_2$7(ctx) {
     	let svg;
     	let polygon;
@@ -15673,34 +15654,34 @@ var app = (function () {
     			div8 = element("div");
     			attr_dev(polygon, "class", "cls-1");
     			attr_dev(polygon, "points", "365 1200 365 900 365 600 365 300 365 0 238 0 238 300 320 600 320 900 342 900 342 1200 365 1200");
-    			add_location(polygon, file$9, 242, 2, 7488);
+    			add_location(polygon, file$9, 240, 2, 7460);
     			attr_dev(svg, "class", "hotDays");
     			attr_dev(svg, "xmlns", "http://www.w3.org/2000/svg");
     			attr_dev(svg, "viewBox", "0 0 365 1200");
     			attr_dev(svg, "preserveAspectRatio", "none");
-    			add_location(svg, file$9, 241, 1, 7379);
+    			add_location(svg, file$9, 239, 1, 7351);
     			attr_dev(span0, "class", "deathToll text svelte-1x9g4so");
-    			add_location(span0, file$9, 246, 36, 7694);
+    			add_location(span0, file$9, 244, 36, 7666);
     			attr_dev(div0, "class", "temperature endMeter svelte-1x9g4so");
-    			add_location(div0, file$9, 246, 2, 7660);
+    			add_location(div0, file$9, 244, 2, 7632);
     			attr_dev(span1, "class", "tempnumber rightEnd text svelte-1x9g4so");
-    			add_location(span1, file$9, 247, 36, 7796);
+    			add_location(span1, file$9, 245, 36, 7768);
     			attr_dev(div1, "class", "temperature infotext");
-    			add_location(div1, file$9, 247, 2, 7762);
+    			add_location(div1, file$9, 245, 2, 7734);
     			attr_dev(div2, "class", "tempMeterCountry svelte-1x9g4so");
-    			add_location(div2, file$9, 245, 1, 7627);
+    			add_location(div2, file$9, 243, 1, 7599);
     			attr_dev(div3, "class", "text years right line60 svelte-1x9g4so");
-    			add_location(div3, file$9, 250, 1, 7867);
+    			add_location(div3, file$9, 248, 1, 7839);
     			attr_dev(div4, "class", "horizontalLine full right line60 svelte-1x9g4so");
-    			add_location(div4, file$9, 251, 1, 7916);
+    			add_location(div4, file$9, 249, 1, 7888);
     			attr_dev(div5, "class", "line right line60 svelte-1x9g4so");
-    			add_location(div5, file$9, 252, 1, 7970);
+    			add_location(div5, file$9, 250, 1, 7942);
     			attr_dev(div6, "class", "text years right line80 svelte-1x9g4so");
-    			add_location(div6, file$9, 253, 1, 8009);
+    			add_location(div6, file$9, 251, 1, 7981);
     			attr_dev(div7, "class", "horizontalLine full right line80 svelte-1x9g4so");
-    			add_location(div7, file$9, 254, 1, 8058);
+    			add_location(div7, file$9, 252, 1, 8030);
     			attr_dev(div8, "class", "line right line80 svelte-1x9g4so");
-    			add_location(div8, file$9, 255, 1, 8112);
+    			add_location(div8, file$9, 253, 1, 8084);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, svg, anchor);
@@ -15748,14 +15729,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$7.name,
     		type: "if",
-    		source: "(241:0) {#if ninethSetup}",
+    		source: "(239:0) {#if ninethSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (269:3) {#if fifthSetup}
+    // (267:3) {#if fifthSetup}
     function create_if_block_1$7(ctx) {
     	let a;
 
@@ -15766,7 +15747,7 @@ var app = (function () {
     			attr_dev(a, "href", "https://deadwhitemansclothes.org/intro");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-1x9g4so");
-    			add_location(a, file$9, 268, 19, 8301);
+    			add_location(a, file$9, 266, 19, 8273);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -15780,14 +15761,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$7.name,
     		type: "if",
-    		source: "(269:3) {#if fifthSetup}",
+    		source: "(267:3) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (270:3) {#if sixthSetup}
+    // (268:3) {#if sixthSetup}
     function create_if_block$7(ctx) {
     	let a0;
     	let t1;
@@ -15803,11 +15784,11 @@ var app = (function () {
     			attr_dev(a0, "href", "https://www.instagram.com/p/B5VfzzlhmOv/");
     			attr_dev(a0, "target", "_blank");
     			attr_dev(a0, "class", "svelte-1x9g4so");
-    			add_location(a0, file$9, 269, 19, 8409);
+    			add_location(a0, file$9, 267, 19, 8381);
     			attr_dev(a1, "href", "https://www.instagram.com/tv/B-Sltgypx7O/");
     			attr_dev(a1, "target", "_blank");
     			attr_dev(a1, "class", "svelte-1x9g4so");
-    			add_location(a1, file$9, 269, 105, 8495);
+    			add_location(a1, file$9, 267, 105, 8467);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a0, anchor);
@@ -15825,7 +15806,7 @@ var app = (function () {
     		block,
     		id: create_if_block$7.name,
     		type: "if",
-    		source: "(270:3) {#if sixthSetup}",
+    		source: "(268:3) {#if sixthSetup}",
     		ctx
     	});
 
@@ -15977,22 +15958,22 @@ var app = (function () {
     			div4 = element("div");
     			attr_dev(div0, "class", "pagetitle");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[1] + ")");
-    			add_location(div0, file$9, 113, 0, 2649);
+    			add_location(div0, file$9, 115, 0, 2690);
     			attr_dev(div1, "class", "bottomLineText text svelte-1x9g4so");
     			set_style(div1, "text-align", "right");
-    			add_location(div1, file$9, 267, 2, 8221);
+    			add_location(div1, file$9, 265, 2, 8193);
     			attr_dev(div2, "class", "text bottomLine svelte-1x9g4so");
-    			add_location(div2, file$9, 266, 0, 8189);
+    			add_location(div2, file$9, 264, 0, 8161);
     			attr_dev(div3, "class", "horizontalLine left svelte-1x9g4so");
     			set_style(div3, "width", "100%");
     			set_style(div3, "top", "calc(" + /*distanceBLines*/ ctx[13] + " * 8)");
     			set_style(div3, "border-top", "1px solid blue");
-    			add_location(div3, file$9, 274, 0, 8605);
+    			add_location(div3, file$9, 272, 0, 8577);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[1] + "))");
-    			add_location(div4, file$9, 278, 1, 8770);
+    			add_location(div4, file$9, 276, 1, 8742);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$9, 277, 0, 8729);
+    			add_location(div5, file$9, 275, 0, 8701);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -16277,9 +16258,7 @@ var app = (function () {
     			}
 
     			if (/*seventhSetup*/ ctx[10]) {
-    				if (if_block17) {
-    					if_block17.p(ctx, dirty);
-    				} else {
+    				if (if_block17) ; else {
     					if_block17 = create_if_block_10$6(ctx);
     					if_block17.c();
     					if_block17.m(t19.parentNode, t19);
@@ -16468,18 +16447,20 @@ var app = (function () {
     	};
 
     	const toggleseventhSetup = () => {
-    		$$invalidate(9, sixthSetup = false);
+    		$$invalidate(9, sixthSetup = true);
     		$$invalidate(10, seventhSetup = true);
     		$$invalidate(11, eightthSetup = false);
     	};
 
     	const toggleeighthSetup = () => {
+    		$$invalidate(9, sixthSetup = true);
     		$$invalidate(10, seventhSetup = false);
     		$$invalidate(11, eightthSetup = true);
     		$$invalidate(12, ninethSetup = false);
     	};
 
     	const toggleninethSetup = () => {
+    		$$invalidate(9, sixthSetup = true);
     		$$invalidate(11, eightthSetup = false);
     		$$invalidate(12, ninethSetup = true);
     	};
@@ -26293,11 +26274,11 @@ var app = (function () {
     			div2.textContent = "2020";
     			attr_dev(div0, "class", "pagetext svelte-hdpz2q");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div0, file$e, 84, 1, 1941);
+    			add_location(div0, file$e, 84, 1, 1923);
     			attr_dev(div1, "class", "horizontalLine left line0 svelte-hdpz2q");
-    			add_location(div1, file$e, 88, 1, 2424);
+    			add_location(div1, file$e, 88, 1, 2406);
     			attr_dev(div2, "class", "text years left line0 now svelte-hdpz2q");
-    			add_location(div2, file$e, 89, 1, 2471);
+    			add_location(div2, file$e, 89, 1, 2453);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -26343,7 +26324,7 @@ var app = (function () {
     			t = text("This focus on securing borders and keeping people out has become a trend in European and U.S. politics at a time when more people than ever are forcibly displaced, many of which due to factors amplified by climate change, such as food insecurity, droughts, flooding, etc.. (all factors which can also lead to conflict that forces people to migrate)");
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$e, 97, 1, 2676);
+    			add_location(div, file$e, 97, 1, 2658);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26410,22 +26391,22 @@ var app = (function () {
     			t9 = space();
     			div6 = element("div");
     			div6.textContent = "2020";
-    			add_location(br, file$e, 105, 2, 3682);
+    			add_location(br, file$e, 105, 2, 3664);
     			attr_dev(div0, "class", "pagetext svelte-hdpz2q");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div0, file$e, 103, 1, 3228);
+    			add_location(div0, file$e, 103, 1, 3210);
     			attr_dev(div1, "class", "horizontalLine left line13 svelte-hdpz2q");
-    			add_location(div1, file$e, 109, 1, 3829);
+    			add_location(div1, file$e, 109, 1, 3811);
     			attr_dev(div2, "class", "text years left line13 svelte-hdpz2q");
-    			add_location(div2, file$e, 110, 1, 3877);
+    			add_location(div2, file$e, 110, 1, 3859);
     			attr_dev(div3, "class", "horizontalLine left line10 svelte-hdpz2q");
-    			add_location(div3, file$e, 111, 1, 3925);
+    			add_location(div3, file$e, 111, 1, 3907);
     			attr_dev(div4, "class", "text years left line10 svelte-hdpz2q");
-    			add_location(div4, file$e, 112, 1, 3973);
+    			add_location(div4, file$e, 112, 1, 3955);
     			attr_dev(div5, "class", "horizontalLine left line0 svelte-hdpz2q");
-    			add_location(div5, file$e, 114, 1, 4022);
+    			add_location(div5, file$e, 114, 1, 4004);
     			attr_dev(div6, "class", "text years left line0 now svelte-hdpz2q");
-    			add_location(div6, file$e, 115, 1, 4069);
+    			add_location(div6, file$e, 115, 1, 4051);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -26490,9 +26471,9 @@ var app = (function () {
     			t = space();
     			div1 = element("div");
     			attr_dev(div0, "class", "line left line13 svelte-hdpz2q");
-    			add_location(div0, file$e, 122, 2, 4181);
+    			add_location(div0, file$e, 122, 2, 4163);
     			attr_dev(div1, "class", "line left line10 svelte-hdpz2q");
-    			add_location(div1, file$e, 123, 2, 4220);
+    			add_location(div1, file$e, 123, 2, 4202);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -26567,11 +26548,11 @@ var app = (function () {
     			div2.textContent = "2030";
     			attr_dev(div0, "class", "pagetext svelte-hdpz2q");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div0, file$e, 128, 1, 4290);
+    			add_location(div0, file$e, 128, 1, 4272);
     			attr_dev(div1, "class", "horizontalLine left line10 svelte-hdpz2q");
-    			add_location(div1, file$e, 132, 1, 4663);
+    			add_location(div1, file$e, 132, 1, 4645);
     			attr_dev(div2, "class", "text years right line10 svelte-hdpz2q");
-    			add_location(div2, file$e, 133, 1, 4711);
+    			add_location(div2, file$e, 133, 1, 4693);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -26614,7 +26595,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "line right line10 svelte-hdpz2q");
-    			add_location(div, file$e, 142, 3, 4851);
+    			add_location(div, file$e, 142, 3, 4833);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26700,11 +26681,11 @@ var app = (function () {
     			div2.textContent = "2050";
     			attr_dev(div0, "class", "pagetext svelte-hdpz2q");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div0, file$e, 148, 1, 4929);
+    			add_location(div0, file$e, 148, 1, 4911);
     			attr_dev(div1, "class", "horizontalLine left line40 svelte-hdpz2q");
-    			add_location(div1, file$e, 152, 1, 5270);
+    			add_location(div1, file$e, 152, 1, 5252);
     			attr_dev(div2, "class", "text years right line40 svelte-hdpz2q");
-    			add_location(div2, file$e, 153, 1, 5318);
+    			add_location(div2, file$e, 153, 1, 5300);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div0, anchor);
@@ -26747,7 +26728,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			attr_dev(div, "class", "line right line40 svelte-hdpz2q");
-    			add_location(div, file$e, 164, 4, 5491);
+    			add_location(div, file$e, 164, 4, 5473);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26842,10 +26823,10 @@ var app = (function () {
     			sub = element("sub");
     			sub.textContent = "2";
     			t2 = text(" emitting countries that take a very active part in fueling the crisis... like Iceland.");
-    			add_location(sub, file$e, 172, 343, 5981);
+    			add_location(sub, file$e, 172, 343, 5963);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$e, 171, 1, 5578);
+    			add_location(div, file$e, 171, 1, 5560);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -26885,7 +26866,7 @@ var app = (function () {
     			attr_dev(a, "class", "text svelte-hdpz2q");
     			attr_dev(a, "href", "https://www.weforum.org/agenda/2019/10/importance-of-disaster-risk-reduction/");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$e, 184, 19, 6239);
+    			add_location(a, file$e, 184, 19, 6221);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -26915,15 +26896,13 @@ var app = (function () {
     	let t5;
     	let div0;
     	let t6;
-    	let br0;
     	let t7;
-    	let br1;
     	let t8;
-    	let t9;
-    	let t10;
     	let div1;
-    	let t11;
+    	let t9;
     	let div2;
+    	let t10;
+    	let t11;
     	let t12;
     	let t13;
     	let t14;
@@ -26931,13 +26910,11 @@ var app = (function () {
     	let t16;
     	let t17;
     	let t18;
-    	let t19;
-    	let t20;
     	let div4;
     	let div3;
-    	let t21;
+    	let t19;
     	let div5;
-    	let t22;
+    	let t20;
     	let div7;
     	let div6;
     	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_21$7(ctx);
@@ -26999,66 +26976,60 @@ var app = (function () {
     			if (if_block5) if_block5.c();
     			t5 = space();
     			div0 = element("div");
-    			t6 = text("Environmental");
-    			br0 = element("br");
-    			t7 = text("Justice:");
-    			br1 = element("br");
-    			t8 = text("I");
-    			t9 = space();
+    			t6 = text("Displacement");
+    			t7 = space();
     			if (if_block6) if_block6.c();
-    			t10 = space();
+    			t8 = space();
     			div1 = element("div");
-    			t11 = space();
+    			t9 = space();
     			div2 = element("div");
-    			t12 = space();
+    			t10 = space();
     			if (if_block7) if_block7.c();
-    			t13 = space();
+    			t11 = space();
     			if (if_block8) if_block8.c();
-    			t14 = space();
+    			t12 = space();
     			if_block9.c();
-    			t15 = space();
+    			t13 = space();
     			if (if_block10) if_block10.c();
-    			t16 = space();
+    			t14 = space();
     			if_block11.c();
-    			t17 = space();
+    			t15 = space();
     			if (if_block12) if_block12.c();
-    			t18 = space();
+    			t16 = space();
     			if_block13.c();
-    			t19 = space();
+    			t17 = space();
     			if (if_block14) if_block14.c();
-    			t20 = space();
+    			t18 = space();
     			div4 = element("div");
     			div3 = element("div");
     			if (if_block15) if_block15.c();
-    			t21 = space();
+    			t19 = space();
     			div5 = element("div");
-    			t22 = space();
+    			t20 = space();
     			div7 = element("div");
     			div6 = element("div");
-    			add_location(br0, file$e, 81, 73, 1898);
-    			add_location(br1, file$e, 81, 85, 1910);
     			attr_dev(div0, "class", "pagetitle");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div0, file$e, 81, 0, 1825);
     			attr_dev(div1, "class", "line left line0 svelte-hdpz2q");
-    			add_location(div1, file$e, 93, 0, 2583);
+    			add_location(div1, file$e, 93, 0, 2565);
     			attr_dev(div2, "class", "line right line0 svelte-hdpz2q");
-    			add_location(div2, file$e, 94, 0, 2619);
+    			add_location(div2, file$e, 94, 0, 2601);
     			attr_dev(div3, "class", "bottomLineText text svelte-hdpz2q");
     			set_style(div3, "text-align", "right");
-    			add_location(div3, file$e, 183, 2, 6159);
+    			add_location(div3, file$e, 183, 2, 6141);
     			attr_dev(div4, "class", "text bottomLine svelte-hdpz2q");
-    			add_location(div4, file$e, 182, 0, 6127);
+    			add_location(div4, file$e, 182, 0, 6109);
     			attr_dev(div5, "class", "horizontalLine left svelte-hdpz2q");
     			set_style(div5, "width", "100%");
     			set_style(div5, "top", "calc(" + /*distanceBLines*/ ctx[9] + " * 8)");
     			set_style(div5, "border-top", "1px solid blue");
-    			add_location(div5, file$e, 189, 0, 6534);
+    			add_location(div5, file$e, 189, 0, 6516);
     			attr_dev(div6, "class", "progressline");
     			set_style(div6, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
-    			add_location(div6, file$e, 192, 1, 6698);
+    			add_location(div6, file$e, 192, 1, 6680);
     			attr_dev(div7, "class", "activedotnew activedotFan");
-    			add_location(div7, file$e, 191, 0, 6657);
+    			add_location(div7, file$e, 191, 0, 6639);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -27078,39 +27049,35 @@ var app = (function () {
     			insert_dev(target, t5, anchor);
     			insert_dev(target, div0, anchor);
     			append_dev(div0, t6);
-    			append_dev(div0, br0);
-    			append_dev(div0, t7);
-    			append_dev(div0, br1);
-    			append_dev(div0, t8);
-    			insert_dev(target, t9, anchor);
+    			insert_dev(target, t7, anchor);
     			if (if_block6) if_block6.m(target, anchor);
-    			insert_dev(target, t10, anchor);
+    			insert_dev(target, t8, anchor);
     			insert_dev(target, div1, anchor);
-    			insert_dev(target, t11, anchor);
+    			insert_dev(target, t9, anchor);
     			insert_dev(target, div2, anchor);
-    			insert_dev(target, t12, anchor);
+    			insert_dev(target, t10, anchor);
     			if (if_block7) if_block7.m(target, anchor);
-    			insert_dev(target, t13, anchor);
+    			insert_dev(target, t11, anchor);
     			if (if_block8) if_block8.m(target, anchor);
-    			insert_dev(target, t14, anchor);
+    			insert_dev(target, t12, anchor);
     			if_block9.m(target, anchor);
-    			insert_dev(target, t15, anchor);
+    			insert_dev(target, t13, anchor);
     			if (if_block10) if_block10.m(target, anchor);
-    			insert_dev(target, t16, anchor);
+    			insert_dev(target, t14, anchor);
     			if_block11.m(target, anchor);
-    			insert_dev(target, t17, anchor);
+    			insert_dev(target, t15, anchor);
     			if (if_block12) if_block12.m(target, anchor);
-    			insert_dev(target, t18, anchor);
+    			insert_dev(target, t16, anchor);
     			if_block13.m(target, anchor);
-    			insert_dev(target, t19, anchor);
+    			insert_dev(target, t17, anchor);
     			if (if_block14) if_block14.m(target, anchor);
-    			insert_dev(target, t20, anchor);
+    			insert_dev(target, t18, anchor);
     			insert_dev(target, div4, anchor);
     			append_dev(div4, div3);
     			if (if_block15) if_block15.m(div3, null);
-    			insert_dev(target, t21, anchor);
+    			insert_dev(target, t19, anchor);
     			insert_dev(target, div5, anchor);
-    			insert_dev(target, t22, anchor);
+    			insert_dev(target, t20, anchor);
     			insert_dev(target, div7, anchor);
     			append_dev(div7, div6);
     		},
@@ -27203,7 +27170,7 @@ var app = (function () {
     				} else {
     					if_block6 = create_if_block_15$a(ctx);
     					if_block6.c();
-    					if_block6.m(t10.parentNode, t10);
+    					if_block6.m(t8.parentNode, t8);
     				}
     			} else if (if_block6) {
     				if_block6.d(1);
@@ -27216,7 +27183,7 @@ var app = (function () {
     				} else {
     					if_block7 = create_if_block_14$a(ctx);
     					if_block7.c();
-    					if_block7.m(t13.parentNode, t13);
+    					if_block7.m(t11.parentNode, t11);
     				}
     			} else if (if_block7) {
     				if_block7.d(1);
@@ -27229,7 +27196,7 @@ var app = (function () {
     				} else {
     					if_block8 = create_if_block_13$b(ctx);
     					if_block8.c();
-    					if_block8.m(t14.parentNode, t14);
+    					if_block8.m(t12.parentNode, t12);
     				}
     			} else if (if_block8) {
     				if_block8.d(1);
@@ -27242,7 +27209,7 @@ var app = (function () {
 
     				if (if_block9) {
     					if_block9.c();
-    					if_block9.m(t15.parentNode, t15);
+    					if_block9.m(t13.parentNode, t13);
     				}
     			}
 
@@ -27252,7 +27219,7 @@ var app = (function () {
     				} else {
     					if_block10 = create_if_block_10$b(ctx);
     					if_block10.c();
-    					if_block10.m(t16.parentNode, t16);
+    					if_block10.m(t14.parentNode, t14);
     				}
     			} else if (if_block10) {
     				if_block10.d(1);
@@ -27265,7 +27232,7 @@ var app = (function () {
 
     				if (if_block11) {
     					if_block11.c();
-    					if_block11.m(t17.parentNode, t17);
+    					if_block11.m(t15.parentNode, t15);
     				}
     			}
 
@@ -27275,7 +27242,7 @@ var app = (function () {
     				} else {
     					if_block12 = create_if_block_6$c(ctx);
     					if_block12.c();
-    					if_block12.m(t18.parentNode, t18);
+    					if_block12.m(t16.parentNode, t16);
     				}
     			} else if (if_block12) {
     				if_block12.d(1);
@@ -27288,7 +27255,7 @@ var app = (function () {
 
     				if (if_block13) {
     					if_block13.c();
-    					if_block13.m(t19.parentNode, t19);
+    					if_block13.m(t17.parentNode, t17);
     				}
     			}
 
@@ -27298,7 +27265,7 @@ var app = (function () {
     				} else {
     					if_block14 = create_if_block_1$c(ctx);
     					if_block14.c();
-    					if_block14.m(t20.parentNode, t20);
+    					if_block14.m(t18.parentNode, t18);
     				}
     			} else if (if_block14) {
     				if_block14.d(1);
@@ -27336,34 +27303,34 @@ var app = (function () {
     			if (if_block5) if_block5.d(detaching);
     			if (detaching) detach_dev(t5);
     			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t9);
+    			if (detaching) detach_dev(t7);
     			if (if_block6) if_block6.d(detaching);
-    			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(t8);
     			if (detaching) detach_dev(div1);
-    			if (detaching) detach_dev(t11);
+    			if (detaching) detach_dev(t9);
     			if (detaching) detach_dev(div2);
-    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(t10);
     			if (if_block7) if_block7.d(detaching);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t11);
     			if (if_block8) if_block8.d(detaching);
-    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(t12);
     			if_block9.d(detaching);
-    			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(t13);
     			if (if_block10) if_block10.d(detaching);
-    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(t14);
     			if_block11.d(detaching);
-    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(t15);
     			if (if_block12) if_block12.d(detaching);
-    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(t16);
     			if_block13.d(detaching);
-    			if (detaching) detach_dev(t19);
+    			if (detaching) detach_dev(t17);
     			if (if_block14) if_block14.d(detaching);
-    			if (detaching) detach_dev(t20);
+    			if (detaching) detach_dev(t18);
     			if (detaching) detach_dev(div4);
     			if (if_block15) if_block15.d();
-    			if (detaching) detach_dev(t21);
+    			if (detaching) detach_dev(t19);
     			if (detaching) detach_dev(div5);
-    			if (detaching) detach_dev(t22);
+    			if (detaching) detach_dev(t20);
     			if (detaching) detach_dev(div7);
     		}
     	};
@@ -28010,25 +27977,32 @@ var app = (function () {
     function create_if_block_9$d(ctx) {
     	let div;
     	let t0;
-    	let br;
+    	let br0;
     	let t1;
+    	let br1;
+    	let t2;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			t0 = text("1. Care");
-    			br = element("br");
-    			t1 = text("\n\t\tCare:\n\t\t- In order to love, we must care.\n\t\t- We must practice empathy, to notice how other people feel and how systems affect them, how our own habits/consumption/politics affect them -- and care.\n\t\t- bell wrote of care as being an integral part of love, however, care alone does not constitute love. An abusive parent can care for their child, but abuse and love can not coexist -- abusive pathological love is not love and love cannot excuse abuse. [the action of abuse is counterproductive to the action of love.] (and codependency is not love, garment workers are codependent on us?)\n\t\t- To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional.");
-    			add_location(br, file$f, 104, 9, 2558);
+    			t0 = text("CARE");
+    			br0 = element("br");
+    			t1 = text("\n\t\tIn order to love, we must care.");
+    			br1 = element("br");
+    			t2 = text("\n\t\tBut care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse abuse.");
+    			add_location(br0, file$f, 104, 6, 2541);
+    			add_location(br1, file$f, 105, 33, 2579);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 103, 1, 2489);
+    			add_location(div, file$f, 103, 1, 2475);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
     			append_dev(div, t0);
-    			append_dev(div, br);
+    			append_dev(div, br0);
     			append_dev(div, t1);
+    			append_dev(div, br1);
+    			append_dev(div, t2);
     		},
     		p: function update(ctx, dirty) {
     			if (dirty & /*rotate*/ 1) {
@@ -28051,7 +28025,7 @@ var app = (function () {
     	return block;
     }
 
-    // (114:0) {#if secondSetup}
+    // (111:0) {#if secondSetup}
     function create_if_block_8$d(ctx) {
     	let div;
     	let t0;
@@ -28068,11 +28042,11 @@ var app = (function () {
     			t1 = text("\n\t\t- In order to love we must be eager and committed to abandoning or replacing abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether of yourself or another. Love is not for narcissistic but communal, “it requires conscious practice, a willingness to unite the way we think with the way we act.” \n \t\t");
     			br1 = element("br");
     			t2 = text("\n\t\t- *BONUS* garment workers in other countries (“only an estimated 2% of garment workers around the globe are paid a living wage.”");
-    			add_location(br0, file$f, 115, 16, 3411);
-    			add_location(br1, file$f, 117, 3, 3881);
+    			add_location(br0, file$f, 112, 16, 2887);
+    			add_location(br1, file$f, 114, 3, 3357);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 114, 1, 3335);
+    			add_location(div, file$f, 111, 1, 2811);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28096,14 +28070,14 @@ var app = (function () {
     		block,
     		id: create_if_block_8$d.name,
     		type: "if",
-    		source: "(114:0) {#if secondSetup}",
+    		source: "(111:0) {#if secondSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (123:0) {#if thirdSetup}
+    // (120:0) {#if thirdSetup}
     function create_if_block_7$d(ctx) {
     	let div;
     	let t0;
@@ -28124,12 +28098,12 @@ var app = (function () {
     			t2 = text("\n\t\tRepresentations of environmentalism in mass media is similarly under-developed, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is kids holding hands around a globe, then where does that lead us?");
     			br2 = element("br");
     			t3 = text("\n\t\tWhat valuable knowledge are we missing out on?");
-    			add_location(br0, file$f, 124, 15, 4185);
-    			add_location(br1, file$f, 125, 533, 4723);
-    			add_location(br2, file$f, 126, 356, 5084);
+    			add_location(br0, file$f, 121, 15, 3661);
+    			add_location(br1, file$f, 122, 533, 4199);
+    			add_location(br2, file$f, 123, 356, 4560);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 123, 1, 4110);
+    			add_location(div, file$f, 120, 1, 3586);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28155,14 +28129,14 @@ var app = (function () {
     		block,
     		id: create_if_block_7$d.name,
     		type: "if",
-    		source: "(123:0) {#if thirdSetup}",
+    		source: "(120:0) {#if thirdSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (133:0) {#if fourthSetup}
+    // (130:0) {#if fourthSetup}
     function create_if_block_6$d(ctx) {
     	let div;
     	let t0;
@@ -28179,11 +28153,11 @@ var app = (function () {
     			t1 = text("\n\t\tbell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable, that way lending love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its meaning.”\n\t\t");
     			br1 = element("br");
     			t2 = text("\n\t\tThis means that we can choose to love (although I’m not so sure we can choose to not love). Love or lack of love is an action, an actions with consequences. In a wider context -- as love exists in many forms and “sizes” -- when speaking of groups of people, we do not simply “not love” them, we choose to not love them. Whether we choose to love them or not love them, our choice has consequences, and we are responsible for those consequences. Love is not just a feeling that we cannot control, it is an intentional action.");
-    			add_location(br0, file$f, 134, 20, 5278);
-    			add_location(br1, file$f, 136, 2, 5608);
+    			add_location(br0, file$f, 131, 20, 4754);
+    			add_location(br1, file$f, 133, 2, 5084);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 133, 1, 5198);
+    			add_location(div, file$f, 130, 1, 4674);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28207,14 +28181,14 @@ var app = (function () {
     		block,
     		id: create_if_block_6$d.name,
     		type: "if",
-    		source: "(133:0) {#if fourthSetup}",
+    		source: "(130:0) {#if fourthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (142:0) {#if fifthSetup}
+    // (139:0) {#if fifthSetup}
     function create_if_block_5$d(ctx) {
     	let div;
 
@@ -28223,7 +28197,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 142, 1, 6174);
+    			add_location(div, file$f, 139, 1, 5650);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28242,14 +28216,14 @@ var app = (function () {
     		block,
     		id: create_if_block_5$d.name,
     		type: "if",
-    		source: "(142:0) {#if fifthSetup}",
+    		source: "(139:0) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (148:0) {#if sixthSetup}
+    // (145:0) {#if sixthSetup}
     function create_if_block_4$d(ctx) {
     	let div;
     	let t0;
@@ -28270,12 +28244,12 @@ var app = (function () {
     			t2 = text("\n\t\tTo love is to trust that the other will not harm us, that difference is not destructive. To not overpolice and exlude on the basis of fear.");
     			br2 = element("br");
     			t3 = text("\n\t\t“Awakening to love can happen only as we let go of our obsession with power and domination.”");
-    			add_location(br0, file$f, 150, 2, 6364);
-    			add_location(br1, file$f, 152, 2, 7107);
-    			add_location(br2, file$f, 153, 141, 7253);
+    			add_location(br0, file$f, 147, 2, 5840);
+    			add_location(br1, file$f, 149, 2, 6583);
+    			add_location(br2, file$f, 150, 141, 6729);
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 148, 1, 6270);
+    			add_location(div, file$f, 145, 1, 5746);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28301,14 +28275,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$d.name,
     		type: "if",
-    		source: "(148:0) {#if sixthSetup}",
+    		source: "(145:0) {#if sixthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (159:0) {#if seventhSetup}
+    // (156:0) {#if seventhSetup}
     function create_if_block_3$d(ctx) {
     	let div;
 
@@ -28317,7 +28291,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 159, 1, 7389);
+    			add_location(div, file$f, 156, 1, 6865);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28336,14 +28310,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$d.name,
     		type: "if",
-    		source: "(159:0) {#if seventhSetup}",
+    		source: "(156:0) {#if seventhSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (165:0) {#if eightthSetup}
+    // (162:0) {#if eightthSetup}
     function create_if_block_2$d(ctx) {
     	let div;
 
@@ -28352,7 +28326,7 @@ var app = (function () {
     			div = element("div");
     			attr_dev(div, "class", "pagetext svelte-hdpz2q");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
-    			add_location(div, file$f, 165, 1, 7487);
+    			add_location(div, file$f, 162, 1, 6963);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -28371,14 +28345,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$d.name,
     		type: "if",
-    		source: "(165:0) {#if eightthSetup}",
+    		source: "(162:0) {#if eightthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (178:3) {#if fifthSetup}
+    // (175:3) {#if fifthSetup}
     function create_if_block_1$d(ctx) {
     	let a;
 
@@ -28389,7 +28363,7 @@ var app = (function () {
     			attr_dev(a, "class", "text svelte-hdpz2q");
     			attr_dev(a, "href", "");
     			attr_dev(a, "target", "_blank");
-    			add_location(a, file$f, 177, 19, 7706);
+    			add_location(a, file$f, 174, 19, 7182);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a, anchor);
@@ -28403,14 +28377,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$d.name,
     		type: "if",
-    		source: "(178:3) {#if fifthSetup}",
+    		source: "(175:3) {#if fifthSetup}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (179:3) {#if sixthSetup}
+    // (176:3) {#if sixthSetup}
     function create_if_block$d(ctx) {
     	let a1;
     	let t0;
@@ -28425,11 +28399,11 @@ var app = (function () {
     			attr_dev(a0, "href", "");
     			attr_dev(a0, "target", "_blank");
     			attr_dev(a0, "class", "svelte-hdpz2q");
-    			add_location(a0, file$f, 178, 74, 7844);
+    			add_location(a0, file$f, 175, 74, 7320);
     			attr_dev(a1, "class", "text svelte-hdpz2q");
     			attr_dev(a1, "href", "");
     			attr_dev(a1, "target", "_blank");
-    			add_location(a1, file$f, 178, 19, 7789);
+    			add_location(a1, file$f, 175, 19, 7265);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, a1, anchor);
@@ -28445,7 +28419,7 @@ var app = (function () {
     		block,
     		id: create_if_block$d.name,
     		type: "if",
-    		source: "(179:3) {#if sixthSetup}",
+    		source: "(176:3) {#if sixthSetup}",
     		ctx
     	});
 
@@ -28467,7 +28441,6 @@ var app = (function () {
     	let t9;
     	let br1;
     	let t10;
-    	let br2;
     	let t11;
     	let t12;
     	let t13;
@@ -28477,13 +28450,12 @@ var app = (function () {
     	let t17;
     	let t18;
     	let t19;
-    	let t20;
     	let div2;
     	let div1;
+    	let t20;
     	let t21;
-    	let t22;
     	let div3;
-    	let t23;
+    	let t22;
     	let div5;
     	let div4;
     	let if_block0 = /*firstSetup*/ ctx[3] && create_if_block_17$b(ctx);
@@ -28524,61 +28496,58 @@ var app = (function () {
     			if (if_block7) if_block7.c();
     			t7 = space();
     			div0 = element("div");
-    			t8 = text("Environ-");
+    			t8 = text("Radical");
     			br0 = element("br");
-    			t9 = text("mental");
+    			t9 = text("love");
     			br1 = element("br");
-    			t10 = text("Justice:");
-    			br2 = element("br");
-    			t11 = text("II");
-    			t12 = space();
+    			t10 = text("...");
+    			t11 = space();
     			if (if_block8) if_block8.c();
-    			t13 = space();
+    			t12 = space();
     			if (if_block9) if_block9.c();
-    			t14 = space();
+    			t13 = space();
     			if (if_block10) if_block10.c();
-    			t15 = space();
+    			t14 = space();
     			if (if_block11) if_block11.c();
-    			t16 = space();
+    			t15 = space();
     			if (if_block12) if_block12.c();
-    			t17 = space();
+    			t16 = space();
     			if (if_block13) if_block13.c();
-    			t18 = space();
+    			t17 = space();
     			if (if_block14) if_block14.c();
-    			t19 = space();
+    			t18 = space();
     			if (if_block15) if_block15.c();
-    			t20 = space();
+    			t19 = space();
     			div2 = element("div");
     			div1 = element("div");
     			if (if_block16) if_block16.c();
-    			t21 = space();
+    			t20 = space();
     			if (if_block17) if_block17.c();
-    			t22 = space();
+    			t21 = space();
     			div3 = element("div");
-    			t23 = space();
+    			t22 = space();
     			div5 = element("div");
     			div4 = element("div");
-    			add_location(br0, file$f, 100, 68, 2435);
-    			add_location(br1, file$f, 100, 78, 2445);
-    			add_location(br2, file$f, 100, 90, 2457);
+    			add_location(br0, file$f, 100, 67, 2434);
+    			add_location(br1, file$f, 100, 75, 2442);
     			attr_dev(div0, "class", "pagetitle");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div0, file$f, 100, 0, 2367);
     			attr_dev(div1, "class", "bottomLineText text svelte-hdpz2q");
     			set_style(div1, "text-align", "right");
-    			add_location(div1, file$f, 176, 2, 7626);
+    			add_location(div1, file$f, 173, 2, 7102);
     			attr_dev(div2, "class", "text bottomLine svelte-hdpz2q");
-    			add_location(div2, file$f, 175, 0, 7594);
+    			add_location(div2, file$f, 172, 0, 7070);
     			attr_dev(div3, "class", "horizontalLine left svelte-hdpz2q");
     			set_style(div3, "width", "100%");
     			set_style(div3, "top", "calc(" + /*distanceBLines*/ ctx[11] + " * 8)");
     			set_style(div3, "border-top", "1px solid blue");
-    			add_location(div3, file$f, 182, 0, 7917);
+    			add_location(div3, file$f, 179, 0, 7393);
     			attr_dev(div4, "class", "progressline");
     			set_style(div4, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
-    			add_location(div4, file$f, 185, 1, 8081);
+    			add_location(div4, file$f, 182, 1, 7557);
     			attr_dev(div5, "class", "activedotnew activedotFan");
-    			add_location(div5, file$f, 184, 0, 8040);
+    			add_location(div5, file$f, 181, 0, 7516);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -28606,33 +28575,31 @@ var app = (function () {
     			append_dev(div0, t9);
     			append_dev(div0, br1);
     			append_dev(div0, t10);
-    			append_dev(div0, br2);
-    			append_dev(div0, t11);
-    			insert_dev(target, t12, anchor);
+    			insert_dev(target, t11, anchor);
     			if (if_block8) if_block8.m(target, anchor);
-    			insert_dev(target, t13, anchor);
+    			insert_dev(target, t12, anchor);
     			if (if_block9) if_block9.m(target, anchor);
-    			insert_dev(target, t14, anchor);
+    			insert_dev(target, t13, anchor);
     			if (if_block10) if_block10.m(target, anchor);
-    			insert_dev(target, t15, anchor);
+    			insert_dev(target, t14, anchor);
     			if (if_block11) if_block11.m(target, anchor);
-    			insert_dev(target, t16, anchor);
+    			insert_dev(target, t15, anchor);
     			if (if_block12) if_block12.m(target, anchor);
-    			insert_dev(target, t17, anchor);
+    			insert_dev(target, t16, anchor);
     			if (if_block13) if_block13.m(target, anchor);
-    			insert_dev(target, t18, anchor);
+    			insert_dev(target, t17, anchor);
     			if (if_block14) if_block14.m(target, anchor);
-    			insert_dev(target, t19, anchor);
+    			insert_dev(target, t18, anchor);
     			if (if_block15) if_block15.m(target, anchor);
-    			insert_dev(target, t20, anchor);
+    			insert_dev(target, t19, anchor);
     			insert_dev(target, div2, anchor);
     			append_dev(div2, div1);
     			if (if_block16) if_block16.m(div1, null);
-    			append_dev(div1, t21);
+    			append_dev(div1, t20);
     			if (if_block17) if_block17.m(div1, null);
-    			insert_dev(target, t22, anchor);
+    			insert_dev(target, t21, anchor);
     			insert_dev(target, div3, anchor);
-    			insert_dev(target, t23, anchor);
+    			insert_dev(target, t22, anchor);
     			insert_dev(target, div5, anchor);
     			append_dev(div5, div4);
     		},
@@ -28751,7 +28718,7 @@ var app = (function () {
     				} else {
     					if_block8 = create_if_block_9$d(ctx);
     					if_block8.c();
-    					if_block8.m(t13.parentNode, t13);
+    					if_block8.m(t12.parentNode, t12);
     				}
     			} else if (if_block8) {
     				if_block8.d(1);
@@ -28764,7 +28731,7 @@ var app = (function () {
     				} else {
     					if_block9 = create_if_block_8$d(ctx);
     					if_block9.c();
-    					if_block9.m(t14.parentNode, t14);
+    					if_block9.m(t13.parentNode, t13);
     				}
     			} else if (if_block9) {
     				if_block9.d(1);
@@ -28777,7 +28744,7 @@ var app = (function () {
     				} else {
     					if_block10 = create_if_block_7$d(ctx);
     					if_block10.c();
-    					if_block10.m(t15.parentNode, t15);
+    					if_block10.m(t14.parentNode, t14);
     				}
     			} else if (if_block10) {
     				if_block10.d(1);
@@ -28790,7 +28757,7 @@ var app = (function () {
     				} else {
     					if_block11 = create_if_block_6$d(ctx);
     					if_block11.c();
-    					if_block11.m(t16.parentNode, t16);
+    					if_block11.m(t15.parentNode, t15);
     				}
     			} else if (if_block11) {
     				if_block11.d(1);
@@ -28803,7 +28770,7 @@ var app = (function () {
     				} else {
     					if_block12 = create_if_block_5$d(ctx);
     					if_block12.c();
-    					if_block12.m(t17.parentNode, t17);
+    					if_block12.m(t16.parentNode, t16);
     				}
     			} else if (if_block12) {
     				if_block12.d(1);
@@ -28816,7 +28783,7 @@ var app = (function () {
     				} else {
     					if_block13 = create_if_block_4$d(ctx);
     					if_block13.c();
-    					if_block13.m(t18.parentNode, t18);
+    					if_block13.m(t17.parentNode, t17);
     				}
     			} else if (if_block13) {
     				if_block13.d(1);
@@ -28829,7 +28796,7 @@ var app = (function () {
     				} else {
     					if_block14 = create_if_block_3$d(ctx);
     					if_block14.c();
-    					if_block14.m(t19.parentNode, t19);
+    					if_block14.m(t18.parentNode, t18);
     				}
     			} else if (if_block14) {
     				if_block14.d(1);
@@ -28842,7 +28809,7 @@ var app = (function () {
     				} else {
     					if_block15 = create_if_block_2$d(ctx);
     					if_block15.c();
-    					if_block15.m(t20.parentNode, t20);
+    					if_block15.m(t19.parentNode, t19);
     				}
     			} else if (if_block15) {
     				if_block15.d(1);
@@ -28853,7 +28820,7 @@ var app = (function () {
     				if (if_block16) ; else {
     					if_block16 = create_if_block_1$d(ctx);
     					if_block16.c();
-    					if_block16.m(div1, t21);
+    					if_block16.m(div1, t20);
     				}
     			} else if (if_block16) {
     				if_block16.d(1);
@@ -28895,29 +28862,29 @@ var app = (function () {
     			if (if_block7) if_block7.d(detaching);
     			if (detaching) detach_dev(t7);
     			if (detaching) detach_dev(div0);
-    			if (detaching) detach_dev(t12);
+    			if (detaching) detach_dev(t11);
     			if (if_block8) if_block8.d(detaching);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t12);
     			if (if_block9) if_block9.d(detaching);
-    			if (detaching) detach_dev(t14);
+    			if (detaching) detach_dev(t13);
     			if (if_block10) if_block10.d(detaching);
-    			if (detaching) detach_dev(t15);
+    			if (detaching) detach_dev(t14);
     			if (if_block11) if_block11.d(detaching);
-    			if (detaching) detach_dev(t16);
+    			if (detaching) detach_dev(t15);
     			if (if_block12) if_block12.d(detaching);
-    			if (detaching) detach_dev(t17);
+    			if (detaching) detach_dev(t16);
     			if (if_block13) if_block13.d(detaching);
-    			if (detaching) detach_dev(t18);
+    			if (detaching) detach_dev(t17);
     			if (if_block14) if_block14.d(detaching);
-    			if (detaching) detach_dev(t19);
+    			if (detaching) detach_dev(t18);
     			if (if_block15) if_block15.d(detaching);
-    			if (detaching) detach_dev(t20);
+    			if (detaching) detach_dev(t19);
     			if (detaching) detach_dev(div2);
     			if (if_block16) if_block16.d();
     			if (if_block17) if_block17.d();
-    			if (detaching) detach_dev(t22);
+    			if (detaching) detach_dev(t21);
     			if (detaching) detach_dev(div3);
-    			if (detaching) detach_dev(t23);
+    			if (detaching) detach_dev(t22);
     			if (detaching) detach_dev(div5);
     		}
     	};
@@ -30608,13 +30575,13 @@ var app = (function () {
     			set_style(div1, "right", /*marginSides*/ ctx[3]);
     			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[2] + " * 8)");
     			add_location(div1, file$i, 79, 2, 3894);
-    			add_location(sub, file$i, 82, 73, 4120);
+    			add_location(sub, file$i, 82, 74, 4121);
     			attr_dev(div2, "class", "pagetitle svelte-1mio7bf");
-    			set_style(div2, "transform", "rotate(90deg)");
+    			set_style(div2, "transform", "rotate(-90deg)");
     			add_location(div2, file$i, 82, 2, 4049);
     			attr_dev(img, "class", "coverfan");
     			if (img.src !== (img_src_value = "imgs/fan.jpg")) attr_dev(img, "src", img_src_value);
-    			add_location(img, file$i, 83, 2, 4141);
+    			add_location(img, file$i, 83, 2, 4142);
     			attr_dev(a, "href", "#front");
     			attr_dev(a, "class", "scrollToFront");
     			add_location(a, file$i, 75, 1, 3649);
@@ -30712,7 +30679,7 @@ var app = (function () {
 
     	const criticaldecadeiii = new CriticalDecadeIII({
     			props: {
-    				pagetitleText: "Critical Decade: III, Pledge",
+    				pagetitleText: "...is the policy of the Critical Decade: III, Pledge",
     				rotate: "90deg",
     				next: "#page2"
     			},
@@ -30721,7 +30688,7 @@ var app = (function () {
 
     	const environmentaljusticeii = new EnvironmentalJusticeII({
     			props: {
-    				pagetitleText: "Environmental Justice: II",
+    				pagetitleText: "Radical love...",
     				rotate: "78deg",
     				next: "#page3",
     				prev: "#page1"
@@ -30939,71 +30906,71 @@ var app = (function () {
     			t15 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(div0, "class", "content");
-    			add_location(div0, file$i, 96, 2, 4440);
+    			add_location(div0, file$i, 96, 2, 4441);
     			attr_dev(div1, "class", "overflowBreaker");
-    			add_location(div1, file$i, 95, 1, 4408);
+    			add_location(div1, file$i, 95, 1, 4409);
     			attr_dev(div2, "class", "content");
-    			add_location(div2, file$i, 99, 2, 4627);
+    			add_location(div2, file$i, 99, 2, 4652);
     			attr_dev(div3, "class", "overflowBreaker");
-    			add_location(div3, file$i, 98, 1, 4595);
+    			add_location(div3, file$i, 98, 1, 4620);
     			attr_dev(div4, "class", "content country");
-    			add_location(div4, file$i, 102, 2, 4835);
+    			add_location(div4, file$i, 102, 2, 4845);
     			attr_dev(div5, "class", "overflowBreaker");
-    			add_location(div5, file$i, 101, 1, 4803);
+    			add_location(div5, file$i, 101, 1, 4813);
     			attr_dev(div6, "class", "content country");
-    			add_location(div6, file$i, 105, 2, 4991);
+    			add_location(div6, file$i, 105, 2, 5001);
     			attr_dev(div7, "class", "overflowBreaker");
-    			add_location(div7, file$i, 104, 1, 4959);
+    			add_location(div7, file$i, 104, 1, 4969);
     			attr_dev(div8, "class", "content");
-    			add_location(div8, file$i, 108, 2, 5151);
+    			add_location(div8, file$i, 108, 2, 5161);
     			attr_dev(div9, "class", "overflowBreaker");
-    			add_location(div9, file$i, 107, 1, 5119);
+    			add_location(div9, file$i, 107, 1, 5129);
     			attr_dev(div10, "class", "content country");
-    			add_location(div10, file$i, 111, 2, 5354);
+    			add_location(div10, file$i, 111, 2, 5364);
     			attr_dev(div11, "class", "overflowBreaker");
-    			add_location(div11, file$i, 110, 1, 5322);
+    			add_location(div11, file$i, 110, 1, 5332);
     			attr_dev(div12, "class", "content country");
-    			add_location(div12, file$i, 114, 2, 5517);
+    			add_location(div12, file$i, 114, 2, 5527);
     			attr_dev(div13, "class", "overflowBreaker");
-    			add_location(div13, file$i, 113, 1, 5485);
+    			add_location(div13, file$i, 113, 1, 5495);
     			attr_dev(div14, "class", "content country");
-    			add_location(div14, file$i, 117, 2, 5674);
+    			add_location(div14, file$i, 117, 2, 5684);
     			attr_dev(div15, "class", "overflowBreaker");
-    			add_location(div15, file$i, 116, 1, 5642);
+    			add_location(div15, file$i, 116, 1, 5652);
     			attr_dev(div16, "class", "content");
-    			add_location(div16, file$i, 120, 2, 5849);
+    			add_location(div16, file$i, 120, 2, 5859);
     			attr_dev(div17, "class", "overflowBreaker");
-    			add_location(div17, file$i, 119, 1, 5817);
+    			add_location(div17, file$i, 119, 1, 5827);
     			attr_dev(div18, "class", "content country");
-    			add_location(div18, file$i, 123, 2, 6059);
+    			add_location(div18, file$i, 123, 2, 6069);
     			attr_dev(div19, "class", "overflowBreaker");
-    			add_location(div19, file$i, 122, 1, 6027);
+    			add_location(div19, file$i, 122, 1, 6037);
     			attr_dev(div20, "class", "content");
-    			add_location(div20, file$i, 126, 2, 6218);
+    			add_location(div20, file$i, 126, 2, 6228);
     			attr_dev(div21, "class", "overflowBreaker");
-    			add_location(div21, file$i, 125, 1, 6186);
+    			add_location(div21, file$i, 125, 1, 6196);
     			attr_dev(div22, "class", "content");
-    			add_location(div22, file$i, 129, 2, 6415);
+    			add_location(div22, file$i, 129, 2, 6425);
     			attr_dev(div23, "class", "overflowBreaker");
-    			add_location(div23, file$i, 128, 1, 6383);
+    			add_location(div23, file$i, 128, 1, 6393);
     			attr_dev(div24, "class", "content country");
-    			add_location(div24, file$i, 132, 2, 6609);
+    			add_location(div24, file$i, 132, 2, 6619);
     			attr_dev(div25, "class", "overflowBreaker");
-    			add_location(div25, file$i, 131, 1, 6577);
+    			add_location(div25, file$i, 131, 1, 6587);
     			attr_dev(div26, "class", "content country");
-    			add_location(div26, file$i, 135, 2, 6778);
+    			add_location(div26, file$i, 135, 2, 6788);
     			attr_dev(div27, "class", "overflowBreaker");
-    			add_location(div27, file$i, 134, 1, 6746);
+    			add_location(div27, file$i, 134, 1, 6756);
     			attr_dev(div28, "class", "content");
-    			add_location(div28, file$i, 138, 2, 6954);
+    			add_location(div28, file$i, 138, 2, 6964);
     			attr_dev(div29, "class", "overflowBreaker");
-    			add_location(div29, file$i, 137, 1, 6922);
+    			add_location(div29, file$i, 137, 1, 6932);
     			attr_dev(div30, "class", "content");
-    			add_location(div30, file$i, 141, 2, 7126);
+    			add_location(div30, file$i, 141, 2, 7136);
     			attr_dev(div31, "class", "overflowBreaker");
-    			add_location(div31, file$i, 140, 1, 7094);
+    			add_location(div31, file$i, 140, 1, 7104);
     			attr_dev(div32, "class", "newmain");
-    			add_location(div32, file$i, 88, 0, 4207);
+    			add_location(div32, file$i, 88, 0, 4208);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div32, anchor);
@@ -31265,8 +31232,8 @@ var app = (function () {
     function instance$i($$self, $$props, $$invalidate) {
     	let distanceBLines = "calc((95vh - 1px) / 9 * 1)";
     	let marginSides = "calc(100vw / 16)";
-    	let scrollToFront = false;
-    	let Main = true;
+    	let scrollToFront = true;
+    	let Main = false;
 
     	const toggleHide = () => {
     		$$invalidate(0, scrollToFront = false);

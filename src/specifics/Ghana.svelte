@@ -48,16 +48,18 @@
 		seventhSetup = false;
 	}
 	const toggleseventhSetup = () => {
-		sixthSetup = false;
+		sixthSetup = true;
 		seventhSetup = true;
 		eightthSetup = false;
 	}
 	const toggleeighthSetup = () => {
+		sixthSetup = true;
 		seventhSetup = false;
 		eightthSetup = true;
 		ninethSetup = false;
 	}
 	const toggleninethSetup = () => {
+		sixthSetup = true;
 		eightthSetup = false;
 		ninethSetup = true;
 	}
@@ -143,7 +145,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Ghana is the birthplace of Highlife, which is a certain type of guitar (dance) music. E.T. Mensah was the pioneer of highlife, and it is still going today through different styles.<!--(My personal favourite is Koo Nimo) + Gyedu-Blay Ambolley - Simi Rapp -->
+		Ghana is the birthplace of Highlife, which is a certain type of guitar (dance) music. E.T.&nbsp;Mensah was the pioneer of highlife, and it is still going today through different styles.<!--(My personal favourite is Koo Nimo) + Gyedu-Blay Ambolley - Simi Rapp -->
 	</div>	
 {/if}
 
@@ -172,15 +174,11 @@
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The clothing, which is sent from the U.S., Canada and Europe, is called ‘Obroni w’awu’ (dead white mans clothing), because Ghanians first assumed the owners were deseased. Kayayei, the women who carry the clothing &ndash; in heavy bales on their heads &ndash; from the harbour to the market earn around 30 cents to $1 for each trip and are considered slaves of the fashion industry.
+		The clothing, which is sent from the U.S., Canada and Europe, is called ‘Obroni w’awu’ (dead white mans clothing), because Ghanians first assumed the owners were deseased. Kayayei, the women who carry the clothing &ndash; in heavy bales on their heads &ndash; from the harbour to the market earn around 30 cents to $1 for each trip<!-- and are considered slaves of the fashion industry-->.
 	</div>	
 {/if}
 
 {#if seventhSetup}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		sfsdfsf
-	</div>	
-
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 342 900 342 1200 365 1200"/>
 	</svg>

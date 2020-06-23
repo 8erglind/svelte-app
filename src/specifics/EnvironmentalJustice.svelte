@@ -79,7 +79,7 @@
 
 <!-- CONTENT -->
 
-<div class="pagetitle" style="transform: rotate({rotate});">Environmental<br>Justice:<br>I</div>
+<div class="pagetitle" style="transform: rotate({rotate});">Displacement</div>
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">

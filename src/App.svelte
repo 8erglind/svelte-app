@@ -31,8 +31,8 @@
 	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
-	let scrollToFront = false;
-	let Main = true;
+	let scrollToFront = true;
+	let Main = false;
 
 	const toggleHide = () => {
 		scrollToFront = false;
@@ -80,7 +80,7 @@
 		<div class="text criticalText animtwo" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">
 			(Click to open)
 		</div>
-		<div class="pagetitle" style="transform: rotate(90deg);">Now &amp; then<sub>2</sub></div>
+		<div class="pagetitle" style="transform: rotate(-90deg);">Now &amp; then<sub>2</sub></div>
 		<img class="coverfan" src="imgs/fan.jpg">
 	</a>
 {/if}
@@ -94,10 +94,10 @@
 		</div>
 	{/each}-->
 	<div class="overflowBreaker">
-		<div class="content"><CriticalDecadeIII pagetitleText="Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
+		<div class="content"><CriticalDecadeIII pagetitleText="...is the policy of the Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
 	</div>
 	<div class="overflowBreaker">
-		<div class="content"><EnvironmentalJusticeII pagetitleText="Environmental Justice:&emsp;II" rotate="78deg" next="#page3" prev="#page1"></EnvironmentalJusticeII></div>
+		<div class="content"><EnvironmentalJusticeII pagetitleText="Radical love..." rotate="78deg" next="#page3" prev="#page1"></EnvironmentalJusticeII></div>
 	</div>
 	<div class="overflowBreaker">
 		<div class="content country"><USA pagetitleText="The U.S." rotate="66deg" next="#page4" prev="#page2"></USA></div>
