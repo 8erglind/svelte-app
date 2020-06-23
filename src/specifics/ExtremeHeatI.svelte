@@ -179,7 +179,10 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			Source <a target="_blank" href="">[1]</a>{#if secondSetup}, <a target="_blank" href="">[2]</a>{/if}.
+			{#if firstSetup} <a target="_blank" href="https://climate.copernicus.eu/surface-air-temperature-may-2020">[more &nearr;]</a>{/if}
+			{#if secondSetup} <a target="_blank" href="https://www.weather.gov/phi/heatcond">[more &nearr;]</a>{/if}
+			{#if thirdSetup} <a target="_blank" href="https://stundin.is/grein/11213/gaetum-glimt-vid-vanda-tengdan-samspili-mikils-hita-og-raka-fyrr-en-aaetlad-var/">[more &nearr;]</a>{/if}
+			{#if fourthSetup} <a target="_blank" href="http://www.impactlab.org/news-insights/valuing-climate-change-mortality/">[more &nearr;]</a>{/if}
 		</div>
 </div>
 

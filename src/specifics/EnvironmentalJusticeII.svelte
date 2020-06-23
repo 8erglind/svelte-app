@@ -102,25 +102,40 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		
+		1. Care<br>
+		Care:
+		- In order to love, we must care.
+		- We must practice empathy, to notice how other people feel and how systems affect them, how our own habits/consumption/politics affect them -- and care.
+		- bell wrote of care as being an integral part of love, however, care alone does not constitute love. An abusive parent can care for their child, but abuse and love can not coexist -- abusive pathological love is not love and love cannot excuse abuse. [the action of abuse is counterproductive to the action of love.] (and codependency is not love, garment workers are codependent on us?)
+		- To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional.
 	</div>	
 {/if}
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		 
+		 2. Commitment<br>
+		- In order to love we must be eager and committed to abandoning or replacing abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether of yourself or another. Love is not for narcissistic but communal, “it requires conscious practice, a willingness to unite the way we think with the way we act.” <!--(U.N.I.T.Y. Queen Latifah)-->
+ 		<br>
+		- *BONUS* garment workers in other countries (“only an estimated 2% of garment workers around the globe are paid a living wage.” <!-- -sustainablefashiondublin from fashion revolution)-->
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		
+		3. Knowledge:<br>
+		bell asks us as consumers to call for a more accurate portrayal of love in mass media. Mass media, which more most often is produced by patriarchal institutions, historically shows love as a mystery. Something undefinable. bell describes this as being linked to patriarchal values, which depend upon inferiority / superiority, which can better be represented through violence than through love. Mass media can’t define love because the creators don’t understand love, patriarchal ideas of love are scewed by dominance and violence.<br>
+		Representations of environmentalism in mass media is similarly under-developed, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is kids holding hands around a globe, then where does that lead us?<br>
+		What valuable knowledge are we missing out on?
 	</div>	
+	<!-- LINK TO THESIS -->
 {/if}
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	
+		4. Responsibility:<br>
+		bell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable, that way lending love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its meaning.”
+		<br>
+		This means that we can choose to love (although I’m not so sure we can choose to not love). Love or lack of love is an action, an actions with consequences. In a wider context -- as love exists in many forms and “sizes” -- when speaking of groups of people, we do not simply “not love” them, we choose to not love them. Whether we choose to love them or not love them, our choice has consequences, and we are responsible for those consequences. Love is not just a feeling that we cannot control, it is an intentional action.
 	</div>	
 {/if}
 
@@ -132,7 +147,12 @@
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	
+		Finally, love involves trust.
+		<br>
+		“Cultures of domination rely on the cultivation of fear as a way to ensure obedience. In our society we make much of love and say little about fear. Yet we are all terribly afraid most of the time. As a culture we are obsessed with the notion of safety. Yet we do not question why we live in states of extreme anxiety and dread. Fear is the primary force upholding structures of domination. It promotes the desire for separation, the desire not to be known. When we are taught that safety lies always with sameness, then difference, of any kind, will appear as a threat. When we choose to love we choose to move against fear-against alienation and separation. The choice to love is a choice to connect-to find ourselves in the other.
+		<br>
+		To love is to trust that the other will not harm us, that difference is not destructive. To not overpolice and exlude on the basis of fear.<br>
+		“Awakening to love can happen only as we let go of our obsession with power and domination.”
 	</div>	
 {/if}
 

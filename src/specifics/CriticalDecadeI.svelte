@@ -1,5 +1,5 @@
 <script>
-	export let pagetitleText;
+	//export let pagetitleText;
 	export let rotate;
 	export let next;
 	export let prev;
@@ -186,21 +186,11 @@
 <!--     FOOTER     -->
 
 <div class="text bottomLine">
-	<!--{#if firstText}
-		<div class="bottomLineText">
-			Since 1880 Earth’s average global temperature has increased by 1,1&nbsp;-&nbsp;1,3°C.
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if firstText} <a target="_blank" href="https://www.carbonbrief.org/state-of-the-climate-how-the-world-warmed-in-2019">[more &nearr;]</a>{/if}
+			{#if secondText} <a target="_blank" href="https://econofact.org/global-temperature-and-human-activity">[more &nearr;]</a>{/if}
+			{#if thirdText} <a target="_blank" href="https://climateactiontracker.org/global/cat-thermometer/">[more &nearr;]</a>{/if}
 		</div>
-	{/if}
-	{#if secondText}
-		<div class="bottomLineText">
-			Two-thirds of that warming happened in the last 45&nbsp;years.
-		</div>
-	{/if}
-	{#if thirdText}
-		<div class="bottomLineText">
-			The Paris Agreement aims to limit <i>future</i> warming to&nbsp;+&nbsp;1,5°C.
-		</div>
-	{/if}-->
 </div>
 
 

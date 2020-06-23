@@ -147,8 +147,7 @@
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Estimations of the number of climate migrants in 2050 vary between 25 million and 1 billion, the most widely accepted number being 200 million, meaning around 1 in every 45 people will be displaced due to climate change.
-		<!-- LINK1 Migration and climate change IPCC   PDF -->
+		The climate crisis is already being felt by an increasingly large population (mostly non-white). Each year since 2008, catastrophic weather disasters have displaced an average of 24 million people. Yet no substancial measures to keep it under control have been taken.
 	</div>	
 
 	<div class="horizontalLine left line40"></div>
@@ -183,8 +182,8 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			{#if fifthSetup}<a class="text" href="" target="_blank">[more &nearr;]</a>{/if}
-			{#if sixthSetup}<a class="text" href="" target="_blank">[more &nearr;] <a href="" target="_blank">[more &nearr;].</a></a>{/if}
+			{#if fifthSetup}<a class="text" href="https://www.weforum.org/agenda/2019/10/importance-of-disaster-risk-reduction/" target="_blank">[more &nearr;]</a>{/if}
+			<!--{#if sixthSetup}<a class="text" href="" target="_blank">[more &nearr;] <a href="" target="_blank">[more &nearr;].</a></a>{/if}-->
 		</div>
 </div>
 

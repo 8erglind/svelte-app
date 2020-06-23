@@ -86,14 +86,14 @@
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Countries that are ranked as having Medium impact on an individual level are:<br>
+		Countries (non-exhaustive list) that are ranked as having Medium impact on an individual level are:<br>
 		<span class="text">Albania, Angola, Argentina, Armenia, Azerbaijan, Bhutan, Bolivia, Botswana, <i>Brazil</i>, Chile, Columbia, Costa&nbsp;Rica, Croatia, Cuba, Dominican Republic, Ecuador, Egypt, El&nbsp;Salvador, Fiji, Gabon, Georgia, Guatemala, Guyana, Honduras, <i>India</i>, Indonesia, Jamaica, Jordan, Kyrgyz Republic, Lebanon, Lesotho, Mexico, Montenegro, North&nbsp;Korea, Namibia, North&nbsp;Macedonia, Pakistan, Panama, Peru, Philippines, Suriname, Sweden, Switzerland, Syria, Tailand, Tunisia, Uruguay, Uzbekistan, Venezuela,&nbsp;Vietnam.</span>
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Countries that are ranked as having Low impact on an individual level are:<br>
+		Countries (non-exhaustive list) that are ranked as having Low impact on an individual level are:<br>
 		<span class="text">Afghanistan, Bangladesh, Benin, Burkina Faso, Burundi, <i>Cambodia</i>, Cameroon, Central African Republic, Chad, Congo, Cote&nbsp;d-Ivoire, Democratic Republic of Congo, Eritrea, Ethiopia, <i>Ghana</i>, Guinea, Haiti, Kenya, Lao, Liberia, Madagascar, Malawi, Mali, Mauritania, Mozambique, Myanmar, Nepal, Nicaragua, Niger, Nigeria, Papua New Guinea, Paraguay, Rwanda, Senegal, Sierra&nbsp;Leone, Solomon&nbsp;Islands, Somalia, South Sudan, Tajiksistan, Tanzania, Timor-Leste, Togo, Uganda, Vanuata, Yemen, Zambia,&nbsp;Zimbabwe.</span>
 	</div>	
 
@@ -102,20 +102,20 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Countries that are ranked as having High impact on an individual level are:<br>
+		Countries (non-exhaustive list) that are ranked as having High impact on an individual level are:<br>
 		<span class="text">Algeria, Austria, Belarus, Belgium, Bosnia and Herzegovina, Bulgaria, China, Denmark, Equatorial Guinea, Finland, France, Greece, Hungary, Iran, Iraq, Ireland, Israel, Italy, Lybia, Malaysia, Morocco, New Zealand, Norway, Poland, Portugal, Serbia, Slovakia, Slovenia, South&nbsp;Africa, Spain, Turkey,&nbsp;the&nbsp;U.K.</span>
 	</div>	
 
-	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->personal climate action (or lack there of) counts,<br>greatly.</div>
+	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->Here, personal climate action (or lack there of)&nbsp;counts,<br>greatly.</div>
 {/if}
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Countries that are ranked as having Highest impact on an individual level are:<br>
+		Countries (non-exhaustive list) that are ranked as having Highest impact on an individual level are:<br>
 		<span class="text">Australia, Canada, Czech, Estonia, Germany, <i>Iceland</i>, Japan, Kazakhstan, Mongolia, Oman, Qatar, Russia, <i>Saudi Arabia</i>, <i>South&nbsp;Korea</i>, <i>The&nbsp;Netherlands</i>, Trinidad and Tobago, Turkmenistan, <i>The&nbsp;U.S.</i>, United Arab&nbsp;Emirates.</span>
 	</div>	
 
-	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->personal climate action (or lack there of) counts,<br>very&nbsp;greatly!</div>
+	<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 0);"><!--If you live in one of these countries your -->Here, personal climate action (or lack there of)&nbsp;counts,<br>very&nbsp;greatly!</div>
 {/if}
 
 
@@ -131,7 +131,7 @@
 
 <div class="text bottomLine">
 		<div class="bottomLineText text" style="text-align: right;">
-			Source <a target="_blank" href="https://feu-us.org/impact-of-individual-action/">[1]</a>.
+			<a target="_blank" href="https://feu-us.org/impact-of-individual-action/">[more &nearr;]</a>.
 		</div>
 </div>
 

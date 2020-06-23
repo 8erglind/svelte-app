@@ -119,7 +119,7 @@
 <div class="pagetitle" style="transform: rotate({rotate});">{pagetitleText}</div>
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Travelling on west (and south) from S-Korea, we reach Cambodia, a former french colony which gained independance in 1953.
+		South-west of South Korea (not directly) is Cambodia, a former french colony which gained independance in&nbsp;1953.
 	</div>	
 
 	<img style="position: absolute; height: 20vw; right: 5%; bottom: 10%;" src="https://cdn1.i-scmp.com/sites/default/files/styles/1200x800/public/images/methode/2017/08/17/4b764522-818f-11e7-a767-bc310e55dd10_1280x720_145203.JPG?itok=-KNK72jk">
@@ -139,7 +139,7 @@
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		In the following years, Cambodia's music and film industry took off with stars such as <span style="font-family: arita;">រស់&nbsp;សេរីសុទ្ធា</span> (Ros&nbsp;Sereysothea) and <span style="font-family: arita;">ស៊ីន&nbsp;ស៊ីសាមុត</span> (Sinn&nbsp;Sisamouth).
+		In the years following Cambodia's independance, Cambodia's music and film industry took off. Influenced by the west, rock music became popular with stars such as <span style="font-family: arita;">រស់&nbsp;សេរីសុទ្ធា</span>, Ros&nbsp;Sereysothea, and <span style="font-family: arita;">ស៊ីន&nbsp;ស៊ីសាមុត</span>, Sinn&nbsp;Sisamouth.
 	</div>
 
 	<div class="horizontalLine left line60" style="width: 100%;"></div>
@@ -177,7 +177,7 @@
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Following the Vietnam War (and subsequent bombings of Cambodia by the U.S. army), the Khmer Rouge, a nationalist communist party, took over and in the years 1975 to 1979 committed a mass genocide killing nearly two million Cambodian people. During that period most artists disappeared, two of them <span style="font-family: arita;">រស់&nbsp;សេរីសុទ្ធា</span> and&nbsp;<span style="font-family: arita;">ស៊ីន&nbsp;ស៊ីសាមុត</span>.
+		Following the Vietnam War (and subsequent bombings of Cambodia by the U.S. army), the Khmer Rouge, a nationalist communist party, took over and in the years 1975 to 1979 committed a mass genocide killing nearly two million Cambodian people. During that period most artists disappeared, including Ros&nbsp;Sereysothea and Sinn&nbsp;Sisamouth.
 	</div><!--- LINK https://www.cambodiatribunal.org/history/cambodian-history/khmer-rouge-history/ -->
 
 	<div class="horizontalLine left line41" style="width: 100%;"></div>
@@ -286,12 +286,6 @@
 
 
 
-<div class="text bottomLine">
-		<div class="bottomLineText" style="text-align: right;">
-			Sources <a>[1]</a>, [2], [3].
-		</div>
-</div>
-
 
 
 
@@ -312,6 +306,24 @@
 
 
 <!--    Footer    -->
+
+<div class="text bottomLine">
+		<div class="bottomLineText text" style="text-align: right;">
+			{#if secondSetup} <a target="_blank" href="https://vimeo.com/ondemand/dtif">[more &nearr;]</a> <a target="_blank" href="https://www.imdb.com/title/tt0069287/">[more &nearr;]</a>
+			{/if}
+			{#if thirdSetup} <a target="_blank" href="https://www.cambodiatribunal.org/history/cambodian-history/khmer-rouge-history/">[more &nearr;]</a>{/if}
+			{#if fourthSetup}
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+			{/if}
+			{#if fifthSetup}
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+			{/if}
+			{#if sixthSetup}
+				<a target="_blank" href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2020-2039&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F">[more &nearr;]</a>
+			{/if}
+
+		</div>
+</div>
 
 <div class="activedotnew activedotFan">
 	<div class="progressline" style="transform: rotate(calc(0deg - {rotate}));"></div>

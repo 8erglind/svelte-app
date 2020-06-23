@@ -28,9 +28,16 @@
 	import ImpactofIndividualAction from './specifics/ImpactofIndividualAction.svelte';
 	import CriticalDecadeIII from './specifics/CriticalDecadeIII.svelte';
 
-	
+	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
+	let marginSides = 'calc(100vw / 16)';
 
+	let scrollToFront = false;
+	let Main = true;
 
+	const toggleHide = () => {
+		scrollToFront = false;
+		Main = true;
+	}
 
 
 	//let pages = [
@@ -61,7 +68,24 @@
 <Header></Header>
 
 
+<div class="desktopView">
+	<div class="please">(Please switch to mobile view)</div>
+</div>
 
+{#if scrollToFront}
+	<a href="#front" class="scrollToFront" on:click={toggleHide}>
+		<div class="text criticalText animone" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">
+			(Please lock your phone in portrait mode)
+		</div>
+		<div class="text criticalText animtwo" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">
+			(Click to open)
+		</div>
+		<div class="pagetitle" style="transform: rotate(90deg);">Now &amp; then<sub>2</sub></div>
+		<img class="coverfan" src="imgs/fan.jpg">
+	</a>
+{/if}
+
+{#if Main}
 <div class="newmain">
 
 	<!--{#each pages as page (page.id)}
@@ -112,7 +136,7 @@
 		<div class="content country"><SouthKorea pagetitleText="South Korea" rotate="-66deg" next="#page15" prev="#page13"></SouthKorea></div>
 	</div>
 	<div class="overflowBreaker">
-		<div class="content"><ExtremeHeatI pagetitleText="Extreme heat" rotate="-78deg" next="#page16" prev="#page14"></ExtremeHeatI></div>
+		<div class="content"><ExtremeHeatI pagetitleText="Extreme heat" rotate="-78deg" next="#front" prev="#page14"></ExtremeHeatI></div>
 	</div>
 	<div class="overflowBreaker">
 		<div class="content"><Cover pagetitleText="now & then" rotate="-90deg" prev="#page15"></Cover></div>
@@ -132,27 +156,46 @@
 
 
 <Footer></Footer>
-
+{/if}
 
 
 
 
 <style>
 
-/*
-.dots {
-	position: fixed;
-	bottom: 0%;
-	height: 5%;
-	left: 0px;
-	width: 100vw;
-	z-index: 99999;
-}
-.dot {
-	width: calc((100vw / 16) - 1px);
-	height: calc(100% - 2px);
-	margin-top: 1px;
-	display: inline-block;
-}
-*/
+.criticalText {
+		color: blue !important;
+	}
+.animone {
+		animation-name: example; 
+    	transition-timing-function: ease-in-out;
+	    animation-duration: 2s;
+	    animation-delay: 0s;
+	    animation-iteration-count: 3;
+	    opacity: 0;
+	}
+	@keyframes example {
+	  0% {opacity: 0;}
+	  20% {opacity: 1;}
+	  80% {opacity: 1;}
+	  100% {opacity: 0;}
+	}
+	.animtwo {
+		animation-name: exampletwo; 
+    	transition-timing-function: ease-in-out;
+	    animation-delay: 6s;
+	    animation-duration: 2s;
+	    animation-iteration-count: infinite;
+	    opacity: 0;
+	}
+	@keyframes exampletwo {
+	  0% {opacity: 0;}
+	  20% {opacity: 1;}
+	  80% {opacity: 1;}
+	  100% {opacity: 0;}
+	}
+.pagetitle {
+    font-size: 30px;
+    font-family: meadow;
+   }
 </style>

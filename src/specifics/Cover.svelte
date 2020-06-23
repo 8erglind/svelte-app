@@ -66,7 +66,7 @@
 
 
 
-<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">(Please lock your phone in portrait mode)</div>
+<!--<div class="text criticalText" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">(Please lock your phone in portrait mode)</div>-->
 
 
 
@@ -102,9 +102,10 @@
 
 
 <div class="text bottomLine">
-	<div class="bottomLineText">
-		<!--&larr; &larr; &larr; Press left side of screen click through, or swipe left to skip.&emsp;--> 
-	</div>
+		<div class="bottomLineText text" style="text-align: right;">
+			<a href="https://www.glyphworld.online/" target="_blank">[font: GlyphWorld &nearr;]</a> 
+			<a href="http://collletttivo.it/" target="_blank">[font: Ortica &nearr;]</a>
+		</div>
 </div>
 	
 
@@ -131,7 +132,7 @@
 	.Two {bottom: 50%;}
 	.Three {bottom: 80%;}
 
-	.criticalText {
+	/*.criticalText {
 		animation-name: example; 
     	transition-timing-function: ease-in-out;
 	    animation-duration: 2s;
@@ -143,7 +144,7 @@
 	  20% {opacity: 1;}
 	  80% {opacity: 1;}
 	  100% {opacity: 0;}
-	}
+	}*/
 
 	/*.OneStuck, .One, .Two, .Three {
     	transition-timing-function: ease-in-out;
@@ -155,7 +156,7 @@
 		transition-timing-function: ease-in-out;
 	    animation-duration: 2s;
 	    opacity: 0;
-	    animation-delay: 4s;
+	    animation-delay: 2s;
 	    animation-fill-mode: forwards;
 	}
 	@keyframes exampleOneStuck {
@@ -170,7 +171,7 @@
 	    animation-duration: 2s;
 	    opacity: 0;
 	    animation-iteration-count: 1;
-	    animation-delay: 5s;
+	    animation-delay: 3s;
 	    animation-fill-mode: forwards;
 	}
 	@keyframes exampleOne {
@@ -184,7 +185,7 @@
 	    animation-duration: 2s;
 	    opacity: 0;
 	    animation-iteration-count: 1;
-	    animation-delay: 6s;
+	    animation-delay: 4s;
 	    animation-fill-mode: forwards;
 	}
 	@keyframes exampleTwo {
@@ -198,7 +199,7 @@
 	    animation-duration: 2s;
 	    opacity: 0;
 	    animation-iteration-count: 1;
-	    animation-delay: 7s;
+	    animation-delay: 5s;
 	    animation-fill-mode: forwards;
 	}
 	@keyframes exampleThree {
@@ -213,7 +214,7 @@
 	    animation-duration: 2s;
 	    opacity: 1;
 	    animation-iteration-count: 1;
-	    animation-delay: 2s;
+	    animation-delay: 0s;
 	    animation-fill-mode: forwards;
 	}
 	@keyframes exampleDisappear {
