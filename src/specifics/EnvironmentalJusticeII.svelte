@@ -16,6 +16,11 @@
 	let sixthSetup = false;
 	let seventhSetup = false;
 	let eightthSetup = false;
+	let ninethSetup = false;
+	let tenthSetup = false;
+	let eleventhSetup = false;
+	let twelvethSetup = false;
+	let thirteenthSetup = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
@@ -54,7 +59,33 @@
 	const toggleeighthSetup = () => {
 		seventhSetup = false;
 		eightthSetup = true;
+		ninethSetup = false;
 	}
+	const toggleninethSetup = () => {
+		eightthSetup = false;
+		ninethSetup = true;
+		tenthSetup = false;
+	}
+	const toggletenthSetup = () => {
+		ninethSetup = false;
+		tenthSetup = true;
+		eleventhSetup = false;
+	}
+	const toggleeleventhSetup = () => {
+		tenthSetup = false;
+		eleventhSetup = true;
+		twelvethSetup = false;
+	}
+	const toggletwelvethSetup = () => {
+		eleventhSetup = false;
+		twelvethSetup = true;
+		thirteenthSetup = false;
+	}
+	const togglethirteenthSetup = () => {
+		twelvethSetup = false;
+		thirteenthSetup = true;
+	}
+
 </script>
 
 <!--    BUTTONS    -->
@@ -89,8 +120,28 @@
 	<div class="buttonPrev" on:click={togglesixthSetup}></div>
 {/if}
 {#if eightthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click={toggleninethSetup}></div>
 	<div class="buttonPrev" on:click={toggleseventhSetup}></div>
+{/if}
+{#if ninethSetup}
+	<div class="buttonNext" on:click={toggletenthSetup}></div>
+	<div class="buttonPrev" on:click={toggleeighthSetup}></div>
+{/if}
+{#if tenthSetup}
+	<div class="buttonNext" on:click={toggleeleventhSetup}></div>
+	<div class="buttonPrev" on:click={toggleninethSetup}></div>
+{/if}
+{#if eleventhSetup}
+	<div class="buttonNext" on:click={toggletwelvethSetup}></div>
+	<div class="buttonPrev" on:click={toggletenthSetup}></div>
+{/if}
+{#if twelvethSetup}
+	<div class="buttonNext" on:click={togglethirteenthSetup}></div>
+	<div class="buttonPrev" on:click={toggleeleventhSetup}></div>
+{/if}
+{#if thirteenthSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={toggletwelvethSetup}></div>
 {/if}
 
 
@@ -98,26 +149,26 @@
 
 <!-- CONTENT -->
 
-<div class="pagetitle" style="transform: rotate({rotate});">Radical<br>love<br>...</div>
+<div class="pagetitle" style="transform: rotate({rotate});">Radical<br>love ...</div>
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		CARE<br>
 		In order to love, we must care.<br>
-		But care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse abuse.<!-- [Careless love -- song] -->
+		But care alone does not constitute love. bell claims that an abusive parent, although maybe caring, does not love it’s child. Abuse and love can not coexist and love can never excuse&nbsp;abuse.<!-- [Careless love -- song] -->
 	</div>	
 {/if}
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional. Creating work for garment workers, and then only paying 2% of them a living wage, is abusive care. 
+		To care about the wellbeing of others than yourself is not sufficient in itself, and combined with abuse or neglect it becomes dysfunctional. Creating work for garment workers, and then only paying 2% of them a living wage, is abusive&nbsp;care. 
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		COMMITMENT<br>
-		In order to love we must be eager and committed to abandoning abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether over yourself or another. Love is communal, “it requires conscious practice, a willingness to unite the way we think with the way we act.” <!--(U.N.I.T.Y. Queen Latifah)--> 
+		In order to love we must be eager and committed to abandoning abusive habits. Love, in bell’s writing, is not a practice for greater life satisfaction of the loving individual, but a deeply political act of ending domination and oppression, whether over yourself or another. Love is communal, “it requires conscious practice, a willingness to unite the way we think with the way we&nbsp;act.” <!--(U.N.I.T.Y. Queen Latifah)--> 
 	</div>	
 {/if}
 
@@ -130,14 +181,14 @@
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Representations of environmentalism in mass media is similarly underdeveloped, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is <i>kids holding hands around a globe</i>, then where does that lead us? What valuable knowledge are we missing out on? <!-- LINK TO THESIS -->
+		Representations of environmentalism in mass media is similarly underdeveloped, which is shameful because representation shapes our culture and informs our thoughts and actions. Consumers must use their power to demand nuanced representations. If love is unknowable and environmentalism is <i>kids holding hands around a globe</i>, then where does that lead&nbsp;us? What valuable knowledge are we missing out&nbsp;on? <!-- LINK TO THESIS -->
 	</div>	
 {/if}
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		RESPONSIBILITY<br>
-		bell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable. This lends love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its meaning.”
+		bell talkes of love as an action, which is informed by will and intention, rather than a feeling, which is uncontrollable. This lends love accountability and responsibility. “If we were constantly remembering that love is as love does, we would not use the word in a manner that devalues and degrades its&nbsp;meaning.”
 	</div>	
 {/if}
 
@@ -154,6 +205,39 @@
 	</div>	
 {/if}
 
+{#if ninethSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		David answered, surprised by the question after a 90 minute discussion, “at just 2 degrees of warming, which is basically the best-case scenario. it’s been estimated that 150 million people would die from air pollution...”, the man stopped him and commented, smiling, “But out of 8&nbsp;billion”.
+	</div>	
+{/if}
+
+{#if tenthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		David continued, trying to convince the man that the - avoidable - death of 150 million people would surely be a tragedy, “...the scale of 25 Holocausts”, the man cut him off again, repeating his previous observation, as if he had proven his point. After learning of the imminent death of 150 million people, he concluded that since they where mainly concentrated in China, India and the Developing world, it wouldn’t be so&nbsp;bad.
+	</div>	
+{/if}
+
+{#if eleventhSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Although most are not as vocal about this kind of disregard for human life, his attitude perfectly mirrors that of western policy. Respect for human life is conditional to class, race, gender, sexuality, religion, etc., and now also year of&nbsp;birth. 
+	</div>	
+{/if}
+
+{#if twelvethSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		TRUST<br>
+		Finally, love requires trust.<br>
+		“As a culture we are obsessed with the notion of safety. Yet we do not question why we live in states of extreme anxiety and dread. Fear is the primary force upholding structures of domination. It promotes the desire for separation, the desire not to be known. When we are taught that safety lies always with sameness, then difference, of any kind, will appear as a threat.&nbsp;... 
+	</div>	
+{/if}
+
+{#if thirteenthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		... When we choose to love we choose to move against fear-against alienation and separation. The choice to love is a choice to connect &mdash; to find ourselves in the&nbsp;other.”<br>
+		To love is to trust that the other will not harm us, that difference is not destructive. “Awakening to love can happen only as we let go of our obsession with power and domination.”
+	</div>	
+{/if}
+
 
 
 
@@ -163,6 +247,8 @@
 		<div class="bottomLineText text" style="text-align: right;">
 			{#if fifthSetup}<a class="text" href="https://kabk.github.io/go-theses-20-berglind-johannsdottir/" target="_blank"> [thesis &nearr;&#xFE0E;]</a>{/if}
 			{#if eightthSetup}<a class="text" href="https://nymag.com/intelligencer/2019/12/climate-change-worst-case-scenario-now-looks-unrealistic.html" target="_blank"> [more &nearr;&#xFE0E;]</a>{/if}
+			{#if ninethSetup}<a class="text" href="https://nymag.com/intelligencer/2019/12/climate-change-worst-case-scenario-now-looks-unrealistic.html" target="_blank"> [more &nearr;&#xFE0E;]</a>{/if}
+			{#if tenthSetup}<a class="text" href="https://nymag.com/intelligencer/2019/12/climate-change-worst-case-scenario-now-looks-unrealistic.html" target="_blank"> [more &nearr;&#xFE0E;]</a>{/if}
 			<a class="text" href="https://www.youtube.com/watch?v=LTRDHb-8EF0" target="_blank"> [more &nearr;&#xFE0E;]</a>
 			<a class="text" href="https://abc.nl/book-details/all-about-love-new-visions/@9780060959470" target="_blank"> [more &nearr;&#xFE0E;]</a>
 		</div>
@@ -182,6 +268,8 @@
 <style>
 
 	.text, .text a, .pagetext {color: rgb(70,70,70) !important;}
+	.pagetext {bottom: 20%;}
+	.pagetitle {bottom: 70%;}
 	.verticalLine {border-right: 1px dotted rgb(70,70,70);}
 	.horizontalLine {border-top: 1px dotted rgb(70,70,70); width: 100%;}
 	.line {background-color: rgb(70,70,70);}
