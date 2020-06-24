@@ -241,6 +241,7 @@
 <style>
 
 	.text, .text a, .pagetext {color: red !important;}
+	.pagetitle {bottom: 75%;}
 	.verticalLine {border-right: 1px dotted red;}
 	.horizontalLine {border-top: 1px dotted red;}
 	.line {background-color: red;}
