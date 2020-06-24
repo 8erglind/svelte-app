@@ -217,7 +217,7 @@
 	<div class="text years left line39">1981</div>
 
 	<img style="position: absolute; width: 50%; right: 5%; top: 13%;" src="https://img.discogs.com/IdGiJdzyzV1OmyHIee7xGaDLD8E=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4305932-1523806860-6780.png.jpg">
-	<iframe class="videoSmall" style="top: 15%; left: 20vw; " src="https://www.youtube.com/embed/oGKDBhdxn6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	<iframe class="videoSmall" style="top: 15%; left: 20vw;" src="https://www.youtube.com/embed/oGKDBhdxn6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {/if}
 
 {#if fifthSetup}

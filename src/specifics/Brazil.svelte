@@ -145,7 +145,8 @@
 	<div class="horizontalLine left line80"></div>
 	<div class="text years left line80">1940</div>
 
-	<iframe src="https://open.spotify.com/embed/track/3MAfY28yoCNbHhtZAGwYln" class="video" style="bottom: calc({distanceBLines} * 2); left: 10vw; height: auto !important; width: 80vw;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<!--<iframe src="https://open.spotify.com/embed/track/3MAfY28yoCNbHhtZAGwYln" class="video" style="bottom: calc({distanceBLines} * 2); left: 10vw; height: auto !important; width: 80vw;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>-->
+	<iframe class="video" style="top: calc({distanceBLines} * 2); left: 10vw; width: 80vw; height: 80vw;" src="https://www.youtube.com/embed/e4WZVQAh_Hw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {/if}
 
 {#if firstSetup}

@@ -113,6 +113,14 @@
 	<div class="pagetext" style="transform: rotate({rotate});">
 		Saudi Arabia is one of the highest ranking countries when it comes to the impact of individual climate action.
 	</div>	
+
+	<img style="position: absolute; width: 50%; right: 2%; top: 3%;" src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2018/04/03/1146466-1925327293.png?itok=sj0MRsQM">
+{/if}
+{#if firstSetup}
+{:else}
+	<div class="prePics" style="top: calc({distanceBLines} * 1.2); left: calc({marginSides} + 5px);">
+		<img class="smallPic" src="https://www.arabnews.pk/sites/default/files/styles/n_670_395/public/2018/04/03/1146466-1925327293.png?itok=sj0MRsQM">
+	</div>
 {/if}
 
 {#if secondSetup}
@@ -129,11 +137,18 @@
 	<div class="horizontalLine left line40" style="width: 100%;"></div>
 	<div class="text years left line40">1980</div>
 	<div class="line left line40"></div>
+
+	<img style="position: absolute; height: 50vw; left: 2%; top: 75%;" src="https://i.pinimg.com/564x/8f/13/67/8f1367cbac68aa3ed779d257d4234111.jpg">
+
 {:else}
 	{#if firstSetup}
 	{:else}
 		<div class="line left line47"></div>
 		<div class="line left line40"></div>
+
+		<div class="prePics" style="bottom: calc({distanceBLines} * 4.1); left: calc({marginSides} + 5px); opacity: .3;">
+		<img class="smallPic" src="https://i.pinimg.com/564x/8f/13/67/8f1367cbac68aa3ed779d257d4234111.jpg">
+	</div>
 	{/if}
 {/if}
 

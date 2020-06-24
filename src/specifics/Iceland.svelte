@@ -127,7 +127,6 @@
 	<div class="buttonNext" on:click={toggletenthSetup}></div>
 	<div class="buttonPrev" on:click={toggleeighthSetup}></div>
 {/if}
-
 {#if tenthSetup}
 	<a class="buttonNext" href="{prev}"></a>
 	<div class="buttonPrev" on:click={toggleninethSetup}></div>
@@ -229,14 +228,14 @@
 
 {#if tonlistarTexti}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence.
+		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. [I'm sorry for the emptyness, I am still missing some cultural content.]
 	</div>
 {/if}
 
 {#if sixthSetup}
-	<div class="sweatdropLarger" style="top: calc(({distanceBLines}*3.5) - 60px); left: 60vw; border-radius: 60px !important;">
+	<!--<div class="sweatdropLarger" style="top: calc(({distanceBLines}*3.5) - 60px); left: 60vw; border-radius: 60px !important;">
 		<iframe style="position: absolute; width: 100%; height: 100%; border-radius: 60px !important;" src="https://www.youtube.com/embed/BBcweZR5PcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	</div>
+	</div>-->
 {/if}
 
 {#if seventhSetup}

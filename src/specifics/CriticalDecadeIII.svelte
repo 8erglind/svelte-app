@@ -230,12 +230,12 @@
 		<br><br>
 
 		<p>This is not an exhaustive list, take&nbsp;it, develope&nbsp;it and make it your&nbsp;own.<br>
-			You are accountable only to yourself.
+			<!--You are accountable only to yourself.-->
 		</p>
 		<br><br>
-		<p class="meadow">LETS GET RADICAL,<br>
+		<p class="meadow"><!--LETS GET RADICAL,<br>-->
 				LOVE<br> 
-				Berglind</p>
+				<!--Berglind--></p>
 
  	<!--Here is a (short) list of companies that don’t pay their employees garment workers: list
 	- Here is a (short) list of companies that use prison labour: list-->

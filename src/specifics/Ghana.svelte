@@ -120,6 +120,8 @@
 	<div class="pagetext" style="transform: rotate({rotate});">
 		Ghana is one of countries which rank low when it comes to the impact of individual climate action.
 	</div>	
+
+	<iframe class="videoSmall" style="top: 15%; right: 10vw; " src="https://www.youtube.com/embed/xyxDt_LFYWI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 {/if}
 
 {#if secondSetup}

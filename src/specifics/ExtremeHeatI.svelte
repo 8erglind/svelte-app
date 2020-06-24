@@ -125,8 +125,8 @@
 
 
 {#if firstSetup}
-	<div class="sweatdrop falling"></div>
-	<div class="sweatdrop falling2"></div>
+	<!--<div class="sweatdrop falling"></div>
+	<div class="sweatdrop falling2"></div>-->
 {/if}
 
 {#if firstSetup}

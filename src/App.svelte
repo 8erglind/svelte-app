@@ -31,8 +31,8 @@
 	let distanceBLines = 'calc((95vh - 1px) / 9 * 1)';
 	let marginSides = 'calc(100vw / 16)';
 
-	let scrollToFront = false;
-	let Main = true;
+	let scrollToFront = true;
+	let Main = false;
 
 	const toggleHide = () => {
 		scrollToFront = false;
@@ -81,7 +81,7 @@
 			(Click to open)
 		</div>
 		<div class="pagetitle" style="transform: rotate(-90deg);">Now &amp; then<sub>2</sub></div>
-		<img class="coverfan" src="imgs/fan.jpg">
+		<img class="coverfan" src="imgs/fansmaller.jpg">
 	</a>
 {/if}
 
@@ -94,7 +94,7 @@
 		</div>
 	{/each}-->
 	<div class="overflowBreaker">
-		<div class="content"><CriticalDecadeIII pagetitleText="...is the policy of the Critical Decade:&emsp;III, Pledge" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
+		<div class="content"><CriticalDecadeIII pagetitleText="...is the policy of the Critical Decade:&emsp;III" rotate="90deg" next="#page2"></CriticalDecadeIII></div>
 	</div>
 	<div class="overflowBreaker">
 		<div class="content"><EnvironmentalJusticeII pagetitleText="Radical love..." rotate="78deg" next="#page3" prev="#page1"></EnvironmentalJusticeII></div>
