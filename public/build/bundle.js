@@ -32238,7 +32238,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("Climate action is a fight for human rights and dignity. It involves dismantling a system of exponential growth of capital, built on exploitation of the resources, labour and lives of those who it deems ‘inferior’.");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 126, 1, 3054);
     		},
@@ -32276,7 +32276,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("At this point future people, as a collective, have been added to the long list of oppressed groups. This system has always been violent and life-killing, but at this point it is running out of life to kill, and so it’s invading the — unwritten and empty, vulnerable even — future.");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 132, 1, 3371);
     		},
@@ -32314,7 +32314,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("bell hooks explained that in a system built on domination, greed and exploitation become normalized, and dehumanization becomes acceptable — even required.");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 138, 1, 3765);
     		},
@@ -32352,7 +32352,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("“We” did not cause this crisis, but by continuing to support the system of exploitation that is causing it, we are responsible for it (particularly those of us who hold a ‘superior’ status within this system).");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 144, 1, 4030);
     		},
@@ -32390,7 +32390,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("We as individuals cannot “save the world” with our individual lifestyle choices alone, they mainly serve to remind us to be climate countious, our real power lies in demanding a just society. A system of exploitation will continue to operate until we decide dehumanization is unaceptable, in any form.");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 150, 1, 4341);
     		},
@@ -32428,7 +32428,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("Lethal heat is rising. It is now, in this critical decade, our responsibility to civilize. To lower our tolerance for exploitation and refuse to compromise our values. We must humanize all people (now or then) and practice radical love!");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 156, 1, 4744);
     		},
@@ -32466,7 +32466,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			t = text("“Society’s collective fear of love must be faced if we are to lay claim to a love ethic that can inspire us and give us the courage to make necessary changes.” — bell lhooks");
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 162, 1, 5084);
     		},
@@ -32522,7 +32522,7 @@ var app = (function () {
     			add_location(i0, file$h, 169, 147, 5579);
     			add_location(i1, file$h, 169, 173, 5605);
     			add_location(i2, file$h, 169, 202, 5634);
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div, file$h, 168, 1, 5372);
     		},
@@ -32571,7 +32571,7 @@ var app = (function () {
     			br = element("br");
     			t1 = text(" → make a pledge to love radically! →");
     			add_location(br, file$h, 175, 28, 5802);
-    			attr_dev(div, "class", "pagetext svelte-xe93tw");
+    			attr_dev(div, "class", "pagetext svelte-1h7mifa");
     			set_style(div, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			set_style(div, "bottom", "35%");
     			add_location(div, file$h, 174, 1, 5701);
@@ -33012,25 +33012,25 @@ var app = (function () {
     			add_location(br2, file$h, 122, 90, 2997);
     			add_location(br3, file$h, 122, 102, 3009);
     			add_location(br4, file$h, 122, 113, 3020);
-    			attr_dev(div0, "class", "pagetitle svelte-xe93tw");
+    			attr_dev(div0, "class", "pagetitle svelte-1h7mifa");
     			set_style(div0, "transform", "rotate(" + /*rotate*/ ctx[0] + ")");
     			add_location(div0, file$h, 122, 0, 2907);
-    			attr_dev(div1, "class", "bottomLineText text svelte-xe93tw");
+    			attr_dev(div1, "class", "bottomLineText text svelte-1h7mifa");
     			set_style(div1, "text-align", "right");
     			add_location(div1, file$h, 186, 2, 5932);
-    			attr_dev(div2, "class", "text bottomLine svelte-xe93tw");
+    			attr_dev(div2, "class", "text bottomLine svelte-1h7mifa");
     			add_location(div2, file$h, 185, 0, 5900);
     			attr_dev(div3, "class", "progressline");
     			set_style(div3, "transform", "rotate(calc(0deg - " + /*rotate*/ ctx[0] + "))");
     			add_location(div3, file$h, 200, 1, 7056);
     			attr_dev(div4, "class", "activedotnew activedotFan");
     			add_location(div4, file$h, 199, 0, 7015);
-    			attr_dev(div5, "class", "horizontalLine left svelte-xe93tw");
+    			attr_dev(div5, "class", "horizontalLine left svelte-1h7mifa");
     			set_style(div5, "width", "100%");
     			set_style(div5, "top", "calc(" + /*distanceBLines*/ ctx[12] + " * 8)");
     			set_style(div5, "border-top", "1px solid blue");
     			add_location(div5, file$h, 204, 0, 7148);
-    			attr_dev(div6, "class", "text criticalText svelte-xe93tw");
+    			attr_dev(div6, "class", "text criticalText svelte-1h7mifa");
     			set_style(div6, "left", /*marginSides*/ ctx[13]);
     			set_style(div6, "right", /*marginSides*/ ctx[13]);
     			set_style(div6, "top", "calc((" + /*distanceBLines*/ ctx[12] + " * 8)");
@@ -33720,20 +33720,20 @@ var app = (function () {
     			attr_dev(div0, "class", "text criticalText animone svelte-1mio7bf");
     			set_style(div0, "left", /*marginSides*/ ctx[3]);
     			set_style(div0, "right", /*marginSides*/ ctx[3]);
-    			set_style(div0, "top", "calc((" + /*distanceBLines*/ ctx[2] + " * 8)");
+    			set_style(div0, "bottom", "calc((" + /*distanceBLines*/ ctx[2] + " * 1)");
     			add_location(div0, file$i, 76, 2, 3713);
     			attr_dev(div1, "class", "text criticalText animtwo svelte-1mio7bf");
     			set_style(div1, "left", /*marginSides*/ ctx[3]);
     			set_style(div1, "right", /*marginSides*/ ctx[3]);
-    			set_style(div1, "top", "calc((" + /*distanceBLines*/ ctx[2] + " * 8)");
-    			add_location(div1, file$i, 79, 2, 3894);
-    			add_location(sub, file$i, 82, 74, 4121);
+    			set_style(div1, "bottom", "calc((" + /*distanceBLines*/ ctx[2] + " * 1)");
+    			add_location(div1, file$i, 79, 2, 3897);
+    			add_location(sub, file$i, 82, 74, 4127);
     			attr_dev(div2, "class", "pagetitle svelte-1mio7bf");
     			set_style(div2, "transform", "rotate(-90deg)");
-    			add_location(div2, file$i, 82, 2, 4049);
+    			add_location(div2, file$i, 82, 2, 4055);
     			attr_dev(img, "class", "coverfan");
     			if (img.src !== (img_src_value = "imgs/fansmaller.jpg")) attr_dev(img, "src", img_src_value);
-    			add_location(img, file$i, 83, 2, 4142);
+    			add_location(img, file$i, 83, 2, 4148);
     			attr_dev(a, "href", "#front");
     			attr_dev(a, "class", "scrollToFront");
     			add_location(a, file$i, 75, 1, 3649);
@@ -34058,71 +34058,71 @@ var app = (function () {
     			t15 = space();
     			create_component(footer.$$.fragment);
     			attr_dev(div0, "class", "content");
-    			add_location(div0, file$i, 96, 2, 4448);
+    			add_location(div0, file$i, 96, 2, 4454);
     			attr_dev(div1, "class", "overflowBreaker");
-    			add_location(div1, file$i, 95, 1, 4416);
+    			add_location(div1, file$i, 95, 1, 4422);
     			attr_dev(div2, "class", "content");
-    			add_location(div2, file$i, 99, 2, 4651);
+    			add_location(div2, file$i, 99, 2, 4657);
     			attr_dev(div3, "class", "overflowBreaker");
-    			add_location(div3, file$i, 98, 1, 4619);
+    			add_location(div3, file$i, 98, 1, 4625);
     			attr_dev(div4, "class", "content country");
-    			add_location(div4, file$i, 102, 2, 4844);
+    			add_location(div4, file$i, 102, 2, 4850);
     			attr_dev(div5, "class", "overflowBreaker");
-    			add_location(div5, file$i, 101, 1, 4812);
+    			add_location(div5, file$i, 101, 1, 4818);
     			attr_dev(div6, "class", "content country");
-    			add_location(div6, file$i, 105, 2, 5000);
+    			add_location(div6, file$i, 105, 2, 5006);
     			attr_dev(div7, "class", "overflowBreaker");
-    			add_location(div7, file$i, 104, 1, 4968);
+    			add_location(div7, file$i, 104, 1, 4974);
     			attr_dev(div8, "class", "content");
-    			add_location(div8, file$i, 108, 2, 5160);
+    			add_location(div8, file$i, 108, 2, 5166);
     			attr_dev(div9, "class", "overflowBreaker");
-    			add_location(div9, file$i, 107, 1, 5128);
+    			add_location(div9, file$i, 107, 1, 5134);
     			attr_dev(div10, "class", "content country");
-    			add_location(div10, file$i, 111, 2, 5363);
+    			add_location(div10, file$i, 111, 2, 5369);
     			attr_dev(div11, "class", "overflowBreaker");
-    			add_location(div11, file$i, 110, 1, 5331);
+    			add_location(div11, file$i, 110, 1, 5337);
     			attr_dev(div12, "class", "content country");
-    			add_location(div12, file$i, 114, 2, 5526);
+    			add_location(div12, file$i, 114, 2, 5532);
     			attr_dev(div13, "class", "overflowBreaker");
-    			add_location(div13, file$i, 113, 1, 5494);
+    			add_location(div13, file$i, 113, 1, 5500);
     			attr_dev(div14, "class", "content country");
-    			add_location(div14, file$i, 117, 2, 5683);
+    			add_location(div14, file$i, 117, 2, 5689);
     			attr_dev(div15, "class", "overflowBreaker");
-    			add_location(div15, file$i, 116, 1, 5651);
+    			add_location(div15, file$i, 116, 1, 5657);
     			attr_dev(div16, "class", "content");
-    			add_location(div16, file$i, 120, 2, 5858);
+    			add_location(div16, file$i, 120, 2, 5864);
     			attr_dev(div17, "class", "overflowBreaker");
-    			add_location(div17, file$i, 119, 1, 5826);
+    			add_location(div17, file$i, 119, 1, 5832);
     			attr_dev(div18, "class", "content country");
-    			add_location(div18, file$i, 123, 2, 6068);
+    			add_location(div18, file$i, 123, 2, 6074);
     			attr_dev(div19, "class", "overflowBreaker");
-    			add_location(div19, file$i, 122, 1, 6036);
+    			add_location(div19, file$i, 122, 1, 6042);
     			attr_dev(div20, "class", "content");
-    			add_location(div20, file$i, 126, 2, 6227);
+    			add_location(div20, file$i, 126, 2, 6233);
     			attr_dev(div21, "class", "overflowBreaker");
-    			add_location(div21, file$i, 125, 1, 6195);
+    			add_location(div21, file$i, 125, 1, 6201);
     			attr_dev(div22, "class", "content");
-    			add_location(div22, file$i, 129, 2, 6424);
+    			add_location(div22, file$i, 129, 2, 6430);
     			attr_dev(div23, "class", "overflowBreaker");
-    			add_location(div23, file$i, 128, 1, 6392);
+    			add_location(div23, file$i, 128, 1, 6398);
     			attr_dev(div24, "class", "content country");
-    			add_location(div24, file$i, 132, 2, 6618);
+    			add_location(div24, file$i, 132, 2, 6624);
     			attr_dev(div25, "class", "overflowBreaker");
-    			add_location(div25, file$i, 131, 1, 6586);
+    			add_location(div25, file$i, 131, 1, 6592);
     			attr_dev(div26, "class", "content country");
-    			add_location(div26, file$i, 135, 2, 6787);
+    			add_location(div26, file$i, 135, 2, 6793);
     			attr_dev(div27, "class", "overflowBreaker");
-    			add_location(div27, file$i, 134, 1, 6755);
+    			add_location(div27, file$i, 134, 1, 6761);
     			attr_dev(div28, "class", "content");
-    			add_location(div28, file$i, 138, 2, 6963);
+    			add_location(div28, file$i, 138, 2, 6969);
     			attr_dev(div29, "class", "overflowBreaker");
-    			add_location(div29, file$i, 137, 1, 6931);
+    			add_location(div29, file$i, 137, 1, 6937);
     			attr_dev(div30, "class", "content");
-    			add_location(div30, file$i, 141, 2, 7135);
+    			add_location(div30, file$i, 141, 2, 7141);
     			attr_dev(div31, "class", "overflowBreaker");
-    			add_location(div31, file$i, 140, 1, 7103);
+    			add_location(div31, file$i, 140, 1, 7109);
     			attr_dev(div32, "class", "newmain");
-    			add_location(div32, file$i, 88, 0, 4215);
+    			add_location(div32, file$i, 88, 0, 4221);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div32, anchor);

@@ -253,8 +253,8 @@
 
 	.text, .text a, .pagetext {color: rgb(70,70,70) !important;}
 	.criticalText {color: blue !important; z-index: 10;}
-	.pagetext {bottom: 30%; width: 80vw;}
-	.pagetitle {bottom: 65%;}
+	.pagetext {bottom: 28%; width: 80vw;}
+	.pagetitle {bottom: 60%;}
 	.verticalLine {border-right: 1px dotted rgb(70,70,70);}
 	.horizontalLine {border-top: 1px dotted rgb(70,70,70); width: 100%;}
 	.line {background-color: rgb(70,70,70);}

@@ -74,10 +74,10 @@
 
 {#if scrollToFront}
 	<a href="#front" class="scrollToFront" on:click={toggleHide}>
-		<div class="text criticalText animone" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">
+		<div class="text criticalText animone" style="left: {marginSides}; right: {marginSides}; bottom: calc(({distanceBLines} * 1);">
 			(Please lock your phone in portrait mode)
 		</div>
-		<div class="text criticalText animtwo" style="left: {marginSides}; right: {marginSides}; top: calc(({distanceBLines} * 8);">
+		<div class="text criticalText animtwo" style="left: {marginSides}; right: {marginSides}; bottom: calc(({distanceBLines} * 1);">
 			(Click to open)
 		</div>
 		<div class="pagetitle" style="transform: rotate(-90deg);">Now &amp; then<sub>2</sub></div>
