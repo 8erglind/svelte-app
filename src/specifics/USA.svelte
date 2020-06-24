@@ -89,6 +89,7 @@
 
 		ninethSetup = false;
 		tenthSetup = true;
+		eleventhSetup = false;
 
 		graph = true;
 	}
