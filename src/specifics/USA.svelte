@@ -150,7 +150,7 @@
 {/if}
 {#if eleventhSetup}
 	<a class="buttonNext" href="{prev}"></a>
-	<div class="buttonPrev" on:click={toggleninethSetup}></div>
+	<div class="buttonPrev" on:click={toggletenthSetup}></div>
 {/if}
 
 
