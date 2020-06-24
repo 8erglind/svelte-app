@@ -189,15 +189,6 @@
 {/if}
 
 
-{#if fifthSetup}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		Within the film-industry was born a strong film-music industry with composers such as R. D. Burman, who wrote the song XXX for the 1981 movie <span style="font-family: arita;">एक&nbsp;दूजे&nbsp;के&nbsp;लिए</span> (Ek Duuje Ke Liye or We Are Made For Each Other). <!-- LINK which was later sampled in Britney Spears's Toxic -->
-	</div>
-
-	<div class="horizontalLine left line39" style="width: 100%;"></div>
-	<div class="text years left line39">1981</div>
-{/if}
-
 {#if fourthSetup}
 {:else}
 	{#if thirdSetup}
@@ -217,13 +208,50 @@
 {/if}
 
 
+{#if fifthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Within the film-industry was born a strong film-music industry with composers such as R. D. Burman, who wrote the song 'Tere Mere Beech Mein' for the 1981 movie <span style="font-family: arita;">एक&nbsp;दूजे&nbsp;के&nbsp;लिए</span> (Ek Duuje Ke Liye or We Are Made For Each&nbsp;Other). <!-- LINK which was later sampled in Britney Spears's Toxic -->
+	</div>
+
+	<div class="horizontalLine left line39" style="width: 100%;"></div>
+	<div class="text years left line39">1981</div>
+
+	<img style="position: absolute; width: 50%; right: 5%; top: 13%;" src="https://img.discogs.com/IdGiJdzyzV1OmyHIee7xGaDLD8E=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4305932-1523806860-6780.png.jpg">
+	<iframe class="videoSmall" style="top: 15%; left: 20vw; " src="https://www.youtube.com/embed/oGKDBhdxn6c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{/if}
+
+{#if fifthSetup}
+{:else}	
+	{#if fourthSetup}
+	{:else}
+		{#if thirdSetup}
+		{:else}
+			{#if firstSetup}
+			{:else}
+				{#if secondSetup}
+				{:else}
+					<div class="line left line39"></div>
+
+					<div class="prePics" style="bottom: calc({distanceBLines} * 3.8); left: calc({marginSides} + 5px);">
+						<img class="smallPic" src="https://img.discogs.com/IdGiJdzyzV1OmyHIee7xGaDLD8E=/fit-in/600x605/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-4305932-1523806860-6780.png.jpg">
+					</div>
+				{/if}
+			{/if}
+		{/if}
+	{/if}
+{/if}
+
+
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		A few years later, in 1990, Asha Puthli published the album Hari Om, named after one of the songs of the album, an Indian rendition of Madonna's Like a Prayer. Another song on the album is an Indian version of Smooth Criminal, called Chipko Chipko.
+		A few years later, in 1990, Asha Puthli published the album Hari Om, named after one of the songs of the album, an Indian rendition of Madonna's Like a Prayer. Another song on the album is an Indian version of Smooth Criminal, called Chipko&nbsp;Chipko.
 	</div>
 
 	<div class="horizontalLine left line30" style="width: 100%;"></div>
 	<div class="text years left line30">1990</div>
+
+	<img style="position: absolute; width: 50%; left: 15%; top: 2%;" src="./imgs/hariOm.jpg">
+	<iframe class="videoSmall" style="bottom: 5%; right: 7vw;" src="https://www.youtube.com/embed/tCKA55M32GE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	
 {/if}
 
@@ -271,6 +299,10 @@
 					{:else}
 					<div class="line left line46"></div>
 					<div class="line left line40"></div>
+
+					<div class="prePics" style="bottom: calc({distanceBLines} * 2.8); left: calc({marginSides} + 5px);">
+						<img class="smallPic" src="./imgs/hariOm.jpg">
+					</div>
 					{/if}
 				{/if}
 			{/if}
@@ -379,6 +411,7 @@
 <style>
 
 	.text, .text a, .pagetext {color: darkorange !important;}
+	.pagetext {bottom: 15%;}
 	.verticalLine {border-right: 1px dotted darkorange;}
 	.horizontalLine {border-top: 1px dotted darkorange;}
 	.line {background-color: darkorange;}
