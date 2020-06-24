@@ -142,7 +142,9 @@
 
 
 
-
+<!--<div class="prePics" style="top: calc({distanceBLines} * 0); left: calc({marginSides} + 5px);">
+	<img class="smallPic" src="https://i.pinimg.com/564x/e2/95/98/e29598f213c862f21bf9e9b02d1a2587.jpg">
+</div>-->
 
 
 
@@ -155,16 +157,19 @@
 {/if}
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-	 	A Bamboo Wife is a cylinder woven out of bamboo that can be cuddled in warm weather in order to better allow air to access the surface of your body. This object is known through-outh South-East Asia and in South-Korea is named <span style="font-family: arita_semibold;">죽부인</span> (Jukbuin).
+	 	A Bamboo Wife is a cylinder woven out of bamboo that can be cuddled in warm weather in order to better allow air to access the surface of your body. This object is known throughout South-East Asia and in South-Korea is named <span style="font-family: arita_semibold;">죽부인</span> (Jukbuin).
 	</div>
 {/if}
-{#if secondPhoto}<div class="eraPhoto"></div>{/if}
+{#if secondPhoto}<img style="position: absolute; width: 45%; left: 7%; top: 4%;" src="https://limdongcheol.files.wordpress.com/2010/08/100159_0-87331700.jpg">{/if}
+
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 	 	Another heat related tradition is connected to the phrase <span style="font-family: arita_semibold;">이열치열</span> (Iyeolchiyeol), which translates to "fight fire with fire" meaning to control body heat with heat. This is done by eating a warm chicken soup called <span style="font-family: arita_semibold;">호수 삼계탕</span> (Samgyetang) or visiting a hot&nbsp;sauna.
 	</div>
 {/if}
-{#if thirdPhoto}<div class="eraPhoto eraPhoto2"></div>{/if}
+{#if thirdPhoto}
+	<img style="position: absolute; width: 45%; right: 0%; bottom: 2%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Samgyetang.jpg/260px-Samgyetang.jpg"><!--FREE TO SHARE PIC-->
+{/if}
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 	 	South Korea is conveniently located when it comes to future extreme heat increase. Following "business as usual", extremely hot days will not increase at all in South Korea for the next 20&nbsp;years...
@@ -257,12 +262,12 @@
 
 
 <style>
-	.text, .text a, .pagetext/*, .pagetitle*/ {color: purple !important;}
-	.horizontalLine {border-top: 1px dotted purple;}
-	.line {background-color: purple;}
+	.text, .text a, .pagetext/*, .pagetitle*/ {color: darkblue !important;}
+	.horizontalLine {border-top: 1px dotted darkblue;}
+	.line {background-color: darkblue;}
 	.tempMeter {
-		border-left: 1px solid /*rgb(70,70,70)*/ purple; 
-		border-right: 1px solid /*rgb(70,70,70)*/ purple;
+		border-left: 1px solid /*rgb(70,70,70)*/ darkblue; 
+		border-right: 1px solid /*rgb(70,70,70)*/ darkblue;
 		background-color: rgba(0,0,0,0);
 		width: calc(100vw - 4px);
 		left: 0%;
@@ -282,11 +287,11 @@
 		border-top-right-radius: 20px;
 		border-bottom-left-radius: 0px; 
 		border-top-left-radius: 0px;
-		border-left: 1px dotted purple;
+		border-left: 1px dotted darkblue;
 	}
 	.midMeter {width: calc(((100% / 365) * 2) - 1px); border: none;}
 	.endMeter {width: calc(((100% / 365) * 19) - 1px);}
-	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted purple;}
+	.firstMeter:after, .midMeter:after, .endMeter:after {border-right: 1px dotted darkblue;}
 	.rightMid {right: calc(((100vw / 365) * 2) - 1px);}
 	.rightEnd {right: calc(((100vw / 365) * 19) - 1px);}
 
@@ -294,8 +299,8 @@
 		background-size: contain !important;
 		background-size: 60% !important;
 		background-position: 10% 20%;
-		/*background-image: url('https://lh3.googleusercontent.com/proxy/3szPE2OTXcgGTMWl72hiFAc7444IgpZ98gH8joKneVKL5kysG6ipruAmdkPYpNvmnJFO0VwckziwrtngPltCa48G7qcS8O0X5aGpTjglDuqcIm2c');*/
-		background-image: url('../imgs/jukbuin light.png');
+		/*background-image: url('https://lh3.googleusercontent.com/proxy/3szPE2OTXcgGTMWl72hiFAc7444IgpZ98gH8joKneVKL5kysG6ipruAmdkPYpNvmnJFO0VwckziwrtngPltCa48G7qcS8O0X5aGpTjglDuqcIm2c');
+		background-image: url('../imgs/jukbuin light.png');*/
 	}
 	.eraPhoto2 {
 		background-size: contain !important;
@@ -303,8 +308,8 @@
 		width: 90vw !important;
 		height: 97% !important;
 		background-position: bottom right;
-		/*background-image: url('https://png.pngtree.com/element_our/png_detail/20181123/traditional-korean-gourmet-chicken-soup-png_242812.jpg');*/
-		background-image: url('../imgs/soup3.png');
+		/*background-image: url('https://png.pngtree.com/element_our/png_detail/20181123/traditional-korean-gourmet-chicken-soup-png_242812.jpg');
+		background-image: url('../imgs/soup3.png');*/
 	}
 
 
