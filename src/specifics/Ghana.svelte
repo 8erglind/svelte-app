@@ -124,7 +124,7 @@
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		In 1957 Ghana became the first Sub-Saharan country to gain independance from colonial rule. The British colonisers where defeated by and independence movement lead by Kwame Nkrumah.  <!--[picture of him wearing kinte cloth??]-->
+		In 1957 Ghana became the first Sub-Saharan country to gain independance from colonial rule. The British colonisers were defeated by and independence movement lead by Kwame Nkrumah.  <!--[picture of him wearing kinte cloth??]-->
 	</div>	
 
 	<div class="horizontalLine left line63"></div>
@@ -145,7 +145,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Ghana is the birthplace of Highlife, which is a certain type of guitar (dance) music. E.T.&nbsp;Mensah was the pioneer of highlife, and it is still going today through different styles.<!--(My personal favourite is Koo Nimo) + Gyedu-Blay Ambolley - Simi Rapp -->
+		Ghana is the birthplace of Highlife, which is a certain type of guitar music. E.T. Mensah was the pioneer of highlife.<!--(My personal favourite is Koo Nimo) + Gyedu-Blay Ambolley - Simi Rapp -->
 	</div>	
 {/if}
 

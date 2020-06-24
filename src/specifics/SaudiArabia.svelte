@@ -118,7 +118,7 @@
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
 		In the 1930’s, an American oil company, a predecessor of Chevron, started looking for oil in Saudi Arabia and launched ARAMCO (American Arabian Oil Company).<br>
-		In the 70’s the Saudi government bought ARAMCO and today it is one of the largest oil companys in the world, one of the oil giants fueling the crisis.
+		In the 70’s the Saudi government bought ARAMCO and today it is one of the largest oil companys in the world, one of the oil giants fueling the crisis, and a large source of wealth for the Saudi Arabian elite. 
 	</div>	
 	<!-- Link history of Aramco: https://www.saudiaramco.com/en/who-we-are/overview/our-history -->
 
@@ -139,7 +139,7 @@
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		In the last decades of the 20th century, following a wealth boost from the oil industry, the short story became a popular artform, specifically for women. They found in it a compact format to express social critisicm with intense focus that could be delivered to the reader before interruption or fatigue kicked in. This wave included writers such as Fawziyya Al-bakr, Badriyya Al-Bisher, Maryam al-Ghamidi, Noura al-Ghamidim, Umaima al-Khamees, Khairiyya Ibrahim al-Saqqaf and Shareefa al-Shamlan.
+		In the last decades of the 20th century, following a wealth boost from the oil industry, women writers took to the short story as an artform. They found in it a compact format to express social critisicm with intense focus that could be delivered to the reader before interruption or fatigue kicked in. This wave included writers such as Fawziyya Al-bakr, Badriyya Al-Bisher, Maryam al-Ghamidi, Noura al-Ghamidim, Umaima al-Khamees, Khairiyya Ibrahim al-Saqqaf and Shareefa al-Shamlan.
 	</div>	
 
 	<!-- LINK https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3276448 -->
@@ -164,7 +164,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		<i>"I’m the woman from the lands of scorching heat, and of sharp freezing cold that twists the bones. Night falls early within the limits of my small village, and all living creatures take refuge inside their own skins. I’m the woman who has nothing, in her world, but the chance to stand secretly on tiptoe, gazing at the world outside through cracks in the small window. The narrow cages that shut life in haven’t stopped her eyes from looking up – with an aimless gaze sometimes, it’s true – towards some undefined future."</i>
+		<i>“I’m the woman from the lands of scorching heat, and of sharp freezing cold that twists the bones. Night falls early within the limits of my small village, and all living creatures take refuge inside their own skins. I’m the woman who has nothing, in her world, but the chance to stand secretly on tiptoe, gazing at the world outside through cracks in the small window. The narrow cages that shut life in haven’t stopped her eyes from looking up – with an aimless gaze sometimes, it’s true – towards some undefined future.” &mdash; Start of 'A Paper Life' by Fawziyya al-Bakr</i>
 	</div>	
 
 	<!-- A Paper Life by Fawziyya al-Bakr -->
@@ -268,6 +268,7 @@
 
 <style>
 	.text, .text a, .pagetext {color: green !important;}
+	.pagetitle {bottom: 70%;}
 	.verticalLine {border-right: 1px dotted green;}
 	.horizontalLine {border-top: 1px dotted green;}
 	.line {background-color: green;}

@@ -133,19 +133,19 @@
 	<div class="horizontalLine left line52"></div>
 	<div class="text years left line52">1968</div>
 
-	<iframe class="video" style="top: calc({distanceBLines} * 0); left: 0vw;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&autoplay=1&feed=%2Fmofgimmers%2Ftropicalismo-brazilian-psychedelia-tropicalia-and-more%2F" frameborder="0" allow="autoplay"></iframe>
+	<!--<iframe class="video" style="top: calc({distanceBLines} * 0); left: 0vw;" src="https://www.mixcloud.com/widget/iframe/?light=1&hide_artwork=1&autoplay=1&feed=%2Fmofgimmers%2Ftropicalismo-brazilian-psychedelia-tropicalia-and-more%2F" frameborder="0" allow="autoplay"></iframe>-->
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Carmen Miranda “they say I was Americanized”.
+		<!--Carmen Miranda “they say I was Americanized”.-->
 		<!-- LINK Disseram Que Eu Voltei Americanizada song written for Carmen Miranda -> show her  -->
 	</div>
 
 	<div class="horizontalLine left line80"></div>
 	<div class="text years left line80">1940</div>
 
-	<iframe src="https://open.spotify.com/embed/track/3MAfY28yoCNbHhtZAGwYln" class="video" style="top: calc({distanceBLines} * 0); left: 10vw; height: auto !important;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+	<iframe src="https://open.spotify.com/embed/track/3MAfY28yoCNbHhtZAGwYln" class="video" style="bottom: calc({distanceBLines} * 2); left: 10vw; height: auto !important; width: 80vw;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 {/if}
 
 {#if firstSetup}
@@ -168,7 +168,7 @@
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		He establishes the difference between the opressor and the oppressed, and the way in which their status affects their thinking. That overall, oppressors will prioritize “their right to live in peace” (and will often view the oppressed’s response to oppression as violent (see current ‘Black Lives Matter’ movement)), and that their idea of “peace” is a state in which they hold power by capitalising on the lives of others, a state that depends on the opression. He calls them “necrophilic” (life-killing).
+		He establishes the difference between the opressor and the oppressed, and the way in which their status affects their thinking. That overall, oppressors will prioritize “their right to live in peace” (and will often view the oppressed’s response to oppression as violent), and that their idea of “peace” is a state in which they hold power by capitalising on the lives of others, a state that depends on the opression. He calls them “necrophilic” (life-killing).
 	</div>
 {/if}
 
@@ -278,6 +278,8 @@
 <style>
 
 	.text, .text a, .pagetext {color: limegreen !important;}
+	.pagetitle {bottom: 75%;}
+	.pagetext {bottom: 20%;}
 	.verticalLine {border-right: 1px dotted limegreen;}
 	.horizontalLine {border-top: 1px dotted limegreen; width: 100vw;}
 	.line {background-color: limegreen;}

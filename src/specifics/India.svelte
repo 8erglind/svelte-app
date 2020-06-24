@@ -219,7 +219,7 @@
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		A few years later, in 1990, Asha Puthli published the album Hari Om, named after one of the songs of the album, an indian rendition of Madonna's Like a Prayer. Another song on the album is an indian version of Smooth Criminal, Chipko Chipko.
+		A few years later, in 1990, Asha Puthli published the album Hari Om, named after one of the songs of the album, an Indian rendition of Madonna's Like a Prayer. Another song on the album is an Indian version of Smooth Criminal, called Chipko Chipko.
 	</div>
 
 	<div class="horizontalLine left line30" style="width: 100%;"></div>
@@ -248,7 +248,7 @@
 
 {#if seventhSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The meaning of Chipko is to hug, embrace or stick to. <span style="font-family: arita;">चिपको&nbsp;आंदोलन</span> (The Chipko Andalon) is a eco-feminist movement formed in 1974 by a group of women, lead by Gaura Devi. Following a tradition of the Bishnois in 1700's, they saved 2.500 trees in Uttarakhand from lodgers by embracing them and influenced a treecutting ban in 1980. <!-- LINKS https://www.thebetterindia.com/176217/uttarakhand-chipko-movement-history-gaura-devi-environment/   and     https://www.youtube.com/watch?v=Hqwns1tyN0M --> <!--[When this is written, Cyclone Amphan is ravaging indian forrests and has destroyed around 16,000 trees in Kolkata]--> <!-- https://www.thehindu.com/news/national/other-states/over-28-of-sunderbans-damaged-in-cyclone-amphan/article31760595.ece -->
+		The meaning of Chipko is to hug, embrace or stick to. <span style="font-family: arita;">चिपको&nbsp;आंदोलन</span>, The Chipko Andalon, is a eco-feminist movement formed in 1974 by a group of women, lead by Gaura Devi. Following a tradition of the Bishnois in 1700's, they saved 2.500 trees in Uttarakhand from lodgers by embracing them and influenced a treecutting ban in 1980. <!-- LINKS https://www.thebetterindia.com/176217/uttarakhand-chipko-movement-history-gaura-devi-environment/   and     https://www.youtube.com/watch?v=Hqwns1tyN0M --> <!--[When this is written, Cyclone Amphan is ravaging indian forrests and has destroyed around 16,000 trees in Kolkata]--> <!-- https://www.thehindu.com/news/national/other-states/over-28-of-sunderbans-damaged-in-cyclone-amphan/article31760595.ece -->
 	</div>
 
 	<div class="horizontalLine left line46" style="width: 100%;"></div>
@@ -282,7 +282,7 @@
 
 {#if eightthText}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		India &mdash; which will see an increase of 18 hot days in the next two decades, 39 the two decades after that and 102 in the two decades leading up to 2100 if business is left "as usual" &mdash; is not devoid of environmentalism, and although India will need to take radical some climate action, the impact of India is not ranked high (better words!).
+		India will see an increase of 18 hot days in the next two decades, 39 the two decades after that and 102 in the two decades leading up to 2100 if business is left "as usual".
 	</div>
 
 	<div class="tempMeterCountry">

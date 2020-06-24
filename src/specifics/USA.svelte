@@ -16,6 +16,9 @@
 	let sixthSetup = false;
 	let seventhSetup = false;
 	let eightthSetup = false;
+	let ninethSetup = false;
+	let	tenthSetup = false;
+	let	eleventhSetup = false;
 
 	let graph = false;
 
@@ -39,19 +42,24 @@
 		fifthSetup = false;
 	}
 	const togglefifthSetup = () => {
-		fourthSetup = false;
+		fourthSetup = true;
 		fifthSetup = true;
 		sixthSetup = false;
 
 		graph = false;
 	}
 	const togglesixthSetup = () => {
+		fourthSetup = true;
+
+		fifthSetup = false;
 		sixthSetup = true;
 		seventhSetup = false;
 
 		graph = true;
 	}
 	const toggleseventhSetup = () => {
+		fourthSetup = true;
+
 		sixthSetup = false;
 		seventhSetup = true;
 		eightthSetup = false;
@@ -59,8 +67,36 @@
 		graph = true;
 	}
 	const toggleeighthSetup = () => {
-		seventhSetup = false;
+		fourthSetup = false;
+		seventhSetup = true;
+
 		eightthSetup = true;
+		ninethSetup = false;
+
+		graph = true;
+	}
+	const toggleninethSetup = () => {
+		seventhSetup = true;
+
+		eightthSetup = false;
+		ninethSetup = true;
+		tenthSetup = false;
+
+		graph = true;
+	}
+	const toggletenthSetup = () => {
+		seventhSetup = true;
+
+		ninethSetup = false;
+		tenthSetup = true;
+
+		graph = true;
+	}
+	const toggleeleventhSetup = () => {
+		seventhSetup = true;
+
+		tenthSetup = false;
+		eleventhSetup = true;
 
 		graph = true;
 	}
@@ -101,8 +137,20 @@
 	<div class="buttonPrev" on:click={togglesixthSetup}></div>
 {/if}
 {#if eightthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click={toggleninethSetup}></div>
 	<div class="buttonPrev" on:click={toggleseventhSetup}></div>
+{/if}
+{#if ninethSetup}
+	<div class="buttonNext" on:click={toggletenthSetup}></div>
+	<div class="buttonPrev" on:click={toggleeighthSetup}></div>
+{/if}
+{#if tenthSetup}
+	<div class="buttonNext" on:click={toggleeleventhSetup}></div>
+	<div class="buttonPrev" on:click={toggleninethSetup}></div>
+{/if}
+{#if eleventhSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={toggleninethSetup}></div>
 {/if}
 
 
@@ -113,38 +161,51 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		These tactics are awfully similar to those use by powerforces today in the U.S. (and beyond), and can easily be mirrored in the medias portrayal of peaceful Black Lives Matter protests as being violent (or Trump’s calling peaceful protesters thugs).
+		The tactics described by Freire are awfully similar to those used by powerforces today in the U.S. (and beyond), one example being Trump calling peaceful protesters&nbsp;thugs.
 	</div>	
 {/if}
 
 {#if secondSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The U.S. is built on oppression and dehumanisation. On stolen land with stolen labour. Angela Davies -> prison industial complex <!-- LINK spotify album --> [UNFINISHED]<br>
-		prison slavery (companies that use slave (prison) labour:
-		<br>ExxonMobile
-		<br>(some of the same companies (or at least similar) use cheap labour in the global south and prison labour in the US. (Slavery was never abolished, the 13th amendment allows the use of “involuntary servitude” as punishment for crime)))
+		The U.S. is built on oppression and dehumanisation. On stolen land with stolen labour. Colonialism and Slavery were made possible by a system that rationalised the expoitation of certain groups of people, who were deamed ‘inferior’, for the economic growth of a ‘superior’ (white) group of people on a scale that would not be possible or sustainable without&nbsp;it.
 	</div>	
 {/if}
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		about oil industry
+		This system is still in place, as has been clearly and widely demonstrated in the last months. Dehumanization through cheap/free/involuntary labour and limited human rights is not bound to non-white people in faraway countries, but is also live and well within the&nbsp;U.S. ...
 	</div>	
 {/if}
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		At the same time, music industry
-		Robert Johnson --> Muddy Waters --> Motown --> Disco and dance music --> hip hop. How the beatles were inspired by black music, and that music inspired the world. (Cultural apropriation) [UNFINISHED] --> the music of the oppressed shook the world.
+		... ... ExxonMobile, BP, Shell, American Airlines, Boeing and KOCH industries, are only a few of the companies that use cheap prison labour. Many of the companies that fuel the climate crisis use dehumanization as an economic strategy, they depend on&nbsp;it.
 	</div>	
 {/if}
 
-{#if fifthSetup}
+{#if eightthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		bell hooks, who was friends with Freire, released the book ‘All About Love’ in 19XX?. In it she defines love by 6 characteristics: care, commitment, knowledge, responsibility, respect and trust. [UNFINISHED]
+		The blues were created by the enslaved, it became a sort of coping mechanism. The blues created rock - motown - disco -  hip hop. This music inspired the rock and roll movement in Cambodia, highlife development in Ghana (ET Mensah), Tropicália in Brazil, Icelandic musicindustry, the&nbsp;Beatles.
 	</div>	
 {/if}
 
+{#if ninethSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		Black voices in America have been the voice of change (although overtly ignored). As Freire stated, change can only be organised by the oppressed, as the oppressors lack capacity to fully understand the problem (their attempts can often result in false generousity or objectification of the oppressed). From Octavia E. Butler<!-- (1993)--> to bell hooks, black women have preached environmentalism for&nbsp;decades. 
+	</div>	
+{/if}
+
+{#if tenthSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		bell hooks released the book ‘All About Love’ in 2000. In it she writes about the importance of understanding love, “Our confusion about what we mean when we use the word “love” is the source of our difficulty in loving. If our society had a commonly held understanding of the meaning of love, the act of loving would not be so mystifying.”
+	</div>	
+{/if}
+
+{#if eleventhSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		She defines love as being the combination of&nbsp;six&nbsp;aspects:<br>care, commitment, knowledge, responsibility, respect and&nbsp;trust.
+	</div>	
+{/if}
 
 
 
@@ -161,7 +222,7 @@
 	</div>
 {/if}
 
-{#if sixthSetup}
+{#if fifthSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -177,7 +238,7 @@
 	<div class="horizontalLine full right line20"></div>
 {/if}
 
-{#if seventhSetup}
+{#if sixthSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 340 600 340 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -193,7 +254,7 @@
 	<div class="horizontalLine full right line20"></div>
 {/if}
 
-{#if eightthSetup}
+{#if seventhSetup}
 	<svg class="hotDays" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 365 1200" preserveAspectRatio="none">
 		<polygon class="cls-1" points="365 1200 365 900 365 600 365 300 365 0 305 0 305 300 340 600 340 900 353 900 353 1200 365 1200"/>
 	</svg>
@@ -242,6 +303,7 @@
 
 	.text, .text a, .pagetext {color: red !important;}
 	.pagetitle {bottom: 75%;}
+	.pagetext {bottom: 20%;}
 	.verticalLine {border-right: 1px dotted red;}
 	.horizontalLine {border-top: 1px dotted red;}
 	.line {background-color: red;}

@@ -177,7 +177,7 @@
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Following the Vietnam War (and subsequent bombings of Cambodia by the U.S. army), the Khmer Rouge, a nationalist communist party, took over and in the years 1975 to 1979 committed a mass genocide killing nearly two million Cambodian people. During that period most artists disappeared, including Ros&nbsp;Sereysothea and Sinn&nbsp;Sisamouth.
+		They both disappeared in the 70's. Following the Vietnam War (and subsequent bombings of Cambodia by the U.S. army), the Khmer Rouge, a nationalist communist party, took over and in the years 1975 to 1979 committed a mass genocide killing nearly two million Cambodian people.
 	</div><!--- LINK https://www.cambodiatribunal.org/history/cambodian-history/khmer-rouge-history/ -->
 
 	<div class="horizontalLine left line41" style="width: 100%;"></div>

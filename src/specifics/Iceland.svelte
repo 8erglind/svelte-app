@@ -23,6 +23,8 @@
 	let thirteenthSetup = false;
 	let fourteenthSetup = false;
 
+	let tonlistarTexti = false;
+
 	const togglefirstSetup = () => {
 		firstSetup = true;
 		secondSetup = false;
@@ -46,35 +48,41 @@
 		fourthSetup = false;
 		fifthSetup = true;
 		sixthSetup = false;
+
+		tonlistarTexti = false;
 	}
 	const togglesixthSetup = () => {
 		fifthSetup = false;
 		sixthSetup = true;
 		seventhSetup = false;
+
+		tonlistarTexti = true;
 	}
 	const toggleseventhSetup = () => {
 		sixthSetup = false;
 		seventhSetup = true;
 		eightthSetup = false;
+
+		tonlistarTexti = true;
 	}
 	const toggleeighthSetup = () => {
 		seventhSetup = false;
 		eightthSetup = true;
 		ninethSetup = false;
+
+		tonlistarTexti = true;
 	}
 	const toggleninethSetup = () => {
 		eightthSetup = false;
 		ninethSetup = true;
 		tenthSetup = false;
+
+		tonlistarTexti = false;
 	}
 	const toggletenthSetup = () => {
-		ninethSetup = false;
+		ninethSetup = true;
 		tenthSetup = true;
 		eleventhSetup = false;
-	}
-	const toggleeleventhSetup = () => {
-		tenthSetup = true;
-		eleventhSetup = true;
 	}
 </script>
 
@@ -121,12 +129,8 @@
 {/if}
 
 {#if tenthSetup}
-	<div class="buttonNext" on:click={toggleeleventhSetup}></div>
-	<div class="buttonPrev" on:click={toggleninethSetup}></div>
-{/if}
-{#if eleventhSetup}
 	<a class="buttonNext" href="{prev}"></a>
-	<div class="buttonPrev" on:click={toggletenthSetup}></div>
+	<div class="buttonPrev" on:click={toggleninethSetup}></div>
 {/if}
 
 
@@ -141,7 +145,7 @@
 
 {#if firstSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Iceland is a high consumer of fast fashion, since 2010 the Red Cross recieves tonnes of used clothing annually, most of which is exported either for recycling in Eurpe or to devoloping countries.
+		Iceland is a high consumer of fast fashion, since 2010 the Icelandic Red Cross recieves tonnes of used clothing annually, most of which is exported either for recycling in Eurpe or to devoloping countries.
 	</div>	
 	<div class="text years left line10">2010</div>
 	<div class="horizontalLine full left line10"></div>
@@ -167,7 +171,8 @@
 
 {#if thirdSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Four years earlier, a few months into World War II, Iceland was occupied by the British military. Most of the soldiers resided in the capital, causing young male soldiers to become around 1/3 of the population.
+		Four years earlier, a few months into World War II, Iceland was occupied by the British military. Most of the soldiers resided in the capital, causing young male soldiers to become around 1/3 of the population.<br>
+		This caused what was called Ástandið (The Situation), in which single women started hanging out with soldiers to much dismay of the wider public and the government. ...
 	</div>	
 
 	<div class="text years left line80">1940</div>
@@ -182,7 +187,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		This caused what was called Ástandið (The Situation), in which single women started hanging out with soldiers to much dismay of the wider public and the government, which’s main concern was that Icelandic women would birth mixed children which would “pollute” the pure Icelandic race. Women who were in the “situation” were spyed on by a police-team which documented their conduct in what was the largest spying opperation ever conducted in Iceland, for a short period, laws were even changed so that the age of “independance” became 20 instead of 16.
+		... Their main concern was that Icelandic women would birth mixed children which would “pollute” the Icelandic race. Women who were in the “situation” were spyed on by a police-team which documented their conduct in what was the largest spying opperation ever conducted in Iceland. For a short period, laws were even changed to shift the age of “independance” from 16 to 20.
 	</div>	
 
 	<div class="text years left line80">1940</div>
@@ -222,41 +227,33 @@
 	{/if}
 {/if}
 
-{#if sixthSetup}
+{#if tonlistarTexti}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. TÓNLIST TÓNLIST TÓNLIST
+		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence.
 	</div>
+{/if}
 
+{#if sixthSetup}
 	<div class="sweatdropLarger" style="top: calc(({distanceBLines}*3.5) - 60px); left: 60vw; border-radius: 60px !important;">
 		<iframe style="position: absolute; width: 100%; height: 100%; border-radius: 60px !important;" src="https://www.youtube.com/embed/BBcweZR5PcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 	</div>
 {/if}
 
 {#if seventhSetup}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		TÓNLIST TÓNLIST TÓNLIST 1
-	</div>
+	<!-- TONLIST -->
 {/if}
 
 {#if eightthSetup}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		TÓNLIST TÓNLIST TÓNLIST 2
-	</div>
+	<!-- TONLIST -->
 {/if}
 
 {#if ninethSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		Although it is branded as a green/clean country, Iceland is one of the largest polluters /CO2 emitters per capita. Despite a 99% renewable energy supply, it’s Consumption-Based Carbon Footprint (CBCF) (as explained briefly in India’s page) is similar to or higher than most EU nations. A majority of Icelandic household CBCF is linked to imported goods, meaning the CO2 burden of Icelandic consumption falls to a large extent on developing nations.
+		Although it is branded as a green/clean country, Iceland is one of the largest polluters /CO2 emitters per capita. Despite a 99% renewable energy supply, it’s Consumption-Based Carbon Footprint is similar to or higher than most EU nations. A majority of Icelandic household CBCF is linked to imported goods, meaning the CO2 burden of Icelandic consumption falls to a large extent on developing nations.
 	</div>
 {/if}
 
 {#if tenthSetup}
-	<div class="pagetext" style="transform: rotate({rotate});">
-		One migh assume that Iceland's disregard for actual sustainability could be linked to the fact that warming in Iceland will not reach extreme hights in the forseeable future, and it's position as an island way up north allows it to close itself off to those affected... 
-	</div>
-{/if}
-
-{#if eleventhSetup}
 	<div class="tempMeterCountry">
 		<div class="temperature infotext"><span class="tempnumber left text" style="z-index: 99999999;">365 days</span></div>
 	</div>
@@ -291,9 +288,8 @@
 
 			{#if fifthSetup}<a href="https://timarit.is/page/3428779#page/n17/mode/2up" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 
-			{#if ninethSetup}<a href="https://www.sciencedirect.com/science/article/pii/S0959652617318267" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
-
-			{#if eleventhSetup}<a href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if ninethSetup}<a href="https://www.sciencedirect.com/science/article/pii/S0959652617318267" target="_blank">[more &nearr;&#xFE0E;]</a> <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
+			{#if tenthSetup}<a href="http://www.impactlab.org/map/#usmeas=absolute&usyear=1981-2010&gmeas=absolute&gyear=2080-2099&tab=global&grcp=rcp85&gprob=0.5&gvar=tasmax-over-95F" target="_blank">[more &nearr;&#xFE0E;]</a>{/if}
 		</div>
 </div>
 
