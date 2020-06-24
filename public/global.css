@@ -164,7 +164,7 @@ body {
 
 .bottomLine {
 	position: absolute;
-	bottom: calc(-5% - 1px);
+	bottom: calc(-5% - 0px);
 	width: calc(100vw - ((5vh - 10px) * 2) - (100vw / 16));
 	right: 0%;
 	height: 5%;
