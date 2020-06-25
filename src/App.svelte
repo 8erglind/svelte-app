@@ -165,6 +165,7 @@
 
 .criticalText {
 		color: blue !important;
+		z-index: 2;
 	}
 .animone {
 		animation-name: example; 
