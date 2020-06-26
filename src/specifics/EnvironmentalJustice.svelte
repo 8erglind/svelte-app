@@ -14,6 +14,7 @@
 	let fourthSetup = false;
 	let fifthSetup = false;
 	let sixthSetup = false;
+	let seventhSetup = false;
 
 	const togglefirstSetup = () => {
 		firstSetup = true;
@@ -44,6 +45,10 @@
 		sixthSetup = true;
 		seventhSetup = false;
 	}
+	const toggleseventhSetup = () => {
+		sixthSetup = false;
+		seventhSetup = true;
+	}
 </script>
 
 <!--    BUTTONS    -->
@@ -70,8 +75,12 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthSetup}
-	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonNext" on:click="{toggleseventhSetup}"></div>
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
+{/if}
+{#if seventhSetup}
+	<a class="buttonNext" href="{prev}"></a>
+	<div class="buttonPrev" on:click={togglesixthSetup}></div>
 {/if}
 
 
@@ -127,7 +136,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The oposite of a drought is a flood, both are becoming more common with heating. Jakarta, Indonesia’s capital city and home to roughly 9 million people, is the fastest sinking city in the world and is estimated to be half underwater in 2030. <!-- LINK https://www.youtube.com/watch?v=dNE5aptbGyY -->
+		The oposite of a drought is a flood, both are becoming more common with heating. Jakarta, Indonesia’s capital city and home to roughly 9 million people, is the fastest sinking city in the world and is estimated to be half underwater in&nbsp;2030. <!-- LINK https://www.youtube.com/watch?v=dNE5aptbGyY -->
 	</div>	
 
 	<div class="horizontalLine left line10"></div>
@@ -147,7 +156,7 @@
 
 {#if fifthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The climate crisis is already being felt by an increasingly large population (mostly non-white). Each year since 2008, catastrophic weather disasters have displaced an average of 24 million people. Yet no substancial measures to keep it under control have been taken.
+		Estimations of the number of climate migrants in 2050 vary between 25 million and 1 billion, the most widely accepted number being 200 million, meaning around 1 in every 45 people will be displaced due to climate&nbsp;change.
 	</div>	
 
 	<div class="horizontalLine left line40"></div>
@@ -170,7 +179,13 @@
 
 {#if sixthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		The climate crisis is already being felt by an increasingly large population (mostly non-white), yet no substancial measures to keep it under control have been taken. As it seems, more powder is being put into securing north-western borders and keeping the problem out of sight and out of mind. Out of mostly white and white governed high CO<sub>2</sub> emitting countries that take a very active part in fueling the crisis... like Iceland.
+		The climate crisis is already being felt by an increasingly large population (mostly non-white). Each year since 2008, catastrophic weather disasters have displaced an average of 24 million people. Yet no substancial measures to keep it under control have been&nbsp;taken.
+	</div>	
+{/if}
+
+{#if seventhSetup}
+	<div class="pagetext" style="transform: rotate({rotate});">
+		As it seems, more powder is being put into securing north-western borders and keeping the problem out of sight and out of mind. Out of mostly white and white governed high CO2 emitting countries that take a very active part in fueling the crisis ... like&nbsp;Iceland.
 	</div>	
 {/if}
 

@@ -143,16 +143,9 @@
 	</div>
 
 
-
-	<!--<div class="dots">
-		{#each pages as page (page.id)}
-			<a href="#{page.name}" class="dot dot{page.id}"></a>
-		{/each}
-	</div>-->
 </div>
 
 
-<!--<div class="button">&nbsp;&rarr;</div>-->
 
 
 <Footer></Footer>

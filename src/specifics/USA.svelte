@@ -180,7 +180,7 @@
 
 {#if fourthSetup}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		... ... ExxonMobile, BP, Shell, American Airlines, Boeing and KOCH industries, are only a few of the companies that use cheap prison labour. Many of the companies that fuel the climate crisis use dehumanization as an economic strategy, they depend on&nbsp;it.
+		... ExxonMobile, BP, Shell, American Airlines, Boeing and KOCH industries, are only a few of the companies that use cheap prison labour. Many of the companies that fuel the climate crisis use dehumanization as an economic strategy, they depend on&nbsp;it.
 	</div>	
 {/if}
 
