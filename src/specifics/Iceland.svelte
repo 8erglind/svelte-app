@@ -57,6 +57,8 @@
 		seventhSetup = false;
 
 		tonlistarTexti = true;
+
+		ninethSetup = false;
 	}
 	const toggleseventhSetup = () => {
 		sixthSetup = false;
@@ -112,8 +114,10 @@
 	<div class="buttonPrev" on:click={togglefourthSetup}></div>
 {/if}
 {#if sixthSetup}
-	<div class="buttonNext" on:click={toggleseventhSetup}></div>
+	<!--<div class="buttonNext" on:click={toggleseventhSetup}></div>-->
 	<div class="buttonPrev" on:click={togglefifthSetup}></div>
+
+	<div class="buttonNext" on:click={toggleninethSetup}></div>
 {/if}
 {#if seventhSetup}
 	<div class="buttonNext" on:click={toggleeighthSetup}></div>
@@ -125,7 +129,9 @@
 {/if}
 {#if ninethSetup}
 	<div class="buttonNext" on:click={toggletenthSetup}></div>
-	<div class="buttonPrev" on:click={toggleeighthSetup}></div>
+	<!--<div class="buttonPrev" on:click={toggleeighthSetup}></div>-->
+
+	<div class="buttonPrev" on:click={togglesixthSetup}></div>
 {/if}
 {#if tenthSetup}
 	<a class="buttonNext" href="{prev}"></a>
@@ -228,7 +234,7 @@
 
 {#if tonlistarTexti}
 	<div class="pagetext" style="transform: rotate({rotate});">
-		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence. [I'm sorry for the emptyness, I am still missing some cultural content.]
+		During this period “ballmenning” became more prominent with a subsequent boost to the music industry, which grew from this point with foreign influence.<!-- [I'm sorry for the emptyness, I am still missing some cultural content.]-->
 	</div>
 {/if}
 

@@ -44,7 +44,6 @@
 		fourthSetup = false;
 		fourthText = false;
 		fourthLines = false;
-		hotDays = false;
 	}
 	const togglefourthSetup = () => {
 		thirdSetup = false;

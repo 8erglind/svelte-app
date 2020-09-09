@@ -59,7 +59,6 @@
 
 		seventhSetup = false;
 		eightthSetup = true;
-		ninethSetup = false;
 	}
 </script>
 

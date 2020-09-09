@@ -62,7 +62,6 @@
 	const toggleninethSetup = () => {
 		eightthSetup = false;
 		ninethSetup = true;
-		tenthSetup = false;
 	}
 
 	const togglePopup = () => {
